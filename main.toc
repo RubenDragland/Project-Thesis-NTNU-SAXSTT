@@ -1,0 +1,52 @@
+\babel@toc {american}{}\relax 
+\vspace {-\cftbeforepartskip }
+\babel@toc {american}{}\relax 
+\contentsline {part}{\numberline {i}\spacedlowsmallcaps {Introduction}}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introduction}}{3}{chapter.1}%
+\contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Review of The Literature}}{5}{part.2}%
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Computed Tomography}}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}X-rays}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Beer-Lambert's Law}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Radon Transform}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Fourier Slice Theorem}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Filtered Back Projection}{8}{section.2.5}%
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Machine Learning Optimisation}}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Maximum Likelihood Estimation}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Gradient Descent}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Conjugate Gradient Descent}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Automatic Differentiation}{12}{section.3.4}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Scattering of X-rays}}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Wave-Particle Duality and Differential Crossection}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Classical Scattering Description}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Time Dependent Pertubation Theory}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Reciprocal Space Related to Electron Density}{16}{section.4.4}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Small Angle X-ray Scattering Tensor Tomography}}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}X-ray Pencil Beam}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Experimental Setup}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Modelling of Anisotropic Scattering}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{17}{section.5.4}%
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{19}{part.3}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Constructed Known Model}{21}{section.6.2}%
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{23}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{23}{section.7.4}%
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Known Model Using Automatic Differentiation SAXSTT}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Comparison of Automatic and Symbolic Differentiation for SAXSTT Applied to Known Model}{25}{section.8.3}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{27}{part.4}%
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Disproval of Derived Symbolic Gradients}}{29}{chapter.9}%
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed Reconstructions }}{31}{chapter.10}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{33}{chapter.11}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{35}{part.5}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of SAXSTT Algorithms}}{37}{chapter.12}%
+\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{39}{chapter.13}%
+\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Improvements of Computational Performance}}{41}{chapter.14}%
+\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{43}{part.6}%
+\vspace {\beforebibskip }
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{45}{dummy.7}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

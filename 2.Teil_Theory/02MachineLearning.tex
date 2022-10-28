@@ -1,0 +1,129 @@
+\chapter{Machine Learning Optimisation}
+
+\section{Maximum Likelihood Estimation}
+
+
+The maximum likelihood estimator is defined to be the set of parameters $\bm{\theta}_{ML}$ that maximise the probability $P(\bm{y} \mid \bm{x}; \bm{\theta})$.
+In other words, it chooses the parameters that produce the most probable estimation $\bm{\widehat{y}}$ of the true output $\bm{y}$ given the input $\bm{x}$.
+Equation \eqref{eq:Max_likelihood} defines this mathematically \cite{Goodfellow-et-al-2016}.
+
+\begin{equation}\label{eq:Max_likelihood}
+    \bm{\theta}_{ML} = \argmax_{\bm{\theta}} P(\bm{y} \mid \bm{x}; \bm{\theta})
+\end{equation}
+
+ML estimation is an example of supervised learning, because the true output, called the targets, are known.
+In supervised learning, the estimation is evaluated by computing the error relative to the true output.
+The expression for the total error of the model is called the cost function $J(\bm{\theta})$,
+which is a sum of loss functions $\mathcal{L}(\bm{y},\bm{\widehat{y}} )$ representing the error of a single data point.
+
+\section{Gradient Descent}
+
+Gradient descent is an optimisation algorithm that updates the model's parameters based on the gradient of the cost function and the step size $\alpha$,
+as shown in Equation \eqref{eq:GD} \cite{ruder2016overview}.
+
+\begin{equation}\label{eq:GD}
+    \bm{\theta} = \bm{\theta} - \alpha \bm{\nabla_{\theta}} J(\bm{\theta})
+\end{equation}
+
+The idea of this algorithm is that by following the gradient of the cost function, it is possible to find the global,
+or at least a sufficiently good local, minima in parameter space.
+In this way, the estimation will converge and minimise the error.
+Gradient descent in parameter space is visualised in Figure \ref{fig:GD_surface}
+% Matplotlib surface plot with path. + Make gif. 
+
+%\begin{figure}
+%    \centering
+%    \includegraphics{}
+%    \caption{A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on gradient descent}
+%    \label{fig:GD_surface}
+%\end{figure}
+
+
+\section{Conjugate Gradient Descent}
+\noindent
+The basic gradient descent algorithm is prone to require many iterations before converging.
+When solving computationally expensive optimisation tasks,
+one should therefore consider a method like Conjugate Gradient Descent (CGD).
+This method serves as a compromise between basic first order gradient descent and Newton's second order method.
+The latter uses the Hessian to converge in a small number of highly expensive iterations.
+The essential characteristics of the CGD algorithm will be summarised in this section, while it is clearly explained by Jonathan Richard Shewchuk \cite{shewchuk1994introduction}.
+
+The first improvement over basic gradient descent is a line search to determine the optimal step size $\alpha$ in the direction of the calculated gradients.
+This is done by computing the cost function $J(\bm{\theta})$ for a range of step sizes $\alpha$.
+At the minima, the gradient vector of the current and next iteration are orthogonal, which optimises the path of convergence.  %minimises the directional derivative of the cost function.
+Intuitively, this reduces the number of gradient calculations required to reach convergence, as the algorithm always exhausts the potential of the current direction, and proceeds orthogonal to this direction.
+
+However, with this procedure, which is commonly referred to as "Method of Steepest Descent", the algorithm often steps in the same direction multiple times.
+To prevent this, CGD only performs one step per basis vector in a set of orthogonal search directions.
+The orthogonal set is derived from Gram-Schmidt conjugations of the gradients.
+In order to optimise any continuous nonlinear function, the Polak-Ribiere formula \eqref{eq:Polak_Ribiere} is used to determine the optimal Gram-Schmidt constant $\beta$,
+where $\bm{g}$ is the current gradient vector and $\bm{g}_{k-1}$ is the gradient vector of the previous iteration.
+
+\begin{equation}\label{eq:Polak_Ribiere}
+    \bm{\beta_{k}} = \max{ \left( \frac{\bm{g}^T_{k}(\bm{g}_{k} - \bm{g}_{k-1})}{\bm{g}^T_{k-1} \bm{g}_{k-1}}, 0 \right) }
+\end{equation}
+
+Due to the $\max$ function, the algorithm will restart CGD with "Method of Steepest Descent" if the gradients are no longer decreasing, thus ensuring convergence.
+Note that this resets the orthogonal set of search directions, but the algorithm still converges in the order of $O(N)$ iterations, where $N$ is the number of parameters.
+Consequently, CGD can be mathematically expressed as follows \cite{shewchuk1994introduction}:
+
+
+\begin{align}\label{eq:CGD}
+    \begin{split}
+        \bm{d}_{0}        & = - \bm{g}_{0}                                                    \\
+        \alpha_{i}        & = \min_{\alpha} \left( J(\bm{\theta}) + \alpha \bm{d}_{i} \right) \\
+        \bm{\theta}_{i+1} & = \bm{\theta}_{i} + \alpha_{i} \bm{d}_{i}                         \\
+        \bm{d}_{i+1}      & = \bm{g}_{i+1} + \beta_{i+1} \bm{d}_{i}.                          \\
+    \end{split}
+\end{align}
+
+In Equation \eqref{eq:CGD}, $\bm{d}_{i}$ is the search direction, $\bm{g}_{i}$ is the gradient, and $\bm{\theta}_{i}$ is the current set of parameters.
+As already mentioned, $J(\bm{\theta})$ is the cost function, $\alpha_{i}$ is the optimal step size, which is determined by a line search, and $\beta_{i+1}$ is the Gram-Schmidt constant derived from the Polak-Ribiere formula \eqref{eq:Polak_Ribiere}.
+
+
+%Consider illustrating the Hessian and/or the Jacobian
+
+% Some equations regarding CGD... Do not now it that well.
+
+\section{Automatic Differentiation}
+\noindent
+Automatic differentiation (AD) is an algorithmic technique for computing the analytical gradients of a function using computational graphs and the chain rule.
+It is important to contrast AD from numerical differentiation using finite differences, which cannot calculate the expression of the gradients analytically.
+Moreover, AD should not be confused with symbolic differentiation, which is a method for calculating the full symbolic gradient expression, like one would do by hand \cite{baydin2018automatic}.
+The superior routine for implementing AD is the "reverse mode", which consists of a forward pass and a backward pass.
+The forward pass is a function evaluation, where a computational graph, like Figure \ref{} illustrates, is constructed.
+
+% \begin{figure}
+%     \centering
+%     \includegraphics{}
+%     \caption{A computational graph for the function $f(x,y) = $.}
+%     \label{fig:AD_comp_graph}
+% \end{figure}
+
+In regard to computer science, the computational graph can easily be constructed from an object-oriented operator overloading approach.
+To elaborate, the AD object inserts the operators from the function to a computational graph.
+Moreover, the rules of differentiation for the operators are pre-implemented.
+Therefore, it is required that the evaluated function only consists of operators that are supported by the AD object.
+With the function evaluation completed, the backward pass is initiated. Using the chain rule from Equation \eqref{eq:chain_rule},
+the gradients with respect to the input variables are calculated given the output value.
+The chain rule,
+\begin{equation}\label{eq:chain_rule}
+    \frac{\partial w}{\partial x} = \frac{\partial w}{\partial y} \frac{\partial y}{\partial x},
+\end{equation}
+shows how the gradient of a functional is simplified to a product series of simple gradient expressions.
+Here, $w(y(x))$ is a functional depending on the function $y(x)$, which is a function of the input variable $x$.
+The backpropagation algorithm recursively applies the chain rule on the computational graph, eventually ending up with the gradients of the input variables \cite{baydin2018automatic}.
+
+In terms of advantages, AD can be a powerful tool for optimisation if the symbolic expression is difficult to derive, or ends up being an uncondensed expression.
+Furthermore, AD is versatile in deep learning tool boxes such as Pytorch and Tensorflow,
+because it allows everyone to implement their own custom neural network architectures or optimisation algorithms.
+However, AD is not without its disadvantages. As pointed out by Baydin, Pearlmutter, Radul, and Siskind \cite{baydin2018automatic},
+AD is not immune to floating point numbers, other numeric issues, and vanishing gradients for deep neural networks.
+Vanishing gradients are a consequence of the chain rule applied too many times, which will cause the gradients to approach zero.
+
+
+
+
+
+
+
