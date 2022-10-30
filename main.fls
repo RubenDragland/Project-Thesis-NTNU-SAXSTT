@@ -1864,6 +1864,12 @@ INPUT ./2.Teil_Theory/03ScatteringTheory.tex
 INPUT 2.Teil_Theory/03ScatteringTheory.tex
 INPUT ./2.Teil_Theory/03ScatteringTheory.tex
 INPUT 2.Teil_Theory/03ScatteringTheory.tex
+INPUT c:/texlive/2022/texmf-dist/fonts/vf/public/eulervm/zeurm7.vf
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
 INPUT ./2.Teil_Theory/04SAXSTT.tex
 INPUT ./2.Teil_Theory/04SAXSTT.tex
 INPUT ./2.Teil_Theory/04SAXSTT.tex
@@ -2073,12 +2079,14 @@ INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb

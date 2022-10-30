@@ -1,58 +1,141 @@
 \chapter{Scattering of X-rays}
 
-\section{The Wave-Particle Duality and Differential Crossection}
+\section{Simple Description of X-ray Pencil Beam}
 % Big too long and tedious. Maybe just a short introduction to the wave-particle duality of x-rays.
-As mentioned in section \ref{sec:CT_Xrays}, X-rays can be described as electromagnetic waves.
-Furthermore, X-rays are described as plane waves, or Transverse electromagnetic waves (TEM-waves), assuming they are free, coherent, and monochromatic.
-TEM-waves are characterised by a magnetic field $H$ and an electric field $E$ that are perpendicular to each other and to the direction of propagation, called the Poynting vector $S$.
+As mentioned in Section \ref{sec:CT_Xrays}, X-rays can be described as electromagnetic waves.
+Furthermore, X-rays are expressed as plane waves, or Transverse electromagnetic waves, TEM-waves, assuming they are free, coherent, and monochromatic.
+TEM-waves are characterised by a magnetic field $\bm{H}$ and an electric field $\bm{E}$ that are perpendicular to each other and to the direction of propagation, which is parallel to the wave vector $\bm{k}$.
 %The mentioned fields and the Poynting vector may all be derived from the vector potential $A$.
-Nevertheless, the expression of the TEM wave in terms of time $t$ and position $\bm{r}$ of the electric field $E$ is
+A TEM wave may be expressed in terms of time $t$ and position $\bm{r}$ of its electric field $E$,
 \begin{equation}\label{eq:TEM_wave}
-    \bm{E}(\bm{r},t) = \bm{\widehat{\epsilon}}  E_{0} \exp\left(-i\left(\omega t - \bm{k}\cdot\bm{r}\right)\right),
+    \bm{E}(\bm{r},t) = \bm{\widehat{\epsilon}} \left. \right.  E_{0} \exp\left(-i\left(\omega t - \bm{k}\cdot\bm{r}\right)\right),
 \end{equation}
-where $\bm{\widehat{\epsilon}}$ is the unit vector in the direction of the electric field, $E_{0}$ is the amplitude of the electric field, $\omega$ is the angular frequency, and $\bm{k}$ is the wave vector.
-Therefore can scattering events between X-rays and electrons, for instance, be described by
-exertion of force between the electric field of the wave and the charge of the electron \cite{mcmorrow2011elements}.
+where $\bm{\widehat{\epsilon}}$, $E_{0}$, $\omega$, and $\bm{k}$ are the electric field unit vector, its corresponding amplitude, the wave angular frequency, and the wave vector, respectively.
+In turn, the electric field may be expressed in terms of a vector potential $\bm{A}$,
 
-However, quantisation of photons, which is performed within the scope of quantum mechanics, results in X-rays being described as photons.
-This is a more useful description of X-rays in terms of scattering events, because it allows for particle-particle interactions between photons and electrons,
-with transfer of momentum, elastic scattering, but also energy in events called inelastic scattering \cite{mcmorrow2011elements}.
+Therefore, scattering events between X-rays and electrons, for instance, can be described by
+exertion of force between the electric field of the wave and the charge of the electrons \cite{mcmorrow2011elements}.
+This description will be elaborated in the following section, Section \ref{sec:classical_scattering}.
 
-The definition of the "differential scattering crossection" is also more intuitive from the perspective of quantisation.
-The differential scattering crossection is the number of photons scattered relative to number of incoming photons per unit solid angle and time.
-Mathematically, this is expressed in terms of scattering intensity $I_{s}$, the incoming flux $\Phi_{0}$, and the differential solid angle $\Delta\Omega$:
+% However, quantisation of photons, which is performed within the scope of quantum mechanics, results in X-rays being described as photons.
+% This is a more useful description of X-rays in terms of scattering events, because it allows for particle-particle interactions between photons and electrons,
+% with transfer of momentum, elastic scattering, but also energy in inelastic scattering events \cite{mcmorrow2011elements}.
 
-\begin{equation}\label{eq:scattering_crossection}
-    \frac{dI_{s}}{d\Omega} = \frac{I_{s}}{\Phi_{0} \Delta\Omega}.
-\end{equation}
+% The definition of the "differential scattering crossection", seen in Equation \eqref{eq:scattering_crossection},
+% is also more intuitive from the perspective of quantisation.
+% The differential scattering crossection is the number of photons scattered relative to number of incoming photons per unit solid angle and time.
+% Mathematically, this is expressed in terms of scattering intensity $I_{s}$, the incoming flux $\Phi_{0}$, and the differential solid angle $\Delta\Omega$:
 
-\section{Classical Scattering Description}
+% \begin{equation}\label{eq:scattering_crossection}
+%     \frac{dI_{s}}{d\Omega} = \frac{I_{s}}{\Phi_{0} \Delta\Omega}.
+% \end{equation}
 
-In the classical description of scattering, the scattering vector $\bm{Q}$ and the atomic form factor $f(Q)$ are characteristic properties.
+\section{Classical Scattering Description}\label{sec:classical_scattering}
 
-$\bm{Q}$ is linked to the phase shift of the scattering event, which can be understood from analysing equation \ref{eq:TEM_wave}. It is defined as
+In the classical description of scattering, the scattering vector $\bm{Q}$ and the atomic form factor $f(\bm{Q})$ are characteristic properties.
+
+$\bm{Q}$ is linked to the phase shift of the scattering event, which can be understood from analysing Equation \eqref{eq:TEM_wave}. It is defined as
 \begin{equation}\label{eq:scattering_vector}
     \bm{Q} = \bm{k} - \bm{k'},
 \end{equation}
 where $\bm{k}$ is the incoming wave vector and $\bm{k'}$ is the scattered wave vector.
+In the case of elastic scattering, only the direction of the scattered wave vector changes, while the magnitude remains the same.
 
-The atomic form factor $f(Q)$ is a function of the scattering vector $\bm{Q}$, from Equation \eqref{eq:scattering_vector},
+The atomic form factor $f(\bm{Q})$ is a function of the scattering vector $\bm{Q}$, from Equation \eqref{eq:scattering_vector},
 and describes the scattering of X-rays by the electron density of the atom.
 Generally, it is a Fourier transform of the electron density distribution of the atom $\rho(\bm{r})$,
-\begin{equation}
+\begin{equation}\label{eq:atomic_form_factor_classical}
     f(Q) = \int \rho(\bm{r}) \exp\left(i\bm{Q}\cdot\bm{r}\right) d\bm{r}.
 \end{equation}
 
-As a result,
-%Scattering Intensity
+The observed scattering intensity $I_{s}$, in Equation \eqref{eq:scattering_intensity_classical} is the absolute squared of the atomic form factor $f(\bm{Q})$ from Equation \eqref{eq:atomic_form_factor_classical},
+\begin{equation}\label{eq:scattering_intensity_classical}
+    I_{s} = |f(\bm{Q})|^{2}.
+\end{equation}
 
-%Anything else?
-%This is going poorly...
+Correspondingly, these results are supported by the Fraunhofer far-field approximation. Consider a plane wave of X-rays incident on an aperture function, which in this case is the electron density distribution.
+The corresponding intensity in the back focal plane is the absolute square of the Fourier transform of the aperture function,
+\begin{equation}\label{eq:Fraunhofer_intensity}
+    I_{fd} = |F\left(\rho(r) \right) |^{2}.
+\end{equation}
+
+Anyway, from the definition of the scattering intensity, the differential scattering crossection may be defined as
+\begin{equation}\label{eq:scattering_crossection}
+    \frac{dI_{s}}{d\Omega} = \frac{I_{s}}{\Phi_{0} \Delta\Omega},
+\end{equation}
+where $\Phi_{0}$ is the incoming flux and $\Delta\Omega$ is the differential solid angle.
 
 
 
+\section{Quantum Mechanical Explanation}\label{sec:quantum_scattering}
+
+Even though the classical description of scattering is useful, it does not satisfy a desire to describe scattering events in terms of particle-particle interactions.
+Quantum Mechanics introduces the quantisation of light, photons, which allows for a more intuitive description of scattering events.
+However, a sufficient description of this evolves around several lenghty derivations, well explained by Nina Rohringer \cite{rohringer2020introduction} and Jan Malte Slowik \cite{slowik2015quantum}.
+Therefore, big leaps between the essential aspects are instead included in this section.
+
+Firstly, the quantum mechanical system must be described by a Hamiltonian. As mentioned, the system consists of X-rays, matter, and interactions between them.
+The total Hamiltonian $H$ is therefore a sum of a matter Hamiltonian $H_{part}$, a radiation field Hamiltonian $H_{rad}$, and an interaction Hamiltonian $H_{int}$,
+\begin{equation}\label{eq:total_Hamiltonian}
+    H = H_{part} + H_{rad} + H_{int}.
+\end{equation}
+
+The Hamiltonian of the electromagnetic field, $H_{rad}$, follows from the quantisation of the vector potential $\bm{\widehat{A}}$, adopting the Coulumb gauge, $\bm{\nabla} \cdot \bm{\widehat{A}} = 0$.
+Applying the assumptions of free, coherent, and monochromatic X-rays, the vector potential is expressed as
+\begin{equation}\label{eq:qm_vector_potential}
+    \bm{\widehat{A}}(\bm{r}) = \sum_{\bm{k}, \lambda} \sqrt{\frac{2 \pi}{V \omega_{\bm{k}} \alpha^{2}  }} \left( \hat{a}_{\bm{k},\lambda} \bm{\epsilon}_{\bm{k},\lambda} e^{i \bm{k}\cdot\bm{r}} + \hat{a}_{\bm{k},\lambda}^{\dagger} \bm{\epsilon}_{\bm{k},\lambda}^{*} e^{-i \bm{k}\cdot\bm{r}}  \right).
+\end{equation}
+The essential parameters from Equation \eqref{eq:qm_vector_potential} are the creation and annihilation operators, $\hat{a}_{\bm{k},\lambda}^{\dagger}$ and $\hat{a}_{\bm{k},\lambda}$, respectively.
+These operators are used to describe the elastic scattering as an annihilation and a subsequent creation of a photon.
+Moreover, the normalisation constant reveals the electromagnetic field to be similar to the well-known "Harmonic Oscillator" \cite{mcmorrow2011elements}. Consequently, $H_{rad}$ becomes
+\begin{equation}
+    H_{rad} = \sum_{\bm{k}, \lambda} \left( \hslash \omega_{\bm{k}} \hat{a}_{\bm{k},\lambda}^{\dagger} \hat{a}_{\bm{k},\lambda}  \right).
+\end{equation}
+
+The Hamiltonian of the matter, $H_{part}$, is the sum of the kinetic energy operator, potential energy operator, and the electronic Hamiltonian operator:
+\begin{equation}\label{eq:qm_Hamiltonian_matter}
+    H_{part} = T_{N} + V_{NN} + H_{el}.
+\end{equation}
+These are, though, of no particular interest concerning the scattering process, and are therefore not elaborated on.
+
+The interaction Hamiltonian, $H_{int}$ accounts for the interaction between the electromagnetic field and the matter.
+It can be shown that interactions between an electromagnetic field and charges $q$ may be accounted for by performing the substitution
+$\bm{p} \rightarrow \bm{p}-q\bm{A}$ \cite{mcmorrow2011elements}. Eventually, the interaction Hamiltonian is revealed to have a term linear in the vector potential $\bm{\widehat{A}}$, and a term quadratic in the vector potential $\bm{\widehat{A}}$:
+\begin{equation}\label{eq:qm_interaction_Hamiltonian}
+    H_{int} \sim \bm{\widehat{p}} \cdot \bm{\widehat{A}} + \bm{\widehat{A}}^{2}.
+\end{equation}
+As the first term is only linear in $\bm{\widehat{A}}$, it can only account for absorption of X-rays through annihilation of photons.
+The second term, however, is quadratic, and therefore accounts for annihilation and subsequent creation of photons, which is the desired interaction.
+This follows from squaring Equation \eqref{eq:qm_vector_potential}, which gives terms on the form $a_{\bm{k},\lambda}^{\dagger} a_{\bm{k},\lambda}$.
+
+Furthermore, second quantisation is more fitting for describing the electronic Hamiltonian and the interaction Hamiltonian when the system consists of many electrons, as the Hamiltonian in second quantisation is independent of the number of electrons \cite{rohringer2020introduction}.
+Here, Fock states are introduced, and the annihilation and creation operators are replaced by annihilation and creation field operators.
+The electronic density operator $\widehat{n}(\bm{r})$ may be expressed in terms of these field operators as
+\begin{equation}\label{eq:electronic_density_operator}
+    \widehat{n}(\bm{r}) =  \hat{\psi}^{\dagger}(\bm{r}) \hat{\psi}( \bm{r}).
+\end{equation}
+
+Next, the interaction Hamiltonian is considered a small time-dependent perturbation.
+From the Time-Dependent Perturbation Theory in the interaction picture, the transition rate $\Gamma_{if}$ of excitation and subsequent recombination is derived.
+The result is famously known as "Fermi's Golden Rule", and is similar to
+\begin{equation}\label{eq:fermis_golden_rule}
+    \Gamma_{if} \sim \left| \langle \psi_{f} | \hat{H}_{int} | \psi_{i} \rangle \right|^{2} \rho(E_{f}).
+\end{equation}
+Here, $\psi_{i}$ and $\psi_{f}$ are the initial and final states, respectively, and $\rho(E_{f})$ is the density of states at the final energy $E_{f}$.
+The essential part of the equation is the matrix element $\langle \psi_{f} | \hat{H}_{int} | \psi_{i} \rangle$, which is the interaction Hamiltonian evaluated in the initial and final states.
+
+In the case of elastic scattering, the initial and final electronic states are identical, and the interaction Hamiltonian consists of the quadratic term in the vector potential $\bm{\widehat{A}}$.
+However, the state of the electromagnetic field changes so that one photon $\vert n_{\bm{k}}\rangle$ with wave vector $\bm{k}$ is annihilated and another photon $\vert n_{\bm{k'}}\rangle$ with wave vector $\bm{k'}$ is created \cite{mcmorrow2011elements}.
+
+The elastic scattering rate is therefore proportional to
+\begin{equation}\label{eq:qm_elastic_scattering_rate}
+    \Gamma_{if} \propto \delta \left( \omega_{f} - \omega_{i} \right) \left| \int d^{3}\bm{r} \langle  \Psi_{f}^{N_{el}} | \hat{\psi}^{\dagger}(\bm{r}) e^{i \bm{Q} \cdot \bm{r} } \hat{\psi}( \bm{r})  | \Psi_{i}^{N_{el}} \rangle \right|^{2}.
+\end{equation}
+
+A final evaluation of the matrix element within Equation \eqref{eq:qm_elastic_scattering_rate} by recognising the electronic density operator from Equation \eqref{eq:electronic_density_operator} yields
+\begin{equation}
+    M_{if} = \int d^{3}\bm{r} \left. \widehat{n}(\bm{r}) e^{i \bm{Q} \cdot \bm{r}} \right. .
+\end{equation}
+In other words, the matrix element is the Fourier transform of the electronic density operator, equivalent to the atomic form factor result in Equation \eqref{eq:atomic_form_factor_classical}.
 
 
-\section{Time Dependent Pertubation Theory} %Which to describe?
-
-\section{Reciprocal Space Related to Electron Density}

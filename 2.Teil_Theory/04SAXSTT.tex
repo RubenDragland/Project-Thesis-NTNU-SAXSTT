@@ -1,6 +1,15 @@
 \chapter{Small Angle X-ray Scattering Tensor Tomography}
 
-\section{X-ray Pencil Beam}% Or in experimental setup. Define brilliance
+\section{X-ray Pencil Beam} % Or in experimental setup. Define brilliance
+The first crucial component of SAXSTT is the quality of the X-ray beam.
+Obviously, more photons increase the signal-to-noise ratio, and thus the resolution of the electron density distribution is improved.
+Moreover, the voxel size is determined by the size of the X-ray beam, where a focused beam results in higher resolution of reconstructed tensor at the cost of reconstruction time.
+Finally, the most consistent scattering occurs when the X-ray beam is almost purely monochromatic, meaning that the spectral bandwidth is narrow.
+All these properties are defined by the brilliance of the X-ray beam, given as
+\begin{equation}
+    Brilliance = \frac{Photons/second}{\left( mmrad \right)^{2} \left( mm^{2} \right) \left( 0.1\% BW \right).},
+\end{equation}
+where $BW$ is a commonly used abbreviation for spectral bandwidth \cite{mcmorrow2011elements}.
 
 \section{Experimental Setup}
 

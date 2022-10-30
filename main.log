@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  28 OCT 2022 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  30 OCT 2022 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1720,22 +1720,28 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.23491pt too wide) in paragraph at lines 3--3
-|[]\T1/pplj/m/sc/10.95/80ls the wave-particle du-al-ity and dif-fer-en-tial crossec-
- []
-
-
-Overfull \hbox (1.92741pt too wide) in paragraph at lines 21--24
-[]\T1/pplj/m/n/10.95 The def-i-ni-tion of the "dif-fer-en-tial scat-ter-ing crossec-tion" is also more
- []
-
-
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [15])
+ [15]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [16]
+Overfull \hbox (19.50298pt too wide) in paragraph at lines 118--121
+[]\T1/pplj/m/n/10.95 Next, the in-ter-ac-tion Hamil-to-nian is con-sid-ered a small time-dependent
+ []
+
+
+Overfull \hbox (1.76399pt too wide) in paragraph at lines 127--129
+\T1/pplj/m/n/10.95 are iden-ti-cal, and the in-ter-ac-tion Hamil-to-nian con-sists of the quadratic
+ []
+
+
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [17])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [18]
 \openout2 = `2.Teil_Theory/04SAXSTT.aux'.
 
  (./2.Teil_Theory/04SAXSTT.tex
@@ -1754,30 +1760,30 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [17
-
-
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [18
-
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
  [19
 
 
+
+
+
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [20]
+ [20
+
+
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [21
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [22]
 \openout2 = `3.Teil_Methods/01ExperimentalSetup.aux'.
 
  (./3.Teil_Methods/01ExperimentalSetup.tex
@@ -1796,7 +1802,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [21
+ [23
 
 
 
@@ -1806,7 +1812,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./3.Teil_Methods/02Implementation.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [22
+ [24
 
 
 
@@ -1828,13 +1834,13 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [23]
+ [25]
 \openout2 = `3.Teil_Methods/03Tests.aux'.
 
  (./3.Teil_Methods/03Tests.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [24
+ [26
 
 
 
@@ -1856,10 +1862,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [25]
+ [27]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [26
+ [28
 
 
 
@@ -1867,13 +1873,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [27
+ [29
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [28]
+ [30]
 \openout2 = `4.Teil_Results/01Validation.aux'.
 
  (./4.Teil_Results/01Validation.tex
@@ -1892,7 +1898,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [29
+ [31
 
 
 
@@ -1902,7 +1908,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./4.Teil_Results/02Reconstructions.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [30
+ [32
 
 
 
@@ -1929,13 +1935,13 @@ Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [31]
+ [33]
 \openout2 = `4.Teil_Results/03PerformanceReview.aux'.
 
  (./4.Teil_Results/03PerformanceReview.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [32
+ [34
 
 
 
@@ -1962,10 +1968,10 @@ Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [33]
+ [35]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [34
+ [36
 
 
 
@@ -1973,13 +1979,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [35
+ [37
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [36]
+ [38]
 \openout2 = `5.Teil_Discussion/01Validation.aux'.
 
  (./5.Teil_Discussion/01Validation.tex
@@ -2003,7 +2009,7 @@ Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [37
+ [39
 
 
 
@@ -2013,7 +2019,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./5.Teil_Discussion/02Comparisons.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [38
+ [40
 
 
 
@@ -2040,13 +2046,13 @@ Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [39]
+ [41]
 \openout2 = `5.Teil_Discussion/03PerformanceImprovements.aux'.
 
  (./5.Teil_Discussion/03PerformanceImprovements.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [40
+ [42
 
 
 
@@ -2073,10 +2079,10 @@ Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [41]
+ [43]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [42
+ [44
 
 
 
@@ -2084,13 +2090,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [43
+ [45
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [44]
+ [46]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex)
@@ -2113,7 +2119,7 @@ Overfull \hbox (6.07562pt too wide) in paragraph at lines 168--168
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [45
+ [47
 
 
 
@@ -2122,7 +2128,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [46
+ [48
 
 
 
@@ -2145,14 +2151,14 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [47
+ [49
 
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [48
+ [50
 
 
 
@@ -2163,7 +2169,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./FrontBackMatter/Colophon.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [49
+ [51
 
 ] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
 
@@ -2176,18 +2182,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33270 strings out of 475071
- 646154 string characters out of 5782907
- 1554551 words of memory out of 5000000
- 53693 multiletter control sequences out of 15000+600000
- 581749 words of font info for 226 fonts, out of 8000000 for 9000
+ 33313 strings out of 475071
+ 647222 string characters out of 5782907
+ 1554400 words of memory out of 5000000
+ 53716 multiletter control sequences out of 15000+600000
+ 583258 words of font info for 231 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,110p,10667b,2400s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (65 pages, 300955 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (67 pages, 335637 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 682 compressed objects within 7 object streams
- 178 named destinations out of 1000 (max. 500000)
- 39382 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 722 compressed objects within 8 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 39374 words of extra memory for PDF output out of 42996 (max. 10000000)
 

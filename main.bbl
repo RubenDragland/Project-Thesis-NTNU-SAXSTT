@@ -225,6 +225,32 @@
     \field{year}{2011}
   \endentry
 
+  \entry{rohringer2020introduction}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RN}{%
+         family={Rohringer},
+         familyi={R\bibinitperiod},
+         given={Nina},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOS Press}%
+    }
+    \strng{namehash}{RN1}
+    \strng{fullhash}{RN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{71}
+    \field{title}{Introduction to the theory of x-ray matter interaction}
+    \field{volume}{199}
+    \field{journaltitle}{Physics of and Science with X-Ray Free-Electron
+  Lasers}
+    \field{year}{2020}
+  \endentry
+
   \entry{ruder2016overview}{article}{}
     \name{author}{1}{}{%
       {{hash=RS}{%
@@ -268,6 +294,29 @@
     \field{title}{An introduction to the conjugate gradient method without the
   agonizing pain}
     \field{year}{1994}
+  \endentry
+
+  \entry{slowik2015quantum}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SJM}{%
+         family={Slowik},
+         familyi={S\bibinitperiod},
+         given={Jan\bibnamedelima Malte},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJM1}
+    \strng{fullhash}{SJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Quantum effects in nonresonant x-ray scattering}
+    \list{institution}{1}{%
+      {Universit{\"a}t Hamburg Hamburg}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2015}
   \endentry
 
   \entry{zeng2010medical}{book}{}
