@@ -1,0 +1,24 @@
+\babel@toc {american}{}\relax 
+\deactivateaddvspace 
+\babel@toc {american}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on gradient descent. Notice that the smooth curve is an indication of many steps with a small step size. The animation belonging to the plot is available at \relax }}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {2}{\ignorespaces A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on conjugate gradient descent. Notice that the curve consists of a few, but long, steps. The animation belonging to the plot is available at \relax }}{12}{figure.caption.10}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3}{\ignorespaces Experimental setup of a SAXSTT experiment. The beam canon represents the synchrotron beam. The cube represents a single row of voxels in the sample. The scattering intensity from eight sectors of the diffractogram is collected for each scanning point $(\alpha , \beta ,x,y)$. Due to uniaxial symmetry, this actually represents a partitioning of the diffractogram into 16 sectors.\relax }}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Spherical harmonics functions $\bm {Y}_{l}^{0}$ with increasing $l$-values.\relax }}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {5}{\ignorespaces The function in Equation \eqref {eq:exp_sin_squared} for some sets of parameters.\relax }}{24}{figure.caption.13}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

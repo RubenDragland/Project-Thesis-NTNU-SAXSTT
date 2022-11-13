@@ -133,41 +133,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Goodfellow-et-al-2016}{book}{}
-    \name{author}{3}{}{%
-      {{hash=GI}{%
-         family={Goodfellow},
-         familyi={G\bibinitperiod},
-         given={Ian},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={Bengio},
-         familyi={B\bibinitperiod},
-         given={Yoshua},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=CA}{%
-         family={Courville},
-         familyi={C\bibinitperiod},
-         given={Aaron},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {MIT Press}%
-    }
-    \strng{namehash}{GIBYCA1}
-    \strng{fullhash}{GIBYCA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{note}{\url{http://www.deeplearningbook.org}}
-    \field{title}{Deep Learning}
-    \field{year}{2016}
-  \endentry
-
   \entry{knuth:1974}{article}{}
     \name{author}{1}{}{%
       {{hash=KDE}{%
@@ -195,6 +160,89 @@
     }
     \field{journaltitle}{Communications of the ACM}
     \field{year}{1974}
+  \endentry
+
+  \entry{liebi2018small}{article}{}
+    \name{author}{10}{}{%
+      {{hash=LM}{%
+         family={Liebi},
+         familyi={L\bibinitperiod},
+         given={Marianne},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Georgiadis},
+         familyi={G\bibinitperiod},
+         given={Marios},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kohlbrecher},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Holler},
+         familyi={H\bibinitperiod},
+         given={Mirko},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Raabe},
+         familyi={R\bibinitperiod},
+         given={J{ö}rg},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=UI}{%
+         family={Usov},
+         familyi={U\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Menzel},
+         familyi={M\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bunk},
+         familyi={B\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GSM}{%
+         family={Guizar-Sicairos},
+         familyi={G\bibinithyphendelim S\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Union of Crystallography}%
+    }
+    \strng{namehash}{LM+1}
+    \strng{fullhash}{LMGMKJHMRJUIMASPBOGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{12\bibrangedash 24}
+    \field{title}{Small-angle X-ray scattering tensor tomography: Model of the
+  three-dimensional reciprocal-space map, reconstruction algorithm and angular
+  sampling requirements}
+    \field{volume}{74}
+    \field{journaltitle}{Acta Crystallographica Section A: Foundations and
+  Advances}
+    \field{year}{2018}
   \endentry
 
   \entry{mcmorrow2011elements}{book}{}

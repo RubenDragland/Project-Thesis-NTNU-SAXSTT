@@ -22,9 +22,26 @@
 \usepackage{bm} % Might not be supported
 \usepackage{amsmath}
 \usepackage{ amssymb }
+%\usepackage[inkscape={/Applications/Inkscape.app/Contents/Resources/bin/inkscape -z -C}]{svg}
+\usepackage[noxcolor]{svg}
+%\svgsetup{inkscapeexe={"C:\Program Files\Inkscape\bin\inkscape.exe"}, inkscapearea=drawing, inkscapeversion=1}
+\svgpath{{Figures/}{./XRD_CT/Figures}{./XRD_CT/Plotting/}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT VARIABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\sinphiop}{\sin\varphi_{op}}
+\newcommand{\cosphiop}{\cos\varphi_{op}}
+\newcommand{\sinthetaop}{\sin\theta_{op}}
+\newcommand{\costhetaop}{\cos\theta_{op}}
+\newcommand{\reciprocalspacemap}{\bm{\widehat{R}}(\bm{r'}, \bm{q'})}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\usepackage[euler-digits,euler-hat-accent]{eulervm}
 \DeclareMathOperator{\argmax}{argmax}

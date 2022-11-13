@@ -3,51 +3,54 @@
 
 %RSD: Should do more precise calculations?
 \section{X-rays}\label{sec:CT_Xrays}
-X-rays are electromagnetic waves with energy in the orders of $keV$.
-From Planck's Equation \eqref{eq:Plancks_eq}, this corresponds to nanometer wavelengths.
-The equation relates energy of a photon $E$ to the angular frequency $\omega$ or wavelength $\lambda$ of the corresponding electromagnetic wave as
 
+X-rays are electromagnetic waves with energy in the orders of $keV$. Planck's Equation,
 \begin{equation}\label{eq:Plancks_eq}
     E = \hslash \omega = 2\pi \hslash \frac{c}{\lambda},
 \end{equation}
+\noindent
+relates the energy of a photon $E$ to the angular frequency $\omega$ or wavelength $\lambda$ of the corresponding electromagnetic wave. In Equation \eqref{eq:Plancks_eq},
+$c \sim 2.99776 \times 10^8 m/s$ is the speed of light.
+The other constant is the reduced Planck's constant $\hslash \sim 1.0543 \times 10^{-34} Js$  \cite{blokhin1961physics}.
+Whence, X-rays typically have wavelengths in the sub-nanometer range.
 
-with $c \sim 2.99776 \times 10^8 m/s$ being the speed of light \cite{blokhin1961physics}.
-The other constant is the reduced Planck's constant $\hslash \sim 1.0543 \times 10^{-34} Js$.
 
-Excitation, acceleration, and deceleration are the three most commonly utilised processes for producing X-rays.
-The first method is commonly referred to as "Characteristic X-ray radiation", which occurs when a highly energetic electron collides into a target atom.
-The accelerated electron transfers enough energy to eject an inner-shell electron from the atom.
-An outer electron may therefore occupy a lower-energy state.
-Due to conservation of energy, this process causes emission of a photon, as illustrated in Equation \eqref{eq:Char_radiation}.
-As the atomic energy levels are discrete, this process is characterised by a spectrum of discrete X-ray emission lines.
-%\cite{Stark, G.. "X-ray." Encyclopedia Britannica, January 30, 2020. https://www.britannica.com/science/X-ray.}.
+Excitation and acceleration are the most common phenomena where X-ray radiation occurs.
+X-ray radiation from excitation, called "Characteristic X-ray radiation", occurs when a highly energetic electron collides into a target atom.
+The accelerated electron transfers enough energy to eject an inner-shell electron with energy $E_i$,
+and an outer electron with energy $E_f$ lowers its energy-state by filling the vacancy,
 
 \begin{equation}\label{eq:Char_radiation}
-    E_{\mathrm{photon}} = - \Delta E = - (E_f - E_i)
+    E_{\mathrm{photon}} = - \Delta E = - (E_f - E_i).
 \end{equation}
 
-In addition to excitation, scattering events occur when electrons pass through an anode material.
-These events accelerate the electrons in a new direction, and X-rays known as $"Bremsstrahluhng"$ are emitted. % Include Intensity relation of Bremsstrahlung?
+Due to conservation of energy, this process causes emission of a photon, as shown in Equation \eqref{eq:Char_radiation}.
+As the atomic energy levels are discrete, this process gives rise to a spectrum of discrete X-ray emission lines.
+%\cite{Stark, G.. "X-ray." Encyclopedia Britannica, January 30, 2020. https://www.britannica.com/science/X-ray.}.
+
+
+Additionally, scattering events occur when electrons pass through an anode material.
+These events accelerate the electrons in new directions, and X-rays known as $"Bremsstrahluhng"$ are emitted. % Include Intensity relation of Bremsstrahlung?
 
 %Improve, Figure or equations
-The synchrotron is the last common form of X-ray production, and is also based upon the principle of $"Bremsstrahluhng"$.
+The synchrotron is the last common X-ray source.
 Generally, charged particles are accelerated to very high energies, and magnets maintain their circular path.
-As moving objects in a circular path experience a centrifugal acceleration perpendicular to its directions, $"Bremsstrahluhng"$ X-rays are emitted \cite{britannica_sync}.
+As moving objects in a circular path experience a centrifugal acceleration perpendicular to its directions, X-rays are emitted \cite{britannica_sync}.
 %\cite{Britannica, T. Editors of Encyclopaedia. "synchrotron." Encyclopedia Britannica, February 7, 2018. https://www.britannica.com/technology/synchrotron.}
 % Add equation?
 
 
 \section{Beer-Lambert's Law}
-The intensity of X-rays attenuates upon interacting with matter.
-This is due to photoelectric absorption, elastic Rayleigh scattering, and inelastic Compton scattering.
+The X-ray beam intensity attenuates upon interacting with matter due to photoelectric absorption, elastic Rayleigh scattering, and inelastic Compton scattering.
 The attenuation coefficient $\mu$ describes this attenuation in an inhomogeneous sample as
-% Include formulas for scattering processes?
 
 \begin{equation}
     I(s) = I(0) \exp(- \int_{0}^{s} \mu(\nu) d\nu),
 \end{equation}
 \noindent
-where $s$ is the distance from the initial intensity to the end of the sample, effectively the thickness of the sample, and $I(0)$ is the initial intensity. Here, the spectral dependence, $\mu(E,\nu)$ is often neglected as it is unknown \cite{buzug2009computed}. A simple manipulation of the expression gives the projection line integral
+where $s$ is the thickness of the sample, and $I(0)$ is the initial intensity. The spectral dependence of $\mu(\nu)$ is here neglected, as it often is,
+as it is impossible to determine, and the beam is assumed to be almost fully monochromatic \cite{buzug2009computed}.
+A simple manipulation of the expression gives the projection line integral
 
 \begin{equation}\label{eq:projection}
     p(s) = -\ln(\frac{I(s)}{I(0)} ) = \int_{0}^{s} \mu(\nu) d\nu.
@@ -55,24 +58,32 @@ where $s$ is the distance from the initial intensity to the end of the sample, e
 
 \section{Radon Transform}
 The projection line integral in Equation \eqref{eq:projection} may be viewed as a Radon transform of an object function $f(x,y)$ for a single orientation $\theta$ \cite{zeng2010medical}.
-Confidence in this statement may be achieved by comparing Equation \eqref{eq:projection} with a single-angle Radon transform \eqref{eq:Radon_transform}
+Confidence in this statement may be achieved by comparing Equation \eqref{eq:projection} with a single-angle Radon transform,
 
 \begin{equation}\label{eq:Radon_transform}
     p_{\theta}(r) = \int_{-\infty}^{\infty} f(r,\nu) d\nu.
 \end{equation}
 
+The Radon transform of a function $f(x,y)$ along the angle $\theta$ is defined in Equation \eqref{eq:Radon_transform} purely as a line integral along the desired angle. %?
+
 %\section{Detectors}??? Cannot be relevant
 
 \section{Fourier Slice Theorem}
 %\section{Projections}
-The key in computed tomography is to determine the spatial dependency of the attenuation coefficient.
-By sampling many projections, meaning line integrals from different orientations and crossections, data necessary to reconstruct a three-dimensional image is collected.
-For a given crossection of the object $f(x,y)$, the detected intensity is plotted as a function of projection number and pixel number in what is called a sinogram.
-By utilising this sinogram and the Fourier slice theorem, the object $f(x,y)$ may be determined by other means than computing the full inverse Radon transform.
-
+The key in computed tomography is to determine the spatial dependency of the attenuation coefficient $\mu(\bm{r})$.
+By sampling many projections, meaning line integrals from different orientations, data necessary to reconstruct a three-dimensional image is collected.
+For a given crossection of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
+By utilising this sinogram and the Fourier slice theorem, the object $f(x, y)$ may be determined by other means than computing the full inverse Radon transform.
 %\section{Fourier Slice Theorem}
 
-The Fourier slice theorem states that the full 2D Fourier transform $F(\omega_x, \omega_y)$ of an object $f(x,y)$ can be constructed from a series of 1D Fourier transforms $P(\omega)$ of projections $p(s)$ with different orientations \cite{zeng2010medical}.
+The Fourier slice theorem states that the full 2D Fourier transform
+$F(\omega_x, \omega_y)$ of an object $f(x,y)$ can be constructed from a series of 1D Fourier transforms
+$P(\omega)$ of projections $p(s)$ with different orientations \cite{zeng2010medical}.
+In other words, the Fourier transform of a Radon transform makes up one angle of the full 2D Fourier transform,
+
+\begin{equation}\label{eq:Fourier_slice}
+    P(\theta, \omega) = F \left( \omega \cos \theta, -\omega \sin \theta \right). %\int_{-\infty}^{\infty} P(\omega) e^{i \omega_x x} dx.
+\end{equation}
 %  that the 1D Fourier transform $P(\omega)$ of the projection $p(s)$ of the object $f(x,y)$ is equal to a slice through the origin of the 2D Fourier transform $F(\omega_x, \omega_y)$ \cite{}. 
 
 
@@ -82,14 +93,14 @@ The Fourier slice theorem states that the full 2D Fourier transform $F(\omega_x,
 
 \section{Filtered Back Projection}
 In short, the filtered back projection (FBP) algorithm reconstructs the object by forward and inverse Fourier transforms.
-Firstly, the sinogram of projections is mapped to frequency space in polar coordinates by subsequent 1D Fourier transforms, as shown in Equation \eqref{eq:FBP_1}:
+Firstly, the sinogram of projections is mapped to frequency space in polar coordinates by subsequent 1D Fourier transforms, mathematically described as:
 
 \begin{equation}\label{eq:FBP_1}
     P(\theta, \omega) = \int_{-\infty}^{\infty} p(\theta,r)e^{-2\pi i\omega r} dr.
 \end{equation}
 
 With this the 2D Fourier transform $F(u,v)$ of the object $f(x,y)$ is found.
-The final step is an inverse 2D Fourier transform with a $ramp$-filter of $|\omega|$ to account for the radial distribution of points in polar coordinates.
+The final step is an inverse 2D Fourier transform with, for instance, a $ramp$-filter of $|\omega|$ to account for the radial distribution of points in polar coordinates.
 This filter is also the Jacobian of the area integration element in the polar Fourier space.
 Consequently, the object function can be expressed as
 

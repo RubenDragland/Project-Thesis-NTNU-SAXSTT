@@ -1,5 +1,5 @@
 \chapter{Scattering of X-rays}
-
+\label{ch:scattering}
 \section{Simple Description of X-ray Pencil Beam}
 % Big too long and tedious. Maybe just a short introduction to the wave-particle duality of x-rays.
 As mentioned in Section \ref{sec:CT_Xrays}, X-rays can be described as electromagnetic waves.
@@ -11,7 +11,9 @@ A TEM wave may be expressed in terms of time $t$ and position $\bm{r}$ of its el
     \bm{E}(\bm{r},t) = \bm{\widehat{\epsilon}} \left. \right.  E_{0} \exp\left(-i\left(\omega t - \bm{k}\cdot\bm{r}\right)\right),
 \end{equation}
 where $\bm{\widehat{\epsilon}}$, $E_{0}$, $\omega$, and $\bm{k}$ are the electric field unit vector, its corresponding amplitude, the wave angular frequency, and the wave vector, respectively.
-In turn, the electric field may be expressed in terms of a vector potential $\bm{A}$,
+% In turn, the electric field may be expressed in terms of a vector potential $\bm{A}$ and a scalar potential $\phi$. 
+% Consequently, it is possible to derive an equivalent wave equation with respect to the vector potential, and thus a solution in the form of a vector potential. 
+% RSD: Something like this. Check if necessary...
 
 Therefore, scattering events between X-rays and electrons, for instance, can be described by
 exertion of force between the electric field of the wave and the charge of the electrons \cite{mcmorrow2011elements}.
@@ -34,7 +36,7 @@ This description will be elaborated in the following section, Section \ref{sec:c
 
 In the classical description of scattering, the scattering vector $\bm{Q}$ and the atomic form factor $f(\bm{Q})$ are characteristic properties.
 
-$\bm{Q}$ is linked to the phase shift of the scattering event, which can be understood from analysing Equation \eqref{eq:TEM_wave}. It is defined as
+$\bm{Q}$ is linked to the phase shift of the scattering event, which can be understood from analysing Equation \eqref{eq:TEM_wave}, and is defined as
 \begin{equation}\label{eq:scattering_vector}
     \bm{Q} = \bm{k} - \bm{k'},
 \end{equation}
@@ -42,13 +44,13 @@ where $\bm{k}$ is the incoming wave vector and $\bm{k'}$ is the scattered wave v
 In the case of elastic scattering, only the direction of the scattered wave vector changes, while the magnitude remains the same.
 
 The atomic form factor $f(\bm{Q})$ is a function of the scattering vector $\bm{Q}$, from Equation \eqref{eq:scattering_vector},
-and describes the scattering of X-rays by the electron density of the atom.
-Generally, it is a Fourier transform of the electron density distribution of the atom $\rho(\bm{r})$,
+and describes the scattering of X-rays as a result of the electron density distribution.
+Generally, it is the Fourier transform of the electron density distribution of the atom $\rho(\bm{r})$,
 \begin{equation}\label{eq:atomic_form_factor_classical}
     f(Q) = \int \rho(\bm{r}) \exp\left(i\bm{Q}\cdot\bm{r}\right) d\bm{r}.
 \end{equation}
 
-The observed scattering intensity $I_{s}$, in Equation \eqref{eq:scattering_intensity_classical} is the absolute squared of the atomic form factor $f(\bm{Q})$ from Equation \eqref{eq:atomic_form_factor_classical},
+The observed scattering intensity $I_{s}$ is the absolute value squared of the atomic form factor $f(\bm{Q})$ from Equation \eqref{eq:atomic_form_factor_classical},
 \begin{equation}\label{eq:scattering_intensity_classical}
     I_{s} = |f(\bm{Q})|^{2}.
 \end{equation}
@@ -75,12 +77,12 @@ However, a sufficient description of this evolves around several lenghty derivat
 Therefore, big leaps between the essential aspects are instead included in this section.
 
 Firstly, the quantum mechanical system must be described by a Hamiltonian. As mentioned, the system consists of X-rays, matter, and interactions between them.
-The total Hamiltonian $H$ is therefore a sum of a matter Hamiltonian $H_{part}$, a radiation field Hamiltonian $H_{rad}$, and an interaction Hamiltonian $H_{int}$,
+The total Hamiltonian $\hat{H}$ is therefore a sum of a matter Hamiltonian $\hat{H}_{part}$, a radiation field Hamiltonian $\hat{H}_{rad}$, and an interaction Hamiltonian $\hat{H}_{int}$,
 \begin{equation}\label{eq:total_Hamiltonian}
-    H = H_{part} + H_{rad} + H_{int}.
+    \hat{H} = \hat{H}_{part} + \hat{H}_{rad} + \hat{H}_{int}.
 \end{equation}
 
-The Hamiltonian of the electromagnetic field, $H_{rad}$, follows from the quantisation of the vector potential $\bm{\widehat{A}}$, adopting the Coulumb gauge, $\bm{\nabla} \cdot \bm{\widehat{A}} = 0$.
+The Hamiltonian of the electromagnetic field, $\hat{H}_{rad}$, follows from the quantisation of the vector potential $\bm{\widehat{A}}$, adopting the Coulumb gauge, $\bm{\nabla} \cdot \bm{\widehat{A}} = 0$.
 Applying the assumptions of free, coherent, and monochromatic X-rays, the vector potential is expressed as
 \begin{equation}\label{eq:qm_vector_potential}
     \bm{\widehat{A}}(\bm{r}) = \sum_{\bm{k}, \lambda} \sqrt{\frac{2 \pi}{V \omega_{\bm{k}} \alpha^{2}  }} \left( \hat{a}_{\bm{k},\lambda} \bm{\epsilon}_{\bm{k},\lambda} e^{i \bm{k}\cdot\bm{r}} + \hat{a}_{\bm{k},\lambda}^{\dagger} \bm{\epsilon}_{\bm{k},\lambda}^{*} e^{-i \bm{k}\cdot\bm{r}}  \right).
@@ -89,20 +91,20 @@ The essential parameters from Equation \eqref{eq:qm_vector_potential} are the cr
 These operators are used to describe the elastic scattering as an annihilation and a subsequent creation of a photon.
 Moreover, the normalisation constant reveals the electromagnetic field to be similar to the well-known "Harmonic Oscillator" \cite{mcmorrow2011elements}. Consequently, $H_{rad}$ becomes
 \begin{equation}
-    H_{rad} = \sum_{\bm{k}, \lambda} \left( \hslash \omega_{\bm{k}} \hat{a}_{\bm{k},\lambda}^{\dagger} \hat{a}_{\bm{k},\lambda}  \right).
+    \hat{H}_{rad} = \sum_{\bm{k}, \lambda} \left( \hslash \omega_{\bm{k}} \hat{a}_{\bm{k},\lambda}^{\dagger} \hat{a}_{\bm{k},\lambda}  \right).
 \end{equation}
 
-The Hamiltonian of the matter, $H_{part}$, is the sum of the kinetic energy operator, potential energy operator, and the electronic Hamiltonian operator:
+The Hamiltonian of the matter, $\hat{H}_{part}$, is the sum of the kinetic energy operator, potential energy operator, and the electronic Hamiltonian operator:
 \begin{equation}\label{eq:qm_Hamiltonian_matter}
-    H_{part} = T_{N} + V_{NN} + H_{el}.
+    \hat{H}_{part} = \hat{T}_{N} + \hat{V}_{NN} + \hat{H}_{el}.
 \end{equation}
-These are, though, of no particular interest concerning the scattering process, and are therefore not elaborated on.
+These are, though, of no particular interest concerning the scattering process, and are therefore not elaborated upon.
 
-The interaction Hamiltonian, $H_{int}$ accounts for the interaction between the electromagnetic field and the matter.
+The interaction Hamiltonian, $\hat{H}_{int}$ accounts for the interaction between the electromagnetic field and the matter.
 It can be shown that interactions between an electromagnetic field and charges $q$ may be accounted for by performing the substitution
-$\bm{p} \rightarrow \bm{p}-q\bm{A}$ \cite{mcmorrow2011elements}. Eventually, the interaction Hamiltonian is revealed to have a term linear in the vector potential $\bm{\widehat{A}}$, and a term quadratic in the vector potential $\bm{\widehat{A}}$:
+$\bm{p} \rightarrow \bm{p}-q\bm{A}$ \cite{mcmorrow2011elements}. Eventually, the interaction Hamiltonian is revealed to have a term linear and a term quadratic in the vector potential $\bm{\widehat{A}}$:
 \begin{equation}\label{eq:qm_interaction_Hamiltonian}
-    H_{int} \sim \bm{\widehat{p}} \cdot \bm{\widehat{A}} + \bm{\widehat{A}}^{2}.
+    \hat{H}_{int} \sim \bm{\widehat{p}} \cdot \bm{\widehat{A}} + \bm{\widehat{A}}^{2}.
 \end{equation}
 As the first term is only linear in $\bm{\widehat{A}}$, it can only account for absorption of X-rays through annihilation of photons.
 The second term, however, is quadratic, and therefore accounts for annihilation and subsequent creation of photons, which is the desired interaction.
