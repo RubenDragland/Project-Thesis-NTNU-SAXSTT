@@ -245,6 +245,69 @@
     \field{year}{2018}
   \endentry
 
+  \entry{liebi2015nanostructure}{article}{}
+    \name{author}{7}{}{%
+      {{hash=LM}{%
+         family={Liebi},
+         familyi={L\bibinitperiod},
+         given={Marianne},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Georgiadis},
+         familyi={G\bibinitperiod},
+         given={Marios},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Menzel},
+         familyi={M\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schneider},
+         familyi={S\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kohlbrecher},
+         familyi={K\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BO}{%
+         family={Bunk},
+         familyi={B\bibinitperiod},
+         given={Oliver},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GSM}{%
+         family={Guizar-Sicairos},
+         familyi={G\bibinithyphendelim S\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LM+1}
+    \strng{fullhash}{LMGMMASPKJBOGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{7578}
+    \field{pages}{349\bibrangedash 352}
+    \field{title}{Nanostructure surveys of macroscopic specimens by small-angle
+  scattering tensor tomography}
+    \field{volume}{527}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+  \endentry
+
   \entry{mcmorrow2011elements}{book}{}
     \name{author}{2}{}{%
       {{hash=MD}{%
