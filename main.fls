@@ -2180,6 +2180,9 @@ INPUT ./3.Teil_Methods/03Tests.tex
 INPUT 3.Teil_Methods/03Tests.tex
 INPUT ./3.Teil_Methods/03Tests.tex
 INPUT 3.Teil_Methods/03Tests.tex
+INPUT c:/texlive/2022/texmf-dist/fonts/vf/public/eulervm/zeusm7.vf
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm7.tfm
 INPUT ./4.Teil_Results/01Validation.tex
 INPUT ./4.Teil_Results/01Validation.tex
 INPUT ./4.Teil_Results/01Validation.tex

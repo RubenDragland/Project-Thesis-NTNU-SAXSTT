@@ -36,8 +36,9 @@
 \contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{36}{section.7.5}%
 \contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{37}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{37}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Reconstruction of Known Model Using Automatic Differentiation SAXSTT}{37}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Comparison of Automatic and Symbolic Differentiation for SAXSTT Applied to Known Model}{37}{section.8.3}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Known Model Using Automatic Differentiation SAXSTT}{38}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Comparison of Automatic and Symbolic Differentiation for SAXSTT Applied to Known Model}{38}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Comparison of Cost Functions Applied on Unknown Model}{38}{section.8.4}%
 \contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{39}{part.4}%
 \contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Disproval of Derived Symbolic Gradients}}{41}{chapter.9}%
 \contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed Reconstructions }}{43}{chapter.10}%
