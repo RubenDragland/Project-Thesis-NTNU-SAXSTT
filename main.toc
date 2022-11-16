@@ -33,6 +33,7 @@
 \contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{31}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{35}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{36}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{36}{section.7.5}%
 \contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{37}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{37}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Reconstruction of Known Model Using Automatic Differentiation SAXSTT}{37}{section.8.2}%

@@ -36,7 +36,7 @@ Eventually, Pytorch was thus later utilised in an effort to optimise the AD SAXS
 \section{Optimisation Using Symbolic Gradients}
 The gradients of the original SAXSTT routine were derived symbolically and implemented in MATLAB by Liebi et. al \cite{liebi2015nanostructure}.
 This routine served as the most important tool of validation when implementing AD for SAXSTT,
-as the AD implementation is simply rewritten in such a way that the AD engine only encounters supported functionality.
+as the AD implementation is simply a variation of the original code in such a way that the AD engine only encounters supported functionality.
 As a result, the SAXSTT routine was thoroughly analysed and categorised into a hierarchy of optimisation routines. % Ref to theory CGD and SAXSTT?
 The topmost part of the hierarchy is the optimisation of the individual spherical harmonics parameters.
 Each parameter was adjusted using a conjugate gradient descent algorithm,
@@ -96,8 +96,8 @@ As mentioned in Section \ref{sec:theory_AD}, the chain rule, Equation \eqref{eq:
 This basic idea was implemented first for the optimisation of the spherical harmonics coefficients.
 Here, the computational graph was shorter than for orientation optimisation, since the orientation was considered to be constants.
 Thus, all the computations prior to the introduction of the spherical harmonics coefficients were performed outside the \emph{dlfeval} cost function evaluation.
-Nevertheless, several pieces of implementation had to be modified in order to make the routine compatible with the AD library.
-Most importantly, the original MEX-function routines implemented to efficiently performing page-multiplication and bilinear interpolation, the bottlenecks of the SAXSTT routine, had to be rewritten in MATLAB.
+Nevertheless, several pieces of code had to be modified in order to make the routine compatible with the AD library.
+Most importantly, the original MEX-function routines implemented to efficiently perform page-multiplication and bilinear interpolation, the bottlenecks of the SAXSTT routine, had to be rewritten in MATLAB.
 The MATLAB implementation was not optimised by altering the structure of the code, since the goal was to create a near identical SAXSTT routine with automatic differentiation capabilities.
 However, page-multiplication kept its efficieny with the built-in function \emph{pagemtimes}.
 On the other hand, bilinear interpolation was performed using a double for-loop, like the original MEX-function implementation, at the cost of a considerable speed decrease.
@@ -114,15 +114,24 @@ Finally, the \emph{dlarrays} were also initialised to \emph{gpuArrays} in order 
 \section{Automatic Differentiation Using Pytorch}\label{sec:AD_pytorch}
 
 In the initial testing of automatic differentiation, it was noted that the AD engine by Pytorch was powerful and versatile.
-Therefore, implemented parts of the AD routine in MATLAB were copied and optimised using Pytorch.
+Therefore, implemented parts of the AD routine in MATLAB were translated to Python, and optimised using Pytorch.
 The code structure was kept the same, but the implementation was modified to be compatible with Pytorch and CUDA GPU computing.
 Moreover, the projection orientations were integrated to a single batch rather than utilising parallel for-loops. %RSD: Has to be done. 
 The batch was an essential optimisation choice, as it minimised the communication frequency between the CPU and GPU, and between Python and MATLAB.
-The other essential optimisation was bilinear interpolation performed using array operations and multidimensional arrays.
+The other essential optimisation was bilinear interpolation performed using array operations on multidimensional arrays.
 In contrast, the MATLAB implementation used double for-loops of single elements.
 At the same time, different data types, different reshaping order conventions, and issues concerning compatible environments had to be considered.
 The forward and backward passes were initialised and finalised using a series of data type conversions.
 Moreover, an efficient F-order reshaping function was found online.
 Unfortunately, MATLAB and Python had library inconsistencies on the server,
 and the Python function had to be run in a separate process, which limited performance and the memory transfer capacity.
+
+\section{Implementation of Alternative Cost Function}\label{sec:alternative_cost_function}
+
+The cost function used in the SAXSTT routine is a comparison of the experimental and estimated SAXS projection intensities.
+Originally, the estimated intensity was the absolute value squared of a linear combination of spherical harmonics, as shown in Equation \eqref{eq:reciprocal_space_map}.
+However, it was desired to express the atomic form factor using the expression listed in Equation \eqref{eq:exp_sin_squared}.
+This implementation required some modifications of the SAXSTT routine, mainly initialising new variables and change the form factor computation in the cost function evaluation.
+It is important to notice that no gradients had to be derived by hand.
+A batch approach in Pytorch was the most optimised code structure, and was chosen for this task.
 

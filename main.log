@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  15 NOV 2022 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  16 NOV 2022 10:32
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1789,7 +1789,7 @@ Overfull \hbox (5.98985pt too wide) in paragraph at lines 24--26
 
 Package svg Info: Last page of `./svg-inkscape/GD_new_svg-tex.pdf' is 1 on input line 40.
 (./svg-inkscape/GD_new_svg-tex.pdf_tex
-<./svg-inkscape/GD_new_svg-tex.pdf, id=308, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/GD_new_svg-tex.pdf, id=311, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/GD_new_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/GD_new_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/GD_new_svg-tex.pdf , page1 used on input line 56.
@@ -1797,7 +1797,7 @@ Package pdftex.def Info: ./svg-inkscape/GD_new_svg-tex.pdf , page1 used on input
 )
 Package svg Info: Last page of `./svg-inkscape/CGD_exact_svg-tex.pdf' is 1 on input line 49.
  (./svg-inkscape/CGD_exact_svg-tex.pdf_tex
-<./svg-inkscape/CGD_exact_svg-tex.pdf, id=310, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/CGD_exact_svg-tex.pdf, id=313, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/CGD_exact_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CGD_exact_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/CGD_exact_svg-tex.pdf , page1 used on input line 56.
@@ -1897,7 +1897,7 @@ LaTeX Warning: Reference `fig:orientations' on page 21 undefined on input line 2
 
 Package svg Info: Last page of `./svg-inkscape/SAXSTT_test_svg-tex.pdf' is 1 on input line 28.
 (./svg-inkscape/SAXSTT_test_svg-tex.pdf_tex
-<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=30659, page=1, 230.32408pt x 80.16435pt>
+<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=30661, page=1, 230.32408pt x 80.16435pt>
 File: ./svg-inkscape/SAXSTT_test_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SAXSTT_test_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SAXSTT_test_svg-tex.pdf , page1 used on input line 56.
@@ -1914,7 +1914,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Package svg Info: Last page of `./svg-inkscape/sph_harm_samples_svg-tex.pdf' is 1 on input line 63.
  (./svg-inkscape/sph_harm_samples_svg-tex.pdf_tex
-<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=30672, page=1, 1156.32pt x 144.54pt>
+<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=30674, page=1, 1156.32pt x 144.54pt>
 File: ./svg-inkscape/sph_harm_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/sph_harm_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/sph_harm_samples_svg-tex.pdf , page1 used on input line 56.
@@ -1933,7 +1933,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  [22 <./svg-inkscape/SAXSTT_test_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/exp_sin_samples_svg-tex.pdf' is 1 on input line 114.
  (./svg-inkscape/exp_sin_samples_svg-tex.pdf_tex
-<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=30731, page=1, 2601.72pt x 144.54pt>
+<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=30733, page=1, 2601.72pt x 144.54pt>
 File: ./svg-inkscape/exp_sin_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/exp_sin_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/exp_sin_samples_svg-tex.pdf , page1 used on input line 56.
@@ -2029,22 +2029,22 @@ LaTeX Warning: Reference `' on page 31 undefined on input line 7.
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [31]
-<../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf, id=91265, 260.60242pt x 526.58235pt>
+<../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf, id=91267, 260.60242pt x 526.58235pt>
 File: ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf  used on input line 61.
 (pdftex.def)             Requested size: 161.27856pt x 325.89113pt.
-<../XRD_CT/Figures/Flowchart_cgmin.pdf, id=91266, 260.60242pt x 526.58235pt>
+<../XRD_CT/Figures/Flowchart_cgmin.pdf, id=91268, 260.60242pt x 526.58235pt>
 File: ../XRD_CT/Figures/Flowchart_cgmin.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_cgmin.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_cgmin.pdf  used on input line 62.
 (pdftex.def)             Requested size: 161.27856pt x 325.89113pt.
-<../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf, id=91267, 555.30876pt x 525.41031pt>
+<../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf, id=91269, 555.30876pt x 525.41031pt>
 File: ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf  used on input line 70.
 (pdftex.def)             Requested size: 336.0pt x 317.9183pt.
-<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91268, 543.54153pt x 705.84387pt>
+<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91270, 543.54153pt x 705.84387pt>
 File: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_SAXSTT.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 78.
@@ -2064,11 +2064,6 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  [34 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>]
 Overfull \hbox (5.48051pt too wide) in paragraph at lines 96--106
 \T1/pplj/m/n/10.95 out-side the \T1/pplj/m/it/10.95 dlfe-val \T1/pplj/m/n/10.95 cost func-tion eval-u-a-tion. Nev-er-the-less, sev-eral pieces
- []
-
-
-Overfull \hbox (8.69528pt too wide) in paragraph at lines 96--106
-\T1/pplj/m/n/10.95 multiplication and bi-lin-ear in-ter-po-la-tion, the bot-tle-necks of the SAXSTT
  []
 
 
@@ -2437,18 +2432,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35199 strings out of 475071
- 693600 string characters out of 5782907
- 1609458 words of memory out of 5000000
- 55461 multiletter control sequences out of 15000+600000
+ 35203 strings out of 475071
+ 693667 string characters out of 5782907
+ 1609582 words of memory out of 5000000
+ 55464 multiletter control sequences out of 15000+600000
  585486 words of font info for 239 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,113p,10667b,2400s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (77 pages, 11000139 bytes).
+Output written on main.pdf (77 pages, 11001399 bytes).
 PDF statistics:
- 91766 PDF objects out of 95282 (max. 8388607)
- 60950 compressed objects within 610 object streams
- 220 named destinations out of 1000 (max. 500000)
- 39456 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 91773 PDF objects out of 95282 (max. 8388607)
+ 60957 compressed objects within 610 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 39464 words of extra memory for PDF output out of 42996 (max. 10000000)
 
