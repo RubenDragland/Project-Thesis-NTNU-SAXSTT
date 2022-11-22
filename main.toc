@@ -27,7 +27,7 @@
 \contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{27}{part.3}%
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{29}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Constructed Known Model}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Periodic and Aligned Uniaxial Nanostructures}{29}{section.6.2}%
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{31}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{31}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{31}{section.7.2}%
@@ -36,13 +36,20 @@
 \contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{36}{section.7.5}%
 \contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{37}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{37}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Reconstruction of Known Model Using Automatic Differentiation SAXSTT}{38}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Comparison of Automatic and Symbolic Differentiation for SAXSTT Applied to Known Model}{38}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Comparison of Cost Functions Applied on Unknown Model}{38}{section.8.4}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Periodic and Aligned Nanostructures Using Automatic Differentiation SAXSTT}{37}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Comparison of Automatic and Symbolic Differentiation}{38}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Comparison of Cost Functions}{38}{section.8.4}%
 \contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{39}{part.4}%
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Disproval of Derived Symbolic Gradients}}{41}{chapter.9}%
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed Reconstructions }}{43}{chapter.10}%
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{41}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{41}{section.9.2}%
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{43}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Reconstruction of Aligned Voxels}{43}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Reconstruction of Experimental Carbon Knot}{43}{section.10.2}%
 \contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{45}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Symbolic SAXSTT}{45}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Automatic SAXSTT in MATLAB}{45}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Optimised Automatic SAXSTT in Python}{45}{section.11.3}%
 \contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{47}{part.5}%
 \contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of SAXSTT Algorithms}}{49}{chapter.12}%
 \contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{51}{chapter.13}%
