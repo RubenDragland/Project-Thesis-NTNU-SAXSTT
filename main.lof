@@ -13,9 +13,8 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces The function in Equation \eqref {eq:exp_sin_squared} for some sets of parameters.\relax }}{24}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Flowchart of the SAXSTT routine.\relax }}{32}{figure.caption.17}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Flowchart of the SAXSTT routine.\relax }}{33}{figure.caption.18}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Flowchart of the SAXSTT routine.\relax }}{34}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Flowchart of the symbolic SAXSTT routine. For each of the optimisation blocks, a for-loop of CGD steps is performed. The entire gradient routine is completed in the gradient computation step, while the line search is only a forward pass. \relax }}{33}{figure.caption.14}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

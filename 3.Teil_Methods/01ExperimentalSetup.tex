@@ -4,60 +4,35 @@
 Data analysis has been performed on one data set of experimental data and some data sets of simulated data.
 This chapter describes the data sets used in the analysis.
 
-\section{Carbon Knot from Synchrotron Measurement}
+\section{Carbon Knot from Synchrotron Measurement} % RSD: Maybe add a picture of the carbon knot?
 Experimental projection data of a carbon knot was acquired.
-The data has dimensions $(y,x,z) = (46,34,34)$, with most of the voxels, except those located in the centre, are air.  % Need some info on the data set.
-Additionally, the data accounts for rotation of the sample through alignment. % RSD: Is this correct?
+The data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located in the centre, consisted of air.  % Need some info on the data set.
+Additionally, alignment had been conducted in order to align the projection data with the tomogram.
 
 
-\section{Periodic and Aligned Uniaxial Nanostructures}
-A data set representing periodic and aligned uniaxial nanostructures were simulated using the SAXSTT forward pass.
-To elaborate, the desired spherical harmonics coefficients were evaluated by the forward pass.
+\section{Periodic and Parallel Uniaxial Nanostructures} % Picture or visualisation?
+A data set representing periodic and parallel uniaxial nanostructures were simulated using the SAXSTT forward pass.
+To elaborate, the desired spherical harmonics parameters were evaluated by the forward pass.
 The resulting projection data was stored, and utilised as experimental data in reconstructions.
 In this way, it was possible to measure and compare the accuracy of the reconstruction algorithms.
 
+In contrast to the experimental data set, this data set excepted voxels consisting of "air",
+as the goal was to most accurately reconstruct one threedimensional slice in the centre of a sample consisting of such nanostructures.
+Instead, the parallel uniaxial nanostructures covered the entire field of view, but only an inner slice of the sample was retrieved for data analysis.
+Therefore, edge artefacts due to bilinear interpolation and convolution with a Gaussian kernel were minimised.
+
 Numerous such data sets were generated. Mostly the size of the data sets was varied. However, different convolutional filters were also applied to the projected data.
-The goal was to find the suitable compromise between computation time and influence from the boundaries, and thereby the accuracy of the reconstruction.
+The goal was to find the suitable compromise between computation time and influence from the boundaries.
+Thereby the accuracy of the reconstruction algorithms could be compared accurately in a reasonable amount of time.
 
-The different data set sizes are listed in Table \ref{tab:periodic_data_sets_sizes}. The respective filters are listed in Appendix. % RSD: Add appendix reference.
-
-\begin{table}[h]
-    \centering
-    \caption{}
-    \label{tab:periodic_data_sets_sizes}
-    \begin{tabular}{ l c c c }
-        \hline
-        \textbf{Size} & \textbf{Voxels Evaluated} & \textbf{Offset} & \textbf{Filter} \\
-        (7,7,7)       & $3^{3}$                   & 4               & 1               \\
-        (15,15,15)    & $11^{3}$                  & 4               & 1               \\
-        (25,25,25)    & $17^{3}$                  & 8               & 1               \\
-        (35,35,35)    & $27^{3}$                  & 8               & 1               \\
-        (35,35,35)    & $17^{3}$                  & 18              & 3               \\
-        \hline
-    \end{tabular}
-\end{table}
+The different data set sizes are listed in Table \ref{tab:periodic_data_sets_sizes} in Appendix \ref{app:appendixA}.
+The respective filters are also listed in Appendix \ref{app:appendixA}, as their exact values are not important.
+It is, however, important to remember that these filters are Gaussian, and filter 1 had the size $(3,3)$ while filter 3 had the size $(5,5)$. % RSD: Add appendix reference.
 
 For some of the mentioned data set sizes, different simulated orientations and coefficients were used.
 However, the relation between the coefficients were kept constant.
-The values of the coefficients are listed in Table \ref{tab:periodic_data_sets_coefficients}.
+The values of the coefficients are listed in Table \ref{tab:periodic_data_sets_coefficients} in Appendix \ref{app:appendixA}.
 
-\begin{table}[h]
-    \centering
-    \caption{}
-    \label{tab:periodic_data_sets_coefficients}
-    \begin{tabular}{ c c c }
-        \hline
-        \textbf{a} & $\bm{\theta}$   & $\bm{\varphi}$   \\
-        0.69       & $\frac{\pi}{3}$ & $\frac{2\pi}{3}$ \\
-        16.9       & $\frac{\pi}{3}$ & $\frac{2\pi}{3}$ \\
-        \hline
-    \end{tabular}
 
-    \begin{tabular}{ c c c c c c}
-        \textbf{a0} & \textbf{a2}    & \textbf{a4}    & \textbf{a6}    & $\bm{\theta}$ & $\bm{\varphi}$ \\
-        1 a         & $\frac{1}{3}$a & $\frac{1}{6}$a & $\frac{1}{12}$ & $\theta$      & $\varphi$      \\
-        \hline
-    \end{tabular}
-\end{table}
 
 

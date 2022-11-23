@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  22 NOV 2022 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  23 NOV 2022 17:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1113,7 +1113,7 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 46.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -1472,11 +1472,6 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 13.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (1.07834pt too wide) in paragraph at lines 39--39
- [][] []\T1/pplj/m/n/10.95 Reconstruction of Pe-ri-odic and Aligned Nanos-truc-tures 
- []
-
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -1995,9 +1990,6 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -2025,9 +2017,6 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-LaTeX Warning: Reference `' on page 31 undefined on input line 7.
-
-
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [31
@@ -2037,53 +2026,41 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-<../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf, id=91292, 260.60242pt x 526.58235pt>
-File: ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf Graphic file (type pdf)
-<use ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf  used on input line 61.
-(pdftex.def)             Requested size: 161.27856pt x 325.89113pt.
-<../XRD_CT/Figures/Flowchart_cgmin.pdf, id=91293, 260.60242pt x 526.58235pt>
-File: ../XRD_CT/Figures/Flowchart_cgmin.pdf Graphic file (type pdf)
-<use ../XRD_CT/Figures/Flowchart_cgmin.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_cgmin.pdf  used on input line 62.
-(pdftex.def)             Requested size: 161.27856pt x 325.89113pt.
-<../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf, id=91294, 555.30876pt x 525.41031pt>
-File: ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf Graphic file (type pdf)
-<use ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf  used on input line 70.
-(pdftex.def)             Requested size: 336.0pt x 317.9183pt.
-<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91295, 543.54153pt x 705.84387pt>
+<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91297, 543.54153pt x 705.84387pt>
 File: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_SAXSTT.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 78.
+Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 61.
 (pdftex.def)             Requested size: 336.0pt x 436.337pt.
 
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [32 <../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf> <../XRD_CT/Figures/Flowchart_cgmin.pdf
-
-pdfTeX warning: pdflatex.exe (file ../XRD_CT/Figures/Flowchart_cgmin.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [33 <../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf>]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [34 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>]
-Overfull \hbox (5.48051pt too wide) in paragraph at lines 96--106
+Overfull \hbox (5.48051pt too wide) in paragraph at lines 82--91
 \T1/pplj/m/n/10.95 out-side the \T1/pplj/m/it/10.95 dlfe-val \T1/pplj/m/n/10.95 cost func-tion eval-u-a-tion. Nev-er-the-less, sev-eral pieces
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [35])
+ [32]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [36]
+ [33 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [34])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [35]
 \openout2 = `3.Teil_Methods/03Tests.aux'.
 
  (./3.Teil_Methods/03Tests.tex
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [36
+
+
+
+
+
+]
 chapter 8.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2097,23 +2074,29 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-LaTeX Warning: Reference `app:gradient_derivation' on page 37 undefined on input line 37.
-
-
-Overfull \hbox (32.74326pt too wide) in paragraph at lines 34--38
+Overfull \hbox (32.74326pt too wide) in paragraph at lines 24--28
 \T1/pplj/m/n/10.95 were tested. For this test, the lab ori-en-ta-tion was ini-tially set to $[]$,
+ []
+
+
+Overfull \hbox (5.67703pt too wide) in paragraph at lines 33--33
+|[]\T1/pplj/m/sc/10.95/80ls reconstruction of pe-ri-odic and par-al-lel nanos-truc-
+ []
+
+
+Overfull \hbox (3.37816pt too wide) in paragraph at lines 45--49
+[]\T1/pplj/m/n/10.95 For a given data set size, deeper data anal-y-sis was con-ducted. Firstly,
+ []
+
+
+Overfull \hbox (15.82288pt too wide) in paragraph at lines 45--49
+\T1/pplj/m/n/10.95 the re-spec-tive gra-di-ents from the first it-er-a-tion of op-ti-mis-ing the isotropic
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [37
-
-
-
-
-
-])
+ [37])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [38]
@@ -2347,6 +2330,35 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [56]
+\openout2 = `6.Teil_Appendix/Chapter0A.aux'.
+
+ (./6.Teil_Appendix/Chapter0A.tex
+chapter A.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [57
+
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [58]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex)
@@ -2384,7 +2396,9 @@ Overfull \hbox (11.77844pt too wide) in paragraph at lines 168--168
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [57
+ [59
+
+
 
 
 
@@ -2393,7 +2407,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [58
+ [60
 
 
 
@@ -2416,14 +2430,14 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [59
+ [61
 
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [60
+ [62
 
 
 
@@ -2434,9 +2448,9 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./FrontBackMatter/Colophon.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [61
+ [63
 
-] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2447,18 +2461,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35230 strings out of 475071
- 694032 string characters out of 5782907
- 1609798 words of memory out of 5000000
- 55478 multiletter control sequences out of 15000+600000
+ 35242 strings out of 475071
+ 694128 string characters out of 5782907
+ 1612648 words of memory out of 5000000
+ 55483 multiletter control sequences out of 15000+600000
  585922 words of font info for 241 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,23n,113p,10667b,2420s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,112p,10667b,2420s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (77 pages, 11027018 bytes).
+Output written on main.pdf (79 pages, 10945737 bytes).
 PDF statistics:
- 91833 PDF objects out of 95282 (max. 8388607)
+ 91824 PDF objects out of 95282 (max. 8388607)
  61014 compressed objects within 611 object streams
- 232 named destinations out of 1000 (max. 500000)
- 39528 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 234 named destinations out of 1000 (max. 500000)
+ 39529 words of extra memory for PDF output out of 42996 (max. 10000000)
 

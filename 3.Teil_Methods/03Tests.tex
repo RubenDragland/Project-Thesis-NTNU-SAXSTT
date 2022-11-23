@@ -6,66 +6,63 @@
 % Validation even though not validated.
 The validation of the alternative functional was conducted in stages with increasing complexity.
 It was important to be able to contrast errors in the implementation from false gradient expressions.
-Firstly, the gradient of a simple integer scattering model was calculated. The cost function of this model, with its gradient, is listed in Table \ref{tab:integer_model}.
+Firstly, the gradient of a simple integer scattering model was calculated. The cost function of this model, with its gradient, is listed in Table \ref{tab:integer_model} in Appendix \ref{app:appendixA}.
 
 % Is it actually fitting to keep this in a table? Or would equations suffice? Or necessary at all, or a part of the results?
 % Possibly move to appendix.
-\begin{table}[h]
-    \centering
-    \caption{}
-    \label{tab:integer_model}
-    \begin{tabular}{ l c }
-        \hline
-        \textbf{Cost Function}       & $\epsilon_{n} = \sum_{n', n''} ( (\sum_{n} A) - I_{n})^2 $           \\
-        \textbf{Gradient Expression} & $\frac{\partial \epsilon_{n}}{\partial A} = 2 (\sum_{n} A - I_{n}) $ \\
-        \hline
-    \end{tabular}
-\end{table}
+
 
 The input data for the model in the test cases were random multidimensional arrays of the initial tomogram $A$ and the experimental intensity $I_{n}$.
-The respective shapes were (2,2,2) and (3,2,2).
-For each of the three 2D-projections, the forward and backward pass were performed, and the gradient expression was evaluated. %RSD: Code listing easier?
+The respective shapes were $(2,2,2)$ and $(3,2,2)$.
+For each of the three 2D-projections, the forward and backward passes were performed, and the gradient expression was evaluated. %RSD: Code listing easier?
 This procedure was identical to the initial testing of AD described in Section \ref{sec:proof_of_concept_AD}.
 
 Next, the procedure was repeated using the cost function of the alternative functional, Equation \eqref{eq:exp_sin_squared}.
 However, the gradients with respect to the parameters $A$ and $B$ were validated before the orientation parameters $\theta_{op}$ and $\varphi_{op}$ were handled.
 
 
-Finally, the gradient with respect to the orientation parameters were tested.
+Finally, the gradients with respect to the orientation parameters were tested.
 For this test, the lab orientation was initially set to $\left( \alpha = 0, \beta = 0 \right)$, and the position coordinate was mostly kept at $\phi = 0$ to simplify the validation.
-Since the behaviour of the $A$ and $B$ parameters were known, debugging of the final implementation was easier. %? 
-In addition, the final parts of the symbolic gradient expression were derived by hand. The derivation is listed in Appendix \ref{app:gradient_derivation}.
+Since the behaviour of parameter $A$ and $B$ was known, debugging of the final implementation was easier. %? 
+In addition, the final parts of the symbolic gradient expression were derived by hand. The derivation is listed in Appendix \ref{app:appendixA}.
 
 
 % Derivation of expressions here or in appendix? Also, orientation symbolic expressions wrong, but unsure if I have done a mistake or if there was a mistake in things derived earlier. 
 
 
-\section{Reconstruction of Periodic and Aligned Nanostructures Using Automatic Differentiation SAXSTT}
+\section{Reconstruction of Periodic and Parallel Nanostructures}
 
 % RSD: The size was set to ... because.... Each voxel is identical, so the params are the same for each voxel. Nope, not here but in data sets. 
 % Experimented a bit with starting conditions. 
 
 The reconstruction script was run for the data sets described in Section \ref{sec:reconstruction_data_sets} using both symbolically and automatically calculated gradients.
-The same starting conditions were applied to all runs.
+The same initial conditions were applied to all runs.
 Parameter \textbf{a} was set to $10^{-4}$, and the default orientation was set to $\left( \theta = \frac{\pi}{4}, \varphi = \frac{\pi}{4} \right)$.
 
+This procedure was repeated for data sets of different sizes to uncover the effect of edge artefacts.
+In addition, the convergence times were sampled to determine the time complexity of the algorithms.
 
+For a given data set size, deeper data analysis was conducted.
+Firstly, the respective gradients from the first iteration of optimising the isotropic coefficient $a0$ were compared.
+Here, the relative deviation of the AD gradients from the symbolic gradients was calculated.
+Additionally, the location of the largest deviation was determined.
 
+Nevertheless, the most valuable information was obtained from comparing the accuracy of the reconstructions.
+This was done by plotting the distribution of reconstructed parameters in the case of automatically and symbolically calculated gradients.
+The respective distributions were curve-fitted to Lorentzian distributions, whence the expectation value and the standard deviation of the functions were calculated.
+The first reconstructions had initial orientation close to the true values, so that the algorithms could easily converge to the correct solution.
+However, the re-runs were conducted on same-sized data sets, where the orientation of the nanostructures were very different from the initial orientation.
+These reconstructions were also compared to the true values by curve-fitting.
 
+As a final note, the alternative functional was also tested on the mentioned data set.
+The purpose of this test was to investigate the convergence behaviour of the alternative functional in comparison to the original functional.
+Here, the use of simulated data allowed for a more controlled test, where one could ensure full convergence.
 
-\section{Comparison of Automatic and Symbolic Differentiation}
+\section{Comparison of Cost Functions}
 
-% All included in results should be mentioned here, But may be located in separate chapters in results?
-% Postprocessing? But unsure what I planned here. 
+Despite the fact that the alternative functional was tested on one simulated data set,
+a comparison of the cost functions was mainly conducted on the experimental data set.
 
-% Also include the new cost function. 
-
-First and foremost, the gradient calculations were evaluated by the accuracy of the reconstruction.
-
-Secondly, the gradients from iteration 1 were compared. Here, the automatic gradients should be identical to the symbolic ones.
-
-\section{Comparison of Cost Functions}% Perhaps. Test the 
-
-A Comparison of the cost functions was mainly conducted on the experimental data set.
-However, the cost function of the alternative functional was also tested on simulated data set,
-as it proved easier to ensure that the initial conditions were sufficiently close to the global minimum.
+The convergence curves were of importance in this comparison.
+Additionally, visual representation of the carbon knot was emphasised.
+To elaborate, slices of the reconstructed reciprocal spaces were plotted and compared for the different reconstruction algorithms.

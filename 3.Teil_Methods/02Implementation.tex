@@ -4,26 +4,9 @@
 \section{Proof of Concept Automatic Differentiation}\label{sec:proof_of_concept_AD}
 
 The first checkpoint in implementing automatic differentiation for the SAXSTT routine, was to witness an expected behaviour from the AD engines of choice.
-A range of different engines were tested using the cost functions listed in Table \ref{} with random initial values.
+A range of different engines were tested using the cost functions listed in Table \ref{tab:cost_functions}, found in Appendix \ref{app:appendixA}, with random initial values.
 
-\begin{table}[h]
-    \centering
-    \caption{}
-    \label{tab:cost_functions}
-    \begin{tabular}{ c c }
-        \hline
-        \textbf{Cost Function} & \textbf{Equation}                \\
-        \hline
-        f(x,y)                 & $\ln{x} + xy$                    \\
-        g(x,y)                 & $\ln(xy)\sin(y)$                 \\
-        h(x)                   & $64x(1-x) (1-2x)^2(1-8x+8x^2)^2$ \\
-    \end{tabular}
-\end{table}
-% RSD: Is this useful?
-
-
-
-The automatically calculated gradients were compared to symbolically derived gradients and a numerical central differences.
+The automatically calculated gradients were compared to symbolically derived gradients and numerical central differences.
 Hence, the accuracy and functionality of the engines were confirmed before the proper implementation.
 Moreover, the performance of the engines were compared relative to the symbolic function evaluation and the numerical gradients.
 As all engines showed expected behaviour when computing gradients,
@@ -49,41 +32,44 @@ Then, bilinear interpolation was applied to assign the scattering from each voxe
 Moreover, the resulting projection data was smoothed using a Gaussian filter to reduce bilinear interpolation artefacts.
 Bilinear interpolation was applied once again to assign one gradient value in each voxel of the tomogram. % Shortly summarised. Ref Figures. Flowcharts are nice. 
 
-With the obtained gradients, a line search was performed iteratively in the direction determined by the CGD algorithm, which was explained in Section. %\ref{sec:theory_CGD}.
+With the obtained gradients, a line search was performed iteratively in the direction determined by the CGD algorithm, which was explained in Section \ref{sec:theory_CGD}.
 Further details of the line search is not of importance for the AD implementation, because it is not directly related to the gradient calculations.
 A complete flowchart of the symbolic gradient routine, which also serves as a general idea of the SAXSTT routine, is shown in Figure \ref{fig:flowchart_SAXSTT}.
 
-%RSD: Decide on a flowchart style. 
-\begin{figure}
-    \centering
-    %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
-    %\includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_SAXSTT.pdf} %Here, the font is scaled, but have enough margins. 
-    \includegraphics[width=0.48\textwidth]{../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf}
-    \includegraphics[width=0.48\textwidth]{../XRD_CT/Figures/Flowchart_cgmin.pdf}
-    %\includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf}
-    \caption{Flowchart of the SAXSTT routine.}
-    \label{fig:flowchart_optimisation}
-\end{figure}
+% %RSD: Decide on a flowchart style. 
+% \begin{figure}
+%     \centering
+%     %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
+%     %\includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_SAXSTT.pdf} %Here, the font is scaled, but have enough margins. 
+%     \includegraphics[width=0.48\textwidth]{../XRD_CT/Figures/Flowchart_optimisation_algorithm.pdf}
+%     \includegraphics[width=0.48\textwidth]{../XRD_CT/Figures/Flowchart_cgmin.pdf}
+%     %\includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf}
+%     \caption{Flowchart of the SAXSTT routine.}
+%     \label{fig:flowchart_optimisation}
+% \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf}
-    \caption{Flowchart of the SAXSTT routine.}
-    \label{fig:flowchart_gradients}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_symbolic_gradient.pdf}
+%     \caption{Flowchart of the SAXSTT routine.}
+%     \label{fig:flowchart_gradients}
+% \end{figure}
 
 \begin{figure}
     \centering
     %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_SAXSTT.pdf} %Here, the font is scaled, but have enough margins. 
-    \caption{Flowchart of the SAXSTT routine.}
+    \caption{Flowchart of the symbolic SAXSTT routine.
+        For each of the optimisation blocks, a for-loop of CGD steps is performed.
+        The entire gradient routine is completed in the gradient computation step, while the line search is only a forward pass.
+    }
     \label{fig:flowchart_SAXSTT}
 \end{figure}
 
 \section{Automatic Differentiation in MATLAB}%?
 \label{sec:AD_matlab}
 As mentioned,
-a working AD SAXSTT routine was implemented into the already existing MATLAB SAXSTT routine
+a working AD SAXSTT routine was implemented into the already existing SAXSTT routine in MATLAB
 through modifications that were compatible to MATLAB's deep learning library.
 The essential aspects from this library were a special array called \emph{dlarray},
 \emph{dlfeval} special function evaluation, and automatic gradient calculation \emph{dlgradient}.
@@ -102,7 +88,6 @@ The MATLAB implementation was not optimised by altering the structure of the cod
 However, page-multiplication kept its efficieny with the built-in function \emph{pagemtimes}.
 On the other hand, bilinear interpolation was performed using a double for-loop, like the original MEX-function implementation, at the cost of a considerable speed decrease.
 Finally, the convolution function \emph{dlconv} applied the mentioned Gaussian smoothing of the bilinear interpolation artefacts. % Ref to Figure \ref{fig:flowchart_SAXSTT}. 
-The error evaluation was kept identical to the original SAXSTT routine, but was at the same time integrated side by side with the gradient calculation using if-statements.
 
 Consequently, the remaining part of the AD SAXSTT routine was the optimisation of the orientation as well as the full optimisation.
 In this case, the differential variables were used early in the cost function evaluation, and the computational graph was longer.
@@ -115,8 +100,9 @@ Finally, the \emph{dlarrays} were also initialised to \emph{gpuArrays} in order 
 
 In the initial testing of automatic differentiation, it was noted that the AD engine by Pytorch was powerful and versatile.
 Therefore, implemented parts of the AD routine in MATLAB were translated to Python, and optimised using Pytorch.
-The code structure was kept the same, but the implementation was modified to be compatible with Pytorch and CUDA GPU computing.
-Moreover, the projection orientations were integrated to a single batch rather than utilising parallel for-loops. %RSD: Has to be done. 
+The essence of the process described in Section \ref{sec:AD_matlab} was repeated,
+meaning that the implementation was modified to be compatible with Pytorch and CUDA GPU computing.
+Moreover, the projection orientations were integrated to a single batch rather than utilising parallel for-loops.
 The batch was an essential optimisation choice, as it minimised the communication frequency between the CPU and GPU, and between Python and MATLAB.
 The other essential optimisation was bilinear interpolation performed using array operations on multidimensional arrays.
 In contrast, the MATLAB implementation used double for-loops of single elements.

@@ -1,0 +1,72 @@
+% Appendix A
+
+\chapter{Appendix A}\label{app:appendixA}
+
+%----------------------------------------------------------------------------------------
+
+\section{Data Sets}
+
+\begin{table}[h]
+    \centering
+    \caption{}
+    \label{tab:periodic_data_sets_sizes}
+    \begin{tabular}{ l c c c }
+        \hline
+        \textbf{Size} & \textbf{Voxels Evaluated} & \textbf{Offset} & \textbf{Filter} \\
+        (7,7,7)       & $3^{3}$                   & 4               & 1               \\
+        (15,15,15)    & $11^{3}$                  & 4               & 1               \\
+        (25,25,25)    & $17^{3}$                  & 8               & 1               \\
+        (35,35,35)    & $27^{3}$                  & 8               & 1               \\
+        (35,35,35)    & $17^{3}$                  & 18              & 3               \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{}
+    \label{tab:periodic_data_sets_coefficients}
+    \begin{tabular}{ c c c }
+        \hline
+        \textbf{a} & $\bm{\theta}$   & $\bm{\varphi}$   \\
+        0.69       & $\frac{\pi}{3}$ & $\frac{2\pi}{3}$ \\
+        16.9       & $\frac{\pi}{3}$ & $\frac{2\pi}{3}$ \\
+        \hline
+    \end{tabular}
+
+    \begin{tabular}{ c c c c c c}
+        \textbf{a0} & \textbf{a2}    & \textbf{a4}    & \textbf{a6}    & $\bm{\theta}$ & $\bm{\varphi}$ \\
+        1 a         & $\frac{1}{3}$a & $\frac{1}{6}$a & $\frac{1}{12}$ & $\theta$      & $\varphi$      \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Cost Functions}
+
+\begin{table}[h]
+    \centering
+    \caption{}
+    \label{tab:cost_functions}
+    \begin{tabular}{ c c }
+        \hline
+        \textbf{Cost Function} & \textbf{Equation}                \\
+        \hline
+        f(x,y)                 & $\ln{x} + xy$                    \\
+        g(x,y)                 & $\ln(xy)\sin(y)$                 \\
+        h(x)                   & $64x(1-x) (1-2x)^2(1-8x+8x^2)^2$ \\
+    \end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \caption{}
+    \label{tab:integer_model}
+    \begin{tabular}{ l c }
+        \hline
+        \textbf{Cost Function}       & $\epsilon_{n} = \sum_{n', n''} ( (\sum_{n} A) - I_{n})^2 $           \\
+        \textbf{Gradient Expression} & $\frac{\partial \epsilon_{n}}{\partial A} = 2 (\sum_{n} A - I_{n}) $ \\
+        \hline
+    \end{tabular}
+\end{table}
