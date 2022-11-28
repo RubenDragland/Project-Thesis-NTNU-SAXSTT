@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  23 NOV 2022 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  27 NOV 2022 22:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -917,23 +917,23 @@ Package microtype Info: Loading configuration file microtype.cfg.
  (c:/texlive/2022/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
 ))
-Package classicthesis Info: A4 paper, Palatino or other on input line 272.
+Package classicthesis Info: A4 paper, Palatino or other on input line 275.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
 (typearea)             BCOR = 14.22636pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 336.0pt
-(typearea)              \evensidemargin = 92.58438pt
-(typearea)              \oddsidemargin  = 24.38356pt
+(typearea)              \textwidth      = 413.0pt
+(typearea)              \evensidemargin = 41.25104pt
+(typearea)              \oddsidemargin  = -1.28311pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 666.04997pt
-(typearea)              \topmargin      = -40.58768pt
+(typearea)              \textheight     = 685.04997pt
+(typearea)              \topmargin      = -46.92102pt
 (typearea)              \headheight     = 15.95pt
 (typearea)              \headsep        = 20.40001pt
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 272.
+(typearea)              on input line 275.
  (c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen190
@@ -957,7 +957,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 Package: textcase 2022/07/10 v1.03 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
 )
-Package classicthesis Info: Using pdftex/microtype for character spacing.Make sure your pdftex is version 1.40 or higher. on input line 345.
+Package classicthesis Info: Using pdftex/microtype for character spacing.Make sure your pdftex is version 1.40 or higher. on input line 348.
  (c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2022/10/12 v3.38 KOMA-Script package (end user interface for scrlayer)
  (c:/texlive/2022/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -973,7 +973,7 @@ Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 1: section
 
 Package scrlayer-scrpage Warning: replacing deprecated \clearscrheading by
-(scrlayer-scrpage)                \clearmainofpairofpagestyles on input line 354.
+(scrlayer-scrpage)                \clearmainofpairofpagestyles on input line 357.
 
 
 Class scrreprt Warning: Usage of package `titlesec' together
@@ -983,7 +983,7 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              and several others to re-configure section
 (scrreprt)              headings.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 378.
+(scrreprt)              package `titlesec' on input line 381.
 
 (c:/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
@@ -1037,7 +1037,7 @@ Class scrreprt Warning: Usage of package `tocloft' together
 (scrreprt)              `part', `section', `subsection',
 (scrreprt)              `subsubsection', `paragraph' and `subparagraph'.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `tocloft' on input line 427.
+(scrreprt)              package `tocloft' on input line 430.
 
 (c:/texlive/2022/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -1113,7 +1113,14 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 46.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./6.Teil_Appendix/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -1434,11 +1441,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-
-Overfull \hbox (8.78125pt too wide) in paragraph at lines 29--30
-\T1/pplj/m/n/10.95 Repp, Hin-rich Harms, Roland Win-kler, and the whole L[]T[]X-community
- []
-
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -1505,45 +1507,18 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 Package tocbasic Info: character protrusion at lof deactivated on input line 33.
 (./main.lof
-Overfull \hbox (1.90414pt too wide) in paragraph at lines 8--8
- \T1/pplj/m/n/10.95 ti-mi-sa-tion based on con-ju-gate gra-di-ent de-scent. 
- []
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
+ [13
 
-Overfull \hbox (2.4022pt too wide) in paragraph at lines 8--8
- \T1/pplj/m/n/10.95 long, steps. The an-i-ma-tion be-long-ing to the plot 
- []
-
-
-Overfull \hbox (14.9346pt too wide) in paragraph at lines 11--11
- \T1/pplj/m/n/10.95 The beam canon rep-re-sents the syn-chrotron beam. 
- []
-
-
-Overfull \hbox (1.75087pt too wide) in paragraph at lines 11--11
- \T1/pplj/m/n/10.95 sec-tors of the diffrac-togram is col-lected for each 
- []
-
-
-Overfull \hbox (1.74438pt too wide) in paragraph at lines 11--11
- \T1/pplj/m/n/10.95 scan-ning point $\U/zeus/m/n/10.95 ¨\U/zeur/m/n/10.95 \T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 ^^L\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 x\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 y\U/zeus/m/n/10.95 ©$\T1/pplj/m/n/10.95 . Due to uni-ax-ial sym- 
- []
-
-
-Overfull \hbox (2.47519pt too wide) in paragraph at lines 12--12
- [][] []\T1/pplj/m/n/10.95 Spherical har-mon-ics func-tions $\OML/cmm/b/it/10.95 Y[]$ \T1/pplj/m/n/10.95 with in-creas- 
- []
-
-)
+])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [13
-
-]
+ [14]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1563,7 +1538,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 46.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [14]
+ [15]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1582,7 +1557,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [15]
+ [16]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1595,82 +1570,86 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-LaTeX Warning: Hyper reference `acro:DRY' on page xvi undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:DRY' on page xvii undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:DRY' on page xvi undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:DRY' on page xvii undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page xvi undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:API' on page xvii undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page xvi undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:API' on page xvii undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page xvi undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:UML' on page xvii undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page xvi undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:UML' on page xvii undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:FBP' on page xvi undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:FBP' on page xvii undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:FBP' on page xvi undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:FBP' on page xvii undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:CT' on page xvi undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:CT' on page xvii undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:CT' on page xvi undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:CT' on page xvii undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page xvi undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:ML' on page xvii undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page xvi undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:ML' on page xvii undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:GD' on page xvi undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:GD' on page xvii undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:GD' on page xvi undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:GD' on page xvii undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:CGD' on page xvi undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:CGD' on page xvii undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:CGD' on page xvi undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:CGD' on page xvii undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:AD' on page xvi undefined on input line 85.
+LaTeX Warning: Hyper reference `acro:AD' on page xvii undefined on input line 85.
 
 
-LaTeX Warning: Hyper reference `acro:AD' on page xvi undefined on input line 85.
+LaTeX Warning: Hyper reference `acro:AD' on page xvii undefined on input line 85.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvi undefined on input line 86.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvii undefined on input line 86.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvi undefined on input line 86.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvii undefined on input line 86.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xvi undefined on input line 87.
+LaTeX Warning: Hyper reference `acro:SH' on page xvii undefined on input line 87.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xvi undefined on input line 87.
+LaTeX Warning: Hyper reference `acro:SH' on page xvii undefined on input line 87.
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [16]
+ [17]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [18
+
+
+
+
+]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [1
-
-
-
-
 
 
 
@@ -1693,6 +1672,11 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              by users or package authors may already break
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
+
+
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 1 
+ []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -1735,13 +1719,8 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (3.3181pt too wide) in paragraph at lines 18--22
-[]\T1/pplj/m/n/10.95 Excitation and ac-cel-er-a-tion are the most com-mon phe-nom-ena where
- []
-
-
-Overfull \hbox (4.80165pt too wide) in paragraph at lines 36--41
-[]\T1/pplj/m/n/10.95 The syn-chrotron is the last com-mon X-ray source. Gen-er-ally, charged
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
+[]\chapterNumber 2 
  []
 
 
@@ -1751,25 +1730,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-]
+])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [8])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [9]
+ [8]
 \openout2 = `2.Teil_Theory/02MachineLearning.aux'.
 
  (./2.Teil_Theory/02MachineLearning.tex
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [10
-
-
-
-
-
-]
 chapter 3.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1783,54 +1750,53 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (5.98985pt too wide) in paragraph at lines 24--26
-\T1/pplj/m/n/10.95 Gradient de-scent is an op-ti-mi-sa-tion al-go-rithm that up-dates the model's
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 3 
  []
 
 Package svg Info: Last page of `./svg-inkscape/GD_new_svg-tex.pdf' is 1 on input line 40.
 (./svg-inkscape/GD_new_svg-tex.pdf_tex
-<./svg-inkscape/GD_new_svg-tex.pdf, id=333, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/GD_new_svg-tex.pdf, id=361, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/GD_new_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/GD_new_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/GD_new_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 336.0pt x 251.99602pt.
+(pdftex.def)             Requested size: 413.0pt x 309.74483pt.
 )
 Package svg Info: Last page of `./svg-inkscape/CGD_exact_svg-tex.pdf' is 1 on input line 49.
  (./svg-inkscape/CGD_exact_svg-tex.pdf_tex
-<./svg-inkscape/CGD_exact_svg-tex.pdf, id=335, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/CGD_exact_svg-tex.pdf, id=363, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/CGD_exact_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CGD_exact_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/CGD_exact_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 336.0pt x 251.99602pt.
+(pdftex.def)             Requested size: 413.0pt x 309.74483pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [11]
+ [9
+
+
+
+
+
+]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [12 <./svg-inkscape/GD_new_svg-tex.pdf> <./svg-inkscape/CGD_exact_svg-tex.pdf
+ [10 <./svg-inkscape/GD_new_svg-tex.pdf>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/CGD_exact_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+ [11 <./svg-inkscape/CGD_exact_svg-tex.pdf>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [12])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [13]
-
-LaTeX Warning: Reference `' on page 14 undefined on input line 121.
-
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [14])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [15]
 \openout2 = `2.Teil_Theory/03ScatteringTheory.aux'.
 
  (./2.Teil_Theory/03ScatteringTheory.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [16
+ [14
 
 
 
@@ -1850,31 +1816,37 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 4 
+ []
+
+
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [15]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [16]
+Overfull \hbox (2.50882pt too wide) in paragraph at lines 113--116
+[]\T1/pplj/m/n/10.95 Furthermore, sec-ond quan-ti-sa-tion is more fit-ting for de-scrib-ing the elec-tronic Hamil-
+ []
+
+)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [17]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [18]
-Overfull \hbox (19.50298pt too wide) in paragraph at lines 120--123
-[]\T1/pplj/m/n/10.95 Next, the in-ter-ac-tion Hamil-to-nian is con-sid-ered a small time-dependent
- []
-
-
-Overfull \hbox (1.76399pt too wide) in paragraph at lines 129--131
-\T1/pplj/m/n/10.95 are iden-ti-cal, and the in-ter-ac-tion Hamil-to-nian con-sists of the quadratic
- []
-
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [19])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [20]
 \openout2 = `2.Teil_Theory/04SAXSTT.aux'.
 
  (./2.Teil_Theory/04SAXSTT.tex
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [18
+
+
+
+
+
+]
 chapter 5.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1888,79 +1860,67 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.98572pt too wide) in paragraph at lines 9--14
-\T1/pplj/m/n/10.95 where a fo-cused beam re-sults in higher res-o-lu-tion of the re-con-structed
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 5 
  []
 
 
-LaTeX Warning: Reference `fig:orientations' on page 21 undefined on input line 21.
+LaTeX Warning: Reference `fig:orientations' on page 19 undefined on input line 21.
 
 Package svg Info: Last page of `./svg-inkscape/SAXSTT_test_svg-tex.pdf' is 1 on input line 28.
 (./svg-inkscape/SAXSTT_test_svg-tex.pdf_tex
-<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=30683, page=1, 230.32408pt x 80.16435pt>
+<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=30712, page=1, 230.32408pt x 80.16435pt>
 File: ./svg-inkscape/SAXSTT_test_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SAXSTT_test_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SAXSTT_test_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 336.0pt x 116.94966pt.
+(pdftex.def)             Requested size: 413.0pt x 143.75136pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [21
-
-
-
-
-
-]
+ [19]
 Package svg Info: Last page of `./svg-inkscape/sph_harm_samples_svg-tex.pdf' is 1 on input line 63.
  (./svg-inkscape/sph_harm_samples_svg-tex.pdf_tex
-<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=30696, page=1, 1156.32pt x 144.54pt>
+<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=30726, page=1, 1156.32pt x 144.54pt>
 File: ./svg-inkscape/sph_harm_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/sph_harm_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/sph_harm_samples_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 1075.1836pt x 134.40535pt.
+(pdftex.def)             Requested size: 1321.57983pt x 165.20515pt.
 )
-Overfull \hbox (739.1836pt too wide) in paragraph at lines 63--64
+Overfull \hbox (908.57983pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [22 <./svg-inkscape/SAXSTT_test_svg-tex.pdf>]
+ [20 <./svg-inkscape/SAXSTT_test_svg-tex.pdf> <./svg-inkscape/sph_harm_samples_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/sph_harm_samples_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 Package svg Info: Last page of `./svg-inkscape/exp_sin_samples_svg-tex.pdf' is 1 on input line 114.
  (./svg-inkscape/exp_sin_samples_svg-tex.pdf_tex
-<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=30755, page=1, 2601.72pt x 144.54pt>
+<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=61023, page=1, 2601.72pt x 144.54pt>
 File: ./svg-inkscape/exp_sin_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/exp_sin_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/exp_sin_samples_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 2419.7537pt x 134.44064pt.
+(pdftex.def)             Requested size: 2974.28058pt x 165.24927pt.
 )
-Overfull \hbox (2083.7537pt too wide) in paragraph at lines 114--115
+Overfull \hbox (2561.28058pt too wide) in paragraph at lines 114--115
  [][] 
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [23 <./svg-inkscape/sph_harm_samples_svg-tex.pdf>]
-Overfull \hbox (3.78876pt too wide) detected at line 135
-[][]\U/zeur/m/n/10.95 ^^O[] \U/zeus/m/n/10.95 ½ \U/zeur/m/n/10.95 2 [] ![]\U/zeus/m/n/10.95 ¨\U/zeur/m/n/10.95 x\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 y\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 q\T1/pplj/m/n/10.95 , \U/zeur/m/n/10.95 ^^^\U/zeus/m/n/10.95 © [][] \T1/pplj/m/n/10.95 ,
- []
-
-)
+ [21 <./svg-inkscape/exp_sin_samples_svg-tex.pdf>])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [24 <./svg-inkscape/exp_sin_samples_svg-tex.pdf>]
+ [22]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [25]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+ [23
 
- [26
+
 
 
 
@@ -1968,13 +1928,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [27
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [28]
+ [24]
 \openout2 = `3.Teil_Methods/01ExperimentalSetup.aux'.
 
  (./3.Teil_Methods/01ExperimentalSetup.tex
@@ -1990,20 +1944,31 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
+
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 6 
+ []
+
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [29
+ [25
 
 
 
 ]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [30]
 \openout2 = `3.Teil_Methods/02Implementation.aux'.
 
  (./3.Teil_Methods/02Implementation.tex
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [26
+
+
+
+
+
+]
 chapter 7.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2017,50 +1982,32 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [31
-
-
-
-
-
-]
-<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91297, 543.54153pt x 705.84387pt>
-File: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf Graphic file (type pdf)
-<use ../XRD_CT/Figures/Flowchart_SAXSTT.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 61.
-(pdftex.def)             Requested size: 336.0pt x 436.337pt.
-
-Overfull \hbox (5.48051pt too wide) in paragraph at lines 82--91
-\T1/pplj/m/n/10.95 out-side the \T1/pplj/m/it/10.95 dlfe-val \T1/pplj/m/n/10.95 cost func-tion eval-u-a-tion. Nev-er-the-less, sev-eral pieces
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
+[]\chapterNumber 7 
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [32]
+ [27]
+<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91319, 543.54153pt x 705.84387pt>
+File: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf Graphic file (type pdf)
+<use ../XRD_CT/Figures/Flowchart_SAXSTT.pdf>
+Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 61.
+(pdftex.def)             Requested size: 413.0pt x 536.32845pt.
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [33 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>]
+ [28]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [34])
+ [29 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [35]
+ [30]
 \openout2 = `3.Teil_Methods/03Tests.aux'.
 
  (./3.Teil_Methods/03Tests.tex
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [36
-
-
-
-
-
-]
 chapter 8.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2074,35 +2021,31 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (32.74326pt too wide) in paragraph at lines 24--28
-\T1/pplj/m/n/10.95 were tested. For this test, the lab ori-en-ta-tion was ini-tially set to $[]$,
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
+[]\chapterNumber 8 
  []
 
 
-Overfull \hbox (5.67703pt too wide) in paragraph at lines 33--33
-|[]\T1/pplj/m/sc/10.95/80ls reconstruction of pe-ri-odic and par-al-lel nanos-truc-
- []
-
-
-Overfull \hbox (3.37816pt too wide) in paragraph at lines 45--49
-[]\T1/pplj/m/n/10.95 For a given data set size, deeper data anal-y-sis was con-ducted. Firstly,
- []
-
-
-Overfull \hbox (15.82288pt too wide) in paragraph at lines 45--49
-\T1/pplj/m/n/10.95 the re-spec-tive gra-di-ents from the first it-er-a-tion of op-ti-mis-ing the isotropic
+Overfull \hbox (4.1668pt too wide) in paragraph at lines 50--56
+\T1/pplj/m/n/10.95 ents. The re-spec-tive dis-tri-bu-tions were curve-fitted to Lorentzian dis-tri-bu-tions, whence
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [37])
+ [31
+
+
+
+
+
+])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [38]
+ [32]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [39
+ [33
 
 
 
@@ -2112,7 +2055,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [40]
+ [34]
 \openout2 = `4.Teil_Results/01Validation.aux'.
 
  (./4.Teil_Results/01Validation.tex
@@ -2128,26 +2071,38 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
+
+Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
+[]\chapterNumber 9 
+ []
+
+
+Overfull \hbox (14.06027pt too wide) in paragraph at lines 21--30
+\T1/pplj/m/n/10.95 spect to the sym-bol-i-cally cal-cu-lated gra-di-ents for the first it-er-a-tion of the $\U/zeur/m/n/10.95 a0$\T1/pplj/m/n/10.95 -optimisation.
+ []
+
+<../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png, id=91372, 429.2838pt x 575.2692pt>
+File: ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png Graphic file (type png)
+<use ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png>
+Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png  used on input line 35.
+(pdftex.def)             Requested size: 413.0pt x 553.44595pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [41
+ [35
 
 
 
 ]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [36 <../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png>]
 \openout2 = `4.Teil_Results/02Reconstructions.aux'.
 
  (./4.Teil_Results/02Reconstructions.tex
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [42
-
-
-
-
-
-]
 chapter 10.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2161,26 +2116,610 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
+Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 10 
  []
 
+Package svg Info: Last page of `./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf' is 44 on input line 16.
+(./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf_tex
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91388, page=1, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91389, page=2, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91390, page=3, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91391, page=4, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 4>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91392, page=5, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 5>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page5 used on input line 64.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91393, page=6, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 6>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page6 used on input line 66.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91394, page=7, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 7>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page7 used on input line 68.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91395, page=8, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 8>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page8 used on input line 70.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91396, page=9, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 9>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page9 used on input line 72.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91397, page=10, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 10>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page10 used on input line 74.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91398, page=11, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 11>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page11 used on input line 76.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91399, page=12, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 12>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page12 used on input line 78.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91400, page=13, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 13>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page13 used on input line 80.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91401, page=14, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 14>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page14 used on input line 82.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91402, page=15, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 15>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page15 used on input line 84.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91403, page=16, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 16>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page16 used on input line 86.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91404, page=17, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 17>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page17 used on input line 88.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91405, page=18, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 18>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page18 used on input line 90.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91406, page=19, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 19>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page19 used on input line 92.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91407, page=20, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 20>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page20 used on input line 94.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91408, page=21, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 21>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page21 used on input line 96.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91409, page=22, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 22>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page22 used on input line 98.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91410, page=23, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 23>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page23 used on input line 100.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91411, page=24, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 24>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page24 used on input line 102.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91412, page=25, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 25>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page25 used on input line 104.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91413, page=26, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 26>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page26 used on input line 106.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91414, page=27, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 27>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page27 used on input line 108.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91415, page=28, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 28>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page28 used on input line 110.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91416, page=29, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 29>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page29 used on input line 112.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91417, page=30, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 30>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page30 used on input line 114.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91418, page=31, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 31>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page31 used on input line 116.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91419, page=32, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 32>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page32 used on input line 118.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91420, page=33, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 33>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page33 used on input line 120.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91421, page=34, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 34>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page34 used on input line 122.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91422, page=35, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 35>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page35 used on input line 124.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91423, page=36, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 36>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page36 used on input line 126.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91424, page=37, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 37>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page37 used on input line 128.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91425, page=38, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 38>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page38 used on input line 130.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91426, page=39, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 39>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page39 used on input line 132.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91427, page=40, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 40>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page40 used on input line 134.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91428, page=41, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 41>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page41 used on input line 136.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91429, page=42, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 42>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page42 used on input line 138.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91430, page=43, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 43>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page43 used on input line 143.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
+<./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, id=91431, page=44, 415.11578pt x 1155.40324pt>
+File: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf, page 44>
+Package pdftex.def Info: ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf , page44 used on input line 145.
+(pdftex.def)             Requested size: 246.11665pt x 685.03172pt.
 )
+
+LaTeX Warning: Float too large for page by 22.57272pt on input line 19.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf' is 25 on input line 23.
+(./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf_tex
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91433, page=1, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91434, page=2, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91435, page=3, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91436, page=4, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 4>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91437, page=5, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 5>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page5 used on input line 64.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91438, page=6, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 6>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page6 used on input line 66.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91439, page=7, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 7>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page7 used on input line 68.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91440, page=8, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 8>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page8 used on input line 70.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91441, page=9, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 9>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page9 used on input line 72.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91442, page=10, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 10>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page10 used on input line 74.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91443, page=11, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 11>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page11 used on input line 76.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91444, page=12, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 12>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page12 used on input line 78.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91445, page=13, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 13>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page13 used on input line 80.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91446, page=14, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 14>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page14 used on input line 82.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91447, page=15, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 15>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page15 used on input line 84.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91448, page=16, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 16>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page16 used on input line 86.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91449, page=17, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 17>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page17 used on input line 88.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91450, page=18, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 18>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page18 used on input line 90.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91451, page=19, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 19>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page19 used on input line 92.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91452, page=20, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 20>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page20 used on input line 94.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91453, page=21, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 21>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page21 used on input line 96.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91454, page=22, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 22>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page22 used on input line 98.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91455, page=23, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 23>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page23 used on input line 100.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91456, page=24, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 24>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page24 used on input line 105.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+<./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, id=91457, page=25, 415.11578pt x 591.69727pt>
+File: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf, page 25>
+Package pdftex.def Info: ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf , page25 used on input line 107.
+(pdftex.def)             Requested size: 240.31522pt x 342.54362pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:coefficient_comparison_AD_SYM_alternative' on page 37 undefined on input line 71.
+
+
+LaTeX Warning: Reference `fig:orientation_comparison_AD_SYM_alternative' on page 37 undefined on input line 71.
+
+
+LaTeX Warning: Reference `tab:anisotropy' on page 37 undefined on input line 74.
+
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [43]
-\openout2 = `4.Teil_Results/03PerformanceReview.aux'.
-
- (./4.Teil_Results/03PerformanceReview.tex
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [44
+ [37
 
 
 
 
 
 ]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [38 <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [39 <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SH_orientation_aligned_distributionangles_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [40
+
+]
+\openout2 = `4.Teil_Results/03PerformanceReview.aux'.
+
+ (./4.Teil_Results/03PerformanceReview.tex
 chapter 11.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2194,17 +2733,166 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
+Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 11 
  []
+
+Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 14 on input line 26.
+(./svg-inkscape/gradient_computation_svg-tex.pdf_tex
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96022, page=1, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96023, page=2, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96024, page=3, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96025, page=4, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 4>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96026, page=5, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 5>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page5 used on input line 64.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96027, page=6, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 6>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page6 used on input line 66.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96028, page=7, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 7>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page7 used on input line 68.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96029, page=8, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 8>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page8 used on input line 70.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96030, page=9, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 9>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page9 used on input line 72.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96031, page=10, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 10>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page10 used on input line 74.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96032, page=11, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 11>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page11 used on input line 76.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96033, page=12, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 12>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page12 used on input line 78.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96034, page=13, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 13>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page13 used on input line 80.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=96035, page=14, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 14>
+Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page14 used on input line 82.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+)
+Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 38.
+ (./svg-inkscape/Loss_curve_optimal_svg-tex.pdf_tex
+<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=96038, page=1, 342.68024pt x 469.755pt>
+File: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 247.80252pt x 339.69992pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package svg Info: Last page of `./svg-inkscape/Loss_curve_carbon_svg-tex.pdf' is 1 on input line 56.
+(./svg-inkscape/Loss_curve_carbon_svg-tex.pdf_tex
+<./svg-inkscape/Loss_curve_carbon_svg-tex.pdf, id=96042, page=1, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [45]
+ [41
+
+
+
+
+
+ <./svg-inkscape/gradient_computation_svg-tex.pdf> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/gradient_computation_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/gradient_computation_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [46
+ [42 <./svg-inkscape/Loss_curve_optimal_svg-tex.pdf>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [43 <./svg-inkscape/Loss_curve_carbon_svg-tex.pdf>]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [44
 
 
 
@@ -2212,13 +2900,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [47
+ [45
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [48]
+ [46]
 \openout2 = `5.Teil_Discussion/01Validation.aux'.
 
  (./5.Teil_Discussion/01Validation.tex
@@ -2235,14 +2923,14 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
+Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 12 
  []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [49
+ [47
 
 
 
@@ -2252,7 +2940,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./5.Teil_Discussion/02Comparisons.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [50
+ [48
 
 
 
@@ -2272,20 +2960,20 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
+Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 13 
  []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [51]
+ [49]
 \openout2 = `5.Teil_Discussion/03PerformanceImprovements.aux'.
 
  (./5.Teil_Discussion/03PerformanceImprovements.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [52
+ [50
 
 
 
@@ -2305,17 +2993,17 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (0.84937pt too wide) in paragraph at lines 1--1
+Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 14 
  []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [53]
+ [51]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [54
+ [52
 
 
 
@@ -2323,13 +3011,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [55
+ [53
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [56]
+ [54]
 \openout2 = `6.Teil_Appendix/Chapter0A.aux'.
 
  (./6.Teil_Appendix/Chapter0A.tex
@@ -2346,7 +3034,43 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
+Overfull \hbox (58.08998pt too wide) in paragraph at lines 3--3
+[]\chapterNumber A 
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [55
+
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [56]
+\openout2 = `6.Teil_Appendix/Chapter0B.aux'.
+
+ (./6.Teil_Appendix/Chapter0B.tex
+chapter B.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+Overfull \hbox (50.84175pt too wide) in paragraph at lines 3--3
+[]\chapterNumber B 
+ []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -2355,10 +3079,17 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
+
+
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [58]
+ [58
+
+
+
+
+]
 \openout2 = `FrontBackMatter/Bibliography.aux'.
 
  (./FrontBackMatter/Bibliography.tex)
@@ -2374,33 +3105,19 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (3.10602pt too wide) in paragraph at lines 168--168
-[]\T1/pplj/m/n/10.95 Marianne Liebi, Mar-ios Geor-giadis, Joachim Kohlbrecher, Mirko
+Overfull \hbox (2.1911pt too wide) in paragraph at lines 168--168
+\T1/pplj/m/n/10.95 Raabe, Ivan Usov, An-dreas Men-zel, Philipp Schnei-der, Oliver Bunk, and Manuel
  []
 
 
-Overfull \hbox (10.5598pt too wide) in paragraph at lines 168--168
-\T1/pplj/m/n/10.95 ray scat-ter-ing ten-sor to-mog-ra-phy: Model of the three-dimensional
- []
-
-
-Overfull \hbox (5.87173pt too wide) in paragraph at lines 168--168
-\T1/pplj/m/n/10.95 reciprocal-space map, re-con-struc-tion al-go-rithm and an-gu-lar sam-
- []
-
-
-Overfull \hbox (11.77844pt too wide) in paragraph at lines 168--168
-\T1/pplj/m/n/10.95 Schnei-der, Joachim Kohlbrecher, Oliver Bunk, and Manuel Guizar-
+Overfull \hbox (4.2036pt too wide) in paragraph at lines 168--168
+[]\T1/pplj/m/n/10.95 Marianne Liebi, Mar-ios Geor-giadis, An-dreas Men-zel, Philipp Schnei-der, Joachim
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [59
-
-
-
-
 
 
 
@@ -2450,9 +3167,12 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [63
 
-] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./6.Teil_Appendix/Chapter0A.aux) (./6.Teil_Appendix/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -2461,18 +3181,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35242 strings out of 475071
- 694128 string characters out of 5782907
- 1612648 words of memory out of 5000000
- 55483 multiletter control sequences out of 15000+600000
+ 35625 strings out of 475071
+ 719891 string characters out of 5782907
+ 1637202 words of memory out of 5000000
+ 55820 multiletter control sequences out of 15000+600000
  585922 words of font info for 241 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,23n,112p,10667b,2420s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,112p,10667b,2436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (79 pages, 10945737 bytes).
+Output written on main.pdf (81 pages, 11708921 bytes).
 PDF statistics:
- 91824 PDF objects out of 95282 (max. 8388607)
- 61014 compressed objects within 611 object streams
- 234 named destinations out of 1000 (max. 500000)
- 39529 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 96567 PDF objects out of 114338 (max. 8388607)
+ 64118 compressed objects within 642 object streams
+ 250 named destinations out of 1000 (max. 500000)
+ 39992 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -1,0 +1,148 @@
+%% Creator: Inkscape 1.2.1 (9c6d41e410, 2022-07-14), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{413.564925bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,2.7833276)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.20662171,2.07165776){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.4170941,2.07165776){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.62756647,2.07165776){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.83803885,2.07165776){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,2.10468536){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,2.24903187){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,2.39337839){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,2.53772492){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1200\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.55262164,2.68536361){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}a0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.23775025,2.61466658){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Solution: 0.69\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.214831,1.40801157){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.15\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.42610747,1.40801157){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.20\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.63738395,1.40801157){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.25\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.84866047,1.40801157){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.30\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.44103917){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.58538561){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.72973213){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.87407864){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1200\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.55262164,2.02171736){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}a2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.23775025,1.9510203){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Solution: 0.23\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.19815531,0.74436516){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.04\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.38443051,0.74436516){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.08\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.57070573,0.74436516){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.12\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.75698094,0.74436516){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.16\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.94325616,0.74436516){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.20\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.77739291){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.92173943){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.06608594){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,1.21043245){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1200\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.55262164,1.3580711){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}a4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.23775025,1.28737412){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Solution: 0.11\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.20873524,0.08071905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.00\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.38497137,0.08071905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.03\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.56120751,0.08071905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.06\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.73744361,0.08071905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.09\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.91367971,0.08071905){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.12\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.11374665){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.25809317){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.40243953){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.09049405,0.54678605){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1200\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.55262164,0.69442484){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}a6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.23775025,0.62372786){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Solution: 0.06\end{tabular}}}}%
+    \put(0.50469687,2.73932698){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}SH Coefficients\end{tabular}}}}%
+    \put(0.02153531,1.38229456){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Count\end{tabular}}}}}%
+    \put(0.50469687,0.04027098){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Value\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.41054599,0.00047935){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}AD\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{SH_coeffs_aligned_distributioncoeffs_svg-tex.pdf}}%
+    \put(0.62225854,0.00047935){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SYM\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

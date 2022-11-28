@@ -4,5 +4,51 @@
 
 \section{Symbolic Gradients of Alternative Functional}
 
+The derived symbolic gradient expression of the alternative functional can be found in Appendix \ref{app:appendixB}.
+
+As mentioned in Section \ref{sec:calc_alt_functional}, the derived expression was compared to automatically calculated gradients for random values.
+The symbolic gradient expressions for coefficients $A$ and $B$ agreed with the automatically calculated gradients for all sampled initial values.
+The gradients with respect to the orientation parameters $\theta_{op}$ and $\varphi_{op}$, however, were incorrect.
+Even though two different methods were used to derive the latter gradients, none proved to be correct.
+
+%Conclude here?
+As a result, the gradients of the alternative functional were correctly derived for the coefficients $A$ and $B$,
+but wrongly derived for the orientation parameters $\theta_{op}$ and $\varphi_{op}$.
+Furthermore, SAXSTT using the alternative functional had to be implemented using automatically calculated gradients.
+
 \section{Automatic Gradients of SAXSTT}
+
+It is worth comparing the gradients of the first iteration of the SAXSTT algorithm implemented using symbolically and automatically calculated gradients, respectively.
+Figure \ref{fig:gradient_comparison} shows
+the relative deviation of the automatically calculated gradients with respect to the symbolically calculated gradients for the first iteration of the $a0$-optimisation.
+This parameter was chosen for the comparison, because it was the most easily retrievable data.
+A tendency shown in the scatter plot is that the relative deviation was larger for smaller gradients.
+Moreover, the positive deviation indicates that the symbolically calculated gradients are generally larger in terms of magnitude.
+The colours in Figure \ref{fig:gradient_comparison} indicate the location of the voxel. A high radius means a voxel located close to the edge of the sample.
+%since both gradients were negative, it means that the symbolically calculated gradients were larger than the automatically calculated gradients. % RSD: Check this 
+% RSD: Think scatter plot is nice here
+
+\begin{figure}[h!]
+    \centering
+    % RSD: Vector graphics slow due to number of elements. png might be better here. But need higher resolution.
+    %\includesvg[width= 1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads.svg}
+    \includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png}
+    \caption{The deviation data is sorted by symbolic gradient value.
+        The majority of the voxels have a deviation below $5\%$, while a subsection of the data has a deviation between $15\%$ and $30\%$.
+        Naturally, the relative deviation is larger for smaller gradients.
+        Also, voxels located close to the edge of the sample have a larger deviation.}
+    \label{fig:gradient_comparison}
+\end{figure} % Color value according to index radius. 
+
+% %RSD: Worth mentioning when radius expressed?
+% Another way to compare the gradients is to look at the location of the deviation.
+% Figure \ref{fig:gradient_comparison_spatial} shows the calculated relative gradient deviation for slices close to the edge and the centre of the tomogram.
+
+% \begin{figure}[h!]
+%     \centering
+%     %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
+%     \caption{
+%     }
+%     \label{fig:gradient_comparison_spatial}
+% \end{figure}
 

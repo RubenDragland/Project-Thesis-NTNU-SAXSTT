@@ -117,7 +117,19 @@ and the Python function had to be run in a separate process, which limited perfo
 The cost function used in the SAXSTT routine is a comparison of the experimental and estimated SAXS projection intensities.
 Originally, the estimated intensity was the absolute value squared of a linear combination of spherical harmonics, as shown in Equation \eqref{eq:reciprocal_space_map}.
 However, it was desired to express the atomic form factor using the expression listed in Equation \eqref{eq:exp_sin_squared}.
-This implementation required some modifications of the SAXSTT routine, mainly initialising new variables and change the form factor computation in the cost function evaluation.
+This implementation required some modifications of the SAXSTT routine, mainly initialising new variables and changing the form factor computation in the cost function evaluation.
 It is important to notice that no gradients had to be derived by hand.
 A batch approach in Pytorch was the most optimised code structure, and was chosen for this task.
+
+Additionally, a refinement of the proposed alternative cost function was implemented.
+In order to keep the different components independent, the exponential term, which controlled the uniaxiality of the reciprocal space map, had to be normalised.
+The normalisation was performed by dividing the exponential term by its integral from $0$ to $\pi$.
+Due to the lack of built-in numerical integration functions in Pytorch,
+vectorised numerical integration using the simpsons rule was implemented.
+The number of integration points was chosen to be $N = 500$ to keep the computational burden low.
+In addition, this number of points proved to be as effective or better than higher number of points,
+something which was uncovered by testing the integration when the exponential term was equal to 1.
+The integrator returned a value in the order of $10^{-7}$, where the true value should be 0.
+Finally, the computed normalisation factor was ensured to be positive, since the integrator had a tendency to return negative values during the mentioned test.
+
 

@@ -1,0 +1,85 @@
+%% Creator: Inkscape 1.2.1 (9c6d41e410, 2022-07-14), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'gradient_computation_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{409.68bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.68541301)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{gradient_computation_svg-tex.pdf}}%
+    \put(0.10624648,0.119157){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}102\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{gradient_computation_svg-tex.pdf}}%
+    \put(0.38362857,0.119157){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}103\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{gradient_computation_svg-tex.pdf}}%
+    \put(0.66101067,0.11942397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}104\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{gradient_computation_svg-tex.pdf}}%
+    \put(0.93839277,0.11942397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}105\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{gradient_computation_svg-tex.pdf}}%
+    \put(0.55593849,0.08062538){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Voxels\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{gradient_computation_svg-tex.pdf}}%
+    \put(0.04543544,0.21230578){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{gradient_computation_svg-tex.pdf}}%
+    \put(0.04543544,0.34413099){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}101\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{gradient_computation_svg-tex.pdf}}%
+    \put(0.04543544,0.47542224){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}102\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{gradient_computation_svg-tex.pdf}}%
+    \put(0.04543544,0.60698048){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}103\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{gradient_computation_svg-tex.pdf}}%
+    \put(0.02958007,0.39848754){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time [s]\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{gradient_computation_svg-tex.pdf}}%
+    \put(0.55593849,0.64841403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Gradient Computation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{gradient_computation_svg-tex.pdf}}%
+    \put(0.30881954,0.01284448){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}CPU\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{gradient_computation_svg-tex.pdf}}%
+    \put(0.54232801,0.01284448){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}GPU\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{gradient_computation_svg-tex.pdf}}%
+    \put(0.77845285,0.01406117){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.01\textsl{N}1\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

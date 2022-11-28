@@ -1,7 +1,113 @@
 \chapter{Performed SAXSTT Reconstructions}
 
-\section{Reconstruction of Aligned Voxels}%Known Model} % Name the known model
+\section{Reconstruction of Simulated Parallel Nanostructures}
+\label{sec:reconstruction_parallel}
 
-\section{Reconstruction of Experimental Carbon Knot}
+With a chosen data set size,
+the SAXSTT algorithm was performed on the dataset of parallel nanostructures, as mentioned in Section \ref{sec:pp_nanostructures_reconstruction}.
+Firstly, the accuracy of automatically calculated gradients compared to symbolically calculated gradients was analysed.
+Figure \ref{fig:coefficient_comparison_AD_SYM} and \ref{fig:orientation_comparison_AD_SYM} show distributions of spherical harmonics parameters for converged SAXSTT reconstructions.
+In addition to the raw data, the results include curve fitting of the distributions to Lorentzian functions. % The optimal parameters are listed in table...
+Initially, a Gaussian curve fitting was performed, but the Lorentzian function proved to be a better fit.
+The peak and full width at half maximum (FWHM) of the Lorentzians are listed in Table \ref{tab:curve_fitting}.
 
-% Consider to have discussion within the results.
+\begin{figure}[h!]
+    \centering
+    \includesvg[height=\textheight]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_aligned_distributioncoeffs.svg}
+    \caption{  f  }
+    \label{fig:coefficient_comparison_AD_SYM_difficult}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includesvg[height = 0.5\textheight]{../XRD_CT/Plotting/thesis_plots/SH_orientation_aligned_distributionangles.svg}
+    \caption{  f  }
+    \label{fig:orientation_comparison_AD_SYM_difficult}
+\end{figure}
+
+
+\begin{table}
+    \centering
+    \caption{  f  }
+    \label{tab:curve_fitting}
+    \begin{tabular}{ c c c c c c }
+        \hline %\toprule
+        \textbf{}      &                   & \multicolumn{2}{c}{\textbf{Automatic (AD)}} & \multicolumn{2}{c}{\textbf{Symbolic (SYM)}}                                 \\
+        \textbf{}      & \textbf{Solution} & \textbf{Peak}                               & \textbf{FWHM}                               & \textbf{Peak} & \textbf{FWHM} \\
+        \hline %\midrule
+        \textbf{a0}    & 0.690             & 0.000                                       & 0.000                                       & 0.000         & 0.000         \\
+        \textbf{a2}    & 0.230             & 0.000                                       & 0.000                                       & 0.000         & 0.000         \\
+        \textbf{a4}    & 0.115             & 0.000                                       & 0.000                                       & 0.000         & 0.000         \\
+        \textbf{a6}    & 0.575             & 0.000                                       & 0.000                                       & 0.000         & 0.000         \\
+        $\bm{\theta}$  & 1.047             & 0.000                                       & 0.000                                       & 0.000                         \\
+        $\bm{\varphi}$ & 1.047             & 0.000                                       & 0.000                                       & 0.000                         \\
+        \hline %\bottomrule
+    \end{tabular}
+\end{table}
+
+However, a more important question is to assess the quality of the algorithms when the initial conditions are not close to the optimal solution.
+Figure \ref{fig:coefficient_comparison_AD_SYM_difficult} and \ref{fig:orientation_comparison_AD_SYM_difficult} show the distributions of spherical harmonics parameters for reconstructions
+where the parallel nanostructures are rotated by 60 degrees relative to the case in Figure \ref{fig:coefficient_comparison_AD_SYM} and \ref{fig:orientation_comparison_AD_SYM}.
+%The results show that the algorithm is able to find the correct solution, even when the initial conditions are far from the optimal solution.
+
+\begin{figure}[h!]
+    \centering
+    %\includesvg[height = \textheight]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_vertical_distributioncoeffs.svg}
+    \caption{f}
+    \label{fig:coefficient_comparison_AD_SYM}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
+    \caption{ f   }
+    \label{fig:orientation_comparison_AD_SYM}
+\end{figure}
+
+As a final note, the reconstruction of the parallel nanostructures, with favorable orientation, was performed using the alternative functional.
+In this case, it is not possible to directly compare coefficients, except for those controlling orientation.
+Thus, the FWHM of the parameter distribution turned out to be an important metric.
+The same assessment as conducted in Figure \ref{fig:coefficient_comparison_AD_SYM} and \ref{fig:orientation_comparison_AD_SYM} was performed for parameters of the alternative functional.
+The results are shown in Figure \ref{fig:coefficient_comparison_AD_SYM_alternative} and \ref{fig:orientation_comparison_AD_SYM_alternative}.
+In addition, visual representation of the reconstructed nanostructures is emphasised. %? % Make delicious plot. 
+However, a degree of anisotropy was also derived and used as a metric in this case. % RSD: Do this. 
+The average degree of anisotropy was calculated for the solution and each of the reconstructions, and can be found in Table \ref{tab:anisotropy}.
+To elaborate, deviation in terms of degree of anisotropy for the different reconstructions are shown in Figure \ref{}, \ref{}, and \ref{} for symbolic, automatic, and alternative gradients, respectively.
+
+
+\clearpage
+\section{Reconstruction of Physical Carbon Knot}
+
+% How to visualise this? Degree of Anisotropy?
+% Slices. center-most
+% 3D Quiver plot. 
+
+%The general reconstruction ability of the different gradient computation methods 
+The different methods were compared in terms of general reconstruction ability. For this, actual synchrotron data of a carbon knot was used.
+Figure \ref{} shows the centre slice (z = 17) of the isotropic coefficent, a0, reconstructed using symbolically, automatically, and alternatively calculated gradients, respectively.
+Note that the a0 coefficient corresponds to coefficient A in the alternative cost function \eqref{eq:exp_sin_squared}.
+\begin{figure}[h!]
+    \centering
+    %\includesvg[height = \textheight]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_aligned_distributioncoeffs.svg}
+    \caption{  Include slice of carbon knot, a0 }
+    \label{}
+\end{figure}
+Furthermore, \ref{} shows the same slice, but the orientation, theta, is visualised.
+\begin{figure}[h!]
+    \centering
+    %\includesvg[height = \textheight]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_aligned_distributioncoeffs.svg}
+    \caption{  Include slice of carbon knot, theta }
+    \label{}
+\end{figure}
+
+For the remaining coefficients, the degree of anisotropy was calculated and used as a metric to compare the different methods.
+% Moreover, a three-dimensional quiver plots combine all reconstructed parameter,
+% and can better compare the reconstruction using spherical harmonics function to the reconstruction using the alternative functional.
+
+\begin{figure}[h!]
+    \centering
+    %\includesvg[height = \textheight]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_aligned_distributioncoeffs.svg}
+    \caption{  Include slice of carbon knot, theta }
+    \label{}
+\end{figure}
+
