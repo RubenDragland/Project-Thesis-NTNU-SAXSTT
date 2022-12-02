@@ -37,7 +37,7 @@ In addition, the final parts of the symbolic gradient expression were derived by
 
 The reconstruction script was run for the data sets described in Section \ref{sec:reconstruction_data_sets} using both symbolically and automatically calculated gradients.
 The same initial conditions were applied to all runs.
-Parameter \textbf{a} was set to $10^{-4}$, and the default orientation was set to $\left( \theta = \frac{\pi}{4}, \varphi = \frac{\pi}{4} \right)$.
+Parameter \textbf{a} was initially $10^{-4}$, and the default orientation was set to $\left( \theta = \frac{\pi}{4}, \varphi = \frac{\pi}{4} \right)$.
 
 This procedure was repeated for data sets of different sizes to uncover the effect of edge artefacts.
 In addition, the convergence times were sampled to determine the time complexity of the algorithms.
@@ -47,6 +47,7 @@ Firstly, the respective gradients from the first iteration of optimising the iso
 Here, the relative deviation of the AD gradients from the symbolic gradients was calculated.
 Additionally, the location of the largest deviation was determined.
 
+% RSD: Debatable... 
 Nevertheless, the most valuable information was obtained from comparing the accuracy of the reconstructions.
 This was done by plotting the distribution of reconstructed parameters in the case of automatically and symbolically calculated gradients.
 The respective distributions were curve-fitted to Lorentzian distributions, whence the expectation value and the standard deviation of the functions were calculated.
@@ -54,7 +55,11 @@ The first reconstructions had initial orientation close to the true values, so t
 However, the re-runs were conducted on same-sized data sets, where the orientation of the nanostructures were very different from the initial orientation.
 These reconstructions were also compared to the true values by curve-fitting.
 
-As a final note, the alternative functional was also tested on the mentioned data set.
+Another similar test was conducted on another simulated data set of a periodic nanostructures, referred to as the phantom data set. %RSD? 
+In contrast to the previous test, this data set had undergone alignment procedures, and it included "air", meaning voxels with no nanostructure,
+surrounding the nanostructure lattice, as described in Section \ref{sec:aligned_parallel_nanostructures_in_air}.
+
+As a final note, the alternative functional was also tested on the mentioned data sets.
 The purpose of this test was to investigate the convergence behaviour of the alternative functional in comparison to the original functional.
 Here, the use of simulated data allowed for a more controlled test, where one could ensure full convergence.
 
@@ -66,3 +71,5 @@ a comparison of the cost functions was mainly conducted on the experimental data
 The convergence curves were of importance in this comparison.
 Additionally, visual representation of the carbon knot was emphasised.
 To elaborate, slices of the reconstructed reciprocal spaces were plotted and compared for the different reconstruction algorithms.
+Additionally, threedimensional tensor reconstructions were plotted to visualise the reconstructed reciprocal spacemap of each voxel,
+both in terms of degree of anisotropy, and in terms of the preffered orientation of the nanostructure.

@@ -1,16 +1,18 @@
 \chapter{Data Sets} % or Original set up and include 
-\label{sec:reconstruction_data_sets}
+\label{ch:reconstruction_data_sets}
 
 Data analysis has been performed on one data set of experimental data and some data sets of simulated data.
 This chapter describes the data sets used in the analysis.
 
 \section{Carbon Knot from Synchrotron Measurement} % RSD: Maybe add a picture of the carbon knot?
+\label{sec:data_set_carbon_knot}
 Experimental projection data of a carbon knot was acquired.
 The data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located in the centre, consisted of air.  % Need some info on the data set.
 Additionally, alignment had been conducted in order to align the projection data with the tomogram.
 
 
 \section{Periodic and Parallel Uniaxial Nanostructures} % Picture or visualisation?
+\label{sec:reconstruction_data_sets_periodic_parallel_uniaxial_nanostructures}
 A data set representing periodic and parallel uniaxial nanostructures were simulated using the SAXSTT forward pass.
 To elaborate, the desired spherical harmonics parameters were evaluated by the forward pass.
 The resulting projection data was stored, and utilised as experimental data in reconstructions.
@@ -34,5 +36,11 @@ However, the relation between the coefficients were kept constant.
 The values of the coefficients are listed in Table \ref{tab:periodic_data_sets_coefficients} in Appendix \ref{app:appendixA}.
 
 
+\section{Aligned Parallel Nanostructures in Air}
+\label{sec:aligned_parallel_nanostructures_in_air}
+Another data set was simulated using the SAXSTT forward pass. In contrast to the previously mentioned simulated data set,
+this data set consisted of parallel nanostructures in air. Therefore, the data set had edges, and the entire projection data was included in the field of view.
+Additionally, alignment procedures had been conducted in order to align the projection data with the tomogram.
+The data set represented a tomogram with dimensions $(y,x,z) = (30,30,30)$, the oriental scattering intensity was divided into effectively 16 sectors.
 
 

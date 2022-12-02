@@ -54,32 +54,5 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{gradient_computation_svg-tex.pdf}}%
-    \put(0.10624648,0.119157){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}102\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{gradient_computation_svg-tex.pdf}}%
-    \put(0.38362857,0.119157){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}103\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{gradient_computation_svg-tex.pdf}}%
-    \put(0.66101067,0.11942397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}104\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{gradient_computation_svg-tex.pdf}}%
-    \put(0.93839277,0.11942397){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}105\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{gradient_computation_svg-tex.pdf}}%
-    \put(0.55593849,0.08062538){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Voxels\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{gradient_computation_svg-tex.pdf}}%
-    \put(0.04543544,0.21230578){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{gradient_computation_svg-tex.pdf}}%
-    \put(0.04543544,0.34413099){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}101\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{gradient_computation_svg-tex.pdf}}%
-    \put(0.04543544,0.47542224){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}102\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=9]{gradient_computation_svg-tex.pdf}}%
-    \put(0.04543544,0.60698048){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}103\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=10]{gradient_computation_svg-tex.pdf}}%
-    \put(0.02958007,0.39848754){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time [s]\end{tabular}}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=11]{gradient_computation_svg-tex.pdf}}%
-    \put(0.55593849,0.64841403){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Gradient Computation\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=12]{gradient_computation_svg-tex.pdf}}%
-    \put(0.30881954,0.01284448){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}CPU\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=13]{gradient_computation_svg-tex.pdf}}%
-    \put(0.54232801,0.01284448){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}GPU\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=14]{gradient_computation_svg-tex.pdf}}%
-    \put(0.77845285,0.01406117){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.01\textsl{N}1\end{tabular}}}}%
   \end{picture}%
 \endgroup%

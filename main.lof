@@ -5,31 +5,32 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on gradient descent. Notice that the smooth curve is an indication of many steps with a small step size. The animation belonging to the plot is available at \relax }}{10}{figure.caption.9}%
-\contentsline {figure}{\numberline {2}{\ignorespaces A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on conjugate gradient descent. Notice that the curve consists of a few, but long, steps. The animation belonging to the plot is available at \relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2}{\ignorespaces A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on conjugate gradient descent. Notice that the curve consists of a few, but long, steps. The animation belonging to the plot is available at \relax }}{10}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces Experimental setup of a SAXSTT experiment. The beam canon represents the synchrotron beam. The cube represents a single row of voxels in the sample. The scattering intensity from eight sectors of the diffractogram is collected for each scanning point $(\alpha , \beta ,x,y)$. Due to uniaxial symmetry, this actually represents a partitioning of the diffractogram into 16 sectors.\relax }}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Spherical harmonics functions $\bm {Y}_{l}^{0}$ with increasing $l$-values.\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {5}{\ignorespaces The function in Equation \eqref {eq:exp_sin_squared} for some sets of parameters.\relax }}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Experimental setup of a SAXSTT experiment. The beam canon represents the synchrotron beam. The cube represents a single row of voxels in the sample. The scattering intensity from eight sectors of the diffractogram is collected for each scanning point $(\alpha , \beta ,x,y)$. Due to uniaxial symmetry, this actually represents a partitioning of the diffractogram into 16 sectors.\relax }}{18}{figure.caption.11}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Spherical harmonics functions $\bm {Y}_{l}^{0}$ with increasing $l$-values.\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {5}{\ignorespaces The function in Equation \eqref {eq:exp_sin_squared} for some sets of parameters.\relax }}{19}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Flowchart of the symbolic SAXSTT routine. For each of the optimisation blocks, a for-loop of CGD steps is performed. The entire gradient routine is completed in the gradient computation step, while the line search is only a forward pass. \relax }}{29}{figure.caption.14}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Flowchart of the symbolic SAXSTT routine. For each of the optimisation blocks, a for-loop of CGD steps is performed. The entire gradient routine is completed in the gradient computation step, while the line search is only a forward pass. \relax }}{27}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces The deviation data is sorted by symbolic gradient value. The majority of the voxels have a deviation below $5\%$, while a subsection of the data has a deviation between $15\%$ and $30\%$. Naturally, the relative deviation is larger for smaller gradients. Also, voxels located close to the edge of the sample have a larger deviation.\relax }}{36}{figure.caption.15}%
+\contentsline {figure}{\numberline {7}{\ignorespaces The deviation data is sorted by symbolic gradient value. The majority of the voxels have a deviation below $5\%$, while a subsection of the data has a deviation between $15\%$ and $30\%$. Naturally, the relative deviation is larger for smaller gradients. Also, voxels located close to the edge of the sample have a larger deviation.\relax }}{34}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces f \relax }}{38}{figure.caption.16}%
-\contentsline {figure}{\numberline {9}{\ignorespaces f \relax }}{39}{figure.caption.17}%
-\contentsline {figure}{\numberline {10}{\ignorespaces f\relax }}{39}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces f \relax }}{39}{figure.caption.20}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Include slice of carbon knot, a0 \relax }}{40}{figure.caption.21}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Include slice of carbon knot, theta \relax }}{40}{figure.caption.22}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Include slice of carbon knot, theta \relax }}{40}{figure.caption.23}%
+\contentsline {figure}{\numberline {8}{\ignorespaces The coefficients converge to a Lorentzian distribution around the true value when the initial conditions have the correct sign. \relax }}{35}{figure.caption.16}%
+\contentsline {figure}{\numberline {9}{\ignorespaces The orientation parameters converge to a Lorentzian distribution around the true value when the initial conditions are sufficiently close to the true value.\relax }}{36}{figure.caption.17}%
+\contentsline {figure}{\numberline {10}{\ignorespaces f\relax }}{36}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces f \relax }}{36}{figure.caption.20}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Include slice of carbon knot, a0 \relax }}{37}{figure.caption.21}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Include slice of carbon knot, theta \relax }}{37}{figure.caption.22}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Include slice of carbon knot, theta \relax }}{37}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces The gradient computation time for different number of voxels using a CPU and a GPU, respectively. The time complexity is about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provides approximately an 8-fold speedup when the number of voxels is sufficiently high.\relax }}{41}{figure.caption.24}%
-\contentsline {figure}{\numberline {16}{\ignorespaces The convergence of the CGD algorithm is steep for each of the optimisation steps. \relax }}{42}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{42}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{43}{figure.caption.27}%
+\contentsline {figure}{\numberline {15}{\ignorespaces The gradient computation time for different number of voxels using a CPU and a GPU, respectively. The time complexity is about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provides approximately an 8-fold speedup when the number of voxels is sufficiently high.\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {16}{\ignorespaces The convergence of the CGD algorithm is steep for each of the optimisation steps. \relax }}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{40}{figure.caption.26}%
+\contentsline {figure}{\numberline {18}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{41}{figure.caption.27}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

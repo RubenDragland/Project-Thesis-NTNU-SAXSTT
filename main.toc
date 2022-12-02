@@ -14,44 +14,48 @@
 \contentsline {section}{\numberline {3.1}Maximum Likelihood Estimation}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Gradient Descent}{9}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Conjugate Gradient Descent}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Automatic Differentiation}{12}{section.3.4}%
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Scattering of X-rays}}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Simple Description of X-ray Pencil Beam}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Classical Scattering Description}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Quantum Mechanical Explanation}{16}{section.4.3}%
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Small Angle X-ray Scattering Tensor Tomography}}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}X-ray Pencil Beam}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Experimental Setup}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Modelling of Anisotropic Scattering}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{22}{section.5.4}%
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{23}{part.3}%
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{25}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Periodic and Parallel Uniaxial Nanostructures}{25}{section.6.2}%
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{27}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{27}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{28}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{30}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{30}{section.7.5}%
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{31}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Reconstruction of Periodic and Parallel Nanostructures}{31}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Comparison of Cost Functions}{32}{section.8.3}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{33}{part.4}%
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{35}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{35}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{35}{section.9.2}%
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{37}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Reconstruction of Simulated Parallel Nanostructures}{37}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{40}{section.10.2}%
-\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{41}{chapter.11}%
-\contentsline {section}{\numberline {11.1}SAXSTT Time Complexity}{41}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{41}{section.11.2}%
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{45}{part.5}%
-\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of SAXSTT Algorithms}}{47}{chapter.12}%
-\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{49}{chapter.13}%
-\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Improvements of Computational Performance}}{51}{chapter.14}%
+\contentsline {section}{\numberline {3.4}Automatic Differentiation}{11}{section.3.4}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Scattering of X-rays}}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simple Description of X-ray Pencil Beam}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Classical Scattering Description}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Quantum Mechanical Explanation}{14}{section.4.3}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Small Angle X-ray Scattering Tensor Tomography}}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}X-ray Pencil Beam}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Experimental Setup}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Modelling of Anisotropic Scattering}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{20}{section.5.4}%
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{21}{part.3}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Periodic and Parallel Uniaxial Nanostructures}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Aligned Parallel Nanostructures in Air}{23}{section.6.3}%
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{25}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{25}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{25}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{26}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{28}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{28}{section.7.5}%
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{29}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Periodic and Parallel Nanostructures}{29}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Comparison of Cost Functions}{30}{section.8.3}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{31}{part.4}%
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{33}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{33}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{33}{section.9.2}%
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{35}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Reconstruction of Simulated Parallel Nanostructures}{35}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{37}{section.10.2}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{39}{chapter.11}%
+\contentsline {section}{\numberline {11.1}SAXSTT Time Complexity}{39}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{39}{section.11.2}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{43}{part.5}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of SAXSTT Algorithms}}{45}{chapter.12}%
+\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{47}{chapter.13}%
+\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Improvements of Computational Performance}}{49}{chapter.14}%
+\contentsline {chapter}{\numberline {15}\spacedlowsmallcaps {Conclusion}}{51}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Project Evaluation}{51}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Future Work}{51}{section.15.2}%
 \contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{53}{part.6}%
 \contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix A}}{55}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Data Sets}{55}{section.A.1}%
