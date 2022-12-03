@@ -4,22 +4,19 @@
 \section{Gradients of Alternative Functional}\label{sec:calc_alt_functional} %Functional is function of functions
 
 % Validation even though not validated.
+The first utilisation of automatic differentition was to test the validity of the symbolic gradient expressions of the alternative functional EXPSIN.
 The validation of the alternative functional was conducted in stages with increasing complexity.
 It was important to be able to contrast errors in the implementation from false gradient expressions.
-Firstly, the gradient of a simple integer scattering model was calculated. The cost function of this model, with its gradient, is listed in Table \ref{tab:integer_model} in Appendix \ref{app:appendixA}.
+% Firstly, the gradient of a simple integer scattering model was calculated. The cost function of this model, with its gradient, is listed in Table \ref{tab:integer_model} in Appendix \ref{app:appendixA}.
 
 % Is it actually fitting to keep this in a table? Or would equations suffice? Or necessary at all, or a part of the results?
 % Possibly move to appendix.
 
-
-The input data for the model in the test cases were random multidimensional arrays of the initial tomogram $A$ and the experimental intensity $I_{n}$.
-The respective shapes were $(2,2,2)$ and $(3,2,2)$.
-For each of the three 2D-projections, the forward and backward passes were performed, and the gradient expression was evaluated. %RSD: Code listing easier?
+The test of the parameters $A$ and $B$ from \eqref{eq:exp_sin_squared} was conducted by comparing the symbolic gradient expressions with the automatically calculated gradients for random values.
+Since the orientations $\theta_{op}$ and $\varphi_{op}$ were not included in the test, the parameters could be validated by drawing random values for $A$, $B$,
+and projection data $I_{n}$.
+For each of the projections, the cost function was evaluated, the backpropagation of the gradient was performed, and the result was compared to the evaluation of the symbolically derived gradient expressions.
 This procedure was identical to the initial testing of AD described in Section \ref{sec:proof_of_concept_AD}.
-
-Next, the procedure was repeated using the cost function of the alternative functional, Equation \eqref{eq:exp_sin_squared}.
-However, the gradients with respect to the parameters $A$ and $B$ were validated before the orientation parameters $\theta_{op}$ and $\varphi_{op}$ were handled.
-
 
 Finally, the gradients with respect to the orientation parameters were tested.
 For this test, the lab orientation was initially set to $\left( \alpha = 0, \beta = 0 \right)$, and the position coordinate was mostly kept at $\phi = 0$ to simplify the validation.
@@ -30,7 +27,7 @@ In addition, the final parts of the symbolic gradient expression were derived by
 % Derivation of expressions here or in appendix? Also, orientation symbolic expressions wrong, but unsure if I have done a mistake or if there was a mistake in things derived earlier. 
 
 
-\section{Reconstruction of Periodic and Parallel Nanostructures}\label{sec:pp_nanostructures_reconstruction}
+\section{Reconstruction of Simulated Data}\label{sec:pp_nanostructures_reconstruction}
 
 % RSD: The size was set to ... because.... Each voxel is identical, so the params are the same for each voxel. Nope, not here but in data sets. 
 % Experimented a bit with starting conditions. 
@@ -39,37 +36,25 @@ The reconstruction script was run for the data sets described in Section \ref{se
 The same initial conditions were applied to all runs.
 Parameter \textbf{a} was initially $10^{-4}$, and the default orientation was set to $\left( \theta = \frac{\pi}{4}, \varphi = \frac{\pi}{4} \right)$.
 
-This procedure was repeated for data sets of different sizes to uncover the effect of edge artefacts.
-In addition, the convergence times were sampled to determine the time complexity of the algorithms.
-
 For a given data set size, deeper data analysis was conducted.
 Firstly, the respective gradients from the first iteration of optimising the isotropic coefficient $a0$ were compared.
 Here, the relative deviation of the AD gradients from the symbolic gradients was calculated.
 Additionally, the location of the largest deviation was determined.
 
-% RSD: Debatable... 
-Nevertheless, the most valuable information was obtained from comparing the accuracy of the reconstructions.
+An initial comparison of the SYM and AD algorithms was to compare the calculated gradients in the first iteration of the optimisation.
+Nevertheless, the accuracy of the reconstructions was measured by analysing converged reconstructions.
 This was done by plotting the distribution of reconstructed parameters in the case of automatically and symbolically calculated gradients.
 The respective distributions were curve-fitted to Lorentzian distributions, whence the expectation value and the standard deviation of the functions were calculated.
-The first reconstructions had initial orientation close to the true values, so that the algorithms could easily converge to the correct solution.
-However, the re-runs were conducted on same-sized data sets, where the orientation of the nanostructures were very different from the initial orientation.
-These reconstructions were also compared to the true values by curve-fitting.
+The reconstructions had initial orientation close to the true values, so that the algorithms would be able to find the global minimum.
 
-Another similar test was conducted on another simulated data set of a periodic nanostructures, referred to as the phantom data set. %RSD? 
-In contrast to the previous test, this data set had undergone alignment procedures, and it included "air", meaning voxels with no nanostructure,
-surrounding the nanostructure lattice, as described in Section \ref{sec:aligned_parallel_nanostructures_in_air}.
+This testing procedure was, however, not useful when all reconstruction algorithms were to be compared.
+Hence, the performance of the algorithms was compared qualitatively by studying the resulting 3D reconstructions of the Phantom data set.
+These models visualised the degree of anisotropy as well as the orientation of the nanostructures.
+Additionally, the centremost 2D slice, with $z = 17$, of each optimisation parameter was extracted from the 3D reconstructions and compared to the true values.
 
-As a final note, the alternative functional was also tested on the mentioned data sets.
-The purpose of this test was to investigate the convergence behaviour of the alternative functional in comparison to the original functional.
-Here, the use of simulated data allowed for a more controlled test, where one could ensure full convergence.
+\section{Reconstruction of Carbon Knot}
 
-\section{Comparison of Cost Functions}
 
-Despite the fact that the alternative functional was tested on one simulated data set,
-a comparison of the cost functions was mainly conducted on the experimental data set.
-
-The convergence curves were of importance in this comparison.
-Additionally, visual representation of the carbon knot was emphasised.
-To elaborate, slices of the reconstructed reciprocal spaces were plotted and compared for the different reconstruction algorithms.
-Additionally, threedimensional tensor reconstructions were plotted to visualise the reconstructed reciprocal spacemap of each voxel,
-both in terms of degree of anisotropy, and in terms of the preffered orientation of the nanostructure.
+The main focus in the comparison of the reconstruction algorithms was to assess the performance of the algorithms on experimental data sets.
+The procedure mentioned in Section \ref{sec:pp_nanostructures_reconstruction} for the Phantom data set, was also applied using the carbon knot projection data.
+As a final note, the computational performance of the algorithms, as well as the convergence curves, were compared.

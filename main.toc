@@ -28,40 +28,43 @@
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{23}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{23}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Periodic and Parallel Uniaxial Nanostructures}{23}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Aligned Parallel Nanostructures in Air}{23}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Aligned Parallel Nanostructures with Void}{23}{section.6.3}%
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{25}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{25}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Optimisation Using Symbolic Gradients}{25}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{26}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{28}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{26}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{28}{section.7.5}%
 \contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{29}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Gradients of Alternative Functional}{29}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Reconstruction of Periodic and Parallel Nanostructures}{29}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Comparison of Cost Functions}{30}{section.8.3}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Simulated Data}{29}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Reconstruction of Carbon Knot}{30}{section.8.3}%
 \contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{31}{part.4}%
 \contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{33}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{33}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{33}{section.9.2}%
 \contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{35}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Reconstruction of Simulated Parallel Nanostructures}{35}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{37}{section.10.2}%
-\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{39}{chapter.11}%
-\contentsline {section}{\numberline {11.1}SAXSTT Time Complexity}{39}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{39}{section.11.2}%
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{43}{part.5}%
-\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of SAXSTT Algorithms}}{45}{chapter.12}%
-\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{47}{chapter.13}%
-\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Improvements of Computational Performance}}{49}{chapter.14}%
-\contentsline {chapter}{\numberline {15}\spacedlowsmallcaps {Conclusion}}{51}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Project Evaluation}{51}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Future Work}{51}{section.15.2}%
-\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{53}{part.6}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix A}}{55}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Data Sets}{55}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Cost Functions}{55}{section.A.2}%
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Appendix B}}{57}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Symbolic Gradients of Alternative Functional}{57}{section.B.1}%
+\contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{41}{section.10.2}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computation Performance}}{47}{chapter.11}%
+\contentsline {section}{\numberline {11.1}SAXSTT Time Complexity}{47}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{47}{section.11.2}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{51}{part.5}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of Implementations}}{53}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Validity of SAXSTT}{53}{section.12.1}%
+\contentsline {section}{\numberline {12.2}AD Implementation}{53}{section.12.2}%
+\contentsline {section}{\numberline {12.3}EXPSIN Implementation}{54}{section.12.3}%
+\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Comparison of Symbolic and Automatic Gradients}}{55}{chapter.13}%
+\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Improvements of Computational Performance}}{57}{chapter.14}%
+\contentsline {chapter}{\numberline {15}\spacedlowsmallcaps {Conclusion}}{59}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Project Evaluation}{59}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Future Work}{59}{section.15.2}%
+\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{61}{part.6}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix A}}{63}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Data Sets}{63}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Cost Functions}{63}{section.A.2}%
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Appendix B}}{65}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Symbolic Gradients of Alternative Functional}{65}{section.B.1}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{59}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{67}{dummy.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

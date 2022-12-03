@@ -1,46 +1,45 @@
 \chapter{Data Sets} % or Original set up and include 
 \label{ch:reconstruction_data_sets}
 
-Data analysis has been performed on one data set of experimental data and some data sets of simulated data.
+Data analysis has been performed on one data set of experimental data and two data sets of simulated data.
 This chapter describes the data sets used in the analysis.
 
 \section{Carbon Knot from Synchrotron Measurement} % RSD: Maybe add a picture of the carbon knot?
 \label{sec:data_set_carbon_knot}
-Experimental projection data of a carbon knot was acquired.
-The data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located in the centre, consisted of air.  % Need some info on the data set.
-Additionally, alignment had been conducted in order to align the projection data with the tomogram.
+The experimental data set was scattering data of a carbon fiber knot obtained from a synchrotron measurement.
+The data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located near the centre, consisted of air.  % Need some info on the data set.
+Additionally, the data set included a correction term in the metadata to account for offset between the axis of rotation
+and the centre of the sample. This data set will simply be referred to as the \emph{carbon knot}.
 
 
 \section{Periodic and Parallel Uniaxial Nanostructures} % Picture or visualisation?
 \label{sec:reconstruction_data_sets_periodic_parallel_uniaxial_nanostructures}
-A data set representing periodic and parallel uniaxial nanostructures were simulated using the SAXSTT forward pass.
-To elaborate, the desired spherical harmonics parameters were evaluated by the forward pass.
-The resulting projection data was stored, and utilised as experimental data in reconstructions.
+A data set representing periodic and parallel uniaxial nanostructures was simulated using parts of the SAXSTT algorithm.
+To elaborate, a set of determined spherical harmonics parameters were evaluated by the forward pass.
+The resulting projection data was stored, and utilised as target values during testing of the different algorithms.
 In this way, it was possible to measure and compare the accuracy of the reconstruction algorithms.
 
-In contrast to the experimental data set, this data set excepted voxels consisting of "air",
-as the goal was to most accurately reconstruct one threedimensional slice in the centre of a sample consisting of such nanostructures.
-Instead, the parallel uniaxial nanostructures covered the entire field of view, but only an inner slice of the sample was retrieved for data analysis.
-Therefore, edge artefacts due to bilinear interpolation and convolution with a Gaussian kernel were minimised.
+In contrast to the carbon knot, this data set had no surrounding void, and no correction to the axis of rotation.
+Instead, parallel uniaxial nanostructures were made to cover the entire field of view, and only an inner slice of the sample was retrieved for data analysis.
+Therefore, edge artefacts due to bilinear interpolation and convolution with a Gaussian kernel were minimised,
+and the quality of the gradient calculations could be assessed with minimal influence from other sources of error.
 
-Numerous such data sets were generated. Mostly the size of the data sets was varied. However, different convolutional filters were also applied to the projected data.
-The goal was to find the suitable compromise between computation time and influence from the boundaries.
-Thereby the accuracy of the reconstruction algorithms could be compared accurately in a reasonable amount of time.
+% The different data set sizes are listed in Table \ref{tab:periodic_data_sets_sizes} in Appendix \ref{app:appendixA}.
+% The respective filters are also listed in Appendix \ref{app:appendixA}, as their exact values are not important.
+% It is, however, important to remember that these filters are Gaussian, and filter 1 had the size $(3,3)$ while filter 3 had the size $(5,5)$. % RSD: Add appendix reference.
 
-The different data set sizes are listed in Table \ref{tab:periodic_data_sets_sizes} in Appendix \ref{app:appendixA}.
-The respective filters are also listed in Appendix \ref{app:appendixA}, as their exact values are not important.
-It is, however, important to remember that these filters are Gaussian, and filter 1 had the size $(3,3)$ while filter 3 had the size $(5,5)$. % RSD: Add appendix reference.
-
-For some of the mentioned data set sizes, different simulated orientations and coefficients were used.
-However, the relation between the coefficients were kept constant.
-The values of the coefficients are listed in Table \ref{tab:periodic_data_sets_coefficients} in Appendix \ref{app:appendixA}.
+% For some of the mentioned data set sizes, different simulated orientations and coefficients were used.
+% However, the relation between the coefficients were kept constant.
+% The values of the coefficients are listed in Table \ref{tab:periodic_data_sets_coefficients} in Appendix \ref{app:appendixA}.
 
 
-\section{Aligned Parallel Nanostructures in Air}
+\section{Aligned Parallel Nanostructures with Void}
 \label{sec:aligned_parallel_nanostructures_in_air}
 Another data set was simulated using the SAXSTT forward pass. In contrast to the previously mentioned simulated data set,
-this data set consisted of parallel nanostructures in air. Therefore, the data set had edges, and the entire projection data was included in the field of view.
-Additionally, alignment procedures had been conducted in order to align the projection data with the tomogram.
-The data set represented a tomogram with dimensions $(y,x,z) = (30,30,30)$, the oriental scattering intensity was divided into effectively 16 sectors.
+this data set consisted of parallel nanostructures with surrounding void. Therefore, the data set had edges, and the entire projection data was included in the field of view.
+Additionally, the data set had alignment corrections between the axis of rotation and the centre of the sample, like the carbon knot.
+Unlike the carbon knot, which is a result of fiber scattering where scattering occurs perpendicular to the orientation of the fibers,
+this simulated data set represented scattering parallel to the orientation of the nanostructures.
+This data set will be referred to as the \emph{Phantom} data set.
 
 

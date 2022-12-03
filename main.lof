@@ -20,16 +20,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {8}{\ignorespaces The coefficients converge to a Lorentzian distribution around the true value when the initial conditions have the correct sign. \relax }}{35}{figure.caption.16}%
 \contentsline {figure}{\numberline {9}{\ignorespaces The orientation parameters converge to a Lorentzian distribution around the true value when the initial conditions are sufficiently close to the true value.\relax }}{36}{figure.caption.17}%
-\contentsline {figure}{\numberline {10}{\ignorespaces f\relax }}{36}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces f \relax }}{36}{figure.caption.20}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Include slice of carbon knot, a0 \relax }}{37}{figure.caption.21}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Include slice of carbon knot, theta \relax }}{37}{figure.caption.22}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Include slice of carbon knot, theta \relax }}{37}{figure.caption.23}%
+\contentsline {figure}{\numberline {10}{\ignorespaces 3D reconstruction of the phantom data set. The reconstruction has been cropped to the region of interest, and the degree of anisotropy has been plotted for voxels that have an isotropic intensity, meaning a0 or A, above a threshold of 0.1. \relax }}{38}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces A 2D slice of the reconstructed volume that shows the isotropic parameter in the top figure, and the anisotropic parameter in the bottom figure, for the different reconstruction algorithms, respectively. More specifically, the slice where z = 17 is shown.\relax }}{39}{figure.caption.20}%
+\contentsline {figure}{\numberline {12}{\ignorespaces A 2D slice of the reconstructed volume that shows the preferred orientation of the reconstructed nanostructures for the different reconstruction algorithms, respectively. The crossection where z = 17 is shown.\relax }}{40}{figure.caption.21}%
+\contentsline {figure}{\numberline {13}{\ignorespaces The resulting 3D reconstructions of the carbon knot from the "SYM"-, "AD"-, and "EXPSIN"-algorithm, respectively. There were 561, 533, and 900 voxels with an isotropic intensity above the threshold value of 6, respectively. \relax }}{42}{figure.caption.22}%
+\contentsline {figure}{\numberline {14}{\ignorespaces A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the anisotropic parameter in the bottom figure, for the different reconstruction algorithms, respectively. More specifically, the slice where z = 17 is shown. \relax }}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {15}{\ignorespaces The reconstructed preferred orientation of the carbon knot in the z=17 crossection for the different reconstruction algorithms, respectively. \relax }}{46}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces The gradient computation time for different number of voxels using a CPU and a GPU, respectively. The time complexity is about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provides approximately an 8-fold speedup when the number of voxels is sufficiently high.\relax }}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {16}{\ignorespaces The convergence of the CGD algorithm is steep for each of the optimisation steps. \relax }}{40}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{40}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{41}{figure.caption.27}%
+\contentsline {figure}{\numberline {16}{\ignorespaces The gradient computation time for different number of voxels using a CPU and a GPU, respectively. The time complexity is about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provides approximately an 8-fold speedup when the number of voxels is sufficiently high.\relax }}{47}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces The convergence of the CGD algorithm is steep for each of the optimisation steps. \relax }}{48}{figure.caption.26}%
+\contentsline {figure}{\numberline {18}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{48}{figure.caption.27}%
+\contentsline {figure}{\numberline {19}{\ignorespaces The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses. \relax }}{49}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

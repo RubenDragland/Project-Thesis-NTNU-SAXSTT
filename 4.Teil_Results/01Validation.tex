@@ -18,15 +18,16 @@ Furthermore, SAXSTT using the alternative functional had to be implemented using
 
 \section{Automatic Gradients of SAXSTT}
 
-It is worth comparing the gradients of the first iteration of the SAXSTT algorithm implemented using symbolically and automatically calculated gradients, respectively.
+It was worth comparing the gradients of the first iteration of the SAXSTT algorithm implemented using symbolically and automatically calculated gradients, respectively.
 Figure \ref{fig:gradient_comparison} shows
 the relative deviation of the automatically calculated gradients with respect to the symbolically calculated gradients for the first iteration of the $a0$-optimisation.
-This parameter was chosen for the comparison, because it was the most easily retrievable data.
+For each voxel, the relative deviation was calculated, and scattered along axes representing gradient magnitude and deviation magnitude, respectively.
+Moreover, the colour of each point represents the distance of the voxel from the centre of the volume.
 A tendency shown in the scatter plot is that the relative deviation was larger for smaller gradients.
 Moreover, the positive deviation indicates that the symbolically calculated gradients are generally larger in terms of magnitude.
-The colours in Figure \ref{fig:gradient_comparison} indicate the location of the voxel. A high radius means a voxel located close to the edge of the sample.
-%since both gradients were negative, it means that the symbolically calculated gradients were larger than the automatically calculated gradients. % RSD: Check this 
-% RSD: Think scatter plot is nice here
+As mentioned, the colours in Figure \ref{fig:gradient_comparison} indicate the location of the voxel. A high radius means a voxel located close to the edge of the sample.
+The large majority of the automatically calculated gradients deviate less than $5\%$ from the symbolically calculated gradients.
+The largest deviation occurs when the gradient magnitude is small, and the voxel is located close to the edge of the sample.
 
 \begin{figure}[h!]
     \centering
@@ -40,15 +41,6 @@ The colours in Figure \ref{fig:gradient_comparison} indicate the location of the
     \label{fig:gradient_comparison}
 \end{figure} % Color value according to index radius. 
 
-% %RSD: Worth mentioning when radius expressed?
-% Another way to compare the gradients is to look at the location of the deviation.
-% Figure \ref{fig:gradient_comparison_spatial} shows the calculated relative gradient deviation for slices close to the edge and the centre of the tomogram.
 
-% \begin{figure}[h!]
-%     \centering
-%     %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
-%     \caption{
-%     }
-%     \label{fig:gradient_comparison_spatial}
-% \end{figure}
+%RSD: Gradients part of the results are finished! However, appendix incomplete.
 

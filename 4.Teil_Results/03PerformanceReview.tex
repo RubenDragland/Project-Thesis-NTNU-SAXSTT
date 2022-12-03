@@ -1,26 +1,12 @@
 \chapter{Computation Performance}
 
 
-%RSD: Does not seem to be necessary
-% \section{Symbolic SAXSTT}
-
-% \section{Automatic SAXSTT in MATLAB}
-
-% \section{Optimised Automatic SAXSTT in Python}
 
 \section{SAXSTT Time Complexity}
 
-% Figure \ref{fig:convergence_time_complexity} shows the time complexity of SAXSTT for the different implementations when the initial conditions are close to the optimal solution.
-
-% \begin{figure}[h!]
-%     \centering
-%     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_performance_curves.svg} %RSD: Update despite the new being ugly. Or exclude. This would require to do test one more time with fixed number of iterations.  
-%     \caption{ f   }
-%     \label{fig:convergence_time_complexity}
-% \end{figure}
-
-Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for the different implementations. %RSD: Update with SYM as well? Manually. Not the most important thing. 
-Trying to render labels.
+Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for the different implementations.
+%RSD: Update with SYM as well? Manually. Not the most important thing. 
+%RSD: Mentioned Laptop vs Server. Note that GPU and CPU are equally fast. However, if algorithm extended so that the amount of transfer of data is at a relative minimum, a significant speed-up will occur. 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/gradient_computation.svg}
@@ -31,7 +17,8 @@ Trying to render labels.
 
 \section{Convergence of SAXSTT}
 
-Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 iterations for the different implementations when the initial conditions are close to the optimal solution. %Update with EXPSIN as well? Evt for carbon knot. 
+Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 iterations for the different implementations when the initial conditions are close to the optimal solution.
+%Update with EXPSIN as well? Evt for carbon knot. Evt include all runs or do normalisation. Difficult to know right now. 
 
 \begin{figure}[h!]
     \centering
