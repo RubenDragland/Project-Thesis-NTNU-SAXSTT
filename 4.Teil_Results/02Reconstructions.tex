@@ -34,7 +34,7 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \begin{table}[h!]
     \centering
     \caption{  The peak and FWHM of the Lorentzian curve fits
-        for the coefficients and orientation parameters after a converged reconstruction.}
+        for the optimisation parameters after a converged reconstruction.}
     \label{tab:curve_fitting}
     \begin{tabular}{ c c c c c c }
         \hline %\toprule
@@ -53,13 +53,13 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 
 \clearpage
 
-Further analysis of the different reconstruction algorithms was performed on the so-called phantom data set.
+Further analysis of the different reconstruction algorithms was performed on the Phantom data set.
 This included comparing the result of the alternative cost function, denoted EXPSIN, to the result of the Spherical Harmonics cost function.
-In this case, it is not possible to directly compare the anisotropic coefficients. Thus, the degree of anisotropy (DoA) was used as a metric for the nanostructure shape.
+In this case, it is not possible to directly compare the anisotropic coefficients. Thus, the degree of anisotropy (DoA) \eqref{eq:hermans_order_parameter} was used as a metric for the nanostructure shape.
 
 The initial EXPSIN form factor, as listed in \eqref{eq:exp_sin_squared}, was modified through trial and error, exploiting the versatility of automatic differentiation.
-The final cost function expression included normalisation of the exponential term using Simpson's rule for numerical integration.
-In addition, the cost function was adjusted to account for both perpendicular and parallel scattering models, as mentioned in ...%RSD: Explain somewhere
+The final cost function expression included normalisation of the exponential term using numerical integration, specifically Simpson's rule.
+In addition, the cost function was adjusted to account for both perpendicular and parallel scattering models.
 The final expression for the EXPSIN form factor was decided to be:
 
 \begin{equation}
@@ -77,8 +77,8 @@ At a glance, the results of the different algorithms were similar.
 However, SYM had the most voxels with an isotropic intensity above the threshold value of 0.1.
 This number is, though, higher than the true number of voxels, excluding void, in the Phantom data set.
 Moreover, AD had seemingly a generally higher degree of anisotropy, and fewer voxels with negative DoA.
-There were, at the same time, some deviations in terms of orientation.
-EXPSIN had few voxels with a DoA different from 0.
+There were, at the same time, some deviations in terms of orientation, and more severe outliers.
+EXPSIN had few voxels with a DoA different from $0$.
 
 \begin{figure}[h!]
     \centering
@@ -97,7 +97,7 @@ EXPSIN had few voxels with a DoA different from 0.
     \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf}
     %\includegraphics[width = 0.25\textwidth, right]{./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf}
     \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_3D_indcolorbar.svg}
-    \caption{ 3D reconstruction of the phantom data set.
+    \caption{ 3D reconstruction of the Phantom data set.
         The reconstruction has been cropped to the region of interest,
         and the degree of anisotropy has been plotted for voxels that have an isotropic intensity, meaning a0 or A, above a threshold of 0.1. }
     \label{fig:phantom_reconstruction_3D}
@@ -106,13 +106,14 @@ EXPSIN had few voxels with a DoA different from 0.
 \clearpage
 A more in-depth analysis was performed on
 the individual reconstruction parameters for the centremost 2D-slice, which are shown in Figure \ref{fig:phantom_reconstruction_2D} and \ref{fig:phantom_reconstruction_2D_angles}. % RSD: Describe
-In regards to the isotropic intensity parameter, $a0/A$, the different algorithms showed different degree of consistency.
+In regards to the isotropic intensity parameter, $a0$ or $A$, the different algorithms showed different degree of consistency.
 Compared to the "AD"-algorithm, the "SYM"-algorithm had fewer and smaller outliers from the true value of isotropic intensity, which was 1.
 However, the "SYM"-algorithm performed poorly at the interface between the sample and the surroundings.
 Generally, the "EXPSIN"-algorithm's estimate of isotropic intensity was lower than the true value.
 Apart from the low estimate, the "EXPSIN"-algorithm behaved similarly to the "AD"-algorithm.
 Regarding the degree of anisotropy, the "SYM"-algorithm and the "AD"-algorithm showed similar behaviour.
-The noise outside the edges of the sample was a result of the calculation of DoA where the intensity was zero, and should be neglected.
+The noise outside the edges of the sample was a result of the calculation of DoA where the intensity was zero.
+Therefore, these artefacts can be neglected.
 The "EXPSIN"-algorithm had no such noise, indicating that the anisotropy was not optimised properly.
 
 
@@ -130,7 +131,7 @@ The "EXPSIN"-algorithm had no such noise, indicating that the anisotropy was not
     %\adjustbox{trim = 0cm 1cm 0cm 0cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_B.svg} }
     %\adjustbox{trim = 0cm 0cm 0cm 3cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_theta.svg}}
     %\adjustbox{trim = 0cm 0cm 0cm 3cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_phi.svg}}
-    \caption{ A 2D slice of the reconstructed volume that shows the isotropic parameter in the top figure, and the anisotropic parameter in the bottom figure, for the different reconstruction algorithms, respectively.
+    \caption{ A 2D slice of the reconstructed volume that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
         More specifically, the slice where z = 17 is shown.}
     \label{fig:phantom_reconstruction_2D}
 \end{figure}
@@ -139,7 +140,7 @@ The "EXPSIN"-algorithm had no such noise, indicating that the anisotropy was not
 
 Moreover, from Figure \ref{fig:phantom_reconstruction_2D_angles}, which shows the reconstructed preferred angles,
 it is evident that the "EXPSIN"-algorithm had many voxels in the middle of the sample with the same set of preferred angles as the initial conditions.
-In contrast, the same voxels have converged to the true value in the "AD"-algorithm and the "SYM"-algorithm, respectively,
+In contrast, the same voxels had converged to the true angles in the "AD"-algorithm and the "SYM"-algorithm, respectively,
 in terms of orientation.
 
 
@@ -152,7 +153,7 @@ in terms of orientation.
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_phi_svg-tex.pdf}
     \caption{ A 2D slice of the reconstructed volume that shows the preferred orientation of the reconstructed nanostructures for the different reconstruction algorithms, respectively.
-        The crossection where z = 17 is shown.}
+        The cross section where z = 17 is shown.}
     \label{fig:phantom_reconstruction_2D_angles}
 \end{figure}
 
@@ -170,7 +171,7 @@ Again, the marker colour represents the degree of anisotropy, while the orientat
 All the algorithms showed similar ability to segregate the voxels containing the carbon knot from the surrounding void.
 However, the "EXPSIN"-algorithm had almost twice the number of voxels with an isotropic intensity above the threshold value of 6 compared to the other algorithms.
 This is an indication of a blurred interface between the carbon knot and the surrounding void.
-Nevertheless, the orientation parameters seem to be correctly estimated by all the algorithms.
+Nevertheless, the orientation parameters seem to be correctly estimated in all algorithms.
 
 \clearpage
 
@@ -200,7 +201,7 @@ Note that the a0 coefficient corresponds to coefficient A in the alternative cos
 %RSD: Describe. 
 The results of the "SYM"- and "AD"-algorithm were close to indistinguishable,
 while the "EXPSIN"-algorithm shared most of the same features.
-However, the latter algorithm had a less pronounced edge in terms of intensity at the interface between the sample and the surroundings.
+However, the latter reconstruction had a less pronounced edge in terms of intensity at the interface between the sample and the surroundings.
 With that being said, the amount of noise in surroundings of the DoA calculation was much less than for SYM and AD.
 
 \begin{figure}[h!]
@@ -212,13 +213,13 @@ With that being said, the amount of noise in surroundings of the DoA calculation
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_A_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_DoA_svg-tex.pdf}
 
-    \caption{  A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the anisotropic parameter in the bottom figure, for the different reconstruction algorithms, respectively.
+    \caption{  A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
         More specifically, the slice where z = 17 is shown. }
     \label{fig:carbon_knot_reconstruction_2D_coeffs}
 \end{figure}
 
 \clearpage
-The determined orientations in the mentioned 2D slice are shown in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}. %RSD: Describe
+The preferred orientations in the mentioned 2D slice are shown in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}. %RSD: Describe
 Again, the "EXPSIN"-result turned out to be noisy, even though the main features were reconstructed correctly.
 In contrast to the isotropic and anisotropic parameters,
 the "AD"-algorithm and the "SYM"-algorithm were slightly different in terms of preferred angles.
@@ -232,7 +233,7 @@ Nevertheless, the differences were small, and the edges between the sample and t
 
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_phi_svg-tex.pdf}
-    \caption{  The reconstructed preferred orientation of the carbon knot in the z=17 crossection for the different reconstruction algorithms, respectively. }
+    \caption{  The reconstructed preferred orientation of the carbon knot in the z=17 cross section for the different reconstruction algorithms, respectively. }
     \label{fig:carbon_knot_reconstruction_2D_angles}
 \end{figure}
 

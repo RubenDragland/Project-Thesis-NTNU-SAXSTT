@@ -16,20 +16,22 @@
 % \url{https://plg.uwaterloo.ca/~migod/research/beckOOPSLA.html}
 % \end{center}
 
-Small Angle X-ray Scattering Tensor Tomography is a form of computed tomography which aims at micrometer resolution orientation mapping based on X-ray scattering data from
-uniaxial nanostructures in three-dimensional amorphous samples.
-The reconstruction algorithm is a maximum likelihood estimation that utilises gradient descent to find the optimal 3D vector field.
+Small Angle X-ray Scattering Tensor Tomography is a form of computed tomography
+which aims at using Small Angle X-ray Scattering (SAXS) data to do micrometer resolution orientation mapping
+of uniaxial nanostructures in three-dimensional amorphous samples.
+The reconstruction algorithm is similar to a maximum likelihood estimation that utilises gradient descent to find the optimal 3D vector field
+to describe the orientation of nanostructures throughout the bulk sample.
 In this thesis, the gradient calculation of the SAXSTT algorithm is implemented using automatic differentiation.
 Thereby, an additional dimension of versatility has been added to world of SAXSTT, and the technique can easily and swiftly be optimised further and expanded.
 Revealed weaknesses of the algorithm include bilinear interpolation artefacts,
 and the fact that the deterministic conjugate gradient descent algorithm converge to local minima without sufficiently good initial conditions.
-Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with Newtons-Raphson's method or the stochastic gradient descent algorithm ADAM.
+Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with second order methods or the stochastic gradient descent algorithms, such as ADAM or AMSGrad.
 The proposed form factor function,
 \begin{equation*}
     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
 \end{equation*}
-was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
-Similarly, Spherical Harmonics functions with $m \neq 0$ can be easily implemented due to automatic differentiation,
+where the sign in the exponent depends on the scattering model, was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
+Similarly, Spherical Harmonics functions with $m \neq 0$ can be implemented due to automatic differentiation,
 and provides the ability to do orientation mapping of other anisotropic symmetries.
 
 \clearpage

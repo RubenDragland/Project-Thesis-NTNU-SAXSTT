@@ -34,13 +34,13 @@ These events accelerate the electrons in new directions, and X-rays known as $"B
 
 %Improve, Figure or equations
 The synchrotron is the last common X-ray source.
-Generally, charged particles are accelerated to very high velocities, and magnets exert forces on the charged particles, which in turn cause acceleration, in accordance with
+Generally, charged particles are accelerated to very high velocities, and because magnets exert forces on charged particles, they accelerate in accordance with
 Lorentz force and Newton's second law of motion,
 
 \begin{equation}\label{eq:Lorentz_force}
     m\vectorBU{a} = q \vectorBU{v} \times \vectorBU{B}.
 \end{equation}
-As described, the acceleration will be parallel to the cross product between the velocity $\vectorBU{v}$ and the external magnetic field $\vectorBU{B}$ \cite{}. %RSD: Cite
+As described, the acceleration will be parallel to the cross product between the velocity $\vectorBU{v}$ and the external magnetic field $\vectorBU{B}$ \cite{crater1994general}. %RSD: Cite
 %\cite{Britannica, T. Editors of Encyclopaedia. "synchrotron." Encyclopedia Britannica, February 7, 2018. https://www.britannica.com/technology/synchrotron.}
 % Add equation?
 
@@ -77,7 +77,7 @@ Collected Radon transform data is called a sinogram, and is used to reconstruct 
 %\section{Projections}
 The key in computed tomography is to determine the spatial dependency of the attenuation coefficient $\mu(\bm{r})$.
 By sampling many projections, meaning line integrals from different orientations, data necessary to reconstruct a three-dimensional image is collected.
-For a given cross-section of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
+For a given cross section of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
 By utilising this sinogram and the Fourier slice theorem, the object $f(x, y)$ may be determined by other means than computing the full inverse Radon transform.
 %\section{Fourier Slice Theorem}
 
@@ -100,7 +100,7 @@ In other words, the Fourier transform of a single projection makes up one angle 
 
 \section{Filtered Back Projection}
 In short, the filtered back projection (FBP) algorithm reconstructs the object by forward and inverse Fourier transforms.
-Firstly, the sinogram of projections is mapped to frequency space in polar coordinates by subsequent 1D Fourier transforms, mathematically described as:
+Firstly, a sinogram of projections is mapped to frequency space in polar coordinates by subsequent 1D Fourier transforms, mathematically described as:
 
 \begin{equation}\label{eq:FBP_1}
     P(\theta, \omega) = \int_{-\infty}^{\infty} p(\theta,r)e^{-2\pi i\omega r} dr.

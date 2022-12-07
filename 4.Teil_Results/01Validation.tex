@@ -4,9 +4,12 @@
 
 \section{Symbolic Gradients of Alternative Functional}
 
-The derived symbolic gradient expression of the alternative functional can be found in Appendix \ref{app:appendixB}.
+%The derived symbolic gradient expression of the alternative functional can be found in Appendix \ref{app:appendixB}.
+The following was the derived symbolic gradients of the alternative functional:
 
-As mentioned in Section \ref{sec:calc_alt_functional}, the derived expression was compared to automatically calculated gradients for random values.
+%RSD: Legg inn gradientene her:
+
+As mentioned in Section \ref{sec:calc_alt_functional}, the symbolic expression was compared to automatically calculated gradients for random values.
 The symbolic gradient expressions for coefficients $A$ and $B$ agreed with the automatically calculated gradients for all sampled initial values.
 The gradients with respect to the orientation parameters $\theta_{op}$ and $\varphi_{op}$, however, were incorrect.
 Even though two different methods were used to derive the latter gradients, none proved to be correct.
@@ -25,15 +28,16 @@ For each voxel, the relative deviation was calculated, and scattered along axes 
 Moreover, the colour of each point represents the distance of the voxel from the centre of the volume.
 A tendency shown in the scatter plot is that the relative deviation was larger for smaller gradients.
 Moreover, the positive deviation indicates that the symbolically calculated gradients are generally larger in terms of magnitude.
-As mentioned, the colours in Figure \ref{fig:gradient_comparison} indicate the location of the voxel. A high radius means a voxel located close to the edge of the sample.
 The large majority of the automatically calculated gradients deviate less than $5\%$ from the symbolically calculated gradients.
-The largest deviation occurs when the gradient magnitude is small, and the voxel is located close to the edge of the sample.
+The largest deviation occurs when the gradient magnitude is small, and the voxel is located close to the edge of the sample,
+as indicated by the dominant colour in the upper right corner of the figure.
 
 \begin{figure}[h!]
     \centering
     % RSD: Vector graphics slow due to number of elements. png might be better here. But need higher resolution.
     %\includesvg[width= 1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads.svg}
-    \includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png}
+    %\includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png}
+    \includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex.pdf}
     \caption{The deviation data is sorted by symbolic gradient value.
         The majority of the voxels have a deviation below $5\%$, while a subsection of the data has a deviation between $15\%$ and $30\%$.
         Naturally, the relative deviation is larger for smaller gradients.

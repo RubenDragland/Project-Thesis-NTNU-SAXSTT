@@ -2,13 +2,13 @@
 
 
 
-\section{SAXSTT Time Complexity}
+\section{Time Complexity of Gradient Computation}
 
 Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for AD and SYM.
 The dotted line indicates a time complexity of $\mathcal{O}(N)$, where $N$ is the number of voxels.
 All tests were approximately parallel to the dotted line, which indicates that the time complexity of both implementations is indeed $\mathcal{O}(N)$.
 Note that \emph{AD laptop} is tested on another device than the rest.
-Regarding \emph{AD CPU/GPU}, the CPU and GPU automatic gradient calculations are merged, as the result was the same.
+Regarding \emph{AD CPU/GPU}, the CPU and GPU automatic gradient calculations are merged, since the performance did not change as a result of choice of device.% as the result was the same.
 Moreover, it is important to notice that the speed-up of the parallelisation is not proportional to the number of cores, which was 12.
 %RSD: Update with SYM as well? Manually. Not the most important thing. 
 %RSD: Mentioned Laptop vs Server. Note that GPU and CPU are equally fast. However, if algorithm extended so that the amount of transfer of data is at a relative minimum, a significant speed-up will occur. 
@@ -16,7 +16,7 @@ Moreover, it is important to notice that the speed-up of the parallelisation is 
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/gradient_computation.svg}
     \caption{ The gradient computation time of AD and SYM for different number of voxels using a laptop, GPU, MEX-functions, and parallelisation, respectively. % Should test CPU on Gamma instead. Mind myself. Not the most important thing. Change text 
-        The time complexity was about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provided approximately an 8-fold speedup when the number of voxels was sufficiently high.}
+        The time complexity was about $\mathcal{O}(N)$ for both methods, where N is the number of voxels.}
     \label{fig:gradient_time_complexity}
 \end{figure}
 
@@ -25,8 +25,8 @@ Moreover, it is important to notice that the speed-up of the parallelisation is 
 
 Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 iterations for the different implementations.
 Specifically, reconstructions of the carbon knot and the Phantom data set are included.
-The characteristic convergence of the Spherical Harmonics method is evident in the Figure.
-Since the different set of parameters are optimised independently before the final optimisation, several exponential decays are visible.
+The characteristic convergence of the Spherical Harmonics method is evident.
+Since the different sets of parameters are optimised independently before the final optimisation, several exponential decays are visible.
 The same step-wise convergence was not implemented for EXPSIN, which therefore experiences an initial exponential decay followed by an almost flat convergence.
 In fact, only $10\%$ of the EXPSIN iterations showed exponential decay; the rest were almost flat.
 Another fascinating observation was that the loss of the stepwise optimisation drastically increased after 30 iterations, meaning the first iteration of the anisotropic coefficients optimisation.

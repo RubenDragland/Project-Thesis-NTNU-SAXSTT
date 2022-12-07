@@ -109,6 +109,33 @@
     \field{year}{2009}
   \endentry
 
+  \entry{crater1994general}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CHW}{%
+         family={Crater},
+         familyi={C\bibinitperiod},
+         given={Horace\bibnamedelima W},
+         giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association of Physics Teachers}%
+    }
+    \strng{namehash}{CHW1}
+    \strng{fullhash}{CHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{10}
+    \field{pages}{923\bibrangedash 931}
+    \field{title}{General covariance, Lorentz covariance, the Lorentz force,
+  and the Maxwell equations}
+    \field{volume}{62}
+    \field{journaltitle}{American Journal of Physics}
+    \field{year}{1994}
+  \endentry
+
   \entry{gonzalez2018digital}{article}{}
     \name{author}{2}{}{%
       {{hash=GRC}{%
