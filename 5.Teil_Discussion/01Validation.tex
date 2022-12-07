@@ -1,6 +1,6 @@
 \chapter{Validation of Implementations} \label{ch:validation_discussion}
 
-\section{Validity of SAXSTT}
+\section{Evaluation of SAXSTT}
 \label{sec:validity_saxstt}
 The general validity of SAXSTT is as expected by a gradient-based maximum likelihood estimation performed on a complex optimisation task with thousands of parameters.
 The algorithm gives a fairly accurate qualitatively orientation mapping of nanostructures
@@ -18,8 +18,17 @@ The one major drawback of the algorithm is that it is not guaranteed to converge
 This fact is highly dependent on the quality of the initial guess of optimisation parameters.
 CGD, which is a deterministic first order method, lacks the ability to escape local minima,
 where stochastic methods are better. %RSD: Cite
-Despite these weaknesses,
-the reconstructed results of SYM in
+A possible step further in terms of optimisation algorithm could be to use automatic differentiation to implement the Newton-Raphson algorithm, which is deterministic but second order.
+%RSD: Cite
+However, this algorithm is possibly more computationally expensive than the current implementation,
+depending on the required number of iterations and the number of performed line searches to determine the step sizes.
+The hope is, however, with extended knowledge of the curvature of parameter space, that the Newton-Raphson algorithm would be able to avoid local minima, and converge to the global minimum.
+Alternatively, the use of a stochastic optimisation algorithm could be considered. Here, the ADAM algorithm is a popular choice \cite{}. %RSD: Cite
+The ADAM algorithm is a stochastic first order method, which partitions the data set into batches which are updated separately.
+This results in an increased variance, and together with its exploitation of momentum and RMSProp, makes it capable to escape local minima.
+One weakness with ADAM in regards to SAXSTT is that ADAM requires numerous gradient evaluations to converge.
+
+Nevertheless, as a whole, the reconstructed results of SYM in
 Figure \ref{fig:coefficient_comparison_AD_SYM},
 \ref{fig:orientation_comparison_AD_SYM},
 \ref{fig:phantom_reconstruction_3D}, and
@@ -27,18 +36,20 @@ Figure \ref{fig:coefficient_comparison_AD_SYM},
 
 %RSD: Check if this should be here or in computational performance. 
 
+%RSD: Past tense or Present Tense
+
 
 \section{AD Implementation}\label{sec:ad_validation}
 Based on the reconstructions performed on simulated data in Section \ref{sec:reconstruction_parallel},
 and on experimental data in Section \ref{sec:reconstruction_physical_carbon_knot},
-it is evident that the AD implementation is valid, because of its similarity to the verfied SYM implementation.
+it is evident that the AD implementation is valid, because of its similarity to the verified SYM implementation.
 Qualitatively, the SYM and AD algorithms converge to the same solution, as seen in Figure \ref{fig:carbon_knot_reconstruction_3D}, \ref{fig:carbon_knot_reconstruction_2D_coeffs}, and \ref{fig:carbon_knot_reconstruction_2D_angles}.
 However, there is naturally some quantitative difference, since they are two iterative numerical optimisation algorithms.
 As seen in the comparison of the initial gradients in Figure \ref{fig:gradient_comparison},
 there is a small numerical deviation between the gradients calculated symbolically and automatically in the first iteration of the optimisation.
-For every gradient calculated, and optimisation parameter updated, this deviation will propagate. However, in a converged reconstruction,
+For every optimisation step, this deviation will propagate. However, in a converged reconstruction,
 the final result will be approximately the same.
-The root cause of the mentioend deviation has not been investigated rigorously, since the impact of the deviation is negligible,
+The root cause of the mentioned deviation has not been investigated rigorously, since the resulting impact is negligible,
 and a likely cause for most of the gradients, except perhaps the deciations between $15\%$ and $30\%$, is the numerical precision of the computer.
 %RSD: With that being said... Systematic? Bug? dunno
 
@@ -46,6 +57,8 @@ and a likely cause for most of the gradients, except perhaps the deciations betw
 \section{EXPSIN Implementation}\label{sec:saxstt_validation}
 As a result, the EXPSIN algorithm, which was implemented in a similar fashion to the AD implementation, is also valid.
 Consequently, the results of this algorithm can be used to evaluate the qualities of \eqref{eq:final_exp_sin_squared} as a functional for SAXSTT.
+This fact is supported by the main features of Figure \ref{fig:phantom_reconstruction_3D} and \ref{fig:carbon_knot_reconstruction_3D},
+since all three algorithms managed to reconstruct the same main features.
 
 %all three algorithms are able to minimise the error between the reconstructed scattering intensities and the analytical intensities.
 %Hence, the resulting reconstructions are most likely qualitatively accurate descriptions of the orientation and degree of anisotropy within the sample.

@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{229.46358617bp}%
+    \setlength{\unitlength}{219.42140411bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,9 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.34805022)%
+  \begin{picture}(1,0.4474689)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SAXSTT_test_svg-tex.pdf}}%
+    \put(0.07979205,0.38811871){\color[rgb]{0,0,0}\rotatebox{34.175203}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Orientational \\Scattering \\Pattern\\\end{tabular}}}}}%
+    \put(0.35469575,0.27952903){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Scanning Point\\($\alpha$, $\beta$, x, y)\\\end{tabular}}}}%
+    \put(0.85518192,0.15187672){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Synchrotron X-ray\\Source\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SAXSTT_test_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

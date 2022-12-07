@@ -9,9 +9,9 @@ X-rays are electromagnetic waves with energy in the orders of $keV$. Planck's Eq
     E = \hslash \omega = 2\pi \hslash \frac{c}{\lambda},
 \end{equation}
 \noindent
-relates the energy of a photon $E$ to the angular frequency $\omega$ or wavelength $\lambda$ of the corresponding electromagnetic wave. In Equation \eqref{eq:Plancks_eq},
-$c \sim 2.99776 \times 10^8 m/s$ is the speed of light.
-The other constant is the reduced Planck's constant $\hslash \sim 1.0543 \times 10^{-34} Js$  \cite{blokhin1961physics}.
+relates the energy of a photon $E$ to the angular frequency $\omega$ or wavelength $\lambda$ of the corresponding electromagnetic wave.
+$c = 2.99792 \times 10^8 m/s$ is the speed of light.
+The other constant is the reduced Planck's constant $\hslash = 1.0543 \times 10^{-34} Js$  \cite{blokhin1961physics}.
 Whence, X-rays typically have wavelengths in the sub-nanometer range.
 
 
@@ -24,7 +24,7 @@ and an outer electron with energy $E_f$ lowers its energy-state by filling the v
     E_{\mathrm{photon}} = - \Delta E = - (E_f - E_i).
 \end{equation}
 
-Due to conservation of energy, this process causes emission of a photon, as shown in Equation \eqref{eq:Char_radiation}.
+Due to conservation of energy, this process causes emission of a photon, as described in Equation \eqref{eq:Char_radiation}.
 As the atomic energy levels are discrete, this process gives rise to a spectrum of discrete X-ray emission lines.
 %\cite{Stark, G.. "X-ray." Encyclopedia Britannica, January 30, 2020. https://www.britannica.com/science/X-ray.}.
 
@@ -34,8 +34,13 @@ These events accelerate the electrons in new directions, and X-rays known as $"B
 
 %Improve, Figure or equations
 The synchrotron is the last common X-ray source.
-Generally, charged particles are accelerated to very high energies, and magnets maintain their circular path.
-As moving objects in a circular path experience a centrifugal acceleration perpendicular to its directions, X-rays are emitted \cite{britannica_sync}.
+Generally, charged particles are accelerated to very high velocities, and magnets exert forces on the charged particles, which in turn cause acceleration, in accordance with
+Lorentz force and Newton's second law of motion,
+
+\begin{equation}\label{eq:Lorentz_force}
+    m\vectorBU{a} = q \vectorBU{v} \times \vectorBU{B}.
+\end{equation}
+As described, the acceleration will be parallel to the cross product between the velocity $\vectorBU{v}$ and the external magnetic field $\vectorBU{B}$ \cite{}. %RSD: Cite
 %\cite{Britannica, T. Editors of Encyclopaedia. "synchrotron." Encyclopedia Britannica, February 7, 2018. https://www.britannica.com/technology/synchrotron.}
 % Add equation?
 
@@ -48,23 +53,23 @@ The attenuation coefficient $\mu$ describes this attenuation in an inhomogeneous
     I(s) = I(0) \exp(- \int_{0}^{s} \mu(\nu) d\nu),
 \end{equation}
 \noindent
-where $s$ is the thickness of the sample, and $I(0)$ is the initial intensity. The spectral dependence of $\mu(\nu)$ is here neglected, as it often is,
-as it is impossible to determine, and the beam is assumed to be almost fully monochromatic \cite{buzug2009computed}.
+where $s$ is the thickness of the sample, and $I(0)$ is the initial intensity. The spectral dependence $\mu(\nu)$ is here neglected, as it often is, as the beam is assumed to be almost fully monochromatic \cite{buzug2009computed}.
 A simple manipulation of the expression gives the projection line integral
 
 \begin{equation}\label{eq:projection}
     p(s) = -\ln(\frac{I(s)}{I(0)} ) = \int_{0}^{s} \mu(\nu) d\nu.
 \end{equation}
 
+%RSD: Rewrite. 
 \section{Radon Transform}
-The projection line integral in Equation \eqref{eq:projection} may be viewed as a Radon transform of an object function $f(x,y)$ for a single orientation $\theta$ \cite{zeng2010medical}.
+The projection line integral in Equation \eqref{eq:projection} is closely related to the Radon transform of an object function $f(x,y)$ for a single orientation $\theta$ \cite{zeng2010medical}.
 Confidence in this statement may be achieved by comparing Equation \eqref{eq:projection} with a single-angle Radon transform,
 
 \begin{equation}\label{eq:Radon_transform}
     p_{\theta}(r) = \int_{-\infty}^{\infty} f(r,\nu) d\nu.
 \end{equation}
-
-The Radon transform of a function $f(x,y)$ along the angle $\theta$ is defined in Equation \eqref{eq:Radon_transform} purely as a line integral along the desired angle. %?
+Collected Radon transform data is called a sinogram, and is used to reconstruct the original object function $f(x,y)$ \cite{gonzalez2018digital}.
+%The Radon transform of a function $f(x,y)$ along the angle $\theta$ is defined in Equation \eqref{eq:Radon_transform} purely as a line integral along the desired angle. %?
 
 %\section{Detectors}??? Cannot be relevant
 
@@ -72,14 +77,16 @@ The Radon transform of a function $f(x,y)$ along the angle $\theta$ is defined i
 %\section{Projections}
 The key in computed tomography is to determine the spatial dependency of the attenuation coefficient $\mu(\bm{r})$.
 By sampling many projections, meaning line integrals from different orientations, data necessary to reconstruct a three-dimensional image is collected.
-For a given crossection of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
+For a given cross-section of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
 By utilising this sinogram and the Fourier slice theorem, the object $f(x, y)$ may be determined by other means than computing the full inverse Radon transform.
 %\section{Fourier Slice Theorem}
 
-The Fourier slice theorem states that the full 2D Fourier transform
+The Fourier slice theorem states that the Fourier transform of a projection
+is a slice of the 2D Fourier Transform of the region from which the projection was obtained \cite{gonzalez2018digital}.
+Consequently, the full 2D Fourier transform
 $F(\omega_x, \omega_y)$ of an object $f(x,y)$ can be constructed from a series of 1D Fourier transforms
 $P(\omega)$ of projections $p(s)$ with different orientations \cite{zeng2010medical}.
-In other words, the Fourier transform of a Radon transform makes up one angle of the full 2D Fourier transform,
+In other words, the Fourier transform of a single projection makes up one angle of the full 2D Fourier transform,
 
 \begin{equation}\label{eq:Fourier_slice}
     P(\theta, \omega) = F \left( \omega \cos \theta, -\omega \sin \theta \right). %\int_{-\infty}^{\infty} P(\omega) e^{i \omega_x x} dx.

@@ -1,1 +1,69 @@
-\chapter{Comparison of Symbolic and Automatic Gradients}
+\chapter{Optimisation Performance}\label{ch:optimisation_performance}
+
+
+\section{Comparison of Performed Reconstructions}
+%Conclusions drawn from results
+\noindent
+From the loss curves in Figure \ref{fig:Loss_curve_optimal},
+there is reason to believe that the Phantom reconstructions converged near the global minimum, while the carbon knot reconstructions
+were trapped in a local minimum which had half the initial error.
+Since the Phantom data set was a simulated data set, it was possible to ensure the initial conditions to be sufficiently good.
+This condition was not possible to enforce upon the carbon knot data set, since it was experimental data.
+Nevertheless, when comparing the quality of the Phantom reconstructions in Figure \ref{fig:phantom_reconstruction_3D}, \ref{fig:phantom_reconstruction_2D},
+and \ref{fig:phantom_reconstruction_2D_angles} with the carbon knot reconstructions in Figure \ref{fig:carbon_knot_reconstruction_3D}, \ref{fig:carbon_knot_reconstruction_2D_coeffs},
+and \ref{fig:carbon_knot_reconstruction_2D_angles}, there is reason to believe that the loss curves cannot be directly compared.
+For instance, both the "SYM"- and "AD"- reconstructions of the carbon knot were seemingly more converged than the "EXPSIN"-reconstruction of the Phantom data set.
+However, this qualitative observation is not reflected by the loss curves.
+One possible explanation might be that the angles of the carbon knot were not fully optimised, which limited the loss reduction, even though the other coefficients were optimised.
+
+The most pressing issue when evaluating the reconstructions is, however, the performance of the EXPSIN cost function.
+The preferred orientation for many voxels of the Phantom data set had not changed significantly from the initial conditions.
+A combination of a too weak anisotropic signal together with the exponential term in the cost function was possibly the root cause.
+An assessment of computed gradient values revealed that the gradient with respect to the orientation was many orders of magnitude smaller than that of the coefficients.
+Effectively, an orientation optimisation step becomes negligible small, and only the isotropic coefficient is optimised.
+In contrast, all optimisation parameters are expected to have computed gradients of similar magnitude when the form factor is modelled by a linear combination of spherical harmonics.
+Moreover, each spherical harmonic function is independent of the others, while the exponential term in EXPSIN appears to affect the intensity parameter $A$.
+This dependency is revealed by an emerged pattern in Figure \ref{fig:phantom_reconstruction_2D}. The anisotropic coefficient $B$ is unchanged where the $A$-parameter is strongest. Likewise, $B$ has been overshooted where $A$ is undershooted.
+The exponential term in the cost function may therefore appear to be a poor choice when the signal is only weakly anisotropic.
+However, the result seemed to be much better with a stronger anisotropic signal, as seen in the carbon knot reconstructions of the preferred orientation in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}.
+As mentioned in Section \ref{sec:reconstruction_physical_carbon_knot},
+the main features of the "SYM"- and "AD"-reconstructions were also present in the "EXPSIN"-reconstruction.
+However, the spatial resolution of the reconstruction was poorer.
+It is important to remember another important difference between the different algorithms.
+SYM and AD both performed stepwise optimisation, while EXPSIN optimised all coefficients simultaneously.
+This seems to favour the "SYM"- and "AD"-algorithms, since they were able to optimise the coefficients in a more targeted manner, resulting in a smaller loss as seen in Figure \ref{fig:Loss_curve_optimal}.
+Therefore, it would be interesting to investigate stepwise optimisation in the "EXPSIN"-algorithm as well.
+
+
+
+
+\section{Assessment of Methodology}
+%Discussion of Methodology. Why is it better to use an AD framework? Why not?
+\noindent
+The AD framework proved essential when developing the "EXPSIN"-algorithm. Not only did it allow for a swift implementation.
+It was also painless to alter the expression, for instance by including normalisation and applying an absolute value operator to the anisotropic coefficent.
+Furthermore, other adaptations of the SAXSTT algorithm could be easily implemented. For instance, SAXSTT could have been expanded to reconstruct other symmetries than uniaxial.
+This could require spherical harmonics functions with $m \neq 0$. Alternatively, another form factor expression would have to be developed.
+Regardless, the gradient of these functions would not have to be derived tediously, and the resulting complex expression would not have to be implemented manually.
+
+On the other hand, the AD framework includes a certain overhead and additional computational time. Moreover, debugging of the AD framework proved to be a challenge, as much of the computation is built-in.
+Exact knowledge of all the operations performed by the backpropagation is therefore not possible.
+
+
+\section{Improved Cost Functions}
+As already mentioned, the AD framework could be used to extend the SAXSTT algorithm to other symmetries, for instance by using spherical harmonics with $m \neq 0$.
+In regards to the existing cost functions, the "EXPSIN"-algorithm could possibly be improved by doing stepwise optimisation.
+There is, however, a probability that the intensity term and the expontential term are too "entangled" to be optimised separately.
+A solution could be to do a compromise between the exponential term and the spherical harmonics terms.
+One possible limitation of the use of a linear combination of spherical harmonics is that one only gets discrete levels of anisotropy.
+In this thesis, only four anisotropic spherical harmonics functions were used. If an even sharper anisotropy is desired, the number of optimisation parameters would increase drastically.
+In contrast, the degree of anisotropy from EXPSIN is continious, and the number of optimisation parameters is constant.
+Therefore, it would be interesting to create a linear combination of an isotropic intensity term and the EXPSIN form factor.
+The resulting form factor would be similar to:
+\begin{equation}
+    \label{eq:form_factor_linear_combination}
+    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2} \frac{\exp\left(\mp |B| \sin^2(\Theta) \right)} {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx}
+\end{equation}
+\noindent
+where $A_{0}$ and $A_{1}$ are the coefficients of the isotropic and anisotropic intensities, respectively. As before, $B$ determines the anisotropic shape of the form factor.
+Note that the exponential term can replace any uniaxial spherical harmonics function.

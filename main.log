@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  3 DEC 2022 22:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  7 DEC 2022 16:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -803,7 +803,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) (c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 185.
+Package scrhack Info: loading listings hack on input line 187.
  (c:/texlive/2022/texmf-dist/tex/latex/koma-script/listings.hak
 File: listings.hak 2022/10/12 v3.38 KOMA-Script scrhack part (hacking package listings)
 Package tocbasic Info: setting babel extension for `lol' on input line 143.
@@ -833,7 +833,7 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 209.
+(scrhack)             need that hack, on input line 211.
  (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
  (c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -921,14 +921,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip97
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 232.
-Package hyperref Info: Option `linktocpage' set `true' on input line 232.
-Package hyperref Info: Option `breaklinks' set `true' on input line 232.
-Package hyperref Info: Option `pageanchor' set `true' on input line 232.
-Package hyperref Info: Option `plainpages' set `false' on input line 232.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 232.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 232.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 232.
+Package hyperref Info: Option `colorlinks' set `true' on input line 234.
+Package hyperref Info: Option `linktocpage' set `true' on input line 234.
+Package hyperref Info: Option `breaklinks' set `true' on input line 234.
+Package hyperref Info: Option `pageanchor' set `true' on input line 234.
+Package hyperref Info: Option `plainpages' set `false' on input line 234.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 234.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 234.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 234.
  (./classicthesis.sty
 Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking thesis
  (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -1182,7 +1182,7 @@ Package csquotes Info: Redefining alias 'default' -> 'american'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 46.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./5.Teil_Discussion/04Conclusion_Future.aux) (./6.Teil_Appendix/Chapter0A.aux) (./6.Teil_Appendix/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+) (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/04Conclusion_Future.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -1353,11 +1353,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<gfx/TFZsuperellipse_bw.pdf, id=7, 260.5755pt x 203.14595pt>
-File: gfx/TFZsuperellipse_bw.pdf Graphic file (type pdf)
-<use gfx/TFZsuperellipse_bw.pdf>
-Package pdftex.def Info: gfx/TFZsuperellipse_bw.pdf  used on input line 20.
-(pdftex.def)             Requested size: 170.71652pt x 133.09721pt.
+<./svg-inkscape/ck_indAD_svg-tex.pdf, id=7, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_indAD_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_indAD_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_indAD_svg-tex.pdf  used on input line 20.
+(pdftex.def)             Requested size: 284.52756pt x 110.95331pt.
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 35.
  (c:/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
@@ -1376,7 +1376,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./gfx/TFZsuperellipse_bw.pdf>])
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./svg-inkscape/ck_indAD_svg-tex.pdf>])
 \openout2 = `FrontBackMatter/Titleback.aux'.
 
  (./FrontBackMatter/Titleback.tex
@@ -1396,9 +1396,32 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-\openout2 = `FrontBackMatter/Dedication.aux'.
+\openout2 = `FrontBackMatter/Abstract.aux'.
 
- (./FrontBackMatter/Dedication.tex)
+ (./FrontBackMatter/Abstract.tex
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [3
@@ -1416,9 +1439,9 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-\openout2 = `FrontBackMatter/Abstract.aux'.
+\openout2 = `FrontBackMatter/Acknowledgments.aux'.
 
- (./FrontBackMatter/Abstract.tex
+ (./FrontBackMatter/Acknowledgments.tex
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1430,14 +1453,15 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 16.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [5
 
 ]
+\openout2 = `FrontBackMatter/Declaration.aux'.
+
+ (./FrontBackMatter/Declaration.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [6
@@ -1445,10 +1469,8 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-]
-\openout2 = `FrontBackMatter/Publications.aux'.
 
- (./FrontBackMatter/Publications.tex
+]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1460,63 +1482,13 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [7
-
-
-
-]
+ [7]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [8
-
-
-
-
-]
-\openout2 = `FrontBackMatter/Acknowledgments.aux'.
-
- (./FrontBackMatter/Acknowledgments.tex
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 5.
-
-
-Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makeschapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makeschapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [9
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [10
 
 
 
@@ -1544,7 +1516,7 @@ Package microtype Info: Character `029' is missing
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [11
+ [9
 
 
 
@@ -1560,7 +1532,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [12]
+ [10]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1574,12 +1546,22 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 Package tocbasic Info: character protrusion at lof deactivated on input line 33.
 (./main.lof
+Overfull \hbox (3.26239pt too wide) in paragraph at lines 13--13
+ [][] []\T1/pplj/m/n/10.95 Spherical har-mon-ics func-tions $[][]$ with in-creas-ing even $\U/zeur/m/n/10.95 l$\T1/pplj/m/n/10.95 -values. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+ []  
+ []
+
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [13
+ [11
 
 ]
-Overfull \hbox (1.07219pt too wide) in paragraph at lines 28--28
+Overfull \hbox (1.07219pt too wide) in paragraph at lines 29--29
  \T1/pplj/m/n/10.95 the z=17 crossec-tion for the dif-fer-ent re-con-struc-tion al-go-rithms, 
  []
 
@@ -1590,7 +1572,7 @@ Overfull \hbox (1.07219pt too wide) in paragraph at lines 28--28
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [14]
+ [12]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1610,26 +1592,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 46.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [15]
-
-Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makeschapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makeschapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-(./main.lol)
-\tf@lol=\write9
-\openout9 = `main.lol'.
-
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [16]
+ [13]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -1642,86 +1605,82 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-LaTeX Warning: Hyper reference `acro:DRY' on page xvii undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:AD' on page xiv undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:DRY' on page xvii undefined on input line 77.
+LaTeX Warning: Hyper reference `acro:AD' on page xiv undefined on input line 77.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page xvii undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:ADAM' on page xiv undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page xvii undefined on input line 78.
+LaTeX Warning: Hyper reference `acro:ADAM' on page xiv undefined on input line 78.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page xvii undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:CGD' on page xiv undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:UML' on page xvii undefined on input line 79.
+LaTeX Warning: Hyper reference `acro:CGD' on page xiv undefined on input line 79.
 
 
-LaTeX Warning: Hyper reference `acro:FBP' on page xvii undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:CT' on page xiv undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:FBP' on page xvii undefined on input line 80.
+LaTeX Warning: Hyper reference `acro:CT' on page xiv undefined on input line 80.
 
 
-LaTeX Warning: Hyper reference `acro:CT' on page xvii undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:FBP' on page xiv undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:CT' on page xvii undefined on input line 81.
+LaTeX Warning: Hyper reference `acro:FBP' on page xiv undefined on input line 81.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page xvii undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:FFT' on page xiv undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page xvii undefined on input line 82.
+LaTeX Warning: Hyper reference `acro:FFT' on page xiv undefined on input line 82.
 
 
-LaTeX Warning: Hyper reference `acro:GD' on page xvii undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:GD' on page xiv undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:GD' on page xvii undefined on input line 83.
+LaTeX Warning: Hyper reference `acro:GD' on page xiv undefined on input line 83.
 
 
-LaTeX Warning: Hyper reference `acro:CGD' on page xvii undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:ML' on page xiv undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:CGD' on page xvii undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:ML' on page xiv undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:AD' on page xvii undefined on input line 85.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xiv undefined on input line 85.
 
 
-LaTeX Warning: Hyper reference `acro:AD' on page xvii undefined on input line 85.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xiv undefined on input line 85.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvii undefined on input line 86.
+LaTeX Warning: Hyper reference `acro:SGD' on page xiv undefined on input line 86.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xvii undefined on input line 86.
+LaTeX Warning: Hyper reference `acro:SGD' on page xiv undefined on input line 86.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xvii undefined on input line 87.
+LaTeX Warning: Hyper reference `acro:SH' on page xiv undefined on input line 87.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xvii undefined on input line 87.
+LaTeX Warning: Hyper reference `acro:SH' on page xiv undefined on input line 87.
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [17]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [18
-
-
-
-
-]
+ [14]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [1
+
+
+
+
 
 
 
@@ -1796,19 +1755,34 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
  []
 
 
+LaTeX Warning: Citation '' on page 7 undefined on input line 43.
+
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [7
 
 
 
-])
+]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [8]
+ [8])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [9]
 \openout2 = `2.Teil_Theory/02MachineLearning.aux'.
 
  (./2.Teil_Theory/02MachineLearning.tex
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [10
+
+
+
+
+
+]
 chapter 3.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -1828,45 +1802,36 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/GD_new_svg-tex.pdf' is 1 on input line 40.
 (./svg-inkscape/GD_new_svg-tex.pdf_tex
-<./svg-inkscape/GD_new_svg-tex.pdf, id=377, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/GD_new_svg-tex.pdf, id=5183, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/GD_new_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/GD_new_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/GD_new_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 365.35298pt x 274.01572pt.
+(pdftex.def)             Requested size: 301.42249pt x 226.06595pt.
 )
-Package svg Info: Last page of `./svg-inkscape/CGD_exact_svg-tex.pdf' is 1 on input line 49.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [11]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [12 <./svg-inkscape/GD_new_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/CGD_exact_svg-tex.pdf' is 1 on input line 110.
  (./svg-inkscape/CGD_exact_svg-tex.pdf_tex
-<./svg-inkscape/CGD_exact_svg-tex.pdf, id=379, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/CGD_exact_svg-tex.pdf, id=20328, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/CGD_exact_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CGD_exact_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/CGD_exact_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 365.35298pt x 274.01572pt.
+(pdftex.def)             Requested size: 301.42249pt x 226.06595pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [9
-
-
-
-
-
-]
+ [13 <./svg-inkscape/CGD_exact_svg-tex.pdf>])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [10 <./svg-inkscape/GD_new_svg-tex.pdf> <./svg-inkscape/CGD_exact_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/CGD_exact_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Reference `' on page 11 undefined on input line 121.
-
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [11])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [12]
+ [14]
 \openout2 = `2.Teil_Theory/03ScatteringTheory.aux'.
 
  (./2.Teil_Theory/03ScatteringTheory.tex
@@ -1890,7 +1855,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [13
+ [15
 
 
 
@@ -1899,21 +1864,21 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [14]
-Overfull \hbox (2.50882pt too wide) in paragraph at lines 113--116
+ [16]
+Overfull \hbox (2.50882pt too wide) in paragraph at lines 114--117
 []\T1/pplj/m/n/10.95 Furthermore, sec-ond quan-ti-sa-tion is more fit-ting for de-scrib-ing the elec-tronic Hamil-
  []
 
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [15]
+ [17]
 \openout2 = `2.Teil_Theory/04SAXSTT.aux'.
 
  (./2.Teil_Theory/04SAXSTT.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [16
+ [18
 
 
 
@@ -1937,63 +1902,95 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 5 
  []
 
+Package svg Info: Last page of `./svg-inkscape/Coord_system_svg-tex.pdf' is 3 on input line 29.
+(./svg-inkscape/Coord_system_svg-tex.pdf_tex
+<./svg-inkscape/Coord_system_svg-tex.pdf, id=35524, page=1, 227.0053pt x 230.17343pt>
+File: ./svg-inkscape/Coord_system_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Coord_system_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Coord_system_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 165.19748pt x 167.50539pt.
+<./svg-inkscape/Coord_system_svg-tex.pdf, id=35525, page=2, 227.0053pt x 230.17343pt>
+File: ./svg-inkscape/Coord_system_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Coord_system_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/Coord_system_svg-tex.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 165.19748pt x 167.50539pt.
+<./svg-inkscape/Coord_system_svg-tex.pdf, id=35526, page=3, 227.0053pt x 230.17343pt>
+File: ./svg-inkscape/Coord_system_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Coord_system_svg-tex.pdf, page 3>
+Package pdftex.def Info: ./svg-inkscape/Coord_system_svg-tex.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 165.19748pt x 167.50539pt.
+)
 
-LaTeX Warning: Reference `fig:orientations' on page 17 undefined on input line 21.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package svg Info: Last page of `./svg-inkscape/SAXSTT_test_svg-tex.pdf' is 1 on input line 28.
+Package svg Info: Last page of `./svg-inkscape/SAXSTT_test_svg-tex.pdf' is 2 on input line 40.
 (./svg-inkscape/SAXSTT_test_svg-tex.pdf_tex
-<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=30719, page=1, 230.32408pt x 80.16435pt>
+<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=35530, page=1, 220.24423pt x 98.55244pt>
 File: ./svg-inkscape/SAXSTT_test_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SAXSTT_test_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SAXSTT_test_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 143.75136pt.
+(pdftex.def)             Requested size: 330.40126pt x 147.85985pt.
+<./svg-inkscape/SAXSTT_test_svg-tex.pdf, id=35531, page=2, 220.24423pt x 98.55244pt>
+File: ./svg-inkscape/SAXSTT_test_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/SAXSTT_test_svg-tex.pdf, page 2>
+Package pdftex.def Info: ./svg-inkscape/SAXSTT_test_svg-tex.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 330.40126pt x 147.85985pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [17]
-Package svg Info: Last page of `./svg-inkscape/sph_harm_samples_svg-tex.pdf' is 1 on input line 63.
+ [19]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [20 <./svg-inkscape/Coord_system_svg-tex.pdf> <./svg-inkscape/Coord_system_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Coord_system_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/Coord_system_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/Coord_system_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SAXSTT_test_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SAXSTT_test_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./svg-inkscape/SAXSTT_test_svg-tex.pdf
+
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/SAXSTT_test_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Package svg Info: Last page of `./svg-inkscape/sph_harm_samples_svg-tex.pdf' is 1 on input line 77.
  (./svg-inkscape/sph_harm_samples_svg-tex.pdf_tex
-<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=30731, page=1, 1156.32pt x 144.54pt>
+<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=35643, page=1, 1156.32pt x 144.54pt>
 File: ./svg-inkscape/sph_harm_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/sph_harm_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/sph_harm_samples_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 1321.57983pt x 165.20515pt.
 )
-Overfull \hbox (908.57983pt too wide) in paragraph at lines 63--64
+Overfull \hbox (908.57983pt too wide) in paragraph at lines 77--80
  [][] 
  []
 
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [18 <./svg-inkscape/SAXSTT_test_svg-tex.pdf> <./svg-inkscape/sph_harm_samples_svg-tex.pdf
-
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/sph_harm_samples_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package svg Info: Last page of `./svg-inkscape/exp_sin_samples_svg-tex.pdf' is 1 on input line 114.
- (./svg-inkscape/exp_sin_samples_svg-tex.pdf_tex
-<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=61028, page=1, 2601.72pt x 144.54pt>
+Package svg Info: Last page of `./svg-inkscape/exp_sin_samples_svg-tex.pdf' is 1 on input line 130.
+(./svg-inkscape/exp_sin_samples_svg-tex.pdf_tex
+<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=35647, page=1, 2601.72pt x 144.54pt>
 File: ./svg-inkscape/exp_sin_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/exp_sin_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/exp_sin_samples_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 2974.28058pt x 165.24927pt.
 )
-Overfull \hbox (2561.28058pt too wide) in paragraph at lines 114--115
+Overfull \hbox (2561.28058pt too wide) in paragraph at lines 130--131
  [][] 
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [19 <./svg-inkscape/exp_sin_samples_svg-tex.pdf>])
+ [21 <./svg-inkscape/sph_harm_samples_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [20]
+ [22 <./svg-inkscape/exp_sin_samples_svg-tex.pdf>])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [21
+ [23]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
-
+ [24
 
 
 
@@ -2001,7 +1998,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [22]
+ [25
+
+
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [26]
 \openout2 = `3.Teil_Methods/01ExperimentalSetup.aux'.
 
  (./3.Teil_Methods/01ExperimentalSetup.tex
@@ -2025,7 +2028,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [23
+ [27
 
 
 
@@ -2035,7 +2038,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  (./3.Teil_Methods/02Implementation.tex
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [24
+ [28
 
 
 
@@ -2062,22 +2065,22 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [25]
-<../XRD_CT/Figures/Flowchart_SAXSTT.pdf, id=91317, 543.54153pt x 705.84387pt>
-File: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf Graphic file (type pdf)
-<use ../XRD_CT/Figures/Flowchart_SAXSTT.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT.pdf  used on input line 61.
-(pdftex.def)             Requested size: 413.0pt x 536.32845pt.
+ [29]
+<../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf, id=96188, 512.35358pt x 722.69725pt>
+File: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf Graphic file (type pdf)
+<use ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>
+Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf  used on input line 61.
+(pdftex.def)             Requested size: 413.0pt x 582.55855pt.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [26]
+ [30]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [27 <../XRD_CT/Figures/Flowchart_SAXSTT.pdf>])
+ [31 <../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [28]
+ [32]
 \openout2 = `3.Teil_Methods/03Tests.aux'.
 
  (./3.Teil_Methods/03Tests.tex
@@ -2099,12 +2102,15 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
  []
 
 
-LaTeX Warning: Reference `sec:reconstruction_data_sets' on page 29 undefined on input line 35.
+LaTeX Warning: Reference `app:appendixA' on page 33 undefined on input line 24.
+
+
+LaTeX Warning: Reference `sec:reconstruction_data_sets' on page 33 undefined on input line 35.
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [29
+ [33
 
 
 
@@ -2113,10 +2119,10 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [30]
+ [34]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [31
+ [35
 
 
 
@@ -2126,7 +2132,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [32]
+ [36]
 \openout2 = `4.Teil_Results/01Validation.aux'.
 
  (./4.Teil_Results/01Validation.tex
@@ -2147,7 +2153,10 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 9 
  []
 
-<../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png, id=91369, 429.2838pt x 575.2692pt>
+
+LaTeX Warning: Reference `app:appendixB' on page 37 undefined on input line 7.
+
+<../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png, id=96237, 429.2838pt x 575.2692pt>
 File: ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png Graphic file (type png)
 <use ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png>
 Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png  used on input line 36.
@@ -2158,14 +2167,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [33
+ [37
 
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [34 <../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png>]
+ [38 <../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png>]
 \openout2 = `4.Teil_Results/02Reconstructions.aux'.
 
  (./4.Teil_Results/02Reconstructions.tex
@@ -2188,7 +2197,7 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf' is 1 on input line 19.
 (./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf_tex
-<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=91385, page=1, 419.37466pt x 308.89984pt>
+<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=96253, page=1, 419.37466pt x 308.89984pt>
 File: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf , page1 used on input line 56.
@@ -2196,7 +2205,7 @@ Package pdftex.def Info: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf
 )
 Package svg Info: Last page of `./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf' is 1 on input line 27.
  (./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf_tex
-<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=91387, page=1, 419.37466pt x 167.97333pt>
+<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=96255, page=1, 419.37466pt x 167.97333pt>
 File: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf , page1 used on input line 56.
@@ -2211,7 +2220,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [35
+ [39
 
 
 
@@ -2220,148 +2229,153 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  <./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [36 <./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/P_3D_svg-tex.pdf' is 1 on input line 83.
- (./svg-inkscape/P_3D_svg-tex.pdf_tex
-<./svg-inkscape/P_3D_svg-tex.pdf, id=96846, page=1, 411.2163pt x 989.67195pt>
-File: ./svg-inkscape/P_3D_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/P_3D_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/P_3D_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 284.64653pt x 685.09427pt.
+ [40 <./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf>]
+<./svg-inkscape/P_3D_indSYM_svg-tex.pdf, id=101714, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_3D_indSYM_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf  used on input line 95.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+<./svg-inkscape/P_3D_indAD_svg-tex.pdf, id=101716, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_3D_indAD_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_3D_indAD_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_3D_indAD_svg-tex.pdf  used on input line 96.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+<./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf, id=101718, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf  used on input line 97.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+Package svg Info: Last page of `./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf' is 1 on input line 99.
+ (./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf_tex
+<./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, id=101721, page=1, 411.2163pt x 56.3706pt>
+File: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 411.21628pt x 56.37389pt.
 )
 
-LaTeX Warning: Float too large for page by 47.80678pt on input line 88.
+LaTeX Warning: Float too large for page by 65.20485pt on input line 104.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [37
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [38 <./svg-inkscape/P_3D_svg-tex.pdf>]
-<./svg-inkscape/P_slices_A_svg-tex.pdf, id=106737, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/P_slices_A_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/P_slices_A_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_A_svg-tex.pdf  used on input line 104.
-(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_B_svg-tex.pdf, id=106739, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/P_slices_B_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/P_slices_B_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_B_svg-tex.pdf  used on input line 105.
-(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [39
-
- <./svg-inkscape/P_slices_A_svg-tex.pdf> <./svg-inkscape/P_slices_B_svg-tex.pdf>]
-<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=106786, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/P_slices_theta_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/P_slices_theta_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_theta_svg-tex.pdf  used on input line 125.
-(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=106788, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/P_slices_phi_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/P_slices_phi_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input line 126.
-(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [40
-
- <./svg-inkscape/P_slices_theta_svg-tex.pdf> <./svg-inkscape/P_slices_phi_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [41
 
 ]
-Package svg Info: Last page of `./svg-inkscape/ck_3D_svg-tex.pdf' is 1 on input line 152.
- (./svg-inkscape/ck_3D_svg-tex.pdf_tex
-<./svg-inkscape/ck_3D_svg-tex.pdf, id=106841, page=1, 411.2163pt x 989.67195pt>
-File: ./svg-inkscape/ck_3D_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/ck_3D_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/ck_3D_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 284.64653pt x 685.09427pt.
-)
-
-LaTeX Warning: Float too large for page by 47.80678pt on input line 157.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [42 <./svg-inkscape/ck_3D_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/ck_slices_A_svg-tex.pdf' is 1 on input line 172.
- (./svg-inkscape/ck_slices_A_svg-tex.pdf_tex
-<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=124916, page=1, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/ck_slices_A_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/ck_slices_A_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_A_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
-)
-Package svg Info: Last page of `./svg-inkscape/ck_slices_B_svg-tex.pdf' is 1 on input line 173.
- (./svg-inkscape/ck_slices_B_svg-tex.pdf_tex
-<./svg-inkscape/ck_slices_B_svg-tex.pdf, id=124918, page=1, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/ck_slices_B_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/ck_slices_B_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_B_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
-)
+ [42 <./svg-inkscape/P_3D_indSYM_svg-tex.pdf> <./svg-inkscape/P_3D_indAD_svg-tex.pdf> <./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf> <./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<./svg-inkscape/P_slices_A_svg-tex.pdf, id=111622, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_slices_A_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_slices_A_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_slices_A_svg-tex.pdf  used on input line 127.
+(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
+<./svg-inkscape/P_slices_DoA_svg-tex.pdf, id=111624, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_slices_DoA_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_slices_DoA_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_slices_DoA_svg-tex.pdf  used on input line 128.
+(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [43
 
+ <./svg-inkscape/P_slices_A_svg-tex.pdf> <./svg-inkscape/P_slices_DoA_svg-tex.pdf>]
+<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=111672, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_slices_theta_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_slices_theta_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_slices_theta_svg-tex.pdf  used on input line 152.
+(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
+<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=111674, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/P_slices_phi_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/P_slices_phi_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input line 153.
+(pdftex.def)             Requested size: 413.0pt x 211.6466pt.
 
-]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [44 <./svg-inkscape/ck_slices_A_svg-tex.pdf> <./svg-inkscape/ck_slices_B_svg-tex.pdf
+ [44
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ck_slices_B_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Package svg Info: Last page of `./svg-inkscape/ck_slices_theta_svg-tex.pdf' is 1 on input line 188.
- (./svg-inkscape/ck_slices_theta_svg-tex.pdf_tex
-<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=124968, page=1, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/ck_slices_theta_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/ck_slices_theta_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_theta_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
-)
-Package svg Info: Last page of `./svg-inkscape/ck_slices_phi_svg-tex.pdf' is 1 on input line 189.
- (./svg-inkscape/ck_slices_phi_svg-tex.pdf_tex
-<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=124970, page=1, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/ck_slices_phi_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/ck_slices_phi_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_phi_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
+ <./svg-inkscape/P_slices_theta_svg-tex.pdf> <./svg-inkscape/P_slices_phi_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [45
 
 ]
+<./svg-inkscape/ck_indSYM_svg-tex.pdf, id=111725, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_indSYM_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_indSYM_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_indSYM_svg-tex.pdf  used on input line 184.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+File: ./svg-inkscape/ck_indAD_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_indAD_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_indAD_svg-tex.pdf  used on input line 185.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+<./svg-inkscape/ck_indEXPSIN_svg-tex.pdf, id=111728, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf  used on input line 186.
+(pdftex.def)             Requested size: 413.0pt x 214.36105pt.
+Package svg Info: Last page of `./svg-inkscape/ck_indcolorbar_svg-tex.pdf' is 1 on input line 187.
+ (./svg-inkscape/ck_indcolorbar_svg-tex.pdf_tex
+<./svg-inkscape/ck_indcolorbar_svg-tex.pdf, id=111731, page=1, 411.2163pt x 56.3706pt>
+File: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_indcolorbar_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 411.21628pt x 56.37389pt.
+)
+
+LaTeX Warning: Float too large for page by 65.20485pt on input line 193.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [46 <./svg-inkscape/ck_slices_theta_svg-tex.pdf> <./svg-inkscape/ck_slices_phi_svg-tex.pdf
+ [46 <./svg-inkscape/ck_indSYM_svg-tex.pdf> <./svg-inkscape/ck_indEXPSIN_svg-tex.pdf> <./svg-inkscape/ck_indcolorbar_svg-tex.pdf
 
-pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ck_slices_phi_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ck_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
+<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=124986, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_slices_A_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_slices_A_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_slices_A_svg-tex.pdf  used on input line 212.
+(pdftex.def)             Requested size: 413.0pt x 225.93546pt.
+<./svg-inkscape/ck_slices_DoA_svg-tex.pdf, id=124988, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_slices_DoA_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf  used on input line 213.
+(pdftex.def)             Requested size: 413.0pt x 225.93546pt.
+
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [47
+
+
+ <./svg-inkscape/ck_slices_A_svg-tex.pdf> <./svg-inkscape/ck_slices_DoA_svg-tex.pdf>]
+<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=125036, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_slices_theta_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_slices_theta_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_slices_theta_svg-tex.pdf  used on input line 233.
+(pdftex.def)             Requested size: 413.0pt x 225.93546pt.
+<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=125038, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/ck_slices_phi_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/ck_slices_phi_svg-tex.pdf>
+Package pdftex.def Info: ./svg-inkscape/ck_slices_phi_svg-tex.pdf  used on input line 234.
+(pdftex.def)             Requested size: 413.0pt x 225.93546pt.
+)
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [48
+
+ <./svg-inkscape/ck_slices_theta_svg-tex.pdf> <./svg-inkscape/ck_slices_phi_svg-tex.pdf>]
 \openout2 = `4.Teil_Results/03PerformanceReview.aux'.
 
  (./4.Teil_Results/03PerformanceReview.tex
@@ -2382,66 +2396,43 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 11 
  []
 
-Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 1 on input line 12.
+Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 1 on input line 17.
 (./svg-inkscape/gradient_computation_svg-tex.pdf_tex
-<./svg-inkscape/gradient_computation_svg-tex.pdf, id=125018, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=125086, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 413.0pt x 283.0909pt.
 )
-Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 25.
- (./svg-inkscape/Loss_curve_optimal_svg-tex.pdf_tex
-<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=125021, page=1, 342.68024pt x 469.755pt>
-File: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 247.80252pt x 339.69992pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package svg Info: Last page of `./svg-inkscape/Loss_curve_carbon_svg-tex.pdf' is 1 on input line 43.
-(./svg-inkscape/Loss_curve_carbon_svg-tex.pdf_tex
-<./svg-inkscape/Loss_curve_carbon_svg-tex.pdf, id=125025, page=1, 411.2163pt x 281.85298pt>
-File: ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf Graphic file (type pdf)
-<use ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf, page 1>
-Package pdftex.def Info: ./svg-inkscape/Loss_curve_carbon_svg-tex.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [47
+ [49
 
 
 
 
 
  <./svg-inkscape/gradient_computation_svg-tex.pdf>]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [48 <./svg-inkscape/Loss_curve_optimal_svg-tex.pdf>]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [49 <./svg-inkscape/Loss_curve_carbon_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 42.
+ (./svg-inkscape/Loss_curve_optimal_svg-tex.pdf_tex
+<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=125123, page=1, 411.2163pt x 281.85298pt>
+File: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 413.0pt x 283.0909pt.
+))
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [50
 
-
-
-
-]
+ <./svg-inkscape/Loss_curve_optimal_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [51
+
+
+
+
 
 
 ]
@@ -2467,6 +2458,9 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 12 
  []
+
+
+LaTeX Warning: Citation '' on page 53 undefined on input line 26.
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -2499,7 +2493,7 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 13 
  []
 
-)
+
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [55
@@ -2508,19 +2502,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
-]
-\openout2 = `5.Teil_Discussion/03PerformanceImprovements.aux'.
-
- (./5.Teil_Discussion/03PerformanceImprovements.tex
+])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [56
+ [56]
+\openout2 = `5.Teil_Discussion/04Conclusion_Future.aux'.
 
-
-
-
-
-]
+ (./5.Teil_Discussion/04Conclusion_Future.tex
 chapter 14.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2541,124 +2529,18 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [57]
+ [57
+
+
+
+
+
+
+
+]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [58
-
-
-
-
-]
-\openout2 = `5.Teil_Discussion/04Conclusion_Future.aux'.
-
- (./5.Teil_Discussion/04Conclusion_Future.tex
-chapter 15.
-
-Class scrreprt Warning: Redefinition of \@makechapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makechapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makechapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-
-Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
-[]\chapterNumber 15 
- []
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [59
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [60
-
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [61]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [62]
-\openout2 = `6.Teil_Appendix/Chapter0A.aux'.
-
- (./6.Teil_Appendix/Chapter0A.tex
-chapter A.
-
-Class scrreprt Warning: Redefinition of \@makechapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makechapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makechapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-
-Overfull \hbox (58.08998pt too wide) in paragraph at lines 3--3
-[]\chapterNumber A 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [63
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [64]
-\openout2 = `6.Teil_Appendix/Chapter0B.aux'.
-
- (./6.Teil_Appendix/Chapter0B.tex
-chapter B.
-
-Class scrreprt Warning: Redefinition of \@makechapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makechapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makechapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-
-Overfull \hbox (50.84175pt too wide) in paragraph at lines 3--3
-[]\chapterNumber B 
- []
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [65
-
-
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [66
 
 
 
@@ -2679,56 +2561,26 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-Overfull \hbox (2.1911pt too wide) in paragraph at lines 170--170
+Overfull \hbox (2.1911pt too wide) in paragraph at lines 173--173
 \T1/pplj/m/n/10.95 Raabe, Ivan Usov, An-dreas Men-zel, Philipp Schnei-der, Oliver Bunk, and Manuel
  []
 
 
-Overfull \hbox (4.2036pt too wide) in paragraph at lines 170--170
+Overfull \hbox (4.2036pt too wide) in paragraph at lines 173--173
 []\T1/pplj/m/n/10.95 Marianne Liebi, Mar-ios Geor-giadis, An-dreas Men-zel, Philipp Schnei-der, Joachim
  []
 
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [67
+ [59
 
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [68
-
-
-
-
-]
-\openout2 = `FrontBackMatter/Declaration.aux'.
-
- (./FrontBackMatter/Declaration.tex
-
-Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
-(scrreprt)              Note: KOMA-Script does use styles for commands like
-(scrreprt)              \chapter. Currently it internally still provides and
-(scrreprt)              uses \@makeschapterhead, but a completely different
-(scrreprt)              definition compared to the standard classes.
-(scrreprt)              So redefining or using internal \@makeschapterhead
-(scrreprt)              by users or package authors may already break
-(scrreprt)              KOMA-Script and will not work with a coming version,
-(scrreprt)              that will remove this deprecated code.
-
-)
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [69
-
-
-
-]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [70
+ [60
 
 
 
@@ -2736,12 +2588,15 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 \openout2 = `FrontBackMatter/Colophon.aux'.
 
- (./FrontBackMatter/Colophon.tex)
+ (./FrontBackMatter/Colophon.tex
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 13.
+)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [71
+ [61
 
-] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Dedication.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Publications.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/03PerformanceImprovements.aux) (./5.Teil_Discussion/04Conclusion_Future.aux) (./6.Teil_Appendix/Chapter0A.aux) (./6.Teil_Appendix/Chapter0B.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Colophon.aux))
+] (./main.aux (./FrontBackMatter/Titlepage.aux) (./FrontBackMatter/Titleback.aux) (./FrontBackMatter/Abstract.aux) (./FrontBackMatter/Acknowledgments.aux) (./FrontBackMatter/Declaration.aux) (./FrontBackMatter/Contents.aux) (./2.Teil_Theory/00Introduction.aux) (./2.Teil_Theory/01TheoryCT.aux) (./2.Teil_Theory/02MachineLearning.aux) (./2.Teil_Theory/03ScatteringTheory.aux) (./2.Teil_Theory/04SAXSTT.aux) (./3.Teil_Methods/01ExperimentalSetup.aux) (./3.Teil_Methods/02Implementation.aux) (./3.Teil_Methods/03Tests.aux) (./4.Teil_Results/01Validation.aux) (./4.Teil_Results/02Reconstructions.aux) (./4.Teil_Results/03PerformanceReview.aux) (./5.Teil_Discussion/01Validation.aux) (./5.Teil_Discussion/02Comparisons.aux) (./5.Teil_Discussion/04Conclusion_Future.aux) (./FrontBackMatter/Bibliography.aux) (./FrontBackMatter/Colophon.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2752,18 +2607,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40407 strings out of 475071
- 848752 string characters out of 5782907
- 1904859 words of memory out of 5000000
- 60506 multiletter control sequences out of 15000+600000
- 585922 words of font info for 241 fonts, out of 8000000 for 9000
+ 40245 strings out of 475071
+ 842955 string characters out of 5782907
+ 1895155 words of memory out of 5000000
+ 60405 multiletter control sequences out of 15000+600000
+ 596758 words of font info for 266 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,125p,10667b,2911s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (89 pages, 14183004 bytes).
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (75 pages, 14134430 bytes).
 PDF statistics:
- 125596 PDF objects out of 137205 (max. 8388607)
- 83396 compressed objects within 834 object streams
- 267 named destinations out of 1000 (max. 500000)
- 39752 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 125594 PDF objects out of 137205 (max. 8388607)
+ 83380 compressed objects within 834 object streams
+ 244 named destinations out of 1000 (max. 500000)
+ 41846 words of extra memory for PDF output out of 42996 (max. 10000000)
 

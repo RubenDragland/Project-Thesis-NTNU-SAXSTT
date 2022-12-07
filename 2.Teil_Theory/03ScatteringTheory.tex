@@ -2,16 +2,16 @@
 \label{ch:scattering}
 \section{Simple Description of X-ray Pencil Beam}
 % Big too long and tedious. Maybe just a short introduction to the wave-particle duality of x-rays.
-As mentioned in Section \ref{sec:CT_Xrays}, X-rays can be described as electromagnetic waves.
-Furthermore, X-rays are expressed as plane waves, or Transverse electromagnetic waves, TEM-waves, assuming they are free, coherent, and monochromatic.
-TEM-waves are characterised by a magnetic field $\bm{H}$ and an electric field $\bm{E}$ that are perpendicular to each other and to the direction of propagation, which is parallel to the wave vector $\bm{k}$.
+As mentioned in Section \ref{sec:CT_Xrays}, X-rays are electromagnetic waves.
+Furthermore, X-rays can be expressed as plane waves, or Transverse electromagnetic waves, TEM-waves, assuming they are unbound, coherent, and monochromatic.
+TEM-waves are characterised by a magnetic field $\vectorBU{H}$ and an electric field $\vectorBU{E}$ that are perpendicular to each other and to the direction of propagation, which is parallel to the wave vector $\vectorBU{k}$.
 %The mentioned fields and the Poynting vector may all be derived from the vector potential $A$.
-A TEM wave may be expressed in terms of time $t$ and position $\bm{r}$ of its electric field $E$,
+A TEM wave may be expressed in terms of time $t$ and position $\vectorBU{r}$ of its electric field $\vectorBU{E}$,
 \begin{equation}\label{eq:TEM_wave}
-    \bm{E}(\bm{r},t) = \bm{\widehat{\epsilon}} \left. \right.  E_{0} \exp\left(-i\left(\omega t - \bm{k}\cdot\bm{r}\right)\right),
+    \vectorBU{E}(\vectorBU{r},t) = \vectorgreek{\widehat{\epsilon}} \left. \right.  E_{0} \exp\left(-i\left(\omega t - \vectorBU{k}\cdot\vectorBU{r}\right)\right),
 \end{equation}
-where $\bm{\widehat{\epsilon}}$, $E_{0}$, $\omega$, and $\bm{k}$ are the electric field unit vector, its corresponding amplitude, the wave angular frequency, and the wave vector, respectively.
-% In turn, the electric field may be expressed in terms of a vector potential $\bm{A}$ and a scalar potential $\phi$. 
+where $\vectorgreek{\widehat{\epsilon}}$, $E_{0}$, $\omega$, and $\vectorBU{k}$ are the electric field unit vector, its corresponding amplitude, the wave angular frequency, and the wave vector, respectively.
+% In turn, the electric field may be expressed in terms of a vector potential $\vectorBU{A}$ and a scalar potential $\phi$. 
 % Consequently, it is possible to derive an equivalent wave equation with respect to the vector potential, and thus a solution in the form of a vector potential. 
 % RSD: Something like this. Check if necessary...
 
@@ -34,34 +34,35 @@ This description will be elaborated in the following section, Section \ref{sec:c
 
 \section{Classical Scattering Description}\label{sec:classical_scattering}
 
-In the classical description of scattering, the scattering vector $\bm{Q}$ and the atomic form factor $f(\bm{Q})$ are characteristic properties.
+In the classical description of scattering, the scattering vector $\vectorBU{Q}$ and the form factor $f(\vectorBU{Q})$ are characteristic properties.
 
-$\bm{Q}$ is linked to the phase shift of the scattering event, which can be understood from analysing Equation \eqref{eq:TEM_wave}, and is defined as
+$\vectorBU{Q}$ is linked to the phase shift of the scattering event, which can be understood from deriving the transfer of momentum for a wave like the one in Equation \eqref{eq:TEM_wave} before and after scattering.
+The momentum transfer is defined as
 \begin{equation}\label{eq:scattering_vector}
-    \bm{Q} = \bm{k} - \bm{k'},
+    \vectorBU{Q} = \vectorBU{k'} - \vectorBU{k},
 \end{equation}
-where $\bm{k}$ is the incoming wave vector and $\bm{k'}$ is the scattered wave vector.
+where $\vectorBU{k}$ is the incoming wave vector and $\vectorBU{k'}$ is the scattered wave vector.
 In the case of elastic scattering, only the direction of the scattered wave vector changes, while the magnitude remains the same.
 
-The atomic form factor $f(\bm{Q})$ is a function of the scattering vector $\bm{Q}$, from Equation \eqref{eq:scattering_vector},
+The atomic form factor $f(\vectorBU{Q})$ is a function of the scattering vector $\vectorBU{Q}$, from Equation \eqref{eq:scattering_vector},
 and describes the scattering of X-rays as a result of the electron density distribution.
-Generally, it is the Fourier transform of the electron density distribution of the atom $\rho(\bm{r})$,
+Generally, it is the Fourier transform of the electron density distribution $\rho(\vectorBU{r})$,
 \begin{equation}\label{eq:atomic_form_factor_classical}
-    f(Q) = \int \rho(\bm{r}) \exp\left(i\bm{Q}\cdot\bm{r}\right) d\bm{r}.
+    f(\vectorBU{Q}) = \int \rho(\vectorBU{r}) \exp\left(i\vectorBU{Q}\cdot\vectorBU{r}\right) d\vectorBU{r}.
 \end{equation}
 
-The observed scattering intensity $I_{s}$ is the absolute value squared of the atomic form factor $f(\bm{Q})$ from Equation \eqref{eq:atomic_form_factor_classical},
+The observed scattering intensity $I_{s}$ is the absolute value squared of the form factor $f(\vectorBU{Q})$ from Equation \eqref{eq:atomic_form_factor_classical},
 \begin{equation}\label{eq:scattering_intensity_classical}
-    I_{s} = |f(\bm{Q})|^{2}.
+    I_{s} \sim |f(\vectorBU{Q})|^{2}.
 \end{equation}
 
-Correspondingly, these results are supported by the Fraunhofer far-field approximation. Consider a plane wave of X-rays incident on an aperture function, which in this case is the electron density distribution.
-The corresponding intensity in the back focal plane is the absolute square of the Fourier transform of the aperture function,
+Correspondingly, these results are supported by the Fraunhofer far-field approximation. Consider a plane wave of X-rays incident on some function, which in this case is the electron density distribution.
+The corresponding intensity in Fourier space is the absolute square of the Fourier transform of the mentioned electron distribution function,
 \begin{equation}\label{eq:Fraunhofer_intensity}
     I_{fd} = |F\left(\rho(r) \right) |^{2}.
 \end{equation}
 
-Anyway, from the definition of the scattering intensity, the differential scattering crossection may be defined as
+Anyway, from the definition of the scattering intensity, the differential scattering cross section may be defined as
 \begin{equation}\label{eq:scattering_crossection}
     \frac{dI_{s}}{d\Omega} = \frac{I_{s}}{\Phi_{0} \Delta\Omega},
 \end{equation}
@@ -82,16 +83,16 @@ The total Hamiltonian $\hat{H}$ is therefore a sum of a matter Hamiltonian $\hat
     \hat{H} = \hat{H}_{part} + \hat{H}_{rad} + \hat{H}_{int}.
 \end{equation}
 
-The Hamiltonian of the electromagnetic field, $\hat{H}_{rad}$, follows from the quantisation of the vector potential $\bm{\widehat{A}}$, adopting the Coulumb gauge, $\bm{\nabla} \cdot \bm{\widehat{A}} = 0$.
+The Hamiltonian of the electromagnetic field, $\hat{H}_{rad}$, follows from the quantisation of the vector potential $\vectorBU{\widehat{A}}$, adopting the Coulumb gauge, $\vectorBU{\nabla} \cdot \vectorBU{\widehat{A}} = 0$.
 Applying the assumptions of free, coherent, and monochromatic X-rays, the vector potential is expressed as
 \begin{equation}\label{eq:qm_vector_potential}
-    \bm{\widehat{A}}(\bm{r}) = \sum_{\bm{k}, \lambda} \sqrt{\frac{2 \pi}{V \omega_{\bm{k}} \alpha^{2}  }} \left( \hat{a}_{\bm{k},\lambda} \bm{\epsilon}_{\bm{k},\lambda} e^{i \bm{k}\cdot\bm{r}} + \hat{a}_{\bm{k},\lambda}^{\dagger} \bm{\epsilon}_{\bm{k},\lambda}^{*} e^{-i \bm{k}\cdot\bm{r}}  \right).
+    \vectorBU{\widehat{A}}(\vectorBU{r}) = \sum_{\vectorBU{k}, \lambda} \sqrt{\frac{2 \pi}{V \omega_{\vectorBU{k}} \alpha^{2}  }} \left( \hat{a}_{\vectorBU{k},\lambda} \vectorgreek{\epsilon}_{\vectorBU{k},\lambda} e^{i \vectorBU{k}\cdot\vectorBU{r}} + \hat{a}_{\vectorBU{k},\lambda}^{\dagger} \vectorgreek{\epsilon}_{\vectorBU{k},\lambda}^{*} e^{-i \vectorBU{k}\cdot\vectorBU{r}}  \right).
 \end{equation}
-The essential parameters from Equation \eqref{eq:qm_vector_potential} are the creation and annihilation operators, $\hat{a}_{\bm{k},\lambda}^{\dagger}$ and $\hat{a}_{\bm{k},\lambda}$, respectively.
+The essential parameters from Equation \eqref{eq:qm_vector_potential} are the creation and annihilation operators, $\hat{a}_{\vectorBU{k},\lambda}^{\dagger}$ and $\hat{a}_{\vectorBU{k},\lambda}$, respectively.
 These operators are used to describe the elastic scattering as an annihilation and a subsequent creation of a photon.
 Moreover, the normalisation constant reveals the electromagnetic field to be similar to the well-known "Harmonic Oscillator" \cite{mcmorrow2011elements}. Consequently, $H_{rad}$ becomes
 \begin{equation}
-    \hat{H}_{rad} = \sum_{\bm{k}, \lambda} \left( \hslash \omega_{\bm{k}} \hat{a}_{\bm{k},\lambda}^{\dagger} \hat{a}_{\bm{k},\lambda}  \right).
+    \hat{H}_{rad} = \sum_{\vectorBU{k}, \lambda} \left( \hslash \omega_{\vectorBU{k}} \hat{a}_{\vectorBU{k},\lambda}^{\dagger} \hat{a}_{\vectorBU{k},\lambda}  \right).
 \end{equation}
 
 The Hamiltonian of the matter, $\hat{H}_{part}$, is the sum of the kinetic energy operator, potential energy operator, and the electronic Hamiltonian operator:
@@ -102,41 +103,41 @@ These are, though, of no particular interest concerning the scattering process, 
 
 The interaction Hamiltonian, $\hat{H}_{int}$ accounts for the interaction between the electromagnetic field and the matter.
 It can be shown that interactions between an electromagnetic field and charges $q$ may be accounted for by performing the substitution
-$\bm{p} \rightarrow \bm{p}-q\bm{A}$ \cite{mcmorrow2011elements}. Eventually, the interaction Hamiltonian is revealed to have a term linear and a term quadratic in the vector potential $\bm{\widehat{A}}$:
+$\vectorBU{p} \rightarrow \vectorBU{p}-q\vectorBU{A}$ \cite{mcmorrow2011elements}. Eventually, the interaction Hamiltonian is revealed to have a term linear and a term quadratic in the vector potential $\vectorBU{\widehat{A}}$:
 \begin{equation}\label{eq:qm_interaction_Hamiltonian}
-    \hat{H}_{int} \sim \bm{\widehat{p}} \cdot \bm{\widehat{A}} + \bm{\widehat{A}}^{2}.
+    \hat{H}_{int} \sim \vectorBU{\widehat{p}} \cdot \vectorBU{\widehat{A}} + \vectorBU{\widehat{A}}^{2}.
 \end{equation}
-As the first term is only linear in $\bm{\widehat{A}}$, it can only account for absorption of X-rays through annihilation of photons.
+As the first term is only linear in $\vectorBU{\widehat{A}}$, it can only account for absorption of X-rays through annihilation of photons.
 The second term, however, is quadratic, and therefore accounts for annihilation and subsequent creation of photons, which is the desired interaction.
-This follows from squaring Equation \eqref{eq:qm_vector_potential}, which gives terms on the form $a_{\bm{k},\lambda}^{\dagger} a_{\bm{k},\lambda}$.
+This follows from squaring Equation \eqref{eq:qm_vector_potential}, which gives terms on the form $a_{\vectorBU{k},\lambda}^{\dagger} a_{\vectorBU{k},\lambda}$.
 
 Furthermore, second quantisation is more fitting for describing the electronic Hamiltonian and the interaction Hamiltonian when the system consists of many electrons, as the Hamiltonian in second quantisation is independent of the number of electrons \cite{rohringer2020introduction}.
 Here, Fock states are introduced, and the annihilation and creation operators are replaced by annihilation and creation field operators.
-The electronic density operator $\widehat{n}(\bm{r})$ may be expressed in terms of these field operators as
+The electronic density operator $\widehat{n}(\vectorBU{r})$ may be expressed in terms of these field operators as
 \begin{equation}\label{eq:electronic_density_operator}
-    \widehat{n}(\bm{r}) =  \hat{\psi}^{\dagger}(\bm{r}) \hat{\psi}( \bm{r}).
+    \widehat{n}(\vectorBU{r}) =  \hat{\psi}^{\dagger}(\vectorBU{r}) \hat{\psi}( \vectorBU{r}).
 \end{equation}
 
 Next, the interaction Hamiltonian is considered a small time-dependent perturbation.
 From the Time-Dependent Perturbation Theory in the interaction picture, the transition rate $\Gamma_{if}$ of excitation and subsequent recombination is derived.
-The result is famously known as "Fermi's Golden Rule", and is similar to
+The result is famously known as "Fermi's Golden Rule", and is proportional to
 \begin{equation}\label{eq:fermis_golden_rule}
     \Gamma_{if} \sim \left| \langle \psi_{f} | \hat{H}_{int} | \psi_{i} \rangle \right|^{2} \rho(E_{f}).
 \end{equation}
 Here, $\psi_{i}$ and $\psi_{f}$ are the initial and final states, respectively, and $\rho(E_{f})$ is the density of states at the final energy $E_{f}$.
 The essential part of the equation is the matrix element $\langle \psi_{f} | \hat{H}_{int} | \psi_{i} \rangle$, which is the interaction Hamiltonian evaluated in the initial and final states.
 
-In the case of elastic scattering, the initial and final electronic states are identical, and the interaction Hamiltonian consists of the quadratic term in the vector potential $\bm{\widehat{A}}$.
-However, the state of the electromagnetic field changes so that one photon $\vert n_{\bm{k}}\rangle$ with wave vector $\bm{k}$ is annihilated and another photon $\vert n_{\bm{k'}}\rangle$ with wave vector $\bm{k'}$ is created \cite{mcmorrow2011elements}.
+In the case of elastic scattering, the initial and final electronic states are identical, and the interaction Hamiltonian consists of the quadratic term in the vector potential $\vectorBU{\widehat{A}}$.
+However, the state of the electromagnetic field changes so that one photon $\vert n_{\vectorBU{k}}\rangle$ with wave vector $\vectorBU{k}$ is annihilated and another photon $\vert n_{\vectorBU{k'}}\rangle$ with wave vector $\vectorBU{k'}$ is created \cite{mcmorrow2011elements}.
 
 The elastic scattering rate is therefore proportional to
 \begin{equation}\label{eq:qm_elastic_scattering_rate}
-    \Gamma_{if} \propto \delta \left( \omega_{f} - \omega_{i} \right) \left| \int d^{3}\bm{r} \langle  \Psi_{f}^{N_{el}} | \hat{\psi}^{\dagger}(\bm{r}) e^{i \bm{Q} \cdot \bm{r} } \hat{\psi}( \bm{r})  | \Psi_{i}^{N_{el}} \rangle \right|^{2}.
+    \Gamma_{if} \propto \delta \left( \omega_{f} - \omega_{i} \right) \left| \int d^{3}\vectorBU{r} \langle  \Psi_{f}^{N_{el}} | \hat{\psi}^{\dagger}(\vectorBU{r}) e^{i \vectorBU{Q} \cdot \vectorBU{r} } \hat{\psi}( \vectorBU{r})  | \Psi_{i}^{N_{el}} \rangle \right|^{2}.
 \end{equation}
 
 A final evaluation of the matrix element within Equation \eqref{eq:qm_elastic_scattering_rate} by recognising the electronic density operator from Equation \eqref{eq:electronic_density_operator} yields
 \begin{equation}
-    M_{if} = \int d^{3}\bm{r} \left. \widehat{n}(\bm{r}) e^{i \bm{Q} \cdot \bm{r}} \right. .
+    M_{if} = \int d^{3}\vectorBU{r} \left. \widehat{n}(\vectorBU{r}) e^{i \vectorBU{Q} \cdot \vectorBU{r}} \right. .
 \end{equation}
 In other words, the matrix element is the Fourier transform of the electronic density operator, equivalent to the atomic form factor result in Equation \eqref{eq:atomic_form_factor_classical}.
 

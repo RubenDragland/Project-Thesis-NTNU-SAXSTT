@@ -1,46 +1,46 @@
-\chapter{Computation Performance}
+\chapter{Computational Performance}
 
 
 
 \section{SAXSTT Time Complexity}
 
-Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for the different implementations.
+Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for AD and SYM.
+The dotted line indicates a time complexity of $\mathcal{O}(N)$, where $N$ is the number of voxels.
+All tests were approximately parallel to the dotted line, which indicates that the time complexity of both implementations is indeed $\mathcal{O}(N)$.
+Note that \emph{AD laptop} is tested on another device than the rest.
+Regarding \emph{AD CPU/GPU}, the CPU and GPU automatic gradient calculations are merged, as the result was the same.
+Moreover, it is important to notice that the speed-up of the parallelisation is not proportional to the number of cores, which was 12.
 %RSD: Update with SYM as well? Manually. Not the most important thing. 
 %RSD: Mentioned Laptop vs Server. Note that GPU and CPU are equally fast. However, if algorithm extended so that the amount of transfer of data is at a relative minimum, a significant speed-up will occur. 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/gradient_computation.svg}
-    \caption{ The gradient computation time for different number of voxels using a CPU and a GPU, respectively. % Should test CPU on Gamma instead. Mind myself. Not the most important thing. 
-        The time complexity is about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provides approximately an 8-fold speedup when the number of voxels is sufficiently high.}
+    \caption{ The gradient computation time of AD and SYM for different number of voxels using a laptop, GPU, MEX-functions, and parallelisation, respectively. % Should test CPU on Gamma instead. Mind myself. Not the most important thing. Change text 
+        The time complexity was about $O(N)$ for both methods, where N is the number of voxels. However, the GPU provided approximately an 8-fold speedup when the number of voxels was sufficiently high.}
     \label{fig:gradient_time_complexity}
 \end{figure}
 
+\clearpage
 \section{Convergence of SAXSTT}
 
-Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 iterations for the different implementations when the initial conditions are close to the optimal solution.
+Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 iterations for the different implementations.
+Specifically, reconstructions of the carbon knot and the Phantom data set are included.
+The characteristic convergence of the Spherical Harmonics method is evident in the Figure.
+Since the different set of parameters are optimised independently before the final optimisation, several exponential decays are visible.
+The same step-wise convergence was not implemented for EXPSIN, which therefore experiences an initial exponential decay followed by an almost flat convergence.
+In fact, only $10\%$ of the EXPSIN iterations showed exponential decay; the rest were almost flat.
+Another fascinating observation was that the loss of the stepwise optimisation drastically increased after 30 iterations, meaning the first iteration of the anisotropic coefficients optimisation.
+Moreover, the loss of the carbon knot reconstruction was only halved after 100 iterations, whereas the loss of the Phantom data set was reduced by a factor of 10.
+In terms of computational time, the symbolic reconstruction of the Phantom data set was significantly faster than the rest, since only 50 of the 100 iterations were performed.
+Apart from that, the "AD"-algorithm and the "EXPSIN"-algorithm are within twice the time of the "SYM"-algorithm.
+
+
 %Update with EXPSIN as well? Evt for carbon knot. Evt include all runs or do normalisation. Difficult to know right now. 
 
 \begin{figure}[h!]
     \centering
-    \includesvg[width=0.6\textwidth]{../XRD_CT/Plotting/thesis_plots/Loss_curve_optimal.svg} %RSD: Remember inkscape formatter and scaling. More changes needed to the plot. Generalise number og lines. 
-    \caption{ The convergence of the CGD algorithm is steep for each of the optimisation steps.  }
+    \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/Loss_curve_optimal.svg} %RSD: Remember inkscape formatter and scaling. More changes needed to the plot. Generalise number og lines. 
+    \caption{ The loss curves of the respective performed reconstructions. Each curve is normalised to the initial loss.
+        CK is short for carbon knot, and P stands for Phantom. }
     \label{fig:Loss_curve_optimal}
-\end{figure}
-
-Figure \ref{fig:Loss_curve_worst} shows the convergence of SAXSTT for the different implementations when the initial conditions are far from the optimal solution.
-
-\begin{figure}[h!]
-    \centering
-    %\includesvg[width=0.6\textwidth]{../XRD_CT/Plotting/thesis_plots/Loss_curve_optimal.svg} %RSD: Remember inkscape formatter and scaling. More changes needed to the plot. Generalise number og lines. 
-    \caption{ The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses.  }
-    \label{fig:Loss_curve_worst}
-\end{figure}
-
-Figure \ref{fig:Loss_curve_carbon}
-
-\begin{figure}[h!]
-    \centering
-    \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/Loss_curve_carbon.svg} %RSD: Remember inkscape formatter and scaling. More changes needed to the plot. Generalise number og lines. 
-    \caption{ The CGD algorithm is prone to getting stuck in local minima, especially when the initial conditions are not sufficiently good guesses.  }
-    \label{fig:Loss_curve_carbon}
 \end{figure}

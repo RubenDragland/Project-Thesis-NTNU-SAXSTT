@@ -4,20 +4,20 @@
 \section{Maximum Likelihood Estimation}
 
 
-The maximum likelihood estimator is defined to be the set of parameters $\bm{\theta}_{ML}$ that maximise the probability $P(\bm{y} \mid \bm{x}; \bm{\theta})$.
-In other words, it chooses the parameters that produce the most probable estimation $\bm{\widehat{y}}$ of the true output $\bm{y}$ given the input $\bm{x}$.
+The maximum likelihood estimator is defined to be the set of parameters $\vectorgreek{\theta}_{ML}$ that maximise the probability $P(\vectorBU{y} \mid \vectorBU{x}; \vectorgreek{\theta})$.
+In other words, it chooses the parameters that produce the most probable estimation $\vectorBU{\widehat{y}}$ of the true output $\vectorBU{y}$ given the input $\vectorBU{x}$.
 Mathematically, the maximum likelihood estimator is defined as
 
 \begin{equation}\label{eq:Max_likelihood}
-    \bm{\theta}_{ML} = \argmax_{\bm{\theta}} P(\bm{y} \mid \bm{x}; \bm{\theta}),
+    \vectorgreek{\theta}_{ML} = \argmax_{\vectorgreek{\theta}} P(\vectorBU{y} \mid \vectorBU{x}; \vectorgreek{\theta}),
 \end{equation}
 \noindent
-where $\argmax_{\bm{\theta}}$ returns the arguments that maximise the probability.
+where $\argmax_{\vectorgreek{\theta}}$ returns the arguments that maximise the probability.
 
 ML estimation is an example of supervised learning, because the true output, called the targets, are known.
 In supervised learning, the estimation is evaluated by computing the error relative to the true output.
-The expression for the total error of the model is called the cost function $J(\bm{\theta})$,
-which is a sum of loss functions $\mathcal{L}(\bm{y},\bm{\widehat{y}} )$ representing the error of a single data point.
+The expression for the total error of the model is called the cost function $J(\vectorgreek{\theta})$,
+which is a sum of loss functions $\mathcal{L}(\vectorBU{y},\vectorBU{\widehat{y}} )$ representing the error of a single data point.
 
 \section{Gradient Descent}
 
@@ -25,7 +25,7 @@ Gradient descent is an optimisation algorithm that updates the model's parameter
 After each backward pass, the parameters of the model are updated according to the following equation:
 
 \begin{equation}\label{eq:GD}
-    \bm{\theta} = \bm{\theta} - \alpha \bm{\nabla_{\theta}} J(\bm{\theta})
+    \vectorgreek{\theta} = \vectorgreek{\theta} - \alpha \bm{\nabla_{\theta}} J(\vectorgreek{\theta}).
 \end{equation}
 
 The idea of this algorithm is that by following the gradient of the cost function,
@@ -34,25 +34,24 @@ which naturally results in the minimal error.
 Gradient descent in parameter space is visualised in Figure \ref{fig:GD_surface}
 % Matplotlib surface plot with path. + Make gif. 
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     %\includegraphics{}
-    \includesvg[height=0.4\textheight]{../XRD_CT/Plotting/plots/GD_new.svg}
+    \includesvg[height=0.33\textheight]{../XRD_CT/Plotting/plots/GD_new.svg}
     \caption{A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on gradient descent.
-        Notice that the smooth curve is an indication of many steps with a small step size. The animation belonging to the plot is available at % Github hyperref. \url{ }
+        Notice that the smooth curve is an indication of many steps with a small step size. An animation of the process is available at % Github hyperref. \url{ }
     }
     \label{fig:GD_surface}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includesvg[height = 0.4\textheight]{../XRD_CT/Plotting/plots/CGD_exact.svg}
-    \caption{A surface plot of the space of error for a model. The trajectory shows the path of parameter optimisation based on conjugate gradient descent.
-        Notice that the curve consists of a few, but long, steps. The animation belonging to the plot is available at % Github hyperref. \url{ }
-    }
-    \label{fig:CGD_surface}
-\end{figure}
 
+\section{Method of Steepest Descent}\label{sec:theory_MSD}
+Numerous terms may be added to the basic idea of gradient descent in order to improve the convergence rate.
+One improvement is to perform  a line search to determine the optimal step size $\alpha$ in the direction of the calculated gradients.
+The optimal step size is determined by computing the cost function $J(\vectorgreek{\theta})$ for a range of step sizes $\alpha$.
+At the optimal step size, the gradient vector of the current and next iteration are orthogonal, which optimises the path of convergence.  %minimises the directional derivative of the cost function.
+Intuitively, this reduces the number of gradient calculations required to reach convergence, as the algorithm always exhausts the potential of the current direction, and proceeds orthogonal to this direction.
+However, this method has a tendency to step in alternating perpendicular directions. Optimally, each independent direction should be exhausted in a single gradient calculation, before proceeding perpendicular to the current direction.
 
 %Notes
 %Order of the CGD
@@ -73,22 +72,18 @@ Hence, CGD is computationally less expensive than Newton's method, since
 the latter uses the Hessian to converge in a small number of highly expensive iterations.
 The essential characteristics of the CGD algorithm will be summarised in this section, while it is clearly explained by Jonathan Richard Shewchuk \cite{shewchuk1994introduction}.
 
-The first improvement over basic gradient descent is a line search to determine the optimal step size $\alpha$ in the direction of the calculated gradients.
-The optimal step size is determined by computing the cost function $J(\bm{\theta})$ for a range of step sizes $\alpha$.
-At the minima, the gradient vector of the current and next iteration are orthogonal, which optimises the path of convergence.  %minimises the directional derivative of the cost function.
-Intuitively, this reduces the number of gradient calculations required to reach convergence, as the algorithm always exhausts the potential of the current direction, and proceeds orthogonal to this direction.
-
-However, with this procedure, which is commonly referred to as "Method of Steepest Descent", the algorithm often steps in the same direction multiple times.
-To prevent this, CGD only performs one step per basis vector in a set of orthogonal search directions.
+Like the method of steepest descent, a line search is performed to determine the optimal step size $\alpha$.
+Additionally, CGD create a Krylov subspace of orthogonal step directions to prevent the algorithm from stepping in the same direction multiple times.
+Essentially, CGD only performs one step per basis vector in a set of orthogonal search directions.
 The orthogonal set is derived from Gram-Schmidt conjugations of the gradients.
 In order to optimise any continuous nonlinear function, the Polak-Ribiere formula,
 
 \begin{equation}\label{eq:Polak_Ribiere}
-    \bm{\beta_{k}} = \max{ \left( \frac{\bm{g}^T_{k}(\bm{g}_{k} - \bm{g}_{k-1})}{\bm{g}^T_{k-1} \bm{g}_{k-1}}, 0 \right) },
+    \vectorgreek{\beta_{k}} = \max{ \left( \frac{\vectorBU{g}^T_{k}(\vectorBU{g}_{k} - \vectorBU{g}_{k-1})}{\vectorBU{g}^T_{k-1} \vectorBU{g}_{k-1}}, 0 \right) },
 \end{equation}
 \noindent
 is used to determine the optimal Gram-Schmidt constant $\beta$,
-where $\bm{g}$ is the current gradient vector and $\bm{g}_{k-1}$ is the gradient vector of the previous iteration.
+where $\vectorBU{g}$ is the current gradient vector and $\vectorBU{g}_{k-1}$ is the gradient vector of the previous iteration.
 The $\max$ operation in Equation \eqref{eq:Polak_Ribiere} is an addition to the original Polak-Riebere formula, added to ensure convergence \cite{shewchuk1994introduction}.
 The algorithm will restart CGD with "Method of Steepest Descent" if the gradients are no longer decreasing, thus ensuring convergence.
 Note that this resets the orthogonal set of search directions, but the algorithm still converges in the order of $O(N)$ iterations, where $N$ is the number of parameters.
@@ -97,18 +92,35 @@ Consequently, CGD can be mathematically expressed as follows \cite{shewchuk1994i
 
 \begin{align}\label{eq:CGD}
     \begin{split}
-        \bm{d}_{0}        & = - \bm{g}_{0}                                                    \\
-        \alpha_{i}        & = \min_{\alpha} \left\{  J\left(\bm{\theta} + \alpha \bm{d}_{i} \right) \right\} \\
-        \bm{\theta}_{i+1} & = \bm{\theta}_{i} + \alpha_{i} \bm{d}_{i}                         \\
-        \bm{d}_{i+1}      & = -\bm{g}_{i+1} + \beta_{i+1} \bm{d}_{i}.                          \\
+        \vectorBU{d}_{0}        & = - \vectorBU{g}_{0}                                                    \\
+        \alpha_{i}        & = \min_{\alpha} \left\{  J\left(\vectorgreek{\theta} + \alpha \vectorBU{d}_{i} \right) \right\} \\
+        \vectorgreek{\theta}_{i+1} & = \vectorgreek{\theta}_{i} + \alpha_{i} \vectorBU{d}_{i}                         \\
+        \vectorBU{d}_{i+1}      & = -\vectorBU{g}_{i+1} + \beta_{i+1} \vectorBU{d}_{i}.                          \\
     \end{split}
 \end{align}
 
-In Equation \eqref{eq:CGD}, $\bm{d}_{i}$ is the search direction, $\bm{g}_{i}$ is the gradient, and $\bm{\theta}_{i}$ is the current set of parameters.
-As already mentioned, $J(\bm{\theta})$ is the cost function, $\alpha_{i}$ is the optimal step size, which is determined by a line search, and $\beta_{i+1}$ is the Gram-Schmidt constant derived from the Polak-Ribiere formula \eqref{eq:Polak_Ribiere}.
+In Equation \eqref{eq:CGD}, $\vectorBU{d}_{i}$ is the search direction, $\vectorBU{g}_{i}$ is the gradient, and $\vectorgreek{\theta}_{i}$ is the current set of parameters.
+As already mentioned, $J(\vectorgreek{\theta})$ is the cost function, $\alpha_{i}$ is the optimal step size, which is determined by a line search, and $\beta_{i+1}$ is the Gram-Schmidt constant derived from the Polak-Ribiere formula \eqref{eq:Polak_Ribiere}.
+The resulting number of necessary iterations is $\mathcal{O}(N)$, where $N$ is the number of parameters.
+In theory, the visualisation of convergence in Figure \ref{fig:CGD_surface} should consist of two orthogonal straight lines.
+However, due to the iterative and approximate nature of the line search, 3-4 iterations were required.
 
+\begin{figure}[h!]
+    \centering
+    \includesvg[height = 0.33\textheight]{../XRD_CT/Plotting/plots/CGD_exact.svg}
+    \caption{A surface plot of the space of error for a model.
+        The trajectory shows the path of parameter optimisation based on conjugate gradient descent.
+        Notice that the curve consists of a few, but long, steps.
+        In theory, this method should converge in two iterations, since there are two parameters.
+        However, 3-4 steps were performed in this case, probably due to a not exact determination of step size.
+        An animation of the process is available at % Github hyperref. \url{ }
+    }
+    \label{fig:CGD_surface}
+\end{figure}
 
 %Consider illustrating the Hessian and/or the Jacobian
+
+%\section{SGD} %RSD: Consider to include. 
 
 % Some equations regarding CGD... Do not now it that well.
 
@@ -118,37 +130,33 @@ Automatic differentiation (AD) is an algorithmic technique for computing the ana
 It is important to contrast AD from numerical differentiation using finite differences, which comes with substantial numerical error.
 Moreover, AD should not be confused with symbolic differentiation, which is a method for calculating the full symbolic expression for the gradient, like one would do by hand \cite{baydin2018automatic}.
 The superior routine for implementing AD is the "reverse mode", which consists of a forward pass and a backward pass.
-The forward pass is a function evaluation, where a computational graph, like Figure \ref{} illustrates, is constructed.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics{}
-%     \caption{A computational graph for the function $f(x,y) = $.}
-%     \label{fig:AD_comp_graph}
-% \end{figure}
-
+"Forward mode" is the counterpart of the reverse mode, but it is in most cases less efficient \cite{baydin2018automatic}.
+Shortly explained, the forward mode process is identical to computing the Jacobian of a function $\vectorBU{J}$, one column at a time.
+At the same time, this mode allows for evaluating the Jacobian-vector product $\vectorBU{Jr}$, without the full matrix, by using $\vectorBU{r}$ as initial values for the gradient computation.
+For the application of AD in this thesis, the advantages of reverse mode are more suited, since the cost function is summed to a single scalar value.
+To elaborate further, the forward pass of the reverse mode is a function evaluation, where a computational graph is constructed.
 In regard to computer science, the computational graph can easily be constructed from an object-oriented operator overloading approach.
 To elaborate, the AD object inserts the operators from the function to a computational graph.
 Moreover, the rules of differentiation for the operators are pre-implemented.
 Therefore, it is required that the evaluated function only consists of operators that are supported by the AD object.
-With the function evaluation completed, the backward pass is initiated. Using the chain rule,
+With the function evaluation completed, the backward pass is initiated.
+Let $w(y(x))$ is a functional depending on the function $y(x)$, which is again a function of the input variable $x$. Applying the chain rule,
 
 \begin{equation}\label{eq:chain_rule}
     \frac{\partial w}{\partial x} = \frac{\partial w}{\partial y} \frac{\partial y}{\partial x},
 \end{equation}
 the gradients with respect to the input variables are calculated given the output value.
-Equation \eqref{eq:chain_rule} shows how the gradient of a functional is simplified to a product series of simple gradient expressions.
-Here, $w(y(x))$ is a functional depending on the function $y(x)$, which is again a function of the input variable $x$.
+Equation \eqref{eq:chain_rule} shows how the gradient of any complex computational graph can be written as a product series of basic gradient expressions.
 The backpropagation algorithm recursively applies the chain rule on the computational graph, eventually ending up with the gradients of the input variables \cite{baydin2018automatic}.
 
-In terms of advantages, AD can be a powerful tool for optimisation if the symbolic expression is difficult to derive, or ends up being an uncondensed expression.
+In terms of advantages, AD can be a powerful tool for optimisation if the symbolic expression is difficult to derive, or if the computational complexity of the symbolic expression is high.
 Furthermore, AD is versatile in deep learning tool boxes such as Pytorch and Tensorflow,
 because it allows everyone to implement their own custom neural network architectures or optimisation algorithms.
 However, AD is not without its disadvantages. As pointed out by Baydin, Pearlmutter, Radul, and Siskind \cite{baydin2018automatic},
 AD is not immune to floating point numbers.
 In particular, it is worth keeping in mind that the gradients are computed from the programmed function, not necessarily the true analytical function.
 For instance, if one works with an approximation of the exponential function, $\exp(x)$, AD will return the gradient with respect to this approximation,
-while one would actually want the analytical gradient $\exp(x)$ \cite{baydin2018automatic}. % Consider another cite Jeffrey Mark Siskind and Barak A. Pearlmutter. Perbupation confusion. The gradient of the exponential function $exp(x)$, for instance, may 
+while one would actually want the analytical gradient, which is $\exp(x)$ \cite{baydin2018automatic}. % Consider another cite Jeffrey Mark Siskind and Barak A. Pearlmutter. Perbupation confusion. The gradient of the exponential function $exp(x)$, for instance, may 
 
 
 

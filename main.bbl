@@ -109,57 +109,29 @@
     \field{year}{2009}
   \endentry
 
-  \entry{britannica_sync}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=oETE}{%
-         prefix={of},
-         prefixi={o\bibinitperiod},
-         family={Encyclopaedia},
-         familyi={E\bibinitperiod},
-         given={T.\bibnamedelima Editors},
-         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+  \entry{gonzalez2018digital}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GRC}{%
+         family={Gonzalez},
+         familyi={G\bibinitperiod},
+         given={Rafael\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=WRE}{%
+         family={Woods},
+         familyi={W\bibinitperiod},
+         given={Richard\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Encyclopedia Britannica}%
-    }
-    \strng{namehash}{ETEo1}
-    \strng{fullhash}{ETEo1}
+    \strng{namehash}{GRCWRE1}
+    \strng{fullhash}{GRCWRE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{E}
-    \field{sortinithash}{E}
-    \field{title}{synchrotron}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Digital image processing 4th edition, global edition}
     \field{year}{2018}
-  \endentry
-
-  \entry{knuth:1974}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KDE}{%
-         family={Knuth},
-         familyi={K\bibinitperiod},
-         given={Donald\bibnamedelima E.},
-         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM Press}%
-    }
-    \strng{namehash}{KDE1}
-    \strng{fullhash}{KDE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{number}{12}
-    \field{pages}{667\bibrangedash 673}
-    \field{title}{{C}omputer {P}rogramming as an {A}rt}
-    \field{volume}{17}
-    \list{location}{1}{%
-      {New York, NY, USA}%
-    }
-    \field{journaltitle}{Communications of the ACM}
-    \field{year}{1974}
   \endentry
 
   \entry{liebi2018small}{article}{}
@@ -428,6 +400,50 @@
     }
     \field{type}{phdthesis}
     \field{year}{2015}
+  \endentry
+
+  \entry{yoshiharu1997cellulose}{article}{}
+    \name{author}{4}{}{%
+      {{hash=YN}{%
+         family={Yoshiharu},
+         familyi={Y\bibinitperiod},
+         given={Nishiyama},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Shigenori},
+         familyi={S\bibinitperiod},
+         given={Kuga},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={Masahisa},
+         familyi={M\bibinitperiod},
+         given={Wada},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=TO}{%
+         family={Takeshi},
+         familyi={T\bibinitperiod},
+         given={Okano},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACS Publications}%
+    }
+    \strng{namehash}{YN+1}
+    \strng{fullhash}{YNSKMWTO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{number}{20}
+    \field{pages}{6395\bibrangedash 6397}
+    \field{title}{Cellulose microcrystal film of high uniaxial orientation}
+    \field{volume}{30}
+    \field{journaltitle}{Macromolecules}
+    \field{year}{1997}
   \endentry
 
   \entry{zeng2010medical}{book}{}

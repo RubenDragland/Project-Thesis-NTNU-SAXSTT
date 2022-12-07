@@ -34,8 +34,7 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \begin{table}[h!]
     \centering
     \caption{  The peak and FWHM of the Lorentzian curve fits
-        for the coefficients and orientation parameters for the reconstruction
-        with good initial conditions.}
+        for the coefficients and orientation parameters after a converged reconstruction.}
     \label{tab:curve_fitting}
     \begin{tabular}{ c c c c c c }
         \hline %\toprule
@@ -44,10 +43,10 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
         \hline %\midrule
         \textbf{a0}    & 0.690             & 0.691                                       & 5.834                                       & 0.691         & 6.764                     \\
         \textbf{a2}    & 0.230             & 0.230                                       & 2.930                                       & 0.229         & 3.906                     \\
-        \textbf{a4}    & 0.115             & 0.000                                       & 0.000                                       & 0.000         & 0.000                     \\
-        \textbf{a6}    & 0.575             & 0.000                                       & 0.000                                       & 0.000         & 0.000                     \\
-        $\bm{\theta}$  & 1.047             & 0.000                                       & 0.000                                       & 0.000                                     \\
-        $\bm{\varphi}$ & 1.047             & 0.000                                       & 0.000                                       & 0.000                                     \\
+        \textbf{a4}    & 0.115             & 0.115                                       & 2.042                                       & 0.115         & 2.995                     \\
+        \textbf{a6}    & 0.058             & 0.058                                       & 1.603                                       & 0.058         & 2.477                     \\
+        $\bm{\theta}$  & 1.047             & 1.047                                       & 2.479                                       & 1.048         & 3.227                     \\
+        $\bm{\varphi}$ & 1.047             & 1.048                                       & 1.775                                       & 1.048         & 2.614                     \\
         \hline %\bottomrule
     \end{tabular}
 \end{table}
@@ -55,17 +54,17 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \clearpage
 
 Further analysis of the different reconstruction algorithms was performed on the so-called phantom data set.
-This included comparing the result of the alternative cost function EXPSIN to the result of the Spherical Harmonics cost function.
+This included comparing the result of the alternative cost function, denoted EXPSIN, to the result of the Spherical Harmonics cost function.
 In this case, it is not possible to directly compare the anisotropic coefficients. Thus, the degree of anisotropy (DoA) was used as a metric for the nanostructure shape.
 
 The initial EXPSIN form factor, as listed in \eqref{eq:exp_sin_squared}, was modified through trial and error, exploiting the versatility of automatic differentiation.
 The final cost function expression included normalisation of the exponential term using Simpson's rule for numerical integration.
 In addition, the cost function was adjusted to account for both perpendicular and parallel scattering models, as mentioned in ...%RSD: Explain somewhere
-The final cost function expression can therefore be expressed as:
+The final expression for the EXPSIN form factor was decided to be:
 
 \begin{equation}
     \label{eq:final_exp_sin_squared}
-    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) = A^{2} \frac{\exp\left( \mp |B| \sin^{2}(\Theta) \right)}{\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(\Theta) \right) \sin(\Theta) d\Theta},
+    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) = A^{2} \frac{\exp\left( \mp |B| \sin^{2}(\Theta) \right)}{\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
 \end{equation}
 
 where $\mp$ is a sign that depends on the scattering model. For parallel scattering, $\mp = -$, while for perpendicular scattering, $\mp = +$.
@@ -75,12 +74,29 @@ With the alternative cost function optimised to some degree, the different algor
 Figure \ref{fig:phantom_reconstruction_3D} shows a 3D representation of the reconstructed Phantom data set.
 The marker colour represents the degree of anisotropy, while the orientation of the nanostructures is represented by the direction of the markers.
 At a glance, the results of the different algorithms were similar.
-However, SYM had the most voxels with an isotropic intensity above the threshold value of 0.1. Moreover, AD had seemingly a generally higher degree of anisotropy,
-while EXPSIN had a more abrupt transition between isotropic and anisotropic voxels. A voxel was in a sense determined to be either isotropic or fully anisotropic.
+However, SYM had the most voxels with an isotropic intensity above the threshold value of 0.1.
+This number is, though, higher than the true number of voxels, excluding void, in the Phantom data set.
+Moreover, AD had seemingly a generally higher degree of anisotropy, and fewer voxels with negative DoA.
+There were, at the same time, some deviations in terms of orientation.
+EXPSIN had few voxels with a DoA different from 0.
 
 \begin{figure}[h!]
     \centering
-    \includesvg[height = 1\textheight]{../XRD_CT/Plotting/thesis_plots/P_3D.svg}
+    %\includesvg[height = 1\textheight]{../XRD_CT/Plotting/thesis_plots/P_3D.svg}
+    % \begin{minipage}[c]{width = 0.75\linewidth}
+    %     \adjustbox{trim = 3cm 3cm 3cm 3cm}{\includesvg[width = 1.5\textwidth]{../XRD_CT/Plotting/thesis_plots/P_3D_indSYM.svg}}
+    %     % \adjustbox{trim = 6cm 6cm 6cm 6cm}{\includesvg[width = 1.5\textwidth]{../XRD_CT/Plotting/thesis_plots/P_3D_indAD.svg}}
+    % \end{minipage}
+    % \begin{minipage}[c]{width = 0.25\linewidth}
+    %     \adjustbox{trim = 0cm 0cm 0cm 0cm}{\includesvg[]{../XRD_CT/Plotting/thesis_plots/P_3D_indcolorbar.svg}}
+    % \end{minipage}
+    %\includesvg[]{../XRD_CT/Plotting/thesis_plots/P_3D_indEXPSIN.svg}
+
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/P_3D_indSYM_svg-tex.pdf}
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/P_3D_indAD_svg-tex.pdf}
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf}
+    %\includegraphics[width = 0.25\textwidth, right]{./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf}
+    \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_3D_indcolorbar.svg}
     \caption{ 3D reconstruction of the phantom data set.
         The reconstruction has been cropped to the region of interest,
         and the degree of anisotropy has been plotted for voxels that have an isotropic intensity, meaning a0 or A, above a threshold of 0.1. }
@@ -95,14 +111,21 @@ Compared to the "AD"-algorithm, the "SYM"-algorithm had fewer and smaller outlie
 However, the "SYM"-algorithm performed poorly at the interface between the sample and the surroundings.
 Generally, the "EXPSIN"-algorithm's estimate of isotropic intensity was lower than the true value.
 Apart from the low estimate, the "EXPSIN"-algorithm behaved similarly to the "AD"-algorithm.
+Regarding the degree of anisotropy, the "SYM"-algorithm and the "AD"-algorithm showed similar behaviour.
+The noise outside the edges of the sample was a result of the calculation of DoA where the intensity was zero, and should be neglected.
+The "EXPSIN"-algorithm had no such noise, indicating that the anisotropy was not optimised properly.
+
 
 %RSD: Also discuss anisotropy part, but wait for the proper metric. 
 
 \begin{figure}[h!]
     \centering
+    %RSD: For compilation:
+    % \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_slices_A.svg}
+    % \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_slices_DoA.svg}
     %RSD: Possible compilation issue if changing the plots
     \includegraphics[trim={0 0cm 0 2.5cm},clip,width=1\textwidth]{./svg-inkscape/P_slices_A_svg-tex.pdf}
-    \includegraphics[trim={0 0cm 0 2.5cm},clip,width=1\textwidth]{./svg-inkscape/P_slices_B_svg-tex.pdf}
+    \includegraphics[trim={0 0cm 0 2.5cm},clip,width=1\textwidth]{./svg-inkscape/P_slices_DoA_svg-tex.pdf}
     %\adjustbox{trim = 0cm 1cm 0cm 0cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_A.svg} }
     %\adjustbox{trim = 0cm 1cm 0cm 0cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_B.svg} }
     %\adjustbox{trim = 0cm 0cm 0cm 3cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_theta.svg}}
@@ -122,6 +145,10 @@ in terms of orientation.
 
 \begin{figure}[h!]
     \centering
+    %RSD: For compilation:
+    % \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_slices_theta.svg}
+    % \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_slices_phi.svg}
+    %%%
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_phi_svg-tex.pdf}
     \caption{ A 2D slice of the reconstructed volume that shows the preferred orientation of the reconstructed nanostructures for the different reconstruction algorithms, respectively.
@@ -149,7 +176,16 @@ Nevertheless, the orientation parameters seem to be correctly estimated by all t
 
 \begin{figure}[h!]
     \centering
-    \includesvg[height = 1\textheight]{../XRD_CT/Plotting/thesis_plots/ck_3D.svg}
+    %RSD: For compilation:
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_indSYM.svg}
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_indAD.svg}
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_indEXPSIN.svg}
+
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/ck_indSYM_svg-tex.pdf}
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/ck_indAD_svg-tex.pdf}
+    \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/ck_indEXPSIN_svg-tex.pdf}
+    \includesvg[]{../XRD_CT/Plotting/thesis_plots/ck_indcolorbar.svg}
+
     \caption{ The resulting 3D reconstructions of the carbon knot from the "SYM"-, "AD"-, and "EXPSIN"-algorithm, respectively.
         There were 561, 533, and 900 voxels with an isotropic intensity above the threshold value of 6, respectively.
     }
@@ -164,13 +200,18 @@ Note that the a0 coefficient corresponds to coefficient A in the alternative cos
 %RSD: Describe. 
 The results of the "SYM"- and "AD"-algorithm were close to indistinguishable,
 while the "EXPSIN"-algorithm shared most of the same features.
-However, the latter algorithm had a less pronounced edge at the interface between the sample and the surroundings.
-Moreover, the amount of outliers was higher for the "EXPSIN"-algorithm.
+However, the latter algorithm had a less pronounced edge in terms of intensity at the interface between the sample and the surroundings.
+With that being said, the amount of noise in surroundings of the DoA calculation was much less than for SYM and AD.
 
 \begin{figure}[h!]
     \centering
-    \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_A.svg}
-    \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_B.svg}
+    %RSD: For compilation:
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_A.svg}
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_DoA.svg}
+
+    \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_A_svg-tex.pdf}
+    \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_DoA_svg-tex.pdf}
+
     \caption{  A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the anisotropic parameter in the bottom figure, for the different reconstruction algorithms, respectively.
         More specifically, the slice where z = 17 is shown. }
     \label{fig:carbon_knot_reconstruction_2D_coeffs}
@@ -185,8 +226,12 @@ Nevertheless, the differences were small, and the edges between the sample and t
 
 \begin{figure}[h!]
     \centering
-    \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_theta.svg}
-    \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_phi.svg}
+    %RSD: For compilation:
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_theta.svg}
+    % \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/ck_slices_phi.svg}
+
+    \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_theta_svg-tex.pdf}
+    \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_phi_svg-tex.pdf}
     \caption{  The reconstructed preferred orientation of the carbon knot in the z=17 crossection for the different reconstruction algorithms, respectively. }
     \label{fig:carbon_knot_reconstruction_2D_angles}
 \end{figure}
