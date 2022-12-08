@@ -136,6 +136,157 @@
     \field{year}{1994}
   \endentry
 
+  \entry{Sinc_interpolation_2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DN}{%
+         family={Dwork},
+         familyi={D\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DN1}
+    \strng{fullhash}{DN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{howpublished}{https://nicholasdwork.com/tutorials/nyquistInterp.pdf}
+    \field{title}{The Nyquisy Theorem and Sinc Interpolation}
+    \field{year}{2016}
+  \endentry
+
+  \entry{PMID_30821257}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GZ}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Zirui},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=GSM}{%
+         family={Guizar-Sicairos},
+         familyi={G\bibinithyphendelim S\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LBV}{%
+         family={Lutz-Bueno},
+         familyi={L\bibinithyphendelim B\bibinitperiod},
+         given={Viviane},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schröter},
+         familyi={S\bibinitperiod},
+         given={Aileen},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Liebi},
+         familyi={L\bibinitperiod},
+         given={Marianne},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rudin},
+         familyi={R\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Georgiadis},
+         familyi={G\bibinitperiod},
+         given={Marios},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GZ+1}
+    \strng{fullhash}{GZGSMLBVSALMRMGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The recent advent of tensor tomography techniques has enabled tomographic
+  investigations of the 3D nanostructure organization of biological and
+  material science samples. These techniques extended the concept of
+  conventional X-ray tomography by reconstructing not only a scalar value such
+  as the attenuation coefficient per voxel, but also a set of parameters that
+  capture the local anisotropy of nanostructures within every voxel of the
+  sample. Tensor tomography data sets are intrinsically large as each pixel of
+  a conventional X-ray projection is substituted by a scattering pattern, and
+  projections have to be recorded at different sample angular orientations with
+  several tilts of the rotation axis with respect to the X-ray propagation
+  direction. Currently available reconstruction approaches for such large data
+  sets are computationally expensive. Here, a novel, fast reconstruction
+  algorithm, named iterative reconstruction tensor tomography (IRTT), is
+  presented to simplify and accelerate tensor tomography reconstructions. IRTT
+  is based on a second-rank tensor model to describe the anisotropy of the
+  nanostructure in every voxel and on an iterative error backpropagation
+  reconstruction algorithm to achieve high convergence speed. The feasibility
+  and accuracy of IRTT are demonstrated by reconstructing the nanostructure
+  anisotropy of three samples: a carbon fiber knot, a human bone trabecula
+  specimen and a fixed mouse brain. Results and reconstruction speed were
+  compared with those obtained by the small-angle scattering tensor tomography
+  (SASTT) reconstruction method introduced by Liebi et al. [Nature (2015), 527,
+  349-352]. The principal orientation of the nanostructure within each voxel
+  revealed a high level of agreement between the two methods. Yet, for
+  identical data sets and computer hardware used, IRTT was shown to be more
+  than an order of magnitude faster. IRTT was found to yield robust results, it
+  does not require prior knowledge of the sample for initializing parameters,
+  and can be used in cases where simple anisotropy metrics are sufficient, i.e.
+  the tensor approximation adequately captures the level of anisotropy and the
+  dominant orientation within a voxel. In addition, by greatly accelerating the
+  reconstruction, IRTT is particularly suitable for handling large tomographic
+  data sets of samples with internal structure or as a real-time analysis tool
+  during the experiment for online feedback during data acquisition.
+  Alternatively, the IRTT results might be used as an initial guess for models
+  capturing a higher complexity of structural anisotropy such as spherical
+  harmonics based SASTT in Liebi et al. (2015), improving both overall
+  convergence speed and robustness of the reconstruction.%
+    }
+    \verb{doi}
+    \verb 10.1107/s2053273318017394
+    \endverb
+    \field{issn}{2053-2733}
+    \field{number}{Pt 2}
+    \field{pages}{223—238}
+    \field{title}{High-speed tensor tomography: iterative reconstruction tensor
+  tomography (IRTT) algorithm}
+    \verb{url}
+    \verb https://europepmc.org/articles/PMC6396401
+    \endverb
+    \field{volume}{75}
+    \field{journaltitle}{Acta crystallographica. Section A, Foundations and
+  advances}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ipol.2011.g_lmii}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GP}{%
+         family={Getreuer},
+         familyi={G\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GP1}
+    \strng{fullhash}{GP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{\url{https://doi.org/10.5201/ipol.2011.g_lmii}}
+    \field{pages}{238\bibrangedash 259}
+    \field{title}{{Linear Methods for Image Interpolation}}
+    \field{volume}{1}
+    \field{journaltitle}{{Image Processing On Line}}
+    \field{year}{2011}
+  \endentry
+
   \entry{gonzalez2018digital}{article}{}
     \name{author}{2}{}{%
       {{hash=GRC}{%
@@ -159,6 +310,41 @@
     \field{sortinithash}{G}
     \field{title}{Digital image processing 4th edition, global edition}
     \field{year}{2018}
+  \endentry
+
+  \entry{Goodfellow-et-al-2016}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{GIBYCA1}
+    \strng{fullhash}{GIBYCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{\url{http://www.deeplearningbook.org}}
+    \field{title}{Deep Learning}
+    \field{year}{2016}
   \endentry
 
   \entry{liebi2018small}{article}{}
@@ -307,6 +493,30 @@
     \field{year}{2015}
   \endentry
 
+  \entry{martens2010deep}{inproceedings}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=MJ}{%
+         family={Martens},
+         familyi={M\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MJ+1}
+    \strng{fullhash}{MJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{ICML}
+    \field{pages}{735\bibrangedash 742}
+    \field{title}{Deep learning via hessian-free optimization.}
+    \field{volume}{27}
+    \field{year}{2010}
+  \endentry
+
   \entry{mcmorrow2011elements}{book}{}
     \name{author}{2}{}{%
       {{hash=MD}{%
@@ -427,6 +637,39 @@
     }
     \field{type}{phdthesis}
     \field{year}{2015}
+  \endentry
+
+  \entry{tan2019review}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=THH}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Hong\bibnamedelima Hui},
+         giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LKH}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={King\bibnamedelima Hann},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{THHLKH1}
+    \strng{fullhash}{THHLKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{IOP conference series: materials science and engineering}
+    \field{number}{1}
+    \field{pages}{012003}
+    \field{title}{Review of second-order optimization techniques in artificial
+  neural networks backpropagation}
+    \field{volume}{495}
+    \field{year}{2019}
   \endentry
 
   \entry{yoshiharu1997cellulose}{article}{}

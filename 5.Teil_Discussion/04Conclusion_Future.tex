@@ -2,12 +2,12 @@
 
 \section{Project Evaluation}
 
-In conclusion, this Thesis has demonstrated the versatility and efficiency of automatic differentiation in gradient-based optimisation algorithms.
-A working AD SAXSTT framework was implemented using Pytorch and validated to the original SAXSTT implementation.
-This allowed for effortless investigation of possible improvements to the current model using the so-called EXPSIN expression.
-The reconstruction results were promising, but not yet an improvement of the existing model.
-It is not conclusively determined whether the reason for the disapointing results was due to the chosen optimisation algorithm or the functionality of the EXPSIN expression.
-Nevertheless, a linear combination between an isotropic term and an uniaxial exponential term was determined to be an exciting possible improvement to the current model.
+In conclusion, this thesis has demonstrated the versatility and efficiency of automatic differentiation in gradient-based optimisation algorithms.
+SAXSTT with automatic gradient calculation was implemented using Pytorch and validated to the original implementation.
+The implementation allowed for effortless investigation of possible improvements to the current cost function, exemplified through the so-called EXPSIN expression.
+The reconstruction results were promising, but not yet an improvement of the existing SAXSTT algorithm.
+It is not conclusively determined whether the reason for the disappointing results was due to the chosen optimisation algorithm or the functionality of the EXPSIN expression.
+Nevertheless, a linear combination between an isotropic term and an uniaxial exponential term was determined to be an exciting possible improvement to SAXSTT.
 
 
 
@@ -15,9 +15,11 @@ Nevertheless, a linear combination between an isotropic term and an uniaxial exp
 \section{Future Work}
 
 Numerous interesting improvements were mentioned in Chapter \ref{ch:validation_discussion} and \ref{ch:optimisation_performance}.
-Shortly summarised, the optimisation algorithm could be promoted to the second order Newton-Raphson method, or the stochastic ADAM algorithm could be used.
+Shortly summarised, a change of optimisation algorithm to either the Quasi-Newton method or the truncated-Newton method would allow for mini batch optimisation,
+which would ensure an enhanced ability to avoid local minima. This would come at the cost of additional computational complexity.
 In addition, automatic differentiation would allow for implementation of SAXSTT for orientation mapping of other symmetries than the currently implemented uniaxial symmetry.
 Regarding the current SAXSTT algorithm for uniaxial symmetries, the EXPSIN expression should have an isotropic term added to it.
 Other small tweaks would be to implement Fourier-Sinc interpolation despite an increased cost in computational complexity.
+With all these improvements, a viable option would be to translate the entire SAXSTT algorithm to Python, which would also allow for a better exploitation of the GPU.
 
 %RSD: Elaborate more? Or just summarise what has been mentioned. 

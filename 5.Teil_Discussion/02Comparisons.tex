@@ -1,5 +1,73 @@
 \chapter{Optimisation Performance}\label{ch:optimisation_performance}
 
+\section{Evaluation of SAXSTT}
+
+Despite the concluded validation of orientation mappin in Section \ref{sec:validity_saxstt},
+there are regardless a number of aspects that should be addressed in order to improve the performance of SAXSTT.
+Firstly, the spatial resolution is affected by the choice of interpolation, as well as the Gaussian blur applied to account for interpolation artefacts.
+As seen in Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs}, zig-zag artefacts, also called staircase artefacts, were present in the reconstructed carbon knot, even though Gaussian blur was applied during reconstruction.
+However, it has not been mentioned that additional regularisation often is applied in SAXSTT to reduce such artefacts and other outliers, at the cost of lower spatial resolution.
+Nevertheless, the artefacts can be reduced without sacrificing the spatial resolution by instead utilising Fourier-Sinc interpolation \cite{Sinc_interpolation_2016}.
+%A possible improvement to the inaccurate interpolation and its skewed artefacts could be to use Fourier-Sinc interpolation. %RSD: Cite.
+%\noindent
+%RSD: How to improve. ?
+Sinc interpolation is equivalent with applying a rectangular kernel in Fourier space, which means that all pixels in real-space are affected, and the interpolated image has ringing artefacts instead of staircase artefacts. %RSD: kernel applied in fourier space, where each pixel is accociated with the entire real image. 
+The disadvantage is that the sinc function decays as $\frac{1}{x}$, and abrupt interfaces will have significant ringing artefacts affecting the entire image \cite{ipol.2011.g_lmii}. % Include image?
+Moreover, the necessary Fast Fourier Transforms (FFTs) would increase the computational complexity of the gradient calculation to $\mathcal{O}(N\log{N})$,
+where $N$ is the number of voxels in the sample. %RSD: Cite
+Currently, there is reason to believe that bilinear interpolation has the same computational complexity as the gradient calculation, $\mathcal{O}(N)$, as indicated in Figure \ref{fig:gradient_time_complexity}.
+Still, sinc interpolation is in many cases considered to be the ideal interpolation for bandlimited functions \cite{ipol.2011.g_lmii}. %RSDL: In bandlimited instances. 
+
+Another aspect in the evaluation of SAXSTT is the rate of convergence.
+Due to CGD, with its use of line seach and conjugate gradient directions,
+the current implementation manages to quickly improve the quality of the orientation mapping in the matter of few iterations.
+%This is mostly due to the CGD algorithm with the use of line search and conjugate gradient directions.
+\noindent
+However, the use of the conjugate gradient directions is not always beneficial.
+The one major drawback of the deterministic algorithm is that it is not guaranteed to converge to a global minimum.
+In many cases, the exponential decay of CGD is a result of the algorithm diving into the closest local minimum.
+This can be seen in Figure \ref{fig:CGD_surface}, where there exist numerous initial points in parameter space with the steepest descent leading away from the global minimum.
+Therefore, the accuracy of CGD, and therefore SAXSTT, is highly dependent on the initial guess of optimisation parameters.
+
+Experimentation with techniques regarding the initial guess should therefore be investigated.
+A possible improvement could be as simple as randomly drawing the initial condition, instead of initialising each voxel with the same intensity and the same orientation.
+At the same time, due to the fact that most of the tomogram consists of void, it actually makes sense to initialise the voxels with the same low intensity.
+Another option, which in some sense has been explored by Gao in \cite{PMID_30821257}, is to use a fast, simple, and efficient reconstruction algorithm,
+in their case iterative reconstruction tensor tomography (IRTT), to obtain an initial guess for the SAXSTT algorithm \cite{PMID_30821257}. %RSD: Elaborate?
+
+Despite the advantage of applying a sequence of reconstruction algorithms, SAXSTT should ideally be able to perform reconstructions single-handedly.
+Therefore, it would be worthwhile to experiment with optimisation algorithms that are more robust in dealing with local minima, such as versions of stochastic gradient descent (SGD).
+The main idea with SGD is to draw mini batches of data from the entire data set, and perform a gradient update on each batch separately.
+To exemplify this for SAXSTT, a total of 250 projections could be randomly divided into 5 batches of 50 projections each.
+From a cost function evaluation of each of the 5 batches, the gradient would be calculated, and the optimisation parameters would be updated.
+Consequently, the updates would be noisy with a higher variance. However, this variance would in many cases be beneficial,
+as it would allow the algorithm to escape local minima.
+Moreover, like CGD that employs line search and conjugate gradient directions, there exist numerous variants of SGD to optimise each step.
+One option is to employ the variant named ADAM, which optimises each step through momentum and RMSProp \cite{Goodfellow-et-al-2016}.
+Shortly explained, momentum is a technique to accelerate the gradient descent based on a moving average of previously calculated gradients.
+RMSProp is a technique to reduce the variance of the gradient descent by dividing the gradient by an exponentially decaying average of squared gradients \cite{Goodfellow-et-al-2016}.
+%A necessity for RMSProp is actually revealed in Figure \ref{} Say that gradients become very small? Because they are correct. Does not make sense. 
+
+While SGD may solve the current issues with CGD, introducing SGD would undoubtedly decrease the rate of convergence of SAXSTT.
+Additionally, a default step size would have to be tuned as a hyperparameter together with a chosen batch size.
+The optimal values of these parameters may vary depending on the measurement data.
+
+Instead, second order methods base the choice of step size on the curvature of the cost function, and are therefore powerful optimisation techniques.
+One advantage would be that no non-exact line search, which currently accounts for approximately half the computational time of SAXSTT, would be necessary.
+A review of second order optimisation techniques was performed by Tan and Lim \cite{tan2019review}.
+Based on their review, either the Quasi-Newton method or the Hessian-free method, also called truncated-Newton method, seemed to be good options for SAXSTT.
+
+The Quasi-Newton method approximates the inverse Hessian using, for instance, the BFGS algorithm \cite{tan2019review}.
+Here, the inverse Hessian is approximated by a given expression of matrix multiplications of current and previous gradients and parameter values.
+Assuming that matrix multiplication can be performed efficiently using GPU computing, and that there is sufficient memory to hold the previously calculated gradients and parameters,
+the Quasi-Newton method could be a viable option.
+
+In contrast, the Hessian-free method calculates Hessian-direction vector products using finite differences, which requires a single additional gradient computation.
+A rough estimation of the optimal Hessian-direction vector product is found using linear conjugate gradient method, which is terminated long before full convergence.
+Essentially, CGD is here applied in a more efficient manner than in the current CGD algorithm, and information regarding the curvature of the cost function is exploited \cite{martens2010deep}.
+
+As a final note, these alternative optimisation algorithms could be implemented using random mini batches, meaning that the main advantage of SGD could be utilised in these approximate second order methods.
+
 
 \section{Comparison of Performed Reconstructions}
 %Conclusions drawn from results
@@ -14,16 +82,20 @@ and \ref{fig:phantom_reconstruction_2D_angles} with the carbon knot reconstructi
 and \ref{fig:carbon_knot_reconstruction_2D_angles}, there is reason to believe that the loss curves cannot be directly compared.
 For instance, both the "SYM"- and "AD"- reconstructions of the carbon knot were seemingly more converged than the "EXPSIN"-reconstruction of the Phantom data set.
 However, this qualitative observation is not reflected by the loss curves.
-One possible explanation might be that the angles of the carbon knot were not fully optimised, which limited the loss reduction, even though the other coefficients were optimised.
+One possible explanation might be that the Phantom data set was so weakly anisotropic compared to the carbon knot data set,
+that only optimising the isotropic coefficient was sufficient to obtain a good reconstruction in terms of total loss.
+%One possible explanation might be that the angles of the carbon knot were not fully optimised, which limited the loss reduction, even though the other coefficients were optimised.
+%RSD: Leave it unanswered? Or elaborate?
 
-The most pressing issue when evaluating the reconstructions is, however, the performance of the EXPSIN cost function.
-The preferred orientation for many voxels of the Phantom data set had not changed significantly from the initial conditions.
-A combination of a too weak anisotropic signal together with the exponential term in the cost function was possibly the root cause.
+The most pressing issue when evaluating the reconstructions, however, is the performance of the EXPSIN cost function.
+The preferred orientation for many voxels of the Phantom data set had not changed noticeably from the initial conditions.
+A combination of a too weak anisotropic signal together with the exponential term in the cost function was concluded to be the root cause.
 An assessment of computed gradient values revealed that the gradient with respect to the orientation was many orders of magnitude smaller than that of the coefficients.
-Effectively, an orientation optimisation step becomes negligible small, and only the isotropic coefficient is optimised.
+Effectively, all optimisation steps of the orientations therefore become negligible small, and only the isotropic coefficient has actually been optimised in the finished reconstruction.
 In contrast, all optimisation parameters are expected to have computed gradients of similar magnitude when the form factor is modelled by a linear combination of spherical harmonics.
 Moreover, each spherical harmonic function is independent of the others, while the exponential term in EXPSIN appears to affect the intensity parameter $A$.
-This dependency is revealed by an emerged pattern in Figure \ref{fig:phantom_reconstruction_2D}. The anisotropic coefficient $B$ is unchanged where the $A$-parameter is strongest. Likewise, $B$ has been overshooted where $A$ is undershooted.
+This dependency was revealed by an emerged pattern in Figure \ref{fig:phantom_reconstruction_2D}. The anisotropic coefficient $B$ was unchanged where the $A$-parameter was the strongest.
+Likewise, $B$ has been overshooted where $A$ was undershooted.
 The exponential term in the cost function may therefore appear to be a poor choice when the signal is only weakly anisotropic.
 However, the result seemed to be much better with a stronger anisotropic signal, as seen in the carbon knot reconstructions of the preferred orientation in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}.
 As mentioned in Section \ref{sec:reconstruction_physical_carbon_knot},
@@ -31,33 +103,33 @@ the main features of the "SYM"- and "AD"-reconstructions were also present in th
 However, the spatial resolution of the reconstruction was poorer.
 It is important to remember another important difference between the different algorithms.
 SYM and AD both performed stepwise optimisation, while EXPSIN optimised all coefficients simultaneously.
-This seems to favour the "SYM"- and "AD"-algorithms, since they were able to optimise the coefficients in a more targeted manner, resulting in a smaller loss as seen in Figure \ref{fig:Loss_curve_optimal}.
+There are obvious advantages with the first approach, since it allows for a more targeted manner optimisation, resulting in a smaller loss as seen in Figure \ref{fig:Loss_curve_optimal}.
 Therefore, it would be interesting to investigate stepwise optimisation in the "EXPSIN"-algorithm as well.
-
-
+There is also a probability that the stepwise approach makes deterministic conjugate gradient descent viable,
+because the estimated model should in most cases be a sufficiently good guess of the true solution before the final optimisation.
 
 
 \section{Assessment of Methodology}
 %Discussion of Methodology. Why is it better to use an AD framework? Why not?
 \noindent
 The AD framework proved essential when developing the "EXPSIN"-algorithm. Not only did it allow for a swift implementation.
-It was also painless to alter the expression, for instance by including normalisation and applying an absolute value operator to the anisotropic coefficent.
-Furthermore, other adaptations of the SAXSTT algorithm could be easily implemented. For instance, SAXSTT could have been expanded to reconstruct other symmetries than uniaxial.
-This could require spherical harmonics functions with $m \neq 0$. Alternatively, another form factor expression would have to be developed.
-Regardless, the gradient of these functions would not have to be derived tediously, and the resulting complex expression would not have to be implemented manually.
+It was also painless to alter the expression, for instance by including normalisation, and applying an absolute value operator to the anisotropic coefficent.
+Furthermore, other adaptations of SAXSTT could be easily implemented. For instance, SAXSTT could have been expanded to reconstruct other symmetries than uniaxial.
+This could require spherical harmonics functions with $m \neq 0$. Alternatively, another form factor expression could have been developed.
+Regardless, the gradient of these functions would not have to be derived tediously, and the resulting complex expression for the gradient would not have to be implemented manually.
 
-On the other hand, the AD framework includes a certain overhead and additional computational time. Moreover, debugging of the AD framework proved to be a challenge, as much of the computation is built-in.
-Exact knowledge of all the operations performed by the backpropagation is therefore not possible.
+On the other hand, the AD framework includes a certain overhead and additional computational time. Moreover, debugging can be a challenge, as much of the computation is built-in.
+Exact knowledge of all the operations performed by the backpropagation is therefore impossible.
 
 
 \section{Improvements to the Cost Function}
 As already mentioned, the AD framework could be used to extend the SAXSTT algorithm to other symmetries, for instance by using spherical harmonics with $m \neq 0$.
-In regards to the existing cost functions, the "EXPSIN"-algorithm could possibly be improved by doing stepwise optimisation.
+In regard to the existing cost functions, EXPSIN could possibly be improved by doing stepwise optimisation.
 There is, however, a probability that the intensity term and the expontential term are too "entangled" to be optimised separately.
-A solution could be to do a compromise between the exponential term and the spherical harmonics terms.
+A solution could be to do a compromise between the idea of the spherical harmonics cost funtion and that of EXPSIN.
 One possible limitation of the use of a linear combination of spherical harmonics is that one only gets discrete levels of anisotropy.
 In this thesis, only four anisotropic spherical harmonics functions were used. If an even sharper anisotropy is desired, the number of optimisation parameters would increase drastically.
-In contrast, the degree of anisotropy from EXPSIN is continious, and the number of optimisation parameters is constant.
+In contrast, the degree of anisotropy from EXPSIN is continuous, and the number of optimisation parameters is constant.
 Therefore, it would be interesting to create a linear combination of an isotropic intensity term and the EXPSIN form factor.
 The resulting form factor would be similar to:
 \begin{equation}

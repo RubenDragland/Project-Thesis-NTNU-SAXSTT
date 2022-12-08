@@ -34,10 +34,24 @@ where the sign in the exponent depends on the scattering model, was estimated to
 Similarly, Spherical Harmonics functions with $m \neq 0$ can be implemented due to automatic differentiation,
 and provides the ability to do orientation mapping of other anisotropic symmetries.
 
-\clearpage
+\pagebreak
 \chapter*{Zusammenfassung}
 Spitzer Winkel Röntgen Streuung Tensor Tomographie ist eine Computertomographietechnik,
 die die Orientierungen der uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
+Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale 3D Vektorfeld zu finden.
+In dieser Arbeit wird die Gradientenberechnung des SAXSTT Algorithmus mit automatischer Differentiation implementiert.
+Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann leicht und schnell weiter optimiert und erweitert werden.
+Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler,
+und das Konvergieren des deterministischen konjugierten Gradientenabstiegs Algorithmus zu lokalen Minima ohne ausreichend gute Anfangsbedingungen. %RSD Check. 
+Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit zweiten Ordnungsmethoden oder den stochastischen Gradientenabstiegsalgorithmen, wie ADAM oder AMSGrad.
+Die vorgeschlagene Formfaktorfunktion,
+\begin{equation*}
+    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
+\end{equation*}
+wobei das Vorzeichen im Exponenten von der Streumodell abhängt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
+Ähnlich können Sphärische Harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Differentiation implementiert werden,
+und ermöglicht die Orientierungsmapping von anderen anisotropen Symmetrien.
+
 %%%
 
 \endgroup
