@@ -7,6 +7,19 @@
 %The derived symbolic gradient expression of the alternative functional can be found in Appendix \ref{app:appendixB}.
 The following was the derived symbolic gradients of the alternative functional:
 
+\begin{align}\label{eq:sym_grad_expsin}
+    \begin{split}
+        \theta &= \frac{\pi}{2} \\
+        Q & = \frac{ \Inhat^{\frac{1}{2}} - \In^{\frac{1}{2}}  }{ \Inhat^{\frac{1}{2}} } \\
+        \frac{\partial \Theta}{\partial \theta_{op}} & = \frac{1}{\sin{\Theta}} ( \left(\costhetaop\cosphiop\cos\beta - \sinthetaop\sin\beta\right)\cos\phi \\ &+ \left( \costhetaop\cosphiop\sin\alpha\cos\beta + \costhetaop\sinphiop\cos\alpha + \sinthetaop\cos\beta\sin\alpha \right)\sin\phi ) \\
+        \frac{\partial \Theta}{\partial \varphi_{op}} & = \frac{1}{\sin{\Theta}} ( \sinthetaop(-\sinphiop)\cos\beta\cos\phi \\ &+ \left( \sinthetaop (-\sinphiop)\sin\alpha\cos\beta + \sinthetaop\cosphiop\cos\alpha \right)\sin\phi ) \\
+        \frac{\partial \epsilon}{\partial A} & = 4 \sum_{n, \phi} Q A \exp\left( - B \sin^2 \Theta\right) \\
+        \frac{\partial \epsilon}{\partial B} & = -2 \sum_{n, \phi} Q A^{2} \sin^{2}\Theta \exp\left( - B \sin^2 \Theta\right) \\
+        \frac{\partial \epsilon}{\partial \theta_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \theta_{op}}   \\
+        \frac{\partial \epsilon}{\partial \varphi_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \varphi_{op}} .  \\
+    \end{split}
+\end{align}
+
 %RSD: Legg inn gradientene her:
 
 As mentioned in Section \ref{sec:calc_alt_functional}, the symbolic expression was compared to automatically calculated gradients for random values.

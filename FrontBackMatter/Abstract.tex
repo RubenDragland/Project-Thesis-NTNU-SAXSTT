@@ -17,40 +17,41 @@
 % \end{center}
 
 Small Angle X-ray Scattering Tensor Tomography is a form of computed tomography
-which aims at using Small Angle X-ray Scattering (SAXS) data to do micrometer resolution orientation mapping
+which aims at using Small Angle X-ray Scattering (SAXS) data to perform micrometer resolution orientation mapping
 of uniaxial nanostructures in three-dimensional amorphous samples.
-The reconstruction algorithm is similar to a maximum likelihood estimation that utilises gradient descent to find the optimal 3D vector field
-to describe the orientation of nanostructures throughout the bulk sample.
-In this thesis, the gradient calculation of the SAXSTT algorithm is implemented using automatic differentiation.
+The reconstruction algorithm is similar to a maximum likelihood estimation, because gradient descent is utilised to find the optimal parameters of a 3D vector field
+that describes the orientation of nanostructures throughout the bulk sample.
+In this project, the gradient calculation of the SAXSTT algorithm has been implemented using automatic differentiation.
 Thereby, an additional dimension of versatility has been added to world of SAXSTT, and the technique can easily and swiftly be optimised further and expanded.
 Revealed weaknesses of the algorithm include bilinear interpolation artefacts,
 and the fact that the deterministic conjugate gradient descent algorithm converge to local minima without sufficiently good initial conditions.
-Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with second order methods or the stochastic gradient descent algorithms, such as ADAM or AMSGrad.
+Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with second order methods together with mini batch optimisation.
 The proposed form factor function,
 \begin{equation*}
     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
 \end{equation*}
-where the sign in the exponent depends on the scattering model, was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
-Similarly, Spherical Harmonics functions with $m \neq 0$ can be implemented due to automatic differentiation,
-and provides the ability to do orientation mapping of other anisotropic symmetries.
+where the sign in the exponent is positive when applying an equatorial scattering model, was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
+Similarly, spherical harmonics functions with $m \neq 0$ can be more easily implemented due to automatic differentiation,
+and would provide the ability to do orientation mapping of other anisotropic symmetries.
 
 \pagebreak
 \chapter*{Zusammenfassung}
-Spitzer Winkel Röntgen Streuung Tensor Tomographie ist eine Computertomographietechnik,
-die die Orientierungen der uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
-Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale 3D Vektorfeld zu finden.
-In dieser Arbeit wird die Gradientenberechnung des SAXSTT Algorithmus mit automatischer Differentiation implementiert.
-Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann leicht und schnell weiter optimiert und erweitert werden.
-Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler,
-und das Konvergieren des deterministischen konjugierten Gradientenabstiegs Algorithmus zu lokalen Minima ohne ausreichend gute Anfangsbedingungen. %RSD Check. 
-Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit zweiten Ordnungsmethoden oder den stochastischen Gradientenabstiegsalgorithmen, wie ADAM oder AMSGrad.
+Spitzer Winkel Röntgen Streuung Tensor Tomographie (SAXSTT) ist eine Computertomographietechnik,
+die die Orientierungen von uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
+Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale Parameter des 3D-Vektorfeldes zu finden.
+In dieser Arbeit wurde die Gradientenberechnung des SAXSTT-Algorithmus mit automatischer Ableitung implementiert.
+Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann jetzt leicht und schnell weiter optimiert und erweitert werden.
+Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler.
+Zusätzlich funktionert nicht der konjugertie Gradientenabstiegsalgorithmus ohne ausreichend gute Anfangsbedingungen.
+Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit der Quasi-Newton-Methode oder der Hessian-frei-Methode.
+Wenn der Optimierungsalgorithmus geändert würde, könnte zwar die gegenwärtige Konvergenzprobleme mit Mini-Batch-Optimerung gelöst werden.
 Die vorgeschlagene Formfaktorfunktion,
 \begin{equation*}
     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
 \end{equation*}
-wobei das Vorzeichen im Exponenten von der Streumodell abhängt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
-Ähnlich können Sphärische Harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Differentiation implementiert werden,
-und ermöglicht die Orientierungsmapping von anderen anisotropen Symmetrien.
+wobei das positive Vorzeichen im Exponenten das "Äquator"-Streumodell angibt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
+Zudem können sphärische harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Ableitung implementiert werden,
+und deshalb ermöglicht automatische Ableitung die Implementierung von Orientierungsermittlung anderen anisotropen Symmetrien.
 
 %%%
 
