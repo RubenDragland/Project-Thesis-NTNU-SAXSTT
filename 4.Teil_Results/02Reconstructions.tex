@@ -11,22 +11,22 @@ On the other hand, the initial intensity value was \num{e-4} compared to the tru
 Figure \ref{fig:coefficient_comparison_AD_SYM} and \ref{fig:orientation_comparison_AD_SYM} show distributions of spherical harmonics parameters for converged SAXSTT reconstructions.
 In addition to the raw data, the results include curve fitting of the distributions to Lorentzian functions.
 The peak and full width at half maximum (FWHM) of the Lorentzians are listed in Table \ref{tab:curve_fitting}.
-The peak values of the Lorentzians are close to the true values of the simulated nanostructures, with a FWHM in the order of \num{e-3}.
+The peak values of the Lorentzians were close to the true values of the simulated nanostructures, with a FWHM in the order of \num{e-3}.
 For simplicity, the preferred orientation will from now on be denoted $\theta$ and $\varphi$ instead of $\theta_{op}$ and $\varphi_{op}$, respectively.
 
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_0align_closecoeffs.svg}
-    \caption{ The coefficients converge to a Lorentzian distribution
-        around the true value when the initial conditions have the correct sign.  }
+    \caption{ The coefficients converged to a Lorentzian distribution
+        around the true value when the initial conditions had the correct sign.  }
     \label{fig:coefficient_comparison_AD_SYM}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_orientation_0align_closeangles.svg}
-    \caption{  The orientation parameters converge to a Lorentzian distribution
-        around the true value when the initial conditions are sufficiently close to the true value.}
+    \caption{  The orientation parameters converged to a Lorentzian distribution
+        around the true value when the initial conditions were sufficiently close to the true value.}
     \label{fig:orientation_comparison_AD_SYM}
 \end{figure}
 
@@ -57,18 +57,18 @@ Further analysis of the different reconstruction algorithms was performed on the
 This included comparing the result of the alternative cost function, denoted EXPSIN, to the result of the Spherical Harmonics cost function.
 In this case, it is not possible to directly compare the anisotropic coefficients. Thus, the degree of anisotropy (DoA) \eqref{eq:hermans_order_parameter} was used as a metric for the nanostructure shape.
 
-The initial EXPSIN form factor, as listed in \eqref{eq:exp_sin_squared}, was modified through trial and error, exploiting the versatility of automatic differentiation.
+The initial EXPSIN form factor squared, as listed in \eqref{eq:exp_sin_squared}, was modified through trial and error, exploiting the versatility of automatic differentiation.
 The final cost function expression included normalisation of the exponential term using numerical integration, specifically Simpson's rule.
 In addition, the cost function was adjusted to account for both perpendicular and parallel scattering models.
-The final expression for the EXPSIN form factor was decided to be:
+The final expression for the EXPSIN form factor squared, which is equivalent to the 3D reciprocal space map, was decided to be:
 
 \begin{equation}
     \label{eq:final_exp_sin_squared}
-    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) = A^{2} \frac{\exp\left( \mp |B| \sin^{2}(\Theta) \right)}{\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
+    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) = \vectorBU{A}^{2} \frac{\exp\left( \mp |\vectorBU{B}| \sin^{2}(\vectorgreek{\Theta}) \right)}{\int_{0}^{\pi} \exp\left( \mp |\vectorBU{B}| \sin^{2}(x) \right) \sin(x) dx},
 \end{equation}
 
-where $\mp$ is a sign that depends on the scattering model. For parallel scattering, $\mp = -$, while for perpendicular scattering, $\mp = +$.
-This sign determines at what $\Theta$ the exponential term is at its maximum.
+where $\mp$ is a sign that depends on the scattering model. For parallel scattering, the sign is negative. For perpendicular scattering, the sign should be positive.
+Note that the sign determines at what $\Theta$ the exponential term is at its maximum, which explains its relation to scattering model.
 
 With the alternative cost function optimised to some degree, the different algorithms were compared.
 Figure \ref{fig:phantom_reconstruction_3D} shows a 3D representation of the reconstructed Phantom data set.
@@ -171,7 +171,8 @@ Again, the marker colour represents the degree of anisotropy, while the orientat
 All the algorithms showed similar ability to segregate the voxels containing the carbon knot from the surrounding void.
 However, the "EXPSIN"-algorithm had almost twice the number of voxels with an isotropic intensity above the threshold value of 6 compared to the other algorithms.
 This is an indication of a blurred interface between the carbon knot and the surrounding void.
-Nevertheless, the orientation parameters seem to be correctly estimated in all algorithms.
+Nevertheless, the orientation parameters seem to be correctly estimated in all algorithms,
+and all algorithms have captured the high degree of anisotropy, as expected in Section \ref{sec:data_set_carbon_knot}.
 
 \clearpage
 

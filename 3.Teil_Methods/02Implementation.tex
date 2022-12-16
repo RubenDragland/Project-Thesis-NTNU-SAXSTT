@@ -61,7 +61,10 @@ A complete flowchart of the symbolic gradient routine, which also serves as a ge
     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf} %Here, the font is scaled, but have enough margins. 
     \caption{Flowchart of symbolic SAXSTT.
         For each of the optimisation blocks, a for-loop of CGD steps is performed.
-        The entire gradient routine is completed during the gradient computation step, while the line search stops at the error evaluation.
+        Each CGD step starts with a gradient calculation.
+        The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.
+        A line search is performed in the direction of optimisation to find the optimal step size.
+        With the optimal step size, the parameters are updated, and the next CGD step is performed.
     }
     \label{fig:flowchart_SAXSTT}
 \end{figure}
@@ -133,3 +136,20 @@ while the AD version will be referred to as \emph{AD}. Reconstructions performed
 % Finally, the computed normalisation factor was ensured to be positive, since the integrator had a tendency to return negative values during the mentioned test.
 
 
+As a final note, the flowchart of the SAXSTT algorithm for when the gradients are automatically calculated is shown in Figure \ref{fig:flowchart_ADSAXSTT}.
+The essential distinction is that all the operations after the evaluation of the cost function are built in to the AD engine, and will be updated automatically
+based on the operations performed in the cost function evaluation.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf}
+    \caption{Flowchart of the SAXSTT algorithm when the gradients are automatically calculated.
+        For each of the optimisation blocks, a for-loop of CGD steps is performed.
+        Each CGD step starts with a gradient calculation.
+        The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.
+        A line search is performed in the direction of optimisation to find the optimal step size.
+        With the optimal step size, the parameters are updated, and the next CGD step is performed.
+        The designated AD engine will automatically calculate the gradient of the cost function based on the operations performed in the evaluation.
+    }
+    \label{fig:flowchart_ADSAXSTT}
+\end{figure}

@@ -16,7 +16,7 @@
 % \url{https://plg.uwaterloo.ca/~migod/research/beckOOPSLA.html}
 % \end{center}
 
-Small Angle X-ray Scattering Tensor Tomography is a form of computed tomography
+Small Angle X-ray Scattering Tensor Tomography is a technique of computed tomography
 which aims at using Small Angle X-ray Scattering (SAXS) data to perform micrometer resolution orientation mapping
 of uniaxial nanostructures in three-dimensional amorphous samples.
 The reconstruction algorithm is similar to a maximum likelihood estimation, because gradient descent is utilised to find the optimal parameters of a 3D vector field
@@ -25,31 +25,36 @@ In this project, the gradient calculation of the SAXSTT algorithm has been imple
 Thereby, an additional dimension of versatility has been added to world of SAXSTT, and the technique can easily and swiftly be optimised further and expanded.
 Revealed weaknesses of the algorithm include bilinear interpolation artefacts,
 and the fact that the deterministic conjugate gradient descent algorithm converge to local minima without sufficiently good initial conditions.
-Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with second order methods together with mini batch optimisation.
-The proposed form factor function,
-\begin{equation*}
-    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
-\end{equation*}
-where the sign in the exponent is positive when applying an equatorial scattering model, was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
+Proposed solutions to the mentioned weaknesses included implementation of Fourier-Sinc interpolation and experimentation with second order methods, mainly the Quasi-Newton method, together with mini batch optimisation.
+Furthermore, the form factor function used to model the 3D reciprocal space map of each voxel was proposed to be changed.
+It was estimated that a form factor with one isotropic term to account for background intensity,
+and one tunable exponential term to account for any level of anisotropic scattering, would expand the functionality of the algorithm in the case of uniaxial nanostructures.
+%The proposed form factor function,
+%\begin{equation*}
+%    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
+%\end{equation*}
+%where the sign in the exponent is positive when applying an equatorial scattering model, was estimated to expand the functionality of the algorithm in the case of uniaxial nanostructures.
+\noindent
 Similarly, spherical harmonics functions with $m \neq 0$ can be more easily implemented due to automatic differentiation,
 and would provide the ability to do orientation mapping of other anisotropic symmetries.
 
 \pagebreak
 \chapter*{Zusammenfassung}
-Spitzer Winkel Röntgen Streuung Tensor Tomographie (SAXSTT) ist eine Computertomographietechnik,
+Kleinwinkel-Röntgenstreuung-Tensortomographie (SAXSTT) ist eine Computertomographietechnik,
 die die Orientierungen von uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
 Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale Parameter des 3D-Vektorfeldes zu finden.
 In dieser Arbeit wurde die Gradientenberechnung des SAXSTT-Algorithmus mit automatischer Ableitung implementiert.
 Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann jetzt leicht und schnell weiter optimiert und erweitert werden.
 Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler.
 Zusätzlich funktionert nicht der konjugertie Gradientenabstiegsalgorithmus ohne ausreichend gute Anfangsbedingungen.
-Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit der Quasi-Newton-Methode oder der Hessian-frei-Methode.
+Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit der Quasi-Newton-Methode.
 Wenn der Optimierungsalgorithmus geändert würde, könnte zwar die gegenwärtige Konvergenzprobleme mit Mini-Batch-Optimerung gelöst werden.
-Die vorgeschlagene Formfaktorfunktion,
-\begin{equation*}
-    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
-\end{equation*}
-wobei das positive Vorzeichen im Exponenten das "Äquator"-Streumodell angibt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
+% Die vorgeschlagene Formfaktorfunktion,
+% \begin{equation*}
+%     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
+% \end{equation*}
+% wobei das positive Vorzeichen im Exponenten das "Äquator"-Streumodell angibt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
+\noindent
 Zudem können sphärische harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Ableitung implementiert werden,
 und deshalb ermöglicht automatische Ableitung die Implementierung von Orientierungsermittlung anderen anisotropen Symmetrien.
 
@@ -58,4 +63,3 @@ und deshalb ermöglicht automatische Ableitung die Implementierung von Orientier
 \endgroup
 
 \vfill
-

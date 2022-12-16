@@ -6,8 +6,19 @@ This chapter describes the data sets used in the analysis.
 
 \section{Carbon Knot from Synchrotron Measurement} % RSD: Maybe add a picture of the carbon knot?
 \label{sec:data_set_carbon_knot}
-The experimental data set was scattering data of a carbon fiber knot obtained from a synchrotron measurement.
-The data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located near the centre, consisted of air.  % Need some info on the data set.
+The experimental data set was scattering data of a carbon fiber knot obtained from a synchrotron measurement \cite{PMID_30821257}.
+According to the mentioned paper, the sample was prepared by tying a bundle of carbon fibers into a knot, and securing the ends of the fibers to metallic frames.
+An optical image of the carbon knot was retrieved from \cite{PMID_30821257}, and is shown in Figure \ref{fig:carbon_knot_image}.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.2\textwidth]{../XRD_CT/figures/optical_image_ck_2.png}
+    \caption{Optical image of a bundle of carbon fibers tied into a knot. The image was retrieved from \cite{PMID_30821257}.}
+    \label{fig:carbon_knot_image}
+\end{figure}
+The long interface between the carbon fibers and air was the main source of scattering in the experiment, and resulted in highly anisotropic equatorial scattering \cite{PMID_30821257}.
+Highly anisotropic scattering is ideal when validating implementations of SAXSTT, and the carbon knot was therefore chosen as the experimental data set.
+Moreover, the data had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located near the centre, consisted of air.
+Consequently, reconstructions could be performed on a laptop in an hour or less, considerably faster than larger data sets that may require days of computations on a powerful server.   % Need some info on the data set. 
 Additionally, the data set included a correction term in the metadata to account for offset between the axis of rotation
 and the centre of the sample. This data set will simply be referred to as the \emph{carbon knot}.
 

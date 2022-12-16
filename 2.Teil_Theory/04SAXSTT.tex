@@ -49,7 +49,7 @@ Figure \ref{fig:experimental_setup} shows the experimental setup of a given SAXS
 
 
 \section{Modelling of Anisotropic Scattering}
-The coordinate systems used in this Thesis follow the convention of the article "Small-angle X-ray scattering tensor tomography:
+The coordinate systems used in this thesis follow the convention of the article "Small-angle X-ray scattering tensor tomography:
 model of the three-dimensional reciprocal-space
 map, reconstruction algorithm and angular
 sampling requirements" \cite{liebi2018small}.
@@ -76,6 +76,7 @@ As shown in Figure \ref{fig:spherical_harmonics}, the increasing even $l$-values
 \begin{figure}[h!]
     \centering
     \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/sph_harm_samples.svg}
+    \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/sph_harm_spheres.svg}
     \caption{Spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ for some even $l$-values.
         %RSD: Anything to say about the colours?
     }
@@ -120,25 +121,30 @@ The rotation matrices in Equation \eqref{eq:coordinate_transformations} are defi
     \end{split}
 \end{equation}
 
-Alternatively, one could model the form factor using a function where one parameter controls the amplitude, and the other controls the degree of uniaxiality, for instance
+Alternatively, one could model the form factor using an exponential function where one parameter controls the amplitude, and the other controls the exponential decay,
+which would account for the degree of anisotropy in this case. Uniaxial symmetry could be accounted for by a sinus squared term in the exponent.
+Squaring the form factor function would give a reciprocal space map function on the form,
 \begin{equation}\label{eq:exp_sin_squared}
-    \vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = A^{2} \exp\{-B \sin^{2}\left( \Theta \right) \}, %RSD: What to do with parameters?
+    %\vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = A^{2} \exp\{-B \sin^{2}\left( \Theta \right) \}, %RSD: What to do with parameters?
+    %\vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = \vectorBU{A}^{2}(\vectorBU{r'}, q') \exp\{-\vectorBU{B}(\vectorBU{r'}, q') \sin^{2}\left( \vectorgreek{\Theta}(\vectorBU{r'}, \vectorBU{q'}) \right) \},
+    \vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = \vectorBU{A}^{2} \exp\{-\vectorBU{B} \sin^{2}\left( \vectorgreek{\Theta} \right) \}, %RSD: Include r', q' as well?
 \end{equation}
-with the resulting shape in threedimensional space shown in Figure \ref{fig:exp_sin_squared}.
+with resulting shape in threedimensional space as shown in Figure \ref{fig:exp_sin_squared}.
 
 \begin{figure}
     \centering
     \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/exp_sin_samples.svg}
+    \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/exp_sin_spheres.svg}
     \caption{The function in Equation \eqref{eq:exp_sin_squared} for some sets of parameters (A,B).}
     \label{fig:exp_sin_squared}
 \end{figure}
 
-There are a total of four parameters to optimise in Equation \eqref{eq:exp_sin_squared}: $A$, $B$, $\theta_{op}$, and $\varphi_{op}$.
+There are a total of four parameters per voxel to optimise in Equation \eqref{eq:exp_sin_squared}: $A$, $B$, $\theta_{op}$, and $\varphi_{op}$.
 In contrast, six parameters per voxel need to be optimised in Equation \eqref{eq:reciprocal_space_map},
 $a_{0}$, $a_{2}$, $a_{4}$, $a_{6}$, $\theta_{op}$, and $\varphi_{op}$.
 Moreover, the alternative representation provides with a continuous degree of uniaxiality
 as opposed to the finite number of orders of spherical harmonics functions that can be included.
-However, Equation \eqref{eq:reciprocal_space_map} is more general and can be used to model a linear combination of isotropic and uniaxial intensities.
+However, Equation \eqref{eq:reciprocal_space_map} is more general, and can be used to model a linear combination of isotropic and uniaxial intensities.
 
 
 \section{Optimisation Algorithm}
@@ -179,8 +185,8 @@ The order parameter $S$ is defined as,
 \end{equation}
 where the average value of cosine squared is calculated by evaluating the integrals,
 \begin{equation}
-    \langle\cos^{2} \Theta\rangle = \frac{ \int_{0}^{\pi} f (\Theta) \cos^{2} \Theta \sin^{2} \Theta  \mathrm{d}\Theta  }
-    {\int_{0}^{\pi} f (\Theta) \Theta \sin^{2} \Theta  \mathrm{d}\Theta },
+    \langle\cos^{2} \Theta\rangle = \frac{ \int_{0}^{\pi} f (\Theta) \cos^{2} \Theta \sin \Theta  \mathrm{d}\Theta  }
+    {\int_{0}^{\pi} f (\Theta) \sin \Theta  \mathrm{d}\Theta },
 \end{equation}
 \noindent
 where $f(\Theta)$ is the function, for whom the average cosine squared value is to be calculated.

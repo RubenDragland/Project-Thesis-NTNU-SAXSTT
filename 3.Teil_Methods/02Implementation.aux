@@ -1,7 +1,6 @@
 \relax 
 \providecommand{\transparent@use}[1]{}
 \providecommand\hyper@newdestlabel[2]{}
-\mph@setcol{ii:30}{\mph@nr}
 \@writefile{toc}{\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps  {Implementation}}{31}{chapter.7}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -17,14 +16,17 @@
 \@writefile{toc}{\contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{32}{section.7.4}\protected@file@percent }
 \newlabel{sec:AD_pytorch}{{7.4}{32}{Automatic Differentiation Using Pytorch}{section.7.4}{}}
 \mph@setcol{ii:32}{\mph@nr}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Flowchart of symbolic SAXSTT. For each of the optimisation blocks, a for-loop of CGD steps is performed. The entire gradient routine is completed during the gradient computation step, while the line search stops at the error evaluation. \relax }}{33}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:flowchart_SAXSTT}{{7}{33}{Flowchart of symbolic SAXSTT. For each of the optimisation blocks, a for-loop of CGD steps is performed. The entire gradient routine is completed during the gradient computation step, while the line search stops at the error evaluation. \relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Flowchart of symbolic SAXSTT. For each of the optimisation blocks, a for-loop of CGD steps is performed. Each CGD step starts with a gradient calculation. The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps. A line search is performed in the direction of optimisation to find the optimal step size. With the optimal step size, the parameters are updated, and the next CGD step is performed. \relax }}{33}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:flowchart_SAXSTT}{{8}{33}{Flowchart of symbolic SAXSTT. For each of the optimisation blocks, a for-loop of CGD steps is performed. Each CGD step starts with a gradient calculation. The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps. A line search is performed in the direction of optimisation to find the optimal step size. With the optimal step size, the parameters are updated, and the next CGD step is performed. \relax }{figure.caption.16}{}}
 \mph@setcol{ii:33}{\mph@nr}
 \@writefile{toc}{\contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{34}{section.7.5}\protected@file@percent }
 \newlabel{sec:alternative_cost_function}{{7.5}{34}{Implementation of Alternative Cost Function}{section.7.5}{}}
 \mph@setcol{ii:34}{\mph@nr}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Flowchart of the SAXSTT algorithm when the gradients are automatically calculated. For each of the optimisation blocks, a for-loop of CGD steps is performed. Each CGD step starts with a gradient calculation. The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps. A line search is performed in the direction of optimisation to find the optimal step size. With the optimal step size, the parameters are updated, and the next CGD step is performed. The designated AD engine will automatically calculate the gradient of the cost function based on the operations performed in the evaluation. \relax }}{35}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:flowchart_ADSAXSTT}{{9}{35}{Flowchart of the SAXSTT algorithm when the gradients are automatically calculated. For each of the optimisation blocks, a for-loop of CGD steps is performed. Each CGD step starts with a gradient calculation. The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps. A line search is performed in the direction of optimisation to find the optimal step size. With the optimal step size, the parameters are updated, and the next CGD step is performed. The designated AD engine will automatically calculate the gradient of the cost function based on the operations performed in the evaluation. \relax }{figure.caption.17}{}}
+\mph@setcol{ii:35}{\mph@nr}
 \@setckpt{3.Teil_Methods/02Implementation}{
-\setcounter{page}{35}
+\setcounter{page}{36}
 \setcounter{equation}{38}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -39,7 +41,7 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{7}
+\setcounter{figure}{9}
 \setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{svg@param@lastpage}{0}
@@ -54,7 +56,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{30}
+\setcounter{instcount}{36}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}

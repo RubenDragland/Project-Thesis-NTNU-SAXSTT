@@ -24,27 +24,27 @@
 \contentsline {section}{\numberline {5.1}X-ray Pencil Beam}{21}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Experimental Setup}{21}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Modelling of Anisotropic Scattering}{22}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{24}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{25}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Degree of Uniaxiality}{25}{section.5.5}%
 \contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{27}{part.3}%
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{29}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Simulated Parallel Uniaxial Nanostructures}{29}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Simulated Aligned Parallel Nanostructures with Void}{29}{section.6.3}%
+\contentsline {section}{\numberline {6.3}Simulated Aligned Parallel Nanostructures with Void}{30}{section.6.3}%
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{31}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{31}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Understanding the SAXSTT Algorithm}{31}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Automatic Differentiation in MATLAB}{32}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Automatic Differentiation Using Pytorch}{32}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Implementation of Alternative Cost Function}{34}{section.7.5}%
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{35}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Computing Gradients of Alternative Functional}{35}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Reconstruction of Simulated Data}{35}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Reconstruction of Carbon Knot}{36}{section.8.3}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{37}{part.4}%
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{39}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{39}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{39}{section.9.2}%
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Calculations}}{37}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Computing Gradients of Alternative Functional}{37}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Reconstruction of Simulated Data}{37}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Reconstruction of Carbon Knot}{38}{section.8.3}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Presentation of Results}}{39}{part.4}%
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Validation of Gradients}}{41}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Symbolic Gradients of Alternative Functional}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Automatic Gradients of SAXSTT}{41}{section.9.2}%
 \contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{43}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Reconstruction of Simulated Parallel Nanostructures}{43}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{50}{section.10.2}%

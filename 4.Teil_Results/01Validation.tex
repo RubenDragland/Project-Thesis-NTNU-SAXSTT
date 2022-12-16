@@ -5,32 +5,29 @@
 \section{Symbolic Gradients of Alternative Functional}
 
 %The derived symbolic gradient expression of the alternative functional can be found in Appendix \ref{app:appendixB}.
-The following was the derived symbolic gradients of the alternative functional:
+% The following was the derived symbolic gradients of the alternative functional:
 
-\begin{align}\label{eq:sym_grad_expsin}
-    \begin{split}
-        \theta &= \frac{\pi}{2} \\
-        Q & = \frac{ \Inhat^{\frac{1}{2}} - \In^{\frac{1}{2}}  }{ \Inhat^{\frac{1}{2}} } \\
-        \frac{\partial \Theta}{\partial \theta_{op}} & = \frac{1}{\sin{\Theta}} ( \left(\costhetaop\cosphiop\cos\beta - \sinthetaop\sin\beta\right)\cos\phi \\ &+ \left( \costhetaop\cosphiop\sin\alpha\cos\beta + \costhetaop\sinphiop\cos\alpha + \sinthetaop\cos\beta\sin\alpha \right)\sin\phi ) \\
-        \frac{\partial \Theta}{\partial \varphi_{op}} & = \frac{1}{\sin{\Theta}} ( \sinthetaop(-\sinphiop)\cos\beta\cos\phi \\ &+ \left( \sinthetaop (-\sinphiop)\sin\alpha\cos\beta + \sinthetaop\cosphiop\cos\alpha \right)\sin\phi ) \\
-        \frac{\partial \epsilon}{\partial A} & = 4 \sum_{n, \phi} Q A \exp\left( - B \sin^2 \Theta\right) \\
-        \frac{\partial \epsilon}{\partial B} & = -2 \sum_{n, \phi} Q A^{2} \sin^{2}\Theta \exp\left( - B \sin^2 \Theta\right) \\
-        \frac{\partial \epsilon}{\partial \theta_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \theta_{op}}   \\
-        \frac{\partial \epsilon}{\partial \varphi_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \varphi_{op}} .  \\
-    \end{split}
-\end{align}
+% \begin{align}\label{eq:sym_grad_expsin}
+%     \begin{split}
+%         \theta &= \frac{\pi}{2} \\
+%         Q & = \frac{ \Inhat^{\frac{1}{2}} - \In^{\frac{1}{2}}  }{ \Inhat^{\frac{1}{2}} } \\
+%         \frac{\partial \Theta}{\partial \theta_{op}} & = \frac{1}{\sin{\Theta}} ( \left(\costhetaop\cosphiop\cos\beta - \sinthetaop\sin\beta\right)\cos\phi \\ &+ \left( \costhetaop\cosphiop\sin\alpha\cos\beta + \costhetaop\sinphiop\cos\alpha + \sinthetaop\cos\beta\sin\alpha \right)\sin\phi ) \\
+%         \frac{\partial \Theta}{\partial \varphi_{op}} & = \frac{1}{\sin{\Theta}} ( \sinthetaop(-\sinphiop)\cos\beta\cos\phi \\ &+ \left( \sinthetaop (-\sinphiop)\sin\alpha\cos\beta + \sinthetaop\cosphiop\cos\alpha \right)\sin\phi ) \\
+%         \frac{\partial \epsilon}{\partial A} & = 4 \sum_{n, \phi} Q A \exp\left( - B \sin^2 \Theta\right) \\
+%         \frac{\partial \epsilon}{\partial B} & = -2 \sum_{n, \phi} Q A^{2} \sin^{2}\Theta \exp\left( - B \sin^2 \Theta\right) \\
+%         \frac{\partial \epsilon}{\partial \theta_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \theta_{op}}   \\
+%         \frac{\partial \epsilon}{\partial \varphi_{op}} & = - 4 \sum_{n, \phi} Q A^{2} B \sin^{2} \Theta \cos\Theta \exp\left( - B \sin^2 \Theta\right) \frac{\partial \Theta}{\partial \varphi_{op}} .  \\
+%     \end{split}
+% \end{align}
 
 %RSD: Legg inn gradientene her:
 
 As mentioned in Section \ref{sec:calc_alt_functional}, the symbolic expression was compared to automatically calculated gradients for random values.
-The symbolic gradient expressions for coefficients $A$ and $B$ agreed with the automatically calculated gradients for all sampled initial values.
+Evaluation of the symbolic gradient expressions for the coefficients $A$ and $B$ agreed with the automatically calculated gradients for all sampled initial values.
 The gradients with respect to the orientation parameters $\theta_{op}$ and $\varphi_{op}$, however, were incorrect.
-Even though two different methods were used to derive the latter gradients, none proved to be correct.
-
-%Conclude here?
 As a result, the gradients of the alternative functional were correctly derived for the coefficients $A$ and $B$,
 but wrongly derived for the orientation parameters $\theta_{op}$ and $\varphi_{op}$.
-Furthermore, SAXSTT using the alternative functional had to be implemented using automatically calculated gradients.
+Therefore, SAXSTT using the alternative functional had to be implemented using automatically calculated gradients.
 
 \section{Automatic Gradients of SAXSTT}
 
@@ -40,9 +37,9 @@ the relative deviation of the automatically calculated gradients with respect to
 For each voxel, the relative deviation was calculated, and scattered along axes representing gradient magnitude and deviation magnitude, respectively.
 Moreover, the colour of each point represents the distance of the voxel from the centre of the volume.
 A tendency shown in the scatter plot is that the relative deviation was larger for smaller gradients.
-Moreover, the positive deviation indicates that the symbolically calculated gradients are generally larger in terms of magnitude.
-The large majority of the automatically calculated gradients deviate less than $5\%$ from the symbolically calculated gradients.
-The largest deviation occurs when the gradient magnitude is small, and the voxel is located close to the edge of the sample,
+Moreover, the positive deviation indicates that the symbolically calculated gradients were generally larger in terms of magnitude.
+The large majority of the automatically calculated gradients deviated less than $5\%$ from the symbolically calculated gradients.
+The largest deviation occurred when the gradient magnitude was small, and the voxel was located close to the edge of the sample,
 as indicated by the dominant colour in the upper right corner of the figure.
 
 \begin{figure}[h!]
@@ -50,14 +47,15 @@ as indicated by the dominant colour in the upper right corner of the figure.
     % RSD: Vector graphics slow due to number of elements. png might be better here. But need higher resolution.
     %\includesvg[width= 1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads.svg}
     %\includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_a0_gradients_raster.png}
-    \includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex.pdf}
+    \includegraphics[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png}
     \caption{The deviation data is sorted by symbolic gradient value.
-        The majority of the voxels have a deviation below $5\%$, while a subsection of the data has a deviation between $15\%$ and $30\%$.
-        Naturally, the relative deviation is larger for smaller gradients.
-        Also, voxels located close to the edge of the sample have a larger deviation.}
+        The majority of the voxels had a deviation below $5\%$, while a subsection of the data had a deviation between $15\%$ and $30\%$.
+        Naturally, the relative deviation was larger for smaller gradients.
+        Also, voxels located close to the edge of the sample had a larger deviation.}
     \label{fig:gradient_comparison}
 \end{figure} % Color value according to index radius. 
 
+%RSD: Watch out for Present Tense. Should be Past tense. !
 
 %RSD: Gradients part of the results are finished! However, appendix incomplete.
 
