@@ -38,7 +38,7 @@ Gradient descent in parameter space is visualised in Figure \ref{fig:GD_surface}
     \centering
     %\includegraphics{}
     \includesvg[height=0.33\textheight]{../XRD_CT/Plotting/plots/GD_new.svg}
-    \caption{A surface plot of the error in parameter space for a model. The trajectory shows the path of parameter optimisation based on gradient descent.
+    \caption[Trajectory of Gradient Descent]{A surface plot of the error in parameter space for a model. The trajectory shows the path of parameter optimisation based on gradient descent.
         Notice that the smooth curve is an indication of many steps with a small step size. An animation of the process is available at \url{https://github.com/RubenDragland/XRD_CT/tree/main/Plotting/animations} % Github hyperref. \url{ }
     }
     \label{fig:GD_surface}
@@ -108,7 +108,7 @@ However, due to the iterative and approximate nature of the line search, or the 
 \begin{figure}[h!]
     \centering
     \includesvg[height = 0.33\textheight]{../XRD_CT/Plotting/plots/CGD_exact.svg}
-    \caption{A surface plot of the error in parameter space for a model.
+    \caption[Trajectory of Conjugate Gradient Descent]{A surface plot of the error in parameter space for a model.
         The trajectory shows the path of parameter optimisation based on conjugate gradient descent.
         Notice that the curve consists of a few, but long, steps.
         In theory, this method should converge in two iterations, since there are two parameters.

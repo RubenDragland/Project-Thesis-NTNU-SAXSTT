@@ -15,7 +15,7 @@ Moreover, it is important to notice that the speed-up of the parallelisation was
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/gradient_computation.svg}
-    \caption{ The gradient computation time of AD and SYM for different number of voxels using a laptop, GPU, MEX-functions, and parallelisation, respectively. % Should test CPU on Gamma instead. Mind myself. Not the most important thing. Change text 
+    \caption[Time Complexity of Gradient Computation]{ The gradient computation time of AD and SYM for different number of voxels using a laptop, GPU, MEX-functions, and parallelisation, respectively. % Should test CPU on Gamma instead. Mind myself. Not the most important thing. Change text 
         The time complexity was about $\mathcal{O}(N)$ for all methods, where N is the number of voxels.}
     \label{fig:gradient_time_complexity}
 \end{figure}
@@ -40,7 +40,7 @@ Apart from that, the "AD"-algorithm and the "EXPSIN"-algorithm were within twice
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/Loss_curve_optimal.svg} %RSD: Remember inkscape formatter and scaling. More changes needed to the plot. Generalise number og lines. 
-    \caption{ The loss curves of the respective performed reconstructions. Each curve was normalised to the initial loss.
+    \caption[Loss Curves of Reconstructions]{ The loss curves of the respective performed reconstructions. Each curve was normalised to the initial loss.
         CK is short for carbon knot, and P stands for Phantom. }
     \label{fig:Loss_curve_optimal}
 \end{figure}

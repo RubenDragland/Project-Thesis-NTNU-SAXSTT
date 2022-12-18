@@ -109,6 +109,74 @@
     \field{year}{2009}
   \endentry
 
+  \entry{carleo2019machine}{article}{}
+    \name{author}{8}{}{%
+      {{hash=CG}{%
+         family={Carleo},
+         familyi={C\bibinitperiod},
+         given={Giuseppe},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CI}{%
+         family={Cirac},
+         familyi={C\bibinitperiod},
+         given={Ignacio},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Cranmer},
+         familyi={C\bibinitperiod},
+         given={Kyle},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Daudet},
+         familyi={D\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schuld},
+         familyi={S\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Tishby},
+         familyi={T\bibinitperiod},
+         given={Naftali},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=VML}{%
+         family={Vogt-Maranto},
+         familyi={V\bibinithyphendelim M\bibinitperiod},
+         given={Leslie},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZL}{%
+         family={Zdeborov{\'a}},
+         familyi={Z\bibinitperiod},
+         given={Lenka},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {APS}%
+    }
+    \strng{namehash}{CG+1}
+    \strng{fullhash}{CGCICKDLSMTNVMLZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{4}
+    \field{pages}{045002}
+    \field{title}{Machine learning and the physical sciences}
+    \field{volume}{91}
+    \field{journaltitle}{Reviews of Modern Physics}
+    \field{year}{2019}
+  \endentry
+
   \entry{crater1994general}{article}{}
     \name{author}{1}{}{%
       {{hash=CHW}{%
@@ -347,6 +415,87 @@
     \field{year}{2016}
   \endentry
 
+  \entry{li2013quantitative}{article}{}
+    \name{author}{10}{}{%
+      {{hash=LXY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiao-Yun},
+         giveni={X\bibinithyphendelim Y\bibinitperiod},
+      }}%
+      {{hash=LXH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Xiu-Hong},
+         giveni={X\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=YCM}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Chun-Ming},
+         giveni={C\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=HWQ}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Wen-Qiang},
+         giveni={W\bibinithyphendelim Q\bibinitperiod},
+      }}%
+      {{hash=ZN}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Nie},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MXR}{%
+         family={Miao},
+         familyi={M\bibinitperiod},
+         given={Xia-Ran},
+         giveni={X\bibinithyphendelim R\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WYZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yu-Zhu},
+         giveni={Y\bibinithyphendelim Z\bibinitperiod},
+      }}%
+      {{hash=BFG}{%
+         family={Bian},
+         familyi={B\bibinitperiod},
+         given={Feng-Gang},
+         giveni={F\bibinithyphendelim G\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{LXY+1}
+    \strng{fullhash}{LXYLXHYCMHWQZNMXRTFWYZBFGWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{4}
+    \field{pages}{046102}
+    \field{title}{Quantitative evaluation of equatorial small-angle X-ray
+  scattering for cylindrical fibers}
+    \field{volume}{22}
+    \field{journaltitle}{Chinese Physics B}
+    \field{year}{2013}
+  \endentry
+
   \entry{liebi2018small}{article}{}
     \name{author}{10}{}{%
       {{hash=LM}{%
@@ -543,6 +692,29 @@
     \field{sortinithash}{M}
     \field{title}{Elements of modern X-ray physics}
     \field{year}{2011}
+  \endentry
+
+  \entry{orhan2020micro}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OK}{%
+         family={Orhan},
+         familyi={O\bibinitperiod},
+         given={Kaan},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{OK1}
+    \strng{fullhash}{OK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Micro-computed Tomography (micro-CT) in Medicine and
+  Engineering}
+    \field{year}{2020}
   \endentry
 
   \entry{rohringer2020introduction}{article}{}

@@ -59,7 +59,7 @@ A complete flowchart of the symbolic gradient routine, which also serves as a ge
     \centering
     %\includesvg{../XRD_CT/Figures/Flowchart_optimisation_algorithm.svg}
     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf} %Here, the font is scaled, but have enough margins. 
-    \caption{Flowchart of symbolic SAXSTT.
+    \caption[Flowchart of Symbolic SAXSTT]{Flowchart of symbolic SAXSTT.
         For each of the optimisation blocks, a for-loop of CGD steps is performed.
         Each CGD step starts with a gradient calculation.
         The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.
@@ -88,6 +88,7 @@ As mentioned in Section \ref{sec:theory_AD}, the chain rule, Equation \eqref{eq:
 
 The resulting AD SAXSTT implementation ended up having some significant disadvantages.
 Most importantly, the original MEX-function routines implemented to efficiently perform page-multiplication and bilinear interpolation, the bottlenecks of the SAXSTT routine, had to be written using MATLAB.
+This is because MEX-functions are written in C, which is not compatible with the AD library.
 The MATLAB implementation was not optimised by altering the structure of the code, since the goal was to create a near identical SAXSTT routine with automatic differentiation capabilities.
 However, page-multiplication kept its efficieny with the built-in function \emph{pagemtimes}.
 On the other hand, bilinear interpolation was performed using a double for-loop, like the original MEX-function implementation, at the cost of a considerable speed decrease.
@@ -113,7 +114,10 @@ Moreover, an efficient F-order reshaping function was found online, ensured that
 
 The cost function used in the SAXSTT routine is a comparison of the experimental and estimated SAXS projection intensities.
 Originally, the estimated intensity was the absolute value squared of a linear combination of spherical harmonics, as shown in Equation \eqref{eq:reciprocal_space_map}.
-However, it was desired to express the form factor using the expression listed in Equation \eqref{eq:exp_sin_squared}.
+However, it was desired to express the reciprocal space map using the expression listed in Equation \eqref{eq:exp_sin_squared}.
+%RSD: Plots of DoA and 1D shape? Have already in theory...
+
+\noindent
 This implementation required some modifications of the AD SAXSTT algorithm, mainly initialising new variables and changing the form factor computation in the cost function evaluation.
 It is important to notice that no gradients had to be derived by hand.
 A batch approach in Pytorch was the most optimised code structure, and was chosen for this task.
@@ -143,7 +147,7 @@ based on the operations performed in the cost function evaluation.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf}
-    \caption{Flowchart of the SAXSTT algorithm when the gradients are automatically calculated.
+    \caption[Flowchart of AD SAXSTT]{Flowchart of the SAXSTT algorithm when the gradients are automatically calculated.
         For each of the optimisation blocks, a for-loop of CGD steps is performed.
         Each CGD step starts with a gradient calculation.
         The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.

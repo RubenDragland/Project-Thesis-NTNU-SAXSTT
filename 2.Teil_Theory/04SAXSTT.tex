@@ -2,15 +2,17 @@
 \label{chap:SAXSTT}
 
 Small Angle X-ray Scattering Tensor Tomography is a characterisation technique where the aim is to reconstruct the reciprocal space map in each voxel of a three-dimensional sample
-that holds nanostructures with anisotropic electron distribution. Essentially, the technique is computed tomography, but with X-ray scattering patterns instead of X-ray absorption measurements.
+that holds nanostructures with anisotropic electron distribution. The technique is closely related to conventional attenuation-based computed tomography.
+However, the technique is computed tomography of X-ray scattering patterns instead of X-ray absorption measurements.
 Using scattering patterns obtained from different polar and azimuthal angles, the goal is to determine a tensor for each voxel in the sample,
 so that the estimated orientational scattering patterns are in close resemblance to the measured scattering.
 Therefore, the optimisation task is closely related to maximum likelihood estimation. The converged model with the minimal error is most likely very similar to the attributes of the physical sample.
 In this way, one can map the orientation and the anisotropy of the nanostructures throughout the three-dimensional bulk sample.
 
-\section{X-ray Pencil Beam} % Or in experimental setup. Define brilliance
-The first crucial component of SAXSTT is the quality of the X-ray beam.
-Obviously, more photons increase the signal-to-noise ratio, and thus the resolution of the electron density distribution is improved.
+% \section{X-ray Pencil Beam} % Or in experimental setup. Define brilliance
+\section{Experimental Setup}
+A crucial component of SAXSTT is the quality of the X-ray beam.
+More photons increase the signal-to-noise ratio, and thus the signal caused by the electron density distribution is improved.
 Moreover, the voxel size is determined by the size of the X-ray beam, where a focused beam results in higher resolution of the reconstructed tensors at the cost of reconstruction time.
 Finally, the most ideal scattering occurs when the X-ray beam is almost purely monochromatic, meaning that the spectral bandwidth is narrow.
 All these properties are defined by the brilliance of the beam, given as
@@ -19,31 +21,64 @@ All these properties are defined by the brilliance of the beam, given as
 \end{equation}
 where $BW$ is a commonly used abbreviation for spectral bandwidth \cite{mcmorrow2011elements}.
 
-\section{Experimental Setup}
-The experimental part of the SAXSTT process consists of collecting a series of two-dimensional SAXS patterns from different orientations $\left(\alpha,\beta\right)$.
-Figure \ref{fig:orientations} shows the definition of the polar angle $\alpha$ and azimuthal angle $\beta$.
+
+The experimental part of SAXSTT, the SAXS measurement, consists of collecting a series of two-dimensional SAXS patterns from different sample orientations $\left(\alpha,\beta\right)$.
+In order to reconstruct tensors, SAXS data from two axes of rotation are necessary, unlike conventional CT which only requires one \cite{liebi2018small}.
+Hence, the sample is rotated by a multi-axis rotating stage.
+Figure \ref{fig:SAXS_setup} shows such an experimental setup with the corresponding lab coordinate system.
+$Z$ is defined to be parallel to the beam direction, making $X$ and $Y$ are perpendicular to the beam.
+The span of $X$ and $Y$ is therefore the detector plane, along which the scattering is recorded by a 2D detector.
+Additionally, $\alpha$ is the polar angle of sample rotation, while $\beta$ is the azimuthal angle.
 
 \begin{figure}[h!]
     \centering
-    %\includegraphics[width = 0.4\textwidth]{../XRD_CT/Figures/Coord_system.png} %RSD: Pdf becomes wrong
-    \includesvg[width=0.4\textwidth]{../XRD_CT/Figures/Coord_system.svg}
-    \caption{Definition of the polar angle $\alpha$ and azimuthal angle $\beta$, used to express the orientation of the sample during SAXS measurements.}
-    \label{fig:orientations}
+    \includegraphics[width = 0.8\textwidth]{../XRD_CT/Figures/SAXSTT_setup.pdf}
+    \caption[Experimental Setup of SAXS]{Experimental setup of a SAXS measurement.
+        The synchrotron beam is parallel to the $Z$ axis, and the detector lies in the $XY$-plane.
+        A multi-axis rotating stage is used to collect scattering patterns from different sample orientations $\left(\alpha,\beta\right)$,
+        where $\alpha$ is the polar angle and $\beta$ is the azimuthal angle.
+        The Figure is simplified to illustrate highly anisotropic parallel scattering from a single voxel.
+    }
+    \label{fig:SAXS_setup}
 \end{figure}
 
-In order to reconstruct tensors, the sample must be rotated around two axes of rotation, unlike conventional CT which only requires one \cite{liebi2018small}.
-The synchrotron beam scans across the sample in a raster pattern for each orientation, and collects the combined scattering intensity for each sector of the diffractogram, respectively.
-Figure \ref{fig:experimental_setup} shows the experimental setup of a given SAXS experiment for a single orientation and at a single scanning point $(\alpha, \beta,x,y)$.
+Translation of the sample across the synchrotron beam is performed in a raster pattern for each orientation.
+The 2D scattering patterns are then summed to respective scattering intensities for each sector of the diffractogram.
+The \emph{q-range} is a radial parameter of the scattering patterns, and is inversely proportional to the size of the structures that caused the scattering.
+Therefore, only scattering from a given interval of q-values is collected. %RSD???
 
-\begin{figure}
-    \centering
-    \includesvg[width=0.8\textwidth]{../XRD_CT/Figures/SAXSTT_test.svg}
-    %\includegraphics[width = 1\textwidth]{Figures/SAXSTT_annotated.pdf}
-    \caption{Experimental setup of a SAXS experiment. The beam canon represents the synchrotron beam. The cube represents a single row of voxels in the sample.
-        The scattering intensity from eight sectors of the diffractogram is collected for each scanning point $(\alpha, \beta,x,y)$.
-        Due to uniaxial symmetry, only one half of the diffractogram needs to be sampled. The half-circle is partitioned into 8 sector, meaning that the entire diffractogram is divided into 16 sectors of 22.5 degrees.}
-    \label{fig:experimental_setup}
-\end{figure}
+
+
+% In order to reconstruct tensors, SAXS data from two axes of rotation are necessary, unlike conventional CT which only requires one \cite{liebi2018small}.
+% Hence, the sample is rotated by a multi-axis rotating stage.
+
+% % \section{Experimental Setup}
+% The experimental part of the SAXSTT process consists of collecting a series of two-dimensional SAXS patterns from different sample orientations $\left(\alpha,\beta\right)$ as the sample is rotated by a multi-axis rotating stage \cite{liebi2018small}.
+% Figure \ref{fig:orientations} shows the definition of the polar angle $\alpha$ and azimuthal angle $\beta$.
+
+% \begin{figure}[h!]
+%     \centering
+%     %\includegraphics[width = 0.4\textwidth]{../XRD_CT/Figures/Coord_system.png} %RSD: Pdf becomes wrong
+%     \includesvg[width=0.4\textwidth]{../XRD_CT/Figures/Coord_system.svg}
+%     \caption{Definition of the polar angle $\alpha$ and azimuthal angle $\beta$, used to express the orientation of the sample during SAXS measurements.}
+%     \label{fig:orientations}
+% \end{figure}
+
+% In order to reconstruct tensors, the sample must be rotated around two axes of rotation, unlike conventional CT which only requires one \cite{liebi2018small}.
+% Translation of the sample across the synchrotron beam is performed in a raster pattern for each orientation, effectively collecting 2D scattering patterns which are then summed to respective scattering intensities for each sector of the diffractogram.
+% The \emph{q-range} is a radial parameter of the scattering patterns, and is inversely proportional to the size of the structures that caused the scattering.
+% Therefore, only scattering from a given interval of q-values is collected. %RSD???
+% Figure \ref{fig:experimental_setup} shows the experimental setup of a given SAXS experiment for a single orientation and at a single scanning point $(\alpha, \beta,x,y)$.
+
+% \begin{figure}
+%     \centering
+%     \includesvg[width=0.8\textwidth]{../XRD_CT/Figures/SAXSTT_test.svg}
+%     %\includegraphics[width = 1\textwidth]{Figures/SAXSTT_annotated.pdf}
+%     \caption{Experimental setup of a SAXS experiment. The beam canon represents the synchrotron beam. The cube represents a single row of voxels in the sample.
+%         The scattering intensity from eight sectors of the diffractogram is collected for each scanning point $(\alpha, \beta,x,y)$.
+%         Due to uniaxial symmetry, only one half of the diffractogram needs to be sampled. The half-circle is partitioned into 8 sector, meaning that the entire diffractogram is divided into 16 sectors of 22.5 degrees.}
+%     \label{fig:experimental_setup}
+% \end{figure}
 
 %Figure of scanning orientations?
 
@@ -70,14 +105,19 @@ as given in Equation \eqref{eq:scattering_intensity_classical}:
     \vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = \left\| \sum_{l, m=0} \vectorBU{a}_{l}^{0}(\vectorBU{r'}, q') \vectorBU{Y}_{l}^{0} \{ \Theta(\vectorBU{r'}, \vectorBU{q'}), \Phi(\vectorBU{r'}, \vectorBU{q'}) \} \right\|^{2}.
 \end{equation}
 
-Equation \eqref{eq:reciprocal_space_map} only sums over the spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ and coefficients $\vectorBU{a}_{l}^{0}(\vectorBU{r'}, q')$ with $m=0$, since the nanostructures are assumed to have uniaxial symmetry.
-As shown in Figure \ref{fig:spherical_harmonics}, the increasing even $l$-values of the spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ correspond to higher degree of uniaxiality.
+Equation \eqref{eq:reciprocal_space_map} only sums over the spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ and coefficients $\vectorBU{a}_{l}^{0}(\vectorBU{r'}, q')$ with $m=0$,
+since the nanostructures are assumed to have uniaxial symmetric reciprocal space maps.
+As shown in Figure \ref{fig:spherical_harmonics}, the increasing even $l$-values of the spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ correspond to highly oriented electron distributions.
+The Figure also visualises the anisotropy using the unit sphere, and it is clear that only the pole of the sphere has significant scattering intensity for high even $l$-values.
 
 \begin{figure}[h!]
     \centering
-    \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/sph_harm_samples.svg}
-    \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/sph_harm_spheres.svg}
-    \caption{Spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ for some even $l$-values.
+    \adjustbox{trim=0cm 0cm 0cm 0cm}{
+        \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/sph_harm_samples.svg}}
+    \adjustbox{trim=0cm 1.5cm 0cm 1.5cm}{
+        \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/sph_harm_spheres.svg}}
+    \caption[Illustration of Spherical Harmonics]{Spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ for some even $l$-values.
+        They can be visualised as uniaxial structures or as an intensity distribution on the unit sphere.
         %RSD: Anything to say about the colours?
     }
     \label{fig:spherical_harmonics}
@@ -133,9 +173,12 @@ with resulting shape in threedimensional space as shown in Figure \ref{fig:exp_s
 
 \begin{figure}
     \centering
-    \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/exp_sin_samples.svg}
-    \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/exp_sin_spheres.svg}
-    \caption{The function in Equation \eqref{eq:exp_sin_squared} for some sets of parameters (A,B).}
+    \adjustbox{trim=0cm 0cm 0cm 0cm}{
+        \includesvg[height=0.4\textwidth]{../XRD_CT/Plotting/plots/exp_sin_samples.svg} }
+    \adjustbox{trim=0cm 1.5cm 0cm 1.5cm}{
+        \includesvg[height = 0.4\textwidth]{../XRD_CT/Plotting/thesis_plots/exp_sin_spheres.svg} }
+    \caption[Illustration of Alternative Functional]{The function in Equation \eqref{eq:exp_sin_squared} for some sets of parameters (A,B).
+        They can be visualised as uniaxial structures or as an intensity distribution on the unit sphere.}
     \label{fig:exp_sin_squared}
 \end{figure}
 
@@ -157,13 +200,13 @@ In terms of cost function expressions, there exist many options, and the express
     \epsilon_{q} = 2 \sum_{n, x, y, \phi} \omega_{n}(x,y,q,\phi) \left\{ \left( \widehat{I}_{n}(x,y,q,\phi) \right)^{\frac{1}{2}}  -  \left( \frac{ I_{n}(x,y,q,\phi) }{T_{n}(x,y)} \right)^{\frac{1}{2}} \right\}^{2},
 \end{equation}
 \noindent
-where the respective parts of the expression are a binary mask $\omega$, the calculated SAXS patterns $\widehat{I}_{n}$, the measured SAXS patterns $I_{n}$, and the transmission intensity $T_{n}$.
+where the respective parts of the expression are a binary mask $\omega$, the calculated projection intensity $\widehat{I}_{n}$, the measured projection intensity $I_{n}$, and the transmission intensity $T_{n}$.
 The latter accounts for absorption, which was another phenomenon, in addition to scattering, occurring when X-rays interact with matter,
-as seen in Equation \eqref{eq:qm_interaction_Hamiltonian} in Chapter \ref{ch:scattering}.
+as seen in Equation \eqref{eq:qm_interaction_Hamiltonian} in Chapter \ref{ch:scattering}. When using high energy X-rays, the absorption is negligible.
 
-The calculated SAXS patterns $\widehat{I}_{n}$ can be estimated in a number of ways.
+The calculated projection intensity $\widehat{I}_{n}$ can be estimated in a number of ways.
 However, it is generally an interpolation from the estimated reciprocal space map model $\vectorBU{\widehat{R}}$ to a set of projections.
-Since the SAXS patterns are projections, each SAXS projection $n$ can be expressed as a sum along the X-ray beam,
+Each SAXS projection $n$ can thus be expressed as a sum along the X-ray beam,
 \begin{equation}\label{eq:SAXS_intensity}
     \widehat{I}_{n}(x,y,q,\phi) = \sum_{z} \reciprocalspacemap.
 \end{equation}
@@ -175,10 +218,10 @@ Following this, the uniaxial components $a_{l}$ are optimised.
 This allows the final optimisation to converge to a lower error value than if only one full optimisation were to be performed.
 
 
-\section{Degree of Uniaxiality} %RSD: Or Anisotropy?
+\section{Degree of Anisotropy} %RSD: Or Anisotropy?
 
-A common measure for the degree of uniaxiality is needed to quantify the results of SAXSTT.
-The Hermans order parameter is common for describing the degree of uniaxiality \cite{yoshiharu1997cellulose}.
+A common measure for the degree of anisotropy is needed to quantify the results of SAXSTT.
+The Hermans order parameter is common for describing the degree of anisotropy \cite{yoshiharu1997cellulose}.
 The order parameter $S$ is defined as,
 \begin{equation}\label{eq:hermans_order_parameter}
     S = \frac{1}{2} \left( 3 \langle\cos^{2} \Theta\rangle - 1 \right),
@@ -189,7 +232,32 @@ where the average value of cosine squared is calculated by evaluating the integr
     {\int_{0}^{\pi} f (\Theta) \sin \Theta  \mathrm{d}\Theta },
 \end{equation}
 \noindent
-where $f(\Theta)$ is the function, for whom the average cosine squared value is to be calculated.
-The degree of uniaxiality will be referred to as degree of anisotropy in the remainder of this thesis, for simplicity.
+where $f(\Theta)$ is the function, in which the average cosine squared value is to be calculated.
+When referring to anisotropy for the remainder of this thesis, the Hermans order parameter will be used as the quantitative measure,
+and uniaxial symmetry is implicitly assumed. %RSD?
+% The degree of uniaxiality will be referred to as degree of anisotropy in the remainder of this thesis, for simplicity.
 
 %RSD: Drop equatorial scattering?
+\clearpage
+\section{Scattering Models}
+From the Hermans order parameter \eqref{eq:hermans_order_parameter}, it is clear that the possible interval of $S$ is $[-0.5, 1]$.
+In the case of negative values, equatorial scattering is dominant, meaning that the resulting scattering is perpendicular to real-space orientation of the sample.
+Typically, equatorial scattering occurs when SAXS is performed on fibers \cite{li2013quantitative}, because X-rays scatter off the fiber-air interface.
+Specifically, the mentioned interface has a characteristic length scale that is responsible for scattering intensity in the analysed \emph{q-range} of the SAXS data.
+To understand this phenomenon, it is important to remember the properties of the Fourier transform.
+Short length scales in real space correspond to high frequencies in reciprocal space, and vice versa.
+Hence, the scattering from the fiber itself will have low frequencies below the given \emph{q-range}.
+In the case of positive values, the scattering is parallel to the real-space orientation of the sample, called meridional scattering.
+Here, the length of a nanostructure corresponds to the frequencies that are sampled, while the width is responsible for scattering at a wider angle.
+Figure \ref{fig:scattering_models} shows the distinction between equatorial and meridional scattering.
+
+\begin{figure}
+
+    \centering
+    \includegraphics[width=0.5\textwidth]{../XRD_CT/Figures/scattering_models.pdf}
+    \caption[Meridional and Equatorial Scattering]{Meridional, or parallel, scattering is shown on the left, while equatorial, or perpendicular, scattering is shown on the right.
+        The 3D figures in front represent objects in real space, while the respective sector diagrams directly behind the objects represent the corresponding scattering patterns for a certain \emph{q-range}.
+        The characteristic length scales of the given \emph{q-ranges} are visualised by the dotted lines, respectively.
+    }
+    \label{fig:scattering_models}
+\end{figure}

@@ -2,25 +2,29 @@
 
 
 Machine learning has grown to be a powerful tool, and is applied to many aspects of society,
-either through marketing of commercial products, or in the development of new technologies aimed at easing the lives of people.
+either through marketing of commercial products, or in the development of new technologies aimed at easing the lives of people \cite{Goodfellow-et-al-2016}.
 Moreover, there is also an ongoing revolution in the field of physics,
-where machine learning is used to solve complex optimisation tasks, thereby revealing new insights that were previously nonextractable.
+where machine learning is used to solve complex optimisation tasks, thereby revealing new insights that were previously nonextractable \cite{carleo2019machine}.
 One instance where machine learning has been proven to be powerful is within the field of computed tomography (CT) and related algorithms thereof.
-CT is known as a medical imaging technique that uses X-rays to produce a 3D image of the internal objects of the patient that was scanned.
-The technique is also highly applicable to materials science, where micro-CT ($\mu CT$) is being used to image the internal structures, such as the pores of microporous materials.
-However, the term computed tomography refers actually to a broader class of algorithms where 3D models are reconstructed from projections.
-One of these algorithms is called Small Angle X-ray Scattering Tensor Tomography (SAXSTT), which distinguishes itself from conventional CT by the fact that the technique
-reconstructs a 3D vector field based on X-ray scattering measurements. Conventional CT results, as mentioned, in a 3D scalar field from X-ray absorption measurements.
-The distinction between the two techniques is essential, as the vector field obtained from SAXSTT maps the orientation of the nanostructures in the sample that caused the anisotropic scattering.
-SAXSTT is therefore able to do harmless and efficient orientation mapping of uniaxial nanostructures throughout any three-dimensional amorphous sample with micrometer spatial resolution.
-The technique combines the power of gradient descent with the quantum mechanical relations between scattering pattern and real-space orientation.
+CT is widely known as a medical imaging technique that uses X-rays to produce a 3D image of the internals of the examined patient.
+The technique is also highly applicable to materials science, where micro-CT ($\mu CT$) has been used for many years for non-destructive characterisation of the internal structure of materials, such as imaging the pores of microporous materials \cite{orhan2020micro}.
+However, the term computed tomography refers to a broader class of algorithms where 3D models are reconstructed from projections.
+Computed tomography combined with X-ray scattering is, for instance, utilised to obtain 3D images with material-specific and orientation-dependent contrast.
+One of these techniques is called Small Angle X-ray Scattering Tensor Tomography (SAXSTT), which distinguishes itself from conventional CT by the fact that the technique
+reconstructs a 3D vector field based on X-ray scattering measurements \cite{liebi2015nanostructure}.
+This distinction is essential, as the vector field obtained from SAXSTT maps the orientation of the nanostructures in the sample that caused the anisotropic scattering.
+SAXSTT is therefore able to do non-destructive and efficient orientation mapping of uniaxial nanostructures throughout three-dimensional amorphous samples with micrometer spatial resolution.
+However, the reconstruction algorithm is an incredibly complex optimisation problem, for which reason tensor tomography relies on gradient-descent based optimisation.
+%The technique combines the power of gradient descent with the quantum mechanical relations between scattering pattern and real-space orientation.
 
 In this thesis, optimisation of Small Angle Scattering X-ray Tensor Tomography is investigated.
 The algorithm is still young and has not yet been developed to its full potential.
-One important tool in the continued development of this algorithm is automatic differentiation (AD).
+To elaborate, analytical expressions for the gradient of the cost function have been used to prioritise computational efficiency.
+The negative aspect of this approach is that optimising the cost function is a tedious and error-prone task.
+One important tool in the continued development of this algorithm is therefore automatic differentiation (AD).
 This tool was a vital contributor in the recent success and popularisation of deep learning,
 as automatic differentiating engines allowed not only scientist, but also hobbyists, to efficiently implement and optimise neural networks without constantly
-having to derive new expressions for the gradients of their cost function. Likewise, SAXSTT could benefit from the use of automatic differentiation.
+having to derive new expressions for the gradients of their cost function \cite{baydin2018automatic}. Likewise, SAXSTT could benefit from the use of automatic differentiation.
 Therefore, the first step in this project work is to implement the gradient calculation of the SAXSTT algorithm using automatic differentiation.
 With this in place, the reconstruction technique can be optimised and expanded in a versatile and efficient manner.
 An initial demonstration of such optimisation is also presented in this thesis, by testing an alternative functional to model the 3D reciprocal space map.

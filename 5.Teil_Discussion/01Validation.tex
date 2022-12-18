@@ -2,7 +2,7 @@
 
 \section{Validity of SAXSTT}\label{sec:validity_saxstt}
 The general validity of SAXSTT is as expected by a gradient-based maximum likelihood estimation performed on a complex problem with thousands of optimisation parameters.
-The algorithm is able to give a fairly accurate qualitative orientation mapping of nanostructures
+The algorithm is able to give a fairly accurate orientation mapping of nanostructures
 throughout a three-dimensional bulk sample with a spatial resolution limited by the brilliance, introduced in \eqref{eq:brilliance}, of the X-ray beam.
 To elaborate, the reconstructed results of SYM in
 Figure \ref{fig:coefficient_comparison_AD_SYM},
@@ -10,9 +10,17 @@ Figure \ref{fig:coefficient_comparison_AD_SYM},
 \ref{fig:phantom_reconstruction_3D} were all very close to the simulated tomogram used to generate the data.
 At the same time, these results were obtained using initial conditions close to the true values for the coefficients and angles.
 However, Figure \ref{fig:carbon_knot_reconstruction_3D} shows a vector field in accordance with the expected results based on the known physics of the carbon knot.
-The only change made to the initial conditions in this case was to assume negative $a2$ and $a6$ due to equatorial fiber scattering.
+As mentioned in Section \ref{sec:data_set_carbon_knot}, the carbon knot was expected to produce highly anisotropic scattering perpendicular to the axis of fibers.
+The only change made to the initial conditions in this case was to assume negative $a2$ and $a6$ due to the mentioned equatorial fiber scattering.
 With that being said, the reconstruction of the carbon knot did consist of outliers and deviation for individual voxels.
-Therefore, SAXSTT is, as mentioned, more of a qualitative than quantitative characterisation technique. %RSD???
+Usually, these outliers are handled by applied regularisation, which has not been done in this thesis, as it would interfere with the comparison of the SYM and AD implementations.
+Anyway, this means that the spatial resolution is also limited by the applied regularisation and smoothing of the reconstructed vector field.
+SAXSTT cannot necessarily produce a perfect reconstruction of each and every voxel in the sample individually,
+but regularised domains of oriented reciprocal space maps are most likely correct.
+
+
+
+% Therefore, SAXSTT is, as mentioned, more of a qualitative than quantitative characterisation technique. %RSD???
 %RSD: Mention that reconstruction results are as expected by the physics of the carbon knot. 
 
 %RSD: Check if this should be here or in computational performance. 

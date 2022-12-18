@@ -17,7 +17,7 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \begin{figure}[h!]
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_0align_closecoeffs.svg}
-    \caption{ The coefficients converged to a Lorentzian distribution
+    \caption[Distribution of Reconstructed Coefficients]{ The coefficients converged to a Lorentzian distribution
         around the true value when the initial conditions had the correct sign.  }
     \label{fig:coefficient_comparison_AD_SYM}
 \end{figure}
@@ -25,7 +25,7 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \begin{figure}[h!]
     \centering
     \includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_orientation_0align_closeangles.svg}
-    \caption{  The orientation parameters converged to a Lorentzian distribution
+    \caption[Distribution of Reconstructed Orientation]{  The orientation parameters converged to a Lorentzian distribution
         around the true value when the initial conditions were sufficiently close to the true value.}
     \label{fig:orientation_comparison_AD_SYM}
 \end{figure}
@@ -33,7 +33,7 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 
 \begin{table}[h!]
     \centering
-    \caption{  The peak and FWHM of the Lorentzian curve fits
+    \caption[Peak and FWHM of Lorentzian Curve Fit]{  The peak and FWHM of the Lorentzian curve fits
         for the optimisation parameters after a converged reconstruction.}
     \label{tab:curve_fitting}
     \begin{tabular}{ c c c c c c }
@@ -97,7 +97,7 @@ EXPSIN had few voxels with a DoA different from $0$.
     \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf}
     %\includegraphics[width = 0.25\textwidth, right]{./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf}
     \includesvg[]{../XRD_CT/Plotting/thesis_plots/P_3D_indcolorbar.svg}
-    \caption{ 3D reconstruction of the Phantom data set.
+    \caption[3D Reconstructions of Phantom Data Set]{ 3D reconstruction of the Phantom data set.
         The reconstruction has been cropped to the region of interest,
         and the degree of anisotropy has been plotted for voxels that have an isotropic intensity, meaning a0 or A, above a threshold of 0.1. }
     \label{fig:phantom_reconstruction_3D}
@@ -131,7 +131,7 @@ The "EXPSIN"-algorithm had no such noise, indicating that the anisotropy was not
     %\adjustbox{trim = 0cm 1cm 0cm 0cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_B.svg} }
     %\adjustbox{trim = 0cm 0cm 0cm 3cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_theta.svg}}
     %\adjustbox{trim = 0cm 0cm 0cm 3cm}{\includesvg[width = 1\textwidth]{../XRD_CT/Plotting/thesis_plots/P_slices_phi.svg}}
-    \caption{ A 2D slice of the reconstructed volume that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
+    \caption[Slice of Reconstructed Coefficients for Phantom Data Set]{ A 2D slice of the reconstructed volume that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
         More specifically, the slice where z = 17 is shown.}
     \label{fig:phantom_reconstruction_2D}
 \end{figure}
@@ -152,7 +152,7 @@ in terms of orientation.
     %%%
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.5cm}, clip, width = 1\textwidth]{./svg-inkscape/P_slices_phi_svg-tex.pdf}
-    \caption{ A 2D slice of the reconstructed volume that shows the preferred orientation of the reconstructed nanostructures for the different reconstruction algorithms, respectively.
+    \caption[Slice of Reconstructed Orientation for Phantom Data Set]{ A 2D slice of the reconstructed volume that shows the preferred orientation of the reconstructed nanostructures for the different reconstruction algorithms, respectively.
         The cross section where z = 17 is shown.}
     \label{fig:phantom_reconstruction_2D_angles}
 \end{figure}
@@ -173,6 +173,11 @@ However, the "EXPSIN"-algorithm had almost twice the number of voxels with an is
 This is an indication of a blurred interface between the carbon knot and the surrounding void.
 Nevertheless, the orientation parameters seem to be correctly estimated in all algorithms,
 and all algorithms have captured the high degree of anisotropy, as expected in Section \ref{sec:data_set_carbon_knot}.
+This observation is further verified in Figure \ref{fig:carbon_knot_ortho}, which shows different orthogonal projections of the reconstructed vector field.
+Note that the colour bar has been shifted to contrast equatorial scattering intensities from isotropic scattering intensities,
+as the amount of meridional scattering was proven to be negligible in Figure \ref{fig:carbon_knot_reconstruction_3D}.
+The orientation of the nanostructures is represented by the direction of the markers
+All voxels with an isotropic intensity below the threshold of 6 are not shown.
 
 \clearpage
 
@@ -188,10 +193,28 @@ and all algorithms have captured the high degree of anisotropy, as expected in S
     \includegraphics[trim={2.5cm 2.5cm 2.5cm 2.5cm},clip, width = 1\textwidth]{./svg-inkscape/ck_indEXPSIN_svg-tex.pdf}
     \includesvg[]{../XRD_CT/Plotting/thesis_plots/ck_indcolorbar.svg}
 
-    \caption{ The resulting 3D reconstructions of the carbon knot from the "SYM"-, "AD"-, and "EXPSIN"-algorithm, respectively.
+    \caption[3D Reconstructions of Carbon Knot]{ The resulting 3D reconstructions of the carbon knot from the "SYM"-, "AD"-, and "EXPSIN"-algorithm, respectively.
         There were 561, 533, and 900 voxels with an isotropic intensity above the threshold value of 6, respectively.
     }
     \label{fig:carbon_knot_reconstruction_3D}
+\end{figure}
+
+\clearpage
+
+\begin{figure}
+
+    \centering
+
+    \includegraphics[width = \textwidth]{../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf}
+    \includesvg[width = 0.8\textwidth]{../XRD_CT/Plotting/thesis_plots/ortho_projectionscolorbar_equatorial.svg}
+    \caption[Orthogonal Projections of Carbon Knot]{ Orthogonal projections of the carbon knot reconstructions.
+        The rows of the figure show the respective reconstructions projected on the XY-, XZ-, and YZ-plane, respectively.
+        Only voxels with an isotropic intensity above a designated threshold value of 6 are shown.
+        Moreover, the included volume has also been cropped to only show most of the carbon knot.
+        The colour of the markers are cold for equatorial anisotropy and warm for isotropic voxels, as indicated by the colourbar, while the orientation is represented by the direction of the markers.
+    }
+    \label{fig:carbon_knot_ortho}
+
 \end{figure}
 
 \clearpage
@@ -214,7 +237,7 @@ With that being said, the amount of noise in surroundings of the DoA calculation
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_A_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_DoA_svg-tex.pdf}
 
-    \caption{  A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
+    \caption[Slice of Reconstructed Coefficients for Carbon Knot]{  A 2D slice of the reconstructed carbon knot that shows the isotropic parameter in the top figure, and the degree of anisotropy in the bottom figure, for the different reconstruction algorithms, respectively.
         More specifically, the slice where z = 17 is shown. }
     \label{fig:carbon_knot_reconstruction_2D_coeffs}
 \end{figure}
@@ -234,7 +257,7 @@ Nevertheless, the differences were small, and the edges between the sample and t
 
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_phi_svg-tex.pdf}
-    \caption{  The reconstructed preferred orientation of the carbon knot in the z=17 cross section for the different reconstruction algorithms, respectively. }
+    \caption[Slice of Reconstructed Orientation for Carbon Knot]{  The reconstructed preferred orientation of the carbon knot in the z=17 cross section for the different reconstruction algorithms, respectively. }
     \label{fig:carbon_knot_reconstruction_2D_angles}
 \end{figure}
 

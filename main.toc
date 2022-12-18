@@ -21,11 +21,11 @@
 \contentsline {section}{\numberline {4.2}Classical Scattering Description}{17}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Quantum Mechanical Explanation}{18}{section.4.3}%
 \contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Small Angle X-ray Scattering Tensor Tomography}}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}X-ray Pencil Beam}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Experimental Setup}{21}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Modelling of Anisotropic Scattering}{22}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Optimisation Algorithm}{25}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Degree of Uniaxiality}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.1}Experimental Setup}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Modelling of Anisotropic Scattering}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Optimisation Algorithm}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Degree of Anisotropy}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Scattering Models}{26}{section.5.5}%
 \contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{27}{part.3}%
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{29}{section.6.1}%
@@ -55,7 +55,7 @@
 \contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of Implementations}}{59}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Validity of SAXSTT}{59}{section.12.1}%
 \contentsline {section}{\numberline {12.2}AD SAXSTT}{59}{section.12.2}%
-\contentsline {section}{\numberline {12.3}EXPSIN Modification}{59}{section.12.3}%
+\contentsline {section}{\numberline {12.3}EXPSIN Modification}{60}{section.12.3}%
 \contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Optimisation Performance}}{61}{chapter.13}%
 \contentsline {section}{\numberline {13.1}Evaluation of SAXSTT}{61}{section.13.1}%
 \contentsline {section}{\numberline {13.2}Comparison of Performed Reconstructions}{63}{section.13.2}%
