@@ -17,14 +17,14 @@ Nevertheless, a linear combination between an isotropic term and an uniaxial exp
 
 Numerous interesting improvements were mentioned in Chapter \ref{ch:validation_discussion} and \ref{ch:optimisation_performance}.
 Shortly summarised, a change of optimisation algorithm to either the Quasi-Newton method or the truncated-Newton method would allow for mini batch optimisation,
-which would ensure an enhanced ability to avoid local minima. This would come at the cost of additional computational complexity.
+which would ensure an enhanced ability to avoid local minima. This would come at the cost of additional computational complexity, but also make the line search for an optimal step size obsolete.
 In addition, automatic differentiation would allow for implementation of SAXSTT for orientation mapping of other symmetries than the currently implemented uniaxial symmetry.
-Regarding the current SAXSTT algorithm for uniaxial symmetries, the EXPSIN expression should have an isotropic term added to it.
+Regarding the current SAXSTT algorithm, the EXPSIN expression should have an isotropic term added to it.
 Other small tweaks would be to implement Fourier-Sinc interpolation despite an increased cost in computational complexity.
 With these improvements to the current SAXSTT algorithm, noise would be reduced, the reconstruction would be more robust, and the algorithm would be more versatile.
 A viable option would be to translate the entire SAXSTT algorithm to Python, which would also allow for a better exploitation of the GPU.
-In terms of challenges, efficient memory allocation when performing computations on the GPU would be a challenge for larger datasets.
-For smaller dataset, only performing one transition from CPU to GPU and back could be sufficient. The potential speed-up would be tremendeous, but for larger datasets of many GigaBytes,
-the memory of even the most powerful GPUs would be insufficient. A clever and optimised way of transferring data between the CPU and GPU would then be necessary.
+In terms of challenges, efficient memory allocation when performing computations on the GPU could be a challenge for larger datasets.
+For smaller dataset, only performing one transition from CPU to GPU and back would be sufficient. The potential speed-up would be tremendeous, but for larger datasets of many gigabytes,
+the memory of even the most powerful GPUs could be insufficient. A clever and optimised way of transferring data between the CPU and GPU would then be necessary.
 
 %RSD: Elaborate more? Or just summarise what has been mentioned. 

@@ -219,7 +219,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{howpublished}{https://nicholasdwork.com/tutorials/nyquistInterp.pdf}
+    \field{howpublished}{\newline
+  https://nicholasdwork.com/tutorials/nyquistInterp.pdf}
     \field{title}{The Nyquisy Theorem and Sinc Interpolation}
     \field{year}{2016}
   \endentry

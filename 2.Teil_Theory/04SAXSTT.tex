@@ -32,7 +32,7 @@ Additionally, $\alpha$ is the polar angle of sample rotation, while $\beta$ is t
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width = 0.8\textwidth]{../XRD_CT/Figures/SAXSTT_setup.pdf}
+    \includegraphics[width = 0.95\textwidth]{../XRD_CT/Figures/SAXSTT_setup.pdf}
     \caption[Experimental Setup of SAXS]{Experimental setup of a SAXS measurement.
         The synchrotron beam is parallel to the $Z$ axis, and the detector lies in the $XY$-plane.
         A multi-axis rotating stage is used to collect scattering patterns from different sample orientations $\left(\alpha,\beta\right)$,
@@ -44,7 +44,7 @@ Additionally, $\alpha$ is the polar angle of sample rotation, while $\beta$ is t
 
 Translation of the sample across the synchrotron beam is performed in a raster pattern for each orientation.
 The 2D scattering patterns are then summed to respective scattering intensities for each sector of the diffractogram.
-The \emph{q-range} is a radial parameter of the scattering patterns, and is inversely proportional to the size of the structures that caused the scattering.
+The \emph{q-range} is the radial parameter of the scattering patterns, and is inversely proportional to the size of the structures that caused the scattering.
 Therefore, only scattering from a given interval of q-values is collected. %RSD???
 
 
@@ -102,7 +102,7 @@ The reciprocal space map is then,
 as given in Equation \eqref{eq:scattering_intensity_classical}:
 
 \begin{equation}\label{eq:reciprocal_space_map}
-    \vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = \left\| \sum_{l, m=0} \vectorBU{a}_{l}^{0}(\vectorBU{r'}, q') \vectorBU{Y}_{l}^{0} \{ \Theta(\vectorBU{r'}, \vectorBU{q'}), \Phi(\vectorBU{r'}, \vectorBU{q'}) \} \right\|^{2}.
+    \vectorBU{\widehat{R}}(\vectorBU{r'}, \vectorBU{q'}) = \left\| \sum_{l, m=0} \vectorBU{a}_{l}^{0}(\vectorBU{r'}, q') \vectorBU{Y}_{l}^{0} \{ \Theta(\vectorBU{r'}, q'), \Phi(\vectorBU{r'}, q') \} \right\|^{2}.
 \end{equation}
 
 Equation \eqref{eq:reciprocal_space_map} only sums over the spherical harmonics functions $\vectorBU{Y}_{l}^{0}$ and coefficients $\vectorBU{a}_{l}^{0}(\vectorBU{r'}, q')$ with $m=0$,
@@ -124,7 +124,7 @@ The Figure also visualises the anisotropy using the unit sphere, and it is clear
 \end{figure}
 
 
-Moreover, $q' = |\vectorBU{q'}|$ is the magnitude of the scattering vector $\vectorBU{q'}$, and $\Theta(\vectorBU{r'}, \vectorBU{q'})$ and $\Phi(\vectorBU{r'}, \vectorBU{q'})$ are the polar and azimuthal angles of the spherical harmonics function.
+Moreover, $q' = |\vectorBU{q'}|$ is the magnitude of the scattering vector $\vectorBU{q'}$, and $\Theta(\vectorBU{r'}, q')$ and $\Phi(\vectorBU{r'}, q')$ are the polar and azimuthal angles of the spherical harmonics function.
 These angles may implicitly be defined by a series of coordinate transformations:
 
 \begin{equation}\label{eq:coordinate_transformations}
@@ -193,7 +193,7 @@ However, Equation \eqref{eq:reciprocal_space_map} is more general, and can be us
 \section{Optimisation Algorithm}
 
 SAXSTT is approximately a maximum likelihood estimation that can utilise gradient descent for optimisation, as mentioned in Chapter \ref{ch:optimisation}.
-The forward pass of SAXSTT is to calculate the resulting SAXS patterns from having the currently estimated model.
+The forward pass of SAXSTT is to calculate the resulting SAXS patterns from the currently estimated model.
 Then, the error between the calculated and measured SAXS patterns can be calculated.
 In terms of cost function expressions, there exist many options, and the expression used by Liebi \cite{liebi2018small} is:
 \begin{equation}\label{eq:cost_function_SAXSTT}
@@ -205,7 +205,7 @@ The latter accounts for absorption, which was another phenomenon, in addition to
 as seen in Equation \eqref{eq:qm_interaction_Hamiltonian} in Chapter \ref{ch:scattering}. When using high energy X-rays, the absorption is negligible.
 
 The calculated projection intensity $\widehat{I}_{n}$ can be estimated in a number of ways.
-However, it is generally an interpolation from the estimated reciprocal space map model $\vectorBU{\widehat{R}}$ to a set of projections.
+However, it is generally an interpolation from the estimated reciprocal space map $\vectorBU{\widehat{R}}$ to a set of projections.
 Each SAXS projection $n$ can thus be expressed as a sum along the X-ray beam,
 \begin{equation}\label{eq:SAXS_intensity}
     \widehat{I}_{n}(x,y,q,\phi) = \sum_{z} \reciprocalspacemap.
@@ -256,11 +256,11 @@ Figure \ref{fig:scattering_models} shows the distinction between equatorial and 
 \begin{figure}
 
     \centering
-    \includegraphics[width=0.5\textwidth]{../XRD_CT/Figures/scattering_models.pdf}
+    \includegraphics[width=0.75\textwidth]{../XRD_CT/Figures/scattering_models.pdf}
     \caption[Meridional and Equatorial Scattering]{Meridional, or parallel, scattering is shown on the left, while equatorial, or perpendicular, scattering is shown on the right.
         The 3D figures in front represent objects in real space, while the respective sector diagrams directly behind the objects represent the corresponding scattering patterns for a certain \emph{q-range}.
         The characteristic length scales of the given \emph{q-ranges} are visualised by the dotted lines, respectively.
-        For equatorial scattering, it is assumed that the length of the nanostructure is large enough to only cause $q\sim0$-scattering.
+        For equatorial scattering, it is assumed that the length of the nanostructure corresponds to $q\sim0$.
         Therefore, only scattering from the width and the gap are sampled.
         Similarly, for meridional scattering, it is assumed that the width of the nanostructure causes wide-angle scattering, which is not sampled in the given \emph{q-range}.
     }

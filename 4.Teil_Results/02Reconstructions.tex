@@ -35,7 +35,10 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
 \begin{table}[h!]
     \centering
     \caption[Peak and FWHM of Lorentzian Curve Fit]{  The peak and FWHM of the Lorentzian curve fits
-        for the optimisation parameters after a converged reconstruction.}
+        for the optimisation parameters after a converged reconstruction.
+        The relative performance of the models varied for different data sets.
+        As a result, no significant conclusions can be drawn from comparing the height of the peaks.
+    }
     \label{tab:curve_fitting}
     \begin{tabular}{ c c c c c c }
         \hline %\toprule
@@ -107,7 +110,7 @@ EXPSIN had few voxels with a DoA different from $0$.
 \clearpage
 A more in-depth analysis was performed on
 the individual reconstruction parameters for the centremost 2D-slice, which are shown in Figure \ref{fig:phantom_reconstruction_2D} and \ref{fig:phantom_reconstruction_2D_angles}. % RSD: Describe
-In regards to the isotropic intensity parameter, $a0$ or $A$, the different algorithms showed different degree of consistency.
+In regard to the isotropic intensity parameter, $a0$ or $A$, the different algorithms showed different degree of consistency.
 Compared to the "AD"-algorithm, the "SYM"-algorithm had fewer and smaller outliers from the true value of isotropic intensity, which was 1.
 However, the "SYM"-algorithm performed poorly at the interface between the sample and the surroundings.
 Generally, the "EXPSIN"-algorithm's estimate of isotropic intensity was lower than the true value.
@@ -173,11 +176,11 @@ All the algorithms showed similar ability to segregate the voxels containing the
 However, the "EXPSIN"-algorithm had almost twice the number of voxels with an isotropic intensity above the threshold value of 6 compared to the other algorithms.
 This is an indication of a blurred interface between the carbon knot and the surrounding void.
 Nevertheless, the orientation parameters seem to be correctly estimated in all algorithms,
-and all algorithms have captured the high degree of anisotropy, as expected in Section \ref{sec:data_set_carbon_knot}.
+and all algorithms have captured a high degree of anisotropy, in accordance with expectations in Section \ref{sec:data_set_carbon_knot}.
 This observation is further verified in Figure \ref{fig:carbon_knot_ortho}, which shows different orthogonal projections of the reconstructed vector field.
 Note that the colour bar has been shifted to contrast equatorial scattering intensities from isotropic scattering intensities,
 as the amount of meridional scattering was proven to be negligible in Figure \ref{fig:carbon_knot_reconstruction_3D}.
-The orientation of the nanostructures is represented by the direction of the markers
+The orientation of the nanostructures is represented by the direction of the markers, making voxels perpendicular to the projection plane appear as a very small dot.
 All voxels with an isotropic intensity below the threshold of 6 are not shown.
 
 \clearpage
@@ -220,9 +223,9 @@ All voxels with an isotropic intensity below the threshold of 6 are not shown.
 
 \clearpage
 
-From the reconstructed volume, the centremost slice (z = 17) was investigated further.
-Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs} shows the isotropic coefficent, a0 or A, and the degree of anisotropy, DoA, reconstructed using symbolically, automatically, and alternatively calculated gradients, respectively.
-Note that the a0 coefficient in some sense corresponds to coefficient A in the alternative cost function \eqref{eq:exp_sin_squared}, as both generally determine the scattering intensity from a voxel.
+For each reconstructed volume, the centremost slice (z = 17) was investigated further.
+Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs} shows the isotropic coefficent, $a0$ or $A$, and the degree of anisotropy, \emph{DoA}, reconstructed using symbolically, automatically, and alternatively calculated gradients, respectively.
+Note that the $a0$-coefficient in some sense corresponds to coefficient $A$ in the alternative cost function \eqref{eq:exp_sin_squared}, as both generally determine the scattering intensity from a voxel.
 However, they are not quantitatively comparable.
 %RSD: Describe. 
 The results of the "SYM"- and "AD"-algorithm were close to indistinguishable,
@@ -248,7 +251,7 @@ With that being said, the amount of noise in surroundings of the DoA calculation
 \clearpage
 The preferred orientations in the mentioned 2D slice are shown in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}. %RSD: Describe
 Again, the "EXPSIN"-result turned out to be noisy, even though the main features were reconstructed correctly.
-It is interesting how a the main features are constructed correctly, but on a bigger scale, affecting more voxels, than the "SYM"- and "AD"-algorithms.
+It is interesting how a the main features were constructed on a bigger scale, affecting more voxels, than the "SYM"- and "AD"-algorithms.
 It is important to remember the only two differences between the implementations are the form factor in the cost function, and step-wise reconstruction versus all-at-once reconstruction.
 In contrast to the isotropic and anisotropic parameters,
 the "AD"-algorithm and the "SYM"-algorithm were slightly different in terms of preferred angles.

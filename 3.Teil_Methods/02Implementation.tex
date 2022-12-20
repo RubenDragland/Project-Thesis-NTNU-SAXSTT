@@ -22,7 +22,7 @@ The results of this algorithm served as the most important tool of validation wh
 as the AD implementation is a variation of the original code in such a way that the AD engine only encounters supported functionality.
 As a result, the symbolic SAXSTT routine was thoroughly analysed and categorised into a hierarchy of optimisation routines. % Ref to theory CGD and SAXSTT?
 The topmost part of the hierarchy is the optimisation of the individual spherical harmonics parameters.
-Each parameter was adjusted using CGD,
+Each parameter was optimised using CGD,
 which consisted of a gradient calculation, determination of direction of optimisation, a linesearch, and an update of the respective parameters.
 
 The gradient calculation consisted of an estimation of the scattering projection intensities, a comparison to the experimental scattering data,
@@ -63,7 +63,8 @@ A complete flowchart of the symbolic gradient routine, which also serves as a ge
         For each of the optimisation blocks, a for-loop of CGD steps is performed.
         Each CGD step starts with a gradient calculation.
         The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.
-        A line search is performed in the direction of optimisation to find the optimal step size.
+        The steps included in the gradient calculation are shown by the red loop.
+        A line search is performed, as shown by the blue loop, in the direction of optimisation to find the optimal step size.
         With the optimal step size, the parameters are updated, and the next CGD step is performed.
     }
     \label{fig:flowchart_SAXSTT}
@@ -149,9 +150,9 @@ based on the operations performed in the cost function evaluation.
     \includegraphics[width=\textwidth]{../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf}
     \caption[Flowchart of AD SAXSTT]{Flowchart of the SAXSTT algorithm when the gradients are automatically calculated.
         For each of the optimisation blocks, a for-loop of CGD steps is performed.
-        Each CGD step starts with a gradient calculation.
+        Each CGD step starts with a gradient calculation, shown by the red loop.
         The gradient is used to determine the direction of optimisation, which is orthogonal to previous steps.
-        A line search is performed in the direction of optimisation to find the optimal step size.
+        A line search, the blue loop, is performed in the direction of optimisation to find the optimal step size.
         With the optimal step size, the parameters are updated, and the next CGD step is performed.
         The designated AD engine will automatically calculate the gradient of the cost function based on the operations performed in the evaluation.
     }

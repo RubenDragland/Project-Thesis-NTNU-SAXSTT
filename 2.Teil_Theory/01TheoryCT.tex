@@ -4,21 +4,21 @@
 %RSD: Should do more precise calculations?
 \section{X-rays}\label{sec:CT_Xrays}
 
-X-rays are electromagnetic waves with energy in the orders of $keV$. Planck's Equation,
+X-rays are electromagnetic waves with energy in the orders of $\unit{keV}$. Planck's Equation,
 \begin{equation}\label{eq:Plancks_eq}
     E = \hslash \omega = 2\pi \hslash \frac{c}{\lambda},
 \end{equation}
 \noindent
 relates the energy of a photon $E$ to the angular frequency $\omega$ or wavelength $\lambda$ of the corresponding electromagnetic wave.
-$c = 2.99792 \times 10^8 m/s$ is the speed of light.
-The other constant is the reduced Planck's constant $\hslash = 1.0543 \times 10^{-34} Js$  \cite{blokhin1961physics}.
+$c = \qty{2.99792e8}{m/s}$ is the speed of light.
+The other constant is the reduced Planck's constant $\hslash = \qty{1.0543e-34}{Js}$  \cite{blokhin1961physics}.
 Whence, X-rays typically have wavelengths in the sub-nanometer range.
 
 
 Excitation and acceleration are the most common phenomena where X-ray radiation occurs.
-X-ray radiation from excitation, called "Characteristic X-ray radiation", occurs when a highly energetic electron collides into a target atom.
+X-ray radiation from excitation, called \emph{Characteristic X-ray radiation}, occurs when a highly energetic electron collides into a target atom.
 The accelerated electron transfers enough energy to eject an inner-shell electron with energy $E_i$,
-and an outer electron with energy $E_f$ lowers its energy-state by filling the vacancy,
+and an outer shell electron with energy $E_f$ lowers its energy-state by filling the vacancy,
 
 \begin{equation}\label{eq:Char_radiation}
     E_{\mathrm{photon}} = - \Delta E = - (E_f - E_i).
@@ -30,7 +30,7 @@ As the atomic energy levels are discrete, this process gives rise to a spectrum 
 
 
 Additionally, scattering events occur when electrons pass through an anode material.
-These events accelerate the electrons in new directions, and X-rays known as $"Bremsstrahluhng"$ are emitted. % Include Intensity relation of Bremsstrahlung?
+These events accelerate the electrons in new directions, and X-rays known as \emph{Bremsstrahluhng} are emitted. % Include Intensity relation of Bremsstrahlung?
 
 %Improve, Figure or equations
 The synchrotron is the last common X-ray source.
@@ -75,9 +75,9 @@ Collected Radon transform data is called a sinogram, and is used to reconstruct 
 
 \section{Fourier Slice Theorem}
 %\section{Projections}
-The key in computed tomography is to determine the spatial dependency of the attenuation coefficient $\mu(\bm{r})$.
+The key in computed tomography is to determine the spatial dependency of the attenuation coefficient $\mu(\vectorBU{r})$.
 By sampling many projections, meaning line integrals from different orientations, data necessary to reconstruct a three-dimensional image is collected.
-For a given cross section of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number in what is called a sinogram.
+For a given cross section of the sample $f(x, y)$, the detected intensity is plotted as a function of projection number and detector number, thereby creating a sinogram.
 By utilising this sinogram and the Fourier slice theorem, the object $f(x, y)$ may be determined by other means than computing the full inverse Radon transform.
 %\section{Fourier Slice Theorem}
 
@@ -107,7 +107,7 @@ Firstly, a sinogram of projections is mapped to frequency space in polar coordin
 \end{equation}
 
 With this the 2D Fourier transform $F(u,v)$ of the object $f(x,y)$ is found.
-The final step is an inverse 2D Fourier transform with, for instance, a $ramp$-filter of $|\omega|$ to account for the radial distribution of points in polar coordinates.
+The final step is an inverse 2D Fourier transform with, for instance, a \emph{ramp}-filter of $|\omega|$ to account for the radial distribution of points in polar coordinates.
 This filter is also the Jacobian of the area integration element in the polar Fourier space.
 Consequently, the object function can be expressed as
 
@@ -117,6 +117,7 @@ Consequently, the object function can be expressed as
 
 %RSD: Read through a couple of times. 
 
+%RSD: Some figure?
 
 
 

@@ -14,7 +14,7 @@ One of these techniques is called Small Angle X-ray Scattering Tensor Tomography
 reconstructs a 3D vector field based on X-ray scattering measurements \cite{liebi2015nanostructure}.
 This distinction is essential, as the vector field obtained from SAXSTT maps the orientation of the nanostructures in the sample that caused the anisotropic scattering.
 SAXSTT is therefore able to do non-destructive and efficient orientation mapping of uniaxial nanostructures throughout three-dimensional amorphous samples with micrometer spatial resolution.
-However, the reconstruction algorithm is an incredibly complex optimisation problem, for which reason tensor tomography relies on gradient-descent based optimisation.
+However, the reconstruction is an incredibly complex optimisation problem, for which reason tensor tomography relies on gradient-descent based optimisation.
 %The technique combines the power of gradient descent with the quantum mechanical relations between scattering pattern and real-space orientation.
 
 In this thesis, optimisation of Small Angle Scattering X-ray Tensor Tomography is investigated.
@@ -23,8 +23,8 @@ To elaborate, analytical expressions for the gradient of the cost function have 
 The negative aspect of this approach is that optimising the cost function is a tedious and error-prone task.
 One important tool in the continued development of this algorithm is therefore automatic differentiation (AD).
 This tool was a vital contributor in the recent success and popularisation of deep learning,
-as automatic differentiating engines allowed not only scientist, but also hobbyists, to efficiently implement and optimise neural networks without constantly
-having to derive new expressions for the gradients of their cost function \cite{baydin2018automatic}. Likewise, SAXSTT could benefit from the use of automatic differentiation.
+as automatic differentiating engines allowed not only scientists, but also hobbyists, to efficiently implement and optimise neural networks without constantly
+having to derive new expressions for the gradients of their cost functions \cite{baydin2018automatic}. Likewise, SAXSTT could benefit from the use of automatic differentiation.
 Therefore, the first step in this project work is to implement the gradient calculation of the SAXSTT algorithm using automatic differentiation.
 With this in place, the reconstruction technique can be optimised and expanded in a versatile and efficient manner.
 An initial demonstration of such optimisation is also presented in this thesis, by testing an alternative functional to model the 3D reciprocal space map.

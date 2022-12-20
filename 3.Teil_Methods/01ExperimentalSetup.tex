@@ -15,11 +15,11 @@ An optical image of the carbon knot was retrieved from \cite{PMID_30821257}, and
     \caption[Optical Image of Carbon Fiber Knot]{Optical image of a bundle of carbon fibers tied into a knot. The image was retrieved from \cite{PMID_30821257}.}
     \label{fig:carbon_knot_image}
 \end{figure}
-The long interface between the carbon fibers and air was the main source of scattering in the experiment, and resulted in highly anisotropic equatorial scattering between $0.021-0.049 \mathrm{nm}^{-1}$ \cite{PMID_30821257}.
+The long interface between the carbon fibers and air was the main source of scattering in the experiment, and resulted in highly anisotropic equatorial scattering between $\num{0.021}-\qty{0.049}{{nm}^{-1}}$ \cite{PMID_30821257}.
 Highly anisotropic scattering is ideal when validating implementations of SAXSTT, and the carbon knot was therefore chosen as the experimental data set.
-Moreover, the carbon knot was rotated in both the azimuthal and polar directions, and 255 projections were sampled. Using a beam size of $30\mu\mathrm{m} \times 20\mu\mathrm{m}$.
-46, 34, and 34 scanning points where needed in the y, x, and z directions, respectively.
-Consequently, the reconstructions had dimensions $(y,x,z) = (46,34,34)$, where most of the voxels, except those located near the centre, consisted of air.
+Moreover, the carbon knot was rotated in both the azimuthal and polar directions, and $\num{255}$ projections were sampled. Using a beam size of $\qty{30}{\micro \meter} \times \qty{20}{\micro \meter}$.
+$\num{46}$, $\num{34}$, and $\num{34}$ scanning points where needed in the y-, x-, and z-directions, respectively.
+Consequently, the reconstructions had dimensions $(y,x,z) = (\num{46},\num{34},\num{34})$, where most of the voxels, except those located near the centre, consisted of air.
 This relatively modest amount of data allowed the reconstructions to be performed on a laptop in an hour or less, considerably faster than larger data sets that may require days of computations on a powerful server.   % Need some info on the data set. 
 Additionally, the data set included a correction term in the metadata to account for offset between the axis of rotation
 and the centre of the sample. This data set will simply be referred to as the \emph{carbon knot}.
@@ -31,7 +31,7 @@ A data set representing periodic and parallel uniaxial nanostructures was simula
 To elaborate, a set of determined spherical harmonics parameters were evaluated by the forward pass.
 For each orientation, bilinear interpolation was performed to retrieve the projected intensity from a predetermined 3D model.
 The resulting projection data was stored, and utilised as target values during testing of the different algorithms.
-In this way, it was possible to measure and compare the accuracy of the reconstruction algorithms by comparing the reconstructed data to model which was used to generate the projection data.
+In this way, it was possible to measure and compare the accuracy of the reconstruction algorithms by comparing the reconstructed data to the known solution.%model which was used to generate the projection data.
 
 In contrast to the carbon knot, this data set had no surrounding void, and no correction to the axis of rotation.
 Instead, the 3D model consisted of "parallel uniaxial nanostructures" that covered the entire field of view.

@@ -14,7 +14,7 @@ Mathematically, the maximum likelihood estimator is defined as
 \noindent
 where $\argmax_{\vectorgreek{\theta}}$ returns the arguments that maximise the probability.
 
-ML estimation is an example of supervised learning, because the true output, called the targets, are known.
+MLE is an example of supervised learning, because the true output, called the targets, are known \cite{Goodfellow-et-al-2016}.
 In supervised learning, the estimation is evaluated by computing the error relative to the true output.
 The expression for the total error of the model is called the cost function $J(\vectorgreek{\theta})$,
 which is a sum of loss functions $\mathcal{L}(\vectorBU{y},\vectorBU{\widehat{y}} )$ representing the error of a single data point.
@@ -22,7 +22,7 @@ which is a sum of loss functions $\mathcal{L}(\vectorBU{y},\vectorBU{\widehat{y}
 \section{Gradient Descent}
 
 Gradient descent is an optimisation algorithm that updates the model's parameters based on the gradient of the cost function and the step size $\alpha$ \cite{ruder2016overview}.
-After each backward pass, the parameters of the model are updated according to the following equation:
+After each backward pass, the parameters of the model $\vectorgreek{\theta}$ are updated according to the following equation:
 
 \begin{equation}\label{eq:GD}
     \vectorgreek{\theta} = \vectorgreek{\theta} - \alpha \bm{\nabla_{\theta}} J(\vectorgreek{\theta}).
@@ -49,7 +49,7 @@ Gradient descent in parameter space is visualised in Figure \ref{fig:GD_surface}
 Numerous terms may be added to the basic idea of gradient descent in order to improve the convergence rate.
 One improvement is to perform a line search to determine the optimal step size $\alpha$ in the direction of the calculated gradients.
 The optimal step size is determined by evaluating the cost function $J(\vectorgreek{\theta})$ for a range of step sizes $\alpha$.
-At the optimal step size, the gradient vector of the current and next iteration are orthogonal, which optimises the path of convergence.  %minimises the directional derivative of the cost function.
+At the optimal step size, the gradient vector of the current and next iteration are orthogonal, which optimises the path of convergence \cite{ruder2016overview}.  %minimises the directional derivative of the cost function.
 Intuitively, this reduces the number of gradient calculations required to reach convergence, as the algorithm always exhausts the potential of the current direction, and proceeds orthogonal to this direction.
 However, this method has a tendency to step in alternating perpendicular directions. Optimally, in an ideal gradient descent algorithm,
 each independent direction should be exhausted in a single gradient calculation, before proceeding perpendicular to the current direction.
@@ -129,14 +129,14 @@ However, due to the iterative and approximate nature of the line search, or the 
 Automatic differentiation (AD) is an algorithmic technique for computing the analytical gradients of a function using computational graphs and the chain rule.
 It is important to contrast AD from numerical differentiation using finite differences, which comes with substantial numerical error.
 Moreover, AD should not be confused with symbolic differentiation, which is a method for calculating the full symbolic expression for the gradient, like one would do by hand \cite{baydin2018automatic}.
-The superior routine for implementing AD is the "reverse mode", which consists of a forward pass and a backward pass.
-"Forward mode" is the counterpart to the reverse mode, but it is in most cases less efficient \cite{baydin2018automatic}.
+The superior routine for implementing AD is the \emph{reverse mode}, which consists of a forward pass and a backward pass.
+\emph{Forward mode} is the counterpart to the reverse mode, but it is in most cases less efficient \cite{baydin2018automatic}.
 Shortly explained, the forward mode process is identical to computing the Jacobian of a function $\vectorBU{J}$, one column at a time.
 At the same time, this mode allows for evaluating the Jacobian-vector product $\vectorBU{Jr}$, without the full matrix, by using $\vectorBU{r}$ as initial values for the gradient computation.
 For the application of AD in this thesis, the advantages of reverse mode are more suited, since the cost function is summed to a single scalar value.
 To elaborate further, the forward pass of the reverse mode is a function evaluation, where a computational graph is constructed.
 In regard to computer science, the computational graph can easily be constructed from an object-oriented operator overloading approach.
-In other words, the AD object inserts the operators from the function to a computational graph.
+In other words, the AD object inserts the operators from the cost function to a computational graph.
 Moreover, the rules of differentiation for the operators are pre-implemented.
 Therefore, it is required that the evaluated function only consists of operators that are supported by the AD object.
 With the function evaluation completed, the backward pass is initiated.

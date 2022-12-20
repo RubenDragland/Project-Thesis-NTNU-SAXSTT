@@ -6,7 +6,7 @@ Despite the concluded validation of orientation mappin in Section \ref{sec:valid
 there are regardless a number of aspects that should be addressed in order to improve the performance of SAXSTT.
 Firstly, the spatial resolution is affected by the choice of interpolation, as well as the Gaussian blur applied to account for interpolation artefacts.
 As seen in Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs}, zig-zag artefacts, also called staircase artefacts, were present in the reconstructed carbon knot, even though Gaussian blur was applied during reconstruction.
-However, regularisation strategies can be utulised to reduce such artefacts and other outliers \cite{liebi2018small}, at the cost of lower spatial resolution.
+However, regularisation strategies can be utilised to reduce such artefacts and other outliers \cite{liebi2018small}, at the cost of lower spatial resolution.
 Nevertheless, the artefacts can be reduced without sacrificing the spatial resolution by instead utilising Fourier-Sinc interpolation \cite{Sinc_interpolation_2016}.
 %A possible improvement to the inaccurate interpolation and its skewed artefacts could be to use Fourier-Sinc interpolation. %RSD: Cite.
 %\noindent
@@ -114,14 +114,14 @@ because the estimated model should in most cases be a sufficiently good guess of
 \section{Assessment of Methodology}
 %Discussion of Methodology. Why is it better to use an AD framework? Why not?
 \noindent
-The AD framework proved essential when developing the "EXPSIN"-algorithm. Not only did it allow for a swift implementation.
-It was also painless to alter the expression, for instance by including normalisation, and applying an absolute value operator to the anisotropic coefficent.
+The AD framework proved essential when developing the "EXPSIN"-algorithm. Not only did it allow for a swift implementation,
+it was also painless to alter the expression, for instance by including normalisation, and applying an absolute value operator to the anisotropic coefficent.
 Furthermore, other adaptations of SAXSTT could be easily implemented. For instance, SAXSTT could have been expanded to reconstruct other symmetries than uniaxial.
 This could require spherical harmonics functions with $m \neq 0$. Alternatively, another form factor expression could have been developed.
-Regardless, the gradient of these functions would not have to be derived tediously, and the resulting complex expression for the gradient would not have to be implemented manually.
+Regardless, the gradient of these functions would not have to be derived tediously, and the resulting lengthy expression for the gradient would not have to be implemented manually.
 
 On the other hand, the AD framework includes a certain overhead and additional computational time. Moreover, debugging can be a challenge, as much of the computation is built-in.
-Exact knowledge of all the operations performed by the backpropagation is therefore impossible.
+Exact knowledge of all the operations performed by the backpropagation is therefore not easily accessible.
 
 
 \section{Improvements to the Cost Function}

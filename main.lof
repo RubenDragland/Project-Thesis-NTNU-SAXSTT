@@ -4,35 +4,35 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Trajectory of Gradient Descent}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Trajectory of Conjugate Gradient Descent}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Trajectory of Gradient Descent}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Trajectory of Conjugate Gradient Descent}}{14}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3}{\ignorespaces Experimental Setup of SAXS}}{22}{figure.caption.11}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of Spherical Harmonics}}{23}{figure.caption.12}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Illustration of Alternative Functional}}{24}{figure.caption.13}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Meridional and Equatorial Scattering}}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Experimental Setup of SAXS}}{22}{figure.caption.10}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of Spherical Harmonics}}{23}{figure.caption.11}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Illustration of Alternative Functional}}{24}{figure.caption.12}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Meridional and Equatorial Scattering}}{26}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Optical Image of Carbon Fiber Knot}}{29}{figure.caption.15}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Optical Image of Carbon Fiber Knot}}{29}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces Flowchart of Symbolic SAXSTT}}{33}{figure.caption.16}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Flowchart of AD SAXSTT}}{35}{figure.caption.17}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Flowchart of Symbolic SAXSTT}}{33}{figure.caption.15}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Flowchart of AD SAXSTT}}{35}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10}{\ignorespaces Initial Gradient Deviation}}{42}{figure.caption.18}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Initial Gradient Deviation}}{42}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11}{\ignorespaces Distribution of Reconstructed Coefficients}}{43}{figure.caption.19}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of Reconstructed Orientation}}{44}{figure.caption.20}%
-\contentsline {figure}{\numberline {13}{\ignorespaces 3D Reconstructions of Phantom Data Set}}{46}{figure.caption.22}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Slice of Reconstructed Coefficients for Phantom Data Set}}{48}{figure.caption.23}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Slice of Reconstructed Orientation for Phantom Data Set}}{49}{figure.caption.24}%
-\contentsline {figure}{\numberline {16}{\ignorespaces 3D Reconstructions of Carbon Knot}}{51}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Orthogonal Projections of Carbon Knot}}{52}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Slice of Reconstructed Coefficients for Carbon Knot}}{54}{figure.caption.27}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Slice of Reconstructed Orientation for Carbon Knot}}{55}{figure.caption.28}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Distribution of Reconstructed Coefficients}}{43}{figure.caption.18}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of Reconstructed Orientation}}{44}{figure.caption.19}%
+\contentsline {figure}{\numberline {13}{\ignorespaces 3D Reconstructions of Phantom Data Set}}{46}{figure.caption.21}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Slice of Reconstructed Coefficients for Phantom Data Set}}{47}{figure.caption.22}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Slice of Reconstructed Orientation for Phantom Data Set}}{48}{figure.caption.23}%
+\contentsline {figure}{\numberline {16}{\ignorespaces 3D Reconstructions of Carbon Knot}}{50}{figure.caption.24}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Orthogonal Projections of Carbon Knot}}{51}{figure.caption.25}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Slice of Reconstructed Coefficients for Carbon Knot}}{53}{figure.caption.26}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Slice of Reconstructed Orientation for Carbon Knot}}{54}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {20}{\ignorespaces Time Complexity of Gradient Computation}}{57}{figure.caption.29}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Loss Curves of Reconstructions}}{58}{figure.caption.30}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Time Complexity of Gradient Computation}}{55}{figure.caption.28}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Loss Curves of Reconstructions}}{56}{figure.caption.29}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

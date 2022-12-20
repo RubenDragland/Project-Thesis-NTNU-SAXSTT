@@ -10,8 +10,8 @@ Figure \ref{fig:coefficient_comparison_AD_SYM},
 \ref{fig:phantom_reconstruction_3D} were all very close to the simulated tomogram used to generate the data.
 At the same time, these results were obtained using initial conditions close to the true values for the coefficients and angles.
 However, Figure \ref{fig:carbon_knot_reconstruction_3D} shows a vector field in accordance with the expected results based on the known physics of the carbon knot.
-As mentioned in Section \ref{sec:data_set_carbon_knot}, the carbon knot was expected to produce highly anisotropic scattering perpendicular to the axis of fibers.
-The only change made to the initial conditions in this case was to assume negative $a2$ and $a6$ due to the mentioned equatorial fiber scattering.
+As mentioned in Section \ref{sec:data_set_carbon_knot}, the carbon knot was expected to produce highly anisotropic scattering perpendicular to the axis of the fibers.
+In order to achieve this, it was necessary to assume negative $a2$ and $a6$ due to the mentioned equatorial fiber scattering.
 With that being said, the reconstruction of the carbon knot did consist of outliers and deviation for individual voxels.
 Usually, these outliers are handled by applied regularisation, which has not been done in this thesis, as it would interfere with the comparison of the SYM and AD implementations.
 Anyway, this means that the spatial resolution is also limited by the applied regularisation and smoothing of the reconstructed vector field.
@@ -38,7 +38,7 @@ As seen in the comparison of the initial gradients in Figure \ref{fig:gradient_c
 there was a small numerical deviation between the gradients calculated symbolically and automatically in the first iteration of the optimisation.
 Therefore, the convergence trajectories were slightly different from one another. However, in the event of successful reconstructions,
 both algorithms will have found the same global minimum.
-The root cause of the mentioned deviation has not been investigated rigorously, since the resulting impact is negligible,
+The root cause of the mentioned deviation has not been investigated rigorously, since the resulting impact was negligible,
 and a likely cause for most of the gradients, except perhaps the deviations between $15\%$ and $30\%$, is the numerical precision of the computer.
 %RSD: With that being said... Systematic? Bug? dunno
 

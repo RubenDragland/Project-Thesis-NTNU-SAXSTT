@@ -38,25 +38,26 @@ and one tunable exponential term to account for any level of anisotropic scatter
 Similarly, spherical harmonics functions with $m \neq 0$ can be more easily implemented due to automatic differentiation,
 and would provide the ability to do orientation mapping of other anisotropic symmetries.
 
-\pagebreak
-\chapter*{Zusammenfassung}
-Kleinwinkel-Röntgenstreuung-Tensortomographie (SAXSTT) ist eine Computertomographietechnik,
-die die Orientierungen von uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
-Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale Parameter des 3D-Vektorfeldes zu finden.
-In dieser Arbeit wurde die Gradientenberechnung des SAXSTT-Algorithmus mit automatischer Ableitung implementiert.
-Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann jetzt leicht und schnell weiter optimiert und erweitert werden.
-Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler.
-Zusätzlich funktionert nicht der konjugertie Gradientenabstiegsalgorithmus ohne ausreichend gute Anfangsbedingungen.
-Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit der Quasi-Newton-Methode.
-Wenn der Optimierungsalgorithmus geändert würde, könnte zwar die gegenwärtige Konvergenzprobleme mit Mini-Batch-Optimerung gelöst werden.
-% Die vorgeschlagene Formfaktorfunktion,
-% \begin{equation*}
-%     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
-% \end{equation*}
-% wobei das positive Vorzeichen im Exponenten das "Äquator"-Streumodell angibt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
-\noindent
-Zudem können sphärische harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Ableitung implementiert werden,
-und deshalb ermöglicht automatische Ableitung die Implementierung von Orientierungsermittlung anderen anisotropen Symmetrien.
+
+% \cleardoublepage
+% \chapter*{Zusammenfassung}
+% Kleinwinkel-Röntgenstreuung-Tensortomographie (SAXSTT) ist eine Computertomographietechnik,
+% die die Orientierungen von uniaxialen Nanostrukturen in dreidimensionalen amorphen Materialen mit mikrometer Auflösung rekonstruieren.
+% Die Rekonstruktionsalgorithmen sind ähnlich wie MLE, die Gradientenabstieg benutzt, um die optimale Parameter des 3D-Vektorfeldes zu finden.
+% In dieser Arbeit wurde die Gradientenberechnung des SAXSTT-Algorithmus mit automatischer Ableitung implementiert.
+% Dadurch wurde eine weitere Dimension an Flexibilität in die Welt von SAXSTT hinzugefügt, und die Technik kann jetzt leicht und schnell weiter optimiert und erweitert werden.
+% Zu den Schwächen des Algorithmus gehören bilineare Interpolationsfehler.
+% Zusätzlich funktionert nicht der konjugertie Gradientenabstiegsalgorithmus ohne ausreichend gute Anfangsbedingungen.
+% Vorgeschlagene Lösungen für die genannten Schwächen umfassen die Implementierung von Fourier-Sinc Interpolation und Experimente mit der Quasi-Newton-Methode.
+% Wenn der Optimierungsalgorithmus geändert würde, könnte zwar die gegenwärtige Konvergenzprobleme mit Mini-Batch-Optimerung gelöst werden.
+% % Die vorgeschlagene Formfaktorfunktion,
+% % \begin{equation*}
+% %     \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2}\frac{ \exp\left(\mp |B| \sin^2(\Theta) \right) } {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx},
+% % \end{equation*}
+% % wobei das positive Vorzeichen im Exponenten das "Äquator"-Streumodell angibt, wurde geschätzt, um die Funktionalität des Algorithmus im Fall von uniaxialen Nanostrukturen zu erweitern.
+% \noindent
+% Zudem können sphärische harmonische Funktionen mit $m \neq 0$ aufgrund der automatischen Ableitung implementiert werden,
+% und deshalb ermöglicht automatische Ableitung die Implementierung von Orientierungsermittlung anderen anisotropen Symmetrien.
 
 %%%
 
