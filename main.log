@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  20 DEC 2022 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  20 DEC 2022 22:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1609,34 +1609,40 @@ LaTeX Warning: Hyper reference `acro:GPU' on page xii undefined on input line 88
 LaTeX Warning: Hyper reference `acro:GPU' on page xii undefined on input line 88.
 
 
-LaTeX Warning: Hyper reference `acro:MLE' on page xii undefined on input line 89.
+LaTeX Warning: Hyper reference `acro:IRTT' on page xii undefined on input line 89.
 
 
-LaTeX Warning: Hyper reference `acro:MLE' on page xii undefined on input line 89.
+LaTeX Warning: Hyper reference `acro:IRTT' on page xii undefined on input line 89.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xii undefined on input line 90.
+LaTeX Warning: Hyper reference `acro:MLE' on page xii undefined on input line 90.
 
 
-LaTeX Warning: Hyper reference `acro:SAXSTT' on page xii undefined on input line 90.
+LaTeX Warning: Hyper reference `acro:MLE' on page xii undefined on input line 90.
 
 
-LaTeX Warning: Hyper reference `acro:SGD' on page xii undefined on input line 91.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xii undefined on input line 91.
 
 
-LaTeX Warning: Hyper reference `acro:SGD' on page xii undefined on input line 91.
+LaTeX Warning: Hyper reference `acro:SAXSTT' on page xii undefined on input line 91.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xii undefined on input line 92.
+LaTeX Warning: Hyper reference `acro:SGD' on page xii undefined on input line 92.
 
 
-LaTeX Warning: Hyper reference `acro:SH' on page xii undefined on input line 92.
+LaTeX Warning: Hyper reference `acro:SGD' on page xii undefined on input line 92.
 
 
-LaTeX Warning: Hyper reference `acro:SYM' on page xii undefined on input line 93.
+LaTeX Warning: Hyper reference `acro:SH' on page xii undefined on input line 93.
 
 
-LaTeX Warning: Hyper reference `acro:SYM' on page xii undefined on input line 93.
+LaTeX Warning: Hyper reference `acro:SH' on page xii undefined on input line 93.
+
+
+LaTeX Warning: Hyper reference `acro:SYM' on page xii undefined on input line 94.
+
+
+LaTeX Warning: Hyper reference `acro:SYM' on page xii undefined on input line 94.
 
 ) [12
 pdfTeX warning (ext4): destination with the same identifier (name{AD}) has been already used, duplicate ignored
@@ -1711,12 +1717,14 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
 
 
 ]
-<../XRD_CT/Plotting/thesis_plots/sinogram.pdf, id=5180, 578.16pt x 325.215pt>
-File: ../XRD_CT/Plotting/thesis_plots/sinogram.pdf Graphic file (type pdf)
-<use ../XRD_CT/Plotting/thesis_plots/sinogram.pdf>
-Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/sinogram.pdf  used on input line 77.
-(pdftex.def)             Requested size: 330.40126pt x 185.85086pt.
- [8 <../XRD_CT/Plotting/thesis_plots/sinogram.pdf>]) [9]
+Package svg Info: Last page of `./svg-inkscape/sinogram_svg-tex.pdf' is 1 on input line 78.
+ (./svg-inkscape/sinogram_svg-tex.pdf_tex
+<./svg-inkscape/sinogram_svg-tex.pdf, id=5182, page=1, 578.16pt x 325.215pt>
+File: ./svg-inkscape/sinogram_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/sinogram_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/sinogram_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 413.0pt x 232.30861pt.
+) [8 <./svg-inkscape/sinogram_svg-tex.pdf>]) [9]
 \openout2 = `2.Teil_Theory/02MachineLearning.aux'.
 
  (./2.Teil_Theory/02MachineLearning.tex [10
@@ -1745,7 +1753,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/GD_new_svg-tex.pdf' is 1 on input line 40.
 (./svg-inkscape/GD_new_svg-tex.pdf_tex
-<./svg-inkscape/GD_new_svg-tex.pdf, id=5218, page=1, 578.16pt x 433.62pt>
+<./svg-inkscape/GD_new_svg-tex.pdf, id=5222, page=1, 578.16pt x 433.62pt>
 File: ./svg-inkscape/GD_new_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/GD_new_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/GD_new_svg-tex.pdf , page1 used on input line 56.
@@ -1768,7 +1776,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [11] [12 <./svg-inkscape/GD_new_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/CGD_exact_thesis_svg-tex.pdf' is 1 on input line 111.
  (./svg-inkscape/CGD_exact_thesis_svg-tex.pdf_tex
-<./svg-inkscape/CGD_exact_thesis_svg-tex.pdf, id=20367, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/CGD_exact_thesis_svg-tex.pdf, id=20371, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/CGD_exact_thesis_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/CGD_exact_thesis_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/CGD_exact_thesis_svg-tex.pdf , page1 used on input line 56.
@@ -1778,7 +1786,7 @@ Package pdftex.def Info: ./svg-inkscape/CGD_exact_thesis_svg-tex.pdf , page1 use
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13] [14 <./svg-inkscape/CGD_exact_thesis_svg-tex.pdf>]
-<../XRD_CT/Figures/AD_chain_rule_graph.pdf, id=35509, 403.15799pt x 309.18607pt>
+<../XRD_CT/Figures/AD_chain_rule_graph.pdf, id=35513, 403.15799pt x 309.18607pt>
 File: ../XRD_CT/Figures/AD_chain_rule_graph.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/AD_chain_rule_graph.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/AD_chain_rule_graph.pdf  used on input line 158.
@@ -1844,7 +1852,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 5 
  []
 
-<../XRD_CT/Figures/SAXSTT_setup.pdf, id=35586, 215.67647pt x 110.42908pt>
+<../XRD_CT/Figures/SAXSTT_setup.pdf, id=35590, 215.67647pt x 110.42908pt>
 File: ../XRD_CT/Figures/SAXSTT_setup.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/SAXSTT_setup.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/SAXSTT_setup.pdf  used on input line 35.
@@ -1855,7 +1863,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [21]
 Package svg Info: Last page of `./svg-inkscape/sph_harm_samples_svg-tex.pdf' is 1 on input line 116.
  (./svg-inkscape/sph_harm_samples_svg-tex.pdf_tex
-<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=35598, page=1, 1156.32pt x 144.54pt>
+<./svg-inkscape/sph_harm_samples_svg-tex.pdf, id=35602, page=1, 1156.32pt x 144.54pt>
 File: ./svg-inkscape/sph_harm_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/sph_harm_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/sph_harm_samples_svg-tex.pdf , page1 used on input line 56.
@@ -1863,7 +1871,7 @@ Package pdftex.def Info: ./svg-inkscape/sph_harm_samples_svg-tex.pdf , page1 use
 )
 Package svg Info: Last page of `./svg-inkscape/sph_harm_spheres_svg-tex.pdf' is 1 on input line 118.
  (./svg-inkscape/sph_harm_spheres_svg-tex.pdf_tex
-<./svg-inkscape/sph_harm_spheres_svg-tex.pdf, id=35600, page=1, 1156.32pt x 144.54pt>
+<./svg-inkscape/sph_harm_spheres_svg-tex.pdf, id=35604, page=1, 1156.32pt x 144.54pt>
 File: ./svg-inkscape/sph_harm_spheres_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/sph_harm_spheres_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/sph_harm_spheres_svg-tex.pdf , page1 used on input line 56.
@@ -1884,7 +1892,7 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/sph_harm_spheres_svg-tex.pdf):
 >]
 Package svg Info: Last page of `./svg-inkscape/exp_sin_samples_svg-tex.pdf' is 1 on input line 177.
  (./svg-inkscape/exp_sin_samples_svg-tex.pdf_tex
-<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=103751, page=1, 2601.72pt x 144.54pt>
+<./svg-inkscape/exp_sin_samples_svg-tex.pdf, id=103755, page=1, 2601.72pt x 144.54pt>
 File: ./svg-inkscape/exp_sin_samples_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/exp_sin_samples_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/exp_sin_samples_svg-tex.pdf , page1 used on input line 56.
@@ -1892,7 +1900,7 @@ Package pdftex.def Info: ./svg-inkscape/exp_sin_samples_svg-tex.pdf , page1 used
 )
 Package svg Info: Last page of `./svg-inkscape/exp_sin_spheres_svg-tex.pdf' is 1 on input line 179.
  (./svg-inkscape/exp_sin_spheres_svg-tex.pdf_tex
-<./svg-inkscape/exp_sin_spheres_svg-tex.pdf, id=103753, page=1, 2601.72pt x 144.54pt>
+<./svg-inkscape/exp_sin_spheres_svg-tex.pdf, id=103757, page=1, 2601.72pt x 144.54pt>
 File: ./svg-inkscape/exp_sin_spheres_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/exp_sin_spheres_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/exp_sin_spheres_svg-tex.pdf , page1 used on input line 56.
@@ -1911,7 +1919,7 @@ Overfull \hbox (2567.65347pt too wide) in paragraph at lines 177--181
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/exp_sin_spheres_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [25]
-<../XRD_CT/Figures/scattering_models.pdf, id=164257, 160.35406pt x 68.90309pt>
+<../XRD_CT/Figures/scattering_models.pdf, id=164261, 160.35406pt x 68.90309pt>
 File: ../XRD_CT/Figures/scattering_models.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/scattering_models.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/scattering_models.pdf  used on input line 259.
@@ -1946,7 +1954,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 6 
  []
 
-<../XRD_CT/figures/optical_image_ck_2.png, id=182188, 183.68625pt x 295.1025pt>
+<../XRD_CT/figures/optical_image_ck_2.png, id=182192, 183.68625pt x 295.1025pt>
 File: ../XRD_CT/figures/optical_image_ck_2.png Graphic file (type png)
 <use ../XRD_CT/figures/optical_image_ck_2.png>
 Package pdftex.def Info: ../XRD_CT/figures/optical_image_ck_2.png  used on input line 14.
@@ -1983,13 +1991,13 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 2--2
 
 
 ]
-<../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf, id=182210, 512.35358pt x 722.69725pt>
+<../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf, id=182215, 512.35358pt x 722.69725pt>
 File: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf  used on input line 61.
 (pdftex.def)             Requested size: 413.0pt x 582.55855pt.
  [32] [33 <../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>]
-<../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf, id=182234, 512.35358pt x 722.69725pt>
+<../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf, id=182238, 512.35358pt x 722.69725pt>
 File: ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf  used on input line 150.
@@ -2053,7 +2061,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 9 
  []
 
-<../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png, id=182281, 429.88605pt x 575.87144pt>
+<../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png, id=182285, 429.88605pt x 575.87144pt>
 File: ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png Graphic file (type png)
 <use ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png>
 Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png  used on input line 50.
@@ -2088,7 +2096,7 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf' is 1 on input line 19.
 (./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf_tex
-<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=182297, page=1, 419.37466pt x 308.89984pt>
+<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=182301, page=1, 419.37466pt x 308.89984pt>
 File: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf , page1 used on input line 56.
@@ -2096,7 +2104,7 @@ Package pdftex.def Info: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf
 )
 Package svg Info: Last page of `./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf' is 1 on input line 28.
  (./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf_tex
-<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=182299, page=1, 419.37466pt x 167.97333pt>
+<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=182303, page=1, 419.37466pt x 167.97333pt>
 File: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf , page1 used on input line 56.
@@ -2115,24 +2123,24 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
  <./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf>] [44 <./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf>]
-<./svg-inkscape/P_3D_indSYM_svg-tex.pdf, id=187760, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indSYM_svg-tex.pdf, id=187765, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indSYM_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf  used on input line 99.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/P_3D_indAD_svg-tex.pdf, id=187762, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indAD_svg-tex.pdf, id=187767, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indAD_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indAD_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_3D_indAD_svg-tex.pdf  used on input line 100.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf, id=187764, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf, id=187769, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf  used on input line 101.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
 Package svg Info: Last page of `./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf' is 1 on input line 103.
  (./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf_tex
-<./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, id=187767, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, id=187772, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf , page1 used on input line 56.
@@ -2150,12 +2158,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./svg-inkscape/P_slices_A_svg-tex.pdf, id=197669, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_A_svg-tex.pdf, id=197673, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_A_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_A_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_slices_A_svg-tex.pdf  used on input line 132.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_DoA_svg-tex.pdf, id=197671, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_DoA_svg-tex.pdf, id=197675, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_DoA_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_DoA_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_slices_DoA_svg-tex.pdf  used on input line 133.
@@ -2163,12 +2171,12 @@ Package pdftex.def Info: ./svg-inkscape/P_slices_DoA_svg-tex.pdf  used on input 
  [47
 
  <./svg-inkscape/P_slices_A_svg-tex.pdf> <./svg-inkscape/P_slices_DoA_svg-tex.pdf>]
-<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=197718, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=197722, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_theta_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_theta_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_slices_theta_svg-tex.pdf  used on input line 157.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=197720, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=197724, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_phi_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_phi_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input line 158.
@@ -2178,7 +2186,7 @@ Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input 
  <./svg-inkscape/P_slices_theta_svg-tex.pdf> <./svg-inkscape/P_slices_phi_svg-tex.pdf>] [49
 
 ]
-<./svg-inkscape/ck_indSYM_svg-tex.pdf, id=197776, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_indSYM_svg-tex.pdf, id=197780, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_indSYM_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indSYM_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_indSYM_svg-tex.pdf  used on input line 195.
@@ -2187,14 +2195,14 @@ File: ./svg-inkscape/ck_indAD_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indAD_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_indAD_svg-tex.pdf  used on input line 196.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/ck_indEXPSIN_svg-tex.pdf, id=197779, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_indEXPSIN_svg-tex.pdf, id=197783, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf  used on input line 197.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
 Package svg Info: Last page of `./svg-inkscape/ck_indcolorbar_svg-tex.pdf' is 1 on input line 198.
  (./svg-inkscape/ck_indcolorbar_svg-tex.pdf_tex
-<./svg-inkscape/ck_indcolorbar_svg-tex.pdf, id=197782, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/ck_indcolorbar_svg-tex.pdf, id=197786, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indcolorbar_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf , page1 used on input line 56.
@@ -2210,25 +2218,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ck_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf, id=211035, 2136.03024pt x 1627.70107pt>
+<../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf, id=211039, 2136.03024pt x 1627.70107pt>
 File: ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf Graphic file (type pdf)
 <use ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf>
 Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf  used on input line 212.
 (pdftex.def)             Requested size: 413.0pt x 314.70566pt.
 Package svg Info: Last page of `./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf' is 1 on input line 213.
  (./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf_tex
-<./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, id=211037, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, id=211041, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 330.40126pt x 45.29523pt.
 ) [51 <../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf> <./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf>]
-<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=211052, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=211058, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_A_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_A_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_slices_A_svg-tex.pdf  used on input line 243.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
-<./svg-inkscape/ck_slices_DoA_svg-tex.pdf, id=211054, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_DoA_svg-tex.pdf, id=211060, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_DoA_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf  used on input line 244.
@@ -2242,12 +2250,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [53 <./svg-inkscape/ck_slices_A_svg-tex.pdf> <./svg-inkscape/ck_slices_DoA_svg-tex.pdf>]
-<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=211105, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=211111, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_theta_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_theta_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_slices_theta_svg-tex.pdf  used on input line 266.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
-<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=211107, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=211113, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_phi_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_phi_svg-tex.pdf>
 Package pdftex.def Info: ./svg-inkscape/ck_slices_phi_svg-tex.pdf  used on input line 267.
@@ -2277,7 +2285,7 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 1 on input line 18.
 (./svg-inkscape/gradient_computation_svg-tex.pdf_tex
-<./svg-inkscape/gradient_computation_svg-tex.pdf, id=211155, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=211161, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1 used on input line 56.
@@ -2291,7 +2299,7 @@ Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1
  <./svg-inkscape/gradient_computation_svg-tex.pdf>]
 Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 45.
  (./svg-inkscape/Loss_curve_optimal_svg-tex.pdf_tex
-<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=211195, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=211201, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 used on input line 56.
@@ -2479,18 +2487,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40375 strings out of 475071
- 848888 string characters out of 5782907
- 1892843 words of memory out of 5000000
- 60496 multiletter control sequences out of 15000+600000
+ 40385 strings out of 475071
+ 849149 string characters out of 5782907
+ 1892904 words of memory out of 5000000
+ 60502 multiletter control sequences out of 15000+600000
  592927 words of font info for 253 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,125p,10667b,2905s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (83 pages, 26071370 bytes).
+Output written on main.pdf (83 pages, 26091499 bytes).
 PDF statistics:
- 211736 PDF objects out of 237090 (max. 8388607)
- 140463 compressed objects within 1405 object streams
- 275 named destinations out of 1000 (max. 500000)
- 42940 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 211742 PDF objects out of 237090 (max. 8388607)
+ 140466 compressed objects within 1405 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 42945 words of extra memory for PDF output out of 42996 (max. 10000000)
 
