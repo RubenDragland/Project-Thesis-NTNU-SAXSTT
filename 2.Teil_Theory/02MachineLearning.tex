@@ -103,16 +103,17 @@ Consequently, CGD can be mathematically expressed as follows \cite{shewchuk1994i
 In Equation \eqref{eq:CGD}, $\vectorBU{d}_{i}$ is the search direction, $\vectorBU{g}_{i}$ is the gradient, and $\vectorgreek{\theta}_{i}$ is the current set of parameters.
 As already mentioned, $J(\vectorgreek{\theta})$ is the cost function, $\alpha_{i}$ is the optimal step size, which is determined by a line search, and $\beta_{i+1}$ is the Gram-Schmidt constant derived from the Polak-Ribiere formula \eqref{eq:Polak_Ribiere}.
 In theory, the visualisation of convergence in Figure \ref{fig:CGD_surface} should consist of two orthogonal straight lines.
-However, due to the iterative and approximate nature of the line search, or the condition of the adjusted Polak-Ribiere formula, 3-4 iterations were required.
+However, due to the iterative and approximate nature of the line search, or the condition of the adjusted Polak-Ribiere formula, \num{4} iterations were required.
 
 \begin{figure}[h!]
     \centering
-    \includesvg[height = 0.33\textheight]{../XRD_CT/Plotting/plots/CGD_exact.svg}
+    %\includesvg[height = 0.33\textheight]{../XRD_CT/Plotting/plots/CGD_exact.svg}
+    \includesvg[height = 0.33\textheight]{../XRD_CT/Plotting/thesis_plots/CGD_exact_thesis.svg}
     \caption[Trajectory of Conjugate Gradient Descent]{A surface plot of the error in parameter space for a model.
         The trajectory shows the path of parameter optimisation based on conjugate gradient descent.
-        Notice that the curve consists of a few, but long, steps.
+        Notice that a few, but long, steps are made.
         In theory, this method should converge in two iterations, since there are two parameters.
-        However, 3-4 steps were performed in this case, probably due to a not exact determination of step size.
+        However, \num{4} steps were performed in this case, probably due to a not exact determination of step size.
         An animation of the process is available at \url{https://github.com/RubenDragland/XRD_CT/tree/main/Plotting/animations}
     }
     \label{fig:CGD_surface}
@@ -148,6 +149,20 @@ Let $w(y(x))$ be a functional depending on the function $y(x)$, which is again a
 the gradients with respect to the input variables are calculated given the output value.
 Equation \eqref{eq:chain_rule} shows how the gradient of any complex computational graph can be written as a product series of basic gradient expressions.
 The backpropagation algorithm recursively applies the chain rule on the computational graph, eventually ending up with the gradients of the input variables \cite{baydin2018automatic}.
+Figure \ref{fig:AD_graph} shows such an instance of a computational graph, with the chain rule applied, to the function $w(x,y) = \exp(xy)$.
+
+\clearpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.75\textwidth]{../XRD_CT/Figures/AD_chain_rule_graph.pdf}
+    \caption[Computational graph]{A computational graph for the function $w(x,y) = \exp(xy)$ on the top.
+        Boxes represent operators, and the circles represent the input or output variables.
+        The chain rule is applied to the computational graph in the bottom figure.
+        Here, circles are the currently calculated gradient, and the boxes are the basic gradient expressions which are multiplied to the current gradient.
+    }
+    \label{fig:AD_graph}
+\end{figure}
 
 In terms of advantages, AD can be a powerful tool for optimisation if the symbolic expression is difficult to derive, or if the computational complexity of the symbolic expression is high.
 Furthermore, AD is versatile in deep learning tool boxes such as Pytorch and Tensorflow,

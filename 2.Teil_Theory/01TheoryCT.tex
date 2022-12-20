@@ -69,7 +69,16 @@ Confidence in this statement may be achieved by comparing Equation \eqref{eq:pro
     p_{\theta}(r) = \int_{-\infty}^{\infty} f(r,\nu) d\nu.
 \end{equation}
 Collected Radon transform data is called a sinogram, and is used to reconstruct the original object function $f(x,y)$ \cite{gonzalez2018digital}.
+Figure \ref{fig:Radon_transform} shows an instance of a sinogram, calculated for a cross section image of a walnut.
+The image was retrieved by performing CT on a walnut at the Technical University in Munich.
 %The Radon transform of a function $f(x,y)$ along the angle $\theta$ is defined in Equation \eqref{eq:Radon_transform} purely as a line integral along the desired angle. %?
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.80\textwidth]{../XRD_CT/Plotting/thesis_plots/sinogram.pdf}
+    \caption[Example of Sinogram]{The cross section of a walnut, and the corresponding sinogram.
+        The sinogram was calculated by performing the Radon transform for 360 different angles using the skimage-package in Python. }
+    \label{fig:Radon_transform}
+\end{figure}
 
 %\section{Detectors}??? Cannot be relevant
 
@@ -96,6 +105,7 @@ In other words, the Fourier transform of a single projection makes up one angle 
 
 % ILLUSTRATE with a Figure
 %See and reconstruct Figure 5.13 in buzug2009computed possibly... or the one in zeng2010medical
+
 
 
 \section{Filtered Back Projection}

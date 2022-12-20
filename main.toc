@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {2.2}Beer-Lambert's Law}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Radon Transform}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Fourier Slice Theorem}{8}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Filtered Back Projection}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Filtered Back Projection}{9}{section.2.5}%
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Machine Learning Optimisation}}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Maximum Likelihood Estimation}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Gradient Descent}{11}{section.3.2}%
