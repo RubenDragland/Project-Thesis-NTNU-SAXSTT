@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  18 DEC 2022 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.26)  19 DEC 2022 21:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2035,10 +2035,10 @@ pdfTeX warning: pdflatex.exe (file ./svg-inkscape/exp_sin_spheres_svg-tex.pdf): 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [25]
-<../XRD_CT/Figures/scattering_models.pdf, id=164232, 160.35406pt x 68.90309pt>
+<../XRD_CT/Figures/scattering_models.pdf, id=164231, 160.35406pt x 68.90309pt>
 File: ../XRD_CT/Figures/scattering_models.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/scattering_models.pdf>
-Package pdftex.def Info: ../XRD_CT/Figures/scattering_models.pdf  used on input line 257.
+Package pdftex.def Info: ../XRD_CT/Figures/scattering_models.pdf  used on input line 259.
 (pdftex.def)             Requested size: 206.5pt x 88.73709pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -2079,7 +2079,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 6 
  []
 
-<../XRD_CT/figures/optical_image_ck_2.png, id=182161, 183.68625pt x 295.1025pt>
+<../XRD_CT/figures/optical_image_ck_2.png, id=182162, 183.68625pt x 295.1025pt>
 File: ../XRD_CT/figures/optical_image_ck_2.png Graphic file (type png)
 <use ../XRD_CT/figures/optical_image_ck_2.png>
 Package pdftex.def Info: ../XRD_CT/figures/optical_image_ck_2.png  used on input line 14.
@@ -2125,7 +2125,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 ]
-<../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf, id=182183, 512.35358pt x 722.69725pt>
+<../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf, id=182184, 512.35358pt x 722.69725pt>
 File: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf  used on input line 61.
@@ -2137,7 +2137,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [33 <../XRD_CT/Figures/Flowchart_SAXSTT_optimised.pdf>]
-<../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf, id=182207, 512.35358pt x 722.69725pt>
+<../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf, id=182208, 512.35358pt x 722.69725pt>
 File: ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf Graphic file (type pdf)
 <use ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf>
 Package pdftex.def Info: ../XRD_CT/Figures/Flowchart_ADSAXSTT_optimised.pdf  used on input line 149.
@@ -2222,7 +2222,7 @@ Overfull \hbox (38.53226pt too wide) in paragraph at lines 1--1
 []\chapterNumber 9 
  []
 
-<../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png, id=182252, 429.88605pt x 575.87144pt>
+<../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png, id=182255, 429.88605pt x 575.87144pt>
 File: ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png Graphic file (type png)
 <use ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png>
 Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/SH_diff_grads_tex_dpi600.png  used on input line 50.
@@ -2263,15 +2263,15 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 
 Package svg Info: Last page of `./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf' is 1 on input line 19.
 (./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf_tex
-<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=182269, page=1, 419.37466pt x 308.89984pt>
+<./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, id=182272, page=1, 419.37466pt x 308.89984pt>
 File: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_coeffs_0align_closecoeffs_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 413.0pt x 304.22336pt.
 )
-Package svg Info: Last page of `./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf' is 1 on input line 27.
+Package svg Info: Last page of `./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf' is 1 on input line 28.
  (./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf_tex
-<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=182271, page=1, 419.37466pt x 167.97333pt>
+<./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, id=182274, page=1, 419.37466pt x 167.97333pt>
 File: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf , page1 used on input line 56.
@@ -2296,31 +2296,31 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [44 <./svg-inkscape/SH_orientation_0align_closeangles_svg-tex.pdf>]
-<./svg-inkscape/P_3D_indSYM_svg-tex.pdf, id=187730, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indSYM_svg-tex.pdf, id=187733, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indSYM_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf  used on input line 95.
+Package pdftex.def Info: ./svg-inkscape/P_3D_indSYM_svg-tex.pdf  used on input line 96.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/P_3D_indAD_svg-tex.pdf, id=187732, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indAD_svg-tex.pdf, id=187735, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indAD_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indAD_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_3D_indAD_svg-tex.pdf  used on input line 96.
+Package pdftex.def Info: ./svg-inkscape/P_3D_indAD_svg-tex.pdf  used on input line 97.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf, id=187734, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf, id=187737, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf  used on input line 97.
+Package pdftex.def Info: ./svg-inkscape/P_3D_indEXPSIN_svg-tex.pdf  used on input line 98.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-Package svg Info: Last page of `./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf' is 1 on input line 99.
+Package svg Info: Last page of `./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf' is 1 on input line 100.
  (./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf_tex
-<./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, id=187737, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, id=187740, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 411.21628pt x 56.37389pt.
 )
 
-LaTeX Warning: Float too large for page by 65.20485pt on input line 104.
+LaTeX Warning: Float too large for page by 65.20485pt on input line 105.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2337,24 +2337,24 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/P_3D_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (0.17638pt too wide) in paragraph at lines 107--118
+Overfull \hbox (0.17638pt too wide) in paragraph at lines 108--119
 \T1/pplj/m/n/10.95 of anisotropy, the "SYM"-algorithm and the "AD"-algorithm showed sim-i-lar be-haviour.
  []
 
 
-Overfull \hbox (6.13141pt too wide) in paragraph at lines 107--118
+Overfull \hbox (6.13141pt too wide) in paragraph at lines 108--119
 \T1/pplj/m/n/10.95 where the in-ten-sity was zero. There-fore, these arte-facts can be ne-glected. The "EXPSIN"-
  []
 
-<./svg-inkscape/P_slices_A_svg-tex.pdf, id=197639, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_A_svg-tex.pdf, id=197642, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_A_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_A_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_A_svg-tex.pdf  used on input line 128.
+Package pdftex.def Info: ./svg-inkscape/P_slices_A_svg-tex.pdf  used on input line 129.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_DoA_svg-tex.pdf, id=197641, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_DoA_svg-tex.pdf, id=197644, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_DoA_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_DoA_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_DoA_svg-tex.pdf  used on input line 129.
+Package pdftex.def Info: ./svg-inkscape/P_slices_DoA_svg-tex.pdf  used on input line 130.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2368,15 +2368,15 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [48 <./svg-inkscape/P_slices_A_svg-tex.pdf> <./svg-inkscape/P_slices_DoA_svg-tex.pdf>]
-<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=197693, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_theta_svg-tex.pdf, id=197696, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_theta_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_theta_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_theta_svg-tex.pdf  used on input line 153.
+Package pdftex.def Info: ./svg-inkscape/P_slices_theta_svg-tex.pdf  used on input line 154.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
-<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=197695, 411.2163pt x 281.85298pt>
+<./svg-inkscape/P_slices_phi_svg-tex.pdf, id=197698, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/P_slices_phi_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/P_slices_phi_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input line 154.
+Package pdftex.def Info: ./svg-inkscape/P_slices_phi_svg-tex.pdf  used on input line 155.
 (pdftex.def)             Requested size: 413.0pt x 211.6466pt.
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
@@ -2389,30 +2389,30 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
  [50
 
 ]
-<./svg-inkscape/ck_indSYM_svg-tex.pdf, id=197750, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_indSYM_svg-tex.pdf, id=197753, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_indSYM_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indSYM_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_indSYM_svg-tex.pdf  used on input line 191.
+Package pdftex.def Info: ./svg-inkscape/ck_indSYM_svg-tex.pdf  used on input line 192.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
 File: ./svg-inkscape/ck_indAD_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indAD_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_indAD_svg-tex.pdf  used on input line 192.
+Package pdftex.def Info: ./svg-inkscape/ck_indAD_svg-tex.pdf  used on input line 193.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-<./svg-inkscape/ck_indEXPSIN_svg-tex.pdf, id=197753, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_indEXPSIN_svg-tex.pdf, id=197756, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf  used on input line 193.
+Package pdftex.def Info: ./svg-inkscape/ck_indEXPSIN_svg-tex.pdf  used on input line 194.
 (pdftex.def)             Requested size: 413.0pt x 214.36105pt.
-Package svg Info: Last page of `./svg-inkscape/ck_indcolorbar_svg-tex.pdf' is 1 on input line 194.
+Package svg Info: Last page of `./svg-inkscape/ck_indcolorbar_svg-tex.pdf' is 1 on input line 195.
  (./svg-inkscape/ck_indcolorbar_svg-tex.pdf_tex
-<./svg-inkscape/ck_indcolorbar_svg-tex.pdf, id=197756, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/ck_indcolorbar_svg-tex.pdf, id=197759, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_indcolorbar_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/ck_indcolorbar_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 411.21628pt x 56.37389pt.
 )
 
-LaTeX Warning: Float too large for page by 65.20485pt on input line 200.
+LaTeX Warning: Float too large for page by 77.80489pt on input line 201.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2424,14 +2424,14 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 pdfTeX warning: pdflatex.exe (file ./svg-inkscape/ck_indcolorbar_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf, id=211008, 2136.03024pt x 1627.70107pt>
+<../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf, id=211011, 2136.03024pt x 1627.70107pt>
 File: ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf Graphic file (type pdf)
 <use ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf>
-Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf  used on input line 208.
+Package pdftex.def Info: ../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf  used on input line 209.
 (pdftex.def)             Requested size: 413.0pt x 314.70566pt.
-Package svg Info: Last page of `./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf' is 1 on input line 209.
+Package svg Info: Last page of `./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf' is 1 on input line 210.
  (./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf_tex
-<./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, id=211010, page=1, 411.2163pt x 56.3706pt>
+<./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, id=211013, page=1, 411.2163pt x 56.3706pt>
 File: ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf , page1 used on input line 56.
@@ -2440,16 +2440,20 @@ Package pdftex.def Info: ./svg-inkscape/ortho_projectionscolorbar_equatorial_svg
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
  [52 <../XRD_CT/Plotting/thesis_plots/ortho_projections.pdf> <./svg-inkscape/ortho_projectionscolorbar_equatorial_svg-tex.pdf>]
-<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=211028, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_A_svg-tex.pdf, id=211031, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_A_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_A_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_A_svg-tex.pdf  used on input line 237.
+Package pdftex.def Info: ./svg-inkscape/ck_slices_A_svg-tex.pdf  used on input line 240.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
-<./svg-inkscape/ck_slices_DoA_svg-tex.pdf, id=211030, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_DoA_svg-tex.pdf, id=211033, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_DoA_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf  used on input line 238.
+Package pdftex.def Info: ./svg-inkscape/ck_slices_DoA_svg-tex.pdf  used on input line 241.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
@@ -2457,26 +2461,38 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
 
 
- <./svg-inkscape/ck_slices_A_svg-tex.pdf> <./svg-inkscape/ck_slices_DoA_svg-tex.pdf>]
-<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=211078, 411.2163pt x 281.85298pt>
+]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [54 <./svg-inkscape/ck_slices_A_svg-tex.pdf> <./svg-inkscape/ck_slices_DoA_svg-tex.pdf>]
+<./svg-inkscape/ck_slices_theta_svg-tex.pdf, id=211085, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_theta_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_theta_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_theta_svg-tex.pdf  used on input line 258.
+Package pdftex.def Info: ./svg-inkscape/ck_slices_theta_svg-tex.pdf  used on input line 263.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
-<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=211080, 411.2163pt x 281.85298pt>
+<./svg-inkscape/ck_slices_phi_svg-tex.pdf, id=211087, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/ck_slices_phi_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ck_slices_phi_svg-tex.pdf>
-Package pdftex.def Info: ./svg-inkscape/ck_slices_phi_svg-tex.pdf  used on input line 259.
+Package pdftex.def Info: ./svg-inkscape/ck_slices_phi_svg-tex.pdf  used on input line 264.
 (pdftex.def)             Requested size: 413.0pt x 225.93546pt.
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [54
+ [55
 
  <./svg-inkscape/ck_slices_theta_svg-tex.pdf> <./svg-inkscape/ck_slices_phi_svg-tex.pdf>]
 \openout2 = `4.Teil_Results/03PerformanceReview.aux'.
 
  (./4.Teil_Results/03PerformanceReview.tex
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [56
+
+
+
+
+
+]
 chapter 11.
 
 Class scrreprt Warning: Redefinition of \@makechapterhead detected.
@@ -2494,9 +2510,9 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 []\chapterNumber 11 
  []
 
-Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 1 on input line 17.
+Package svg Info: Last page of `./svg-inkscape/gradient_computation_svg-tex.pdf' is 1 on input line 18.
 (./svg-inkscape/gradient_computation_svg-tex.pdf_tex
-<./svg-inkscape/gradient_computation_svg-tex.pdf, id=211128, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/gradient_computation_svg-tex.pdf, id=211139, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/gradient_computation_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/gradient_computation_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1 used on input line 56.
@@ -2504,16 +2520,10 @@ Package pdftex.def Info: ./svg-inkscape/gradient_computation_svg-tex.pdf , page1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [55
-
-
-
-
-
- <./svg-inkscape/gradient_computation_svg-tex.pdf>]
-Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 42.
+ [57 <./svg-inkscape/gradient_computation_svg-tex.pdf>]
+Package svg Info: Last page of `./svg-inkscape/Loss_curve_optimal_svg-tex.pdf' is 1 on input line 45.
  (./svg-inkscape/Loss_curve_optimal_svg-tex.pdf_tex
-<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=211164, page=1, 411.2163pt x 281.85298pt>
+<./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, id=211178, page=1, 411.2163pt x 281.85298pt>
 File: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 used on input line 56.
@@ -2521,12 +2531,12 @@ Package pdftex.def Info: ./svg-inkscape/Loss_curve_optimal_svg-tex.pdf , page1 u
 ))
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [56
+ [58
 
  <./svg-inkscape/Loss_curve_optimal_svg-tex.pdf>]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [57
+ [59
 
 
 
@@ -2536,7 +2546,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [58]
+ [60]
 \openout2 = `5.Teil_Discussion/01Validation.aux'.
 
  (./5.Teil_Discussion/01Validation.tex
@@ -2560,14 +2570,14 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [59
+ [61
 
 
 
 ])
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [60]
+ [62]
 \openout2 = `5.Teil_Discussion/02Comparisons.aux'.
 
  (./5.Teil_Discussion/02Comparisons.tex
@@ -2601,7 +2611,7 @@ Overfull \hbox (0.62997pt too wide) in paragraph at lines 38--50
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [61
+ [63
 
 
 
@@ -2610,13 +2620,13 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [62]
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
- [63])
-Overfull \vbox (6.51149pt too high) has occurred while \output is active []
-
  [64]
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [65])
+Overfull \vbox (6.51149pt too high) has occurred while \output is active []
+
+ [66]
 \openout2 = `5.Teil_Discussion/04Conclusion_Future.aux'.
 
  (./5.Teil_Discussion/04Conclusion_Future.tex
@@ -2640,7 +2650,7 @@ Overfull \hbox (77.06451pt too wide) in paragraph at lines 1--1
 )
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [65
+ [67
 
 
 
@@ -2651,7 +2661,7 @@ Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [66
+ [68
 
 
 
@@ -2691,20 +2701,20 @@ Overfull \hbox (4.2036pt too wide) in paragraph at lines 173--173
 
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [67
+ [69
 
 
 
 ]
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [68]
+ [70]
 \openout2 = `FrontBackMatter/Colophon.aux'.
 
  (./FrontBackMatter/Colophon.tex)
 Overfull \vbox (6.51149pt too high) has occurred while \output is active []
 
- [69
+ [71
 
 
 
@@ -2721,18 +2731,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40356 strings out of 475071
- 847487 string characters out of 5782907
- 1889976 words of memory out of 5000000
- 60483 multiletter control sequences out of 15000+600000
+ 40362 strings out of 475071
+ 847580 string characters out of 5782907
+ 1890100 words of memory out of 5000000
+ 60487 multiletter control sequences out of 15000+600000
  592425 words of font info for 254 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,23n,125p,10667b,2895s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurb7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (83 pages, 25963952 bytes).
+Output written on main.pdf (85 pages, 25969745 bytes).
 PDF statistics:
- 211679 PDF objects out of 237090 (max. 8388607)
- 140412 compressed objects within 1405 object streams
- 271 named destinations out of 1000 (max. 500000)
+ 211697 PDF objects out of 237090 (max. 8388607)
+ 140428 compressed objects within 1405 object streams
+ 273 named destinations out of 1000 (max. 500000)
  41362 words of extra memory for PDF output out of 42996 (max. 10000000)
 

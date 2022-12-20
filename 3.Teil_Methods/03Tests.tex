@@ -4,7 +4,7 @@
 \section{Computing Gradients of Alternative Functional}\label{sec:calc_alt_functional} %Functional is function of functions
 
 % Validation even though not validated.
-The first utilisation of automatic differentition was to test the validity of obtained symbolic gradient expressions of the alternative functional EXPSIN.
+The first utilisation of automatic differentition was to test the validity of obtained symbolic gradient expressions of the alternative functional EXPSIN, proposed in Section \ref{sec:modelling_scattering}.
 The validation of the alternative functional was conducted in stages with increasing complexity.
 It was important to be able to contrast errors in the implementation from false gradient expressions.
 % Firstly, the gradient of a simple integer scattering model was calculated. The cost function of this model, with its gradient, is listed in Table \ref{tab:integer_model} in Appendix \ref{app:appendixA}.
@@ -37,6 +37,7 @@ The reconstruction script was run for the data sets described in Section \ref{se
 using both symbolically and automatically calculated gradients.
 The same initial conditions were applied to all runs.
 $a0$ was initially $10^{-4}$, and the default orientation was set to $\left( \theta = \frac{\pi}{4}, \varphi = \frac{\pi}{4} \right)$.
+All anisotropic parameters were set to a be positive, since meridional scattering was expected.
 
 For a given data set size, deeper data analysis was conducted.
 Firstly, the respective gradients from the first iteration of optimising the isotropic coefficient $a0$ were compared.
@@ -56,6 +57,11 @@ Additionally, the centremost 2D slice, with $z = 17$, of each optimisation param
 \section{Reconstruction of Carbon Knot}
 
 
-The main focus in the comparison of the reconstruction algorithms was to assess the performance of the algorithms on experimental data sets.
-The procedure mentioned in Section \ref{sec:pp_nanostructures_reconstruction} for the Phantom data set, was also applied using the carbon knot projection data.
+The main focus in the comparison of the reconstruction algorithms was to assess the performance of the algorithms on the experimental data set.
+Each of the implemented algorithms were run on the carbon knot data set using a total of 100 iterations each.
+% The procedure mentioned in Section \ref{sec:pp_nanostructures_reconstruction} for the Phantom data set was also applied using the carbon knot projection data.
+\noindent
+With the exception that coefficients $a2$ and $a6$ were negative, due to anticipated equatorial scattering, the initial conditions were identical to what was used for the Phantom data set.
+The resulting 3D reconstructions were compared to one another along different projections, as well as the 2D slices of the optimisation parameters.
+Moreover, whether the algorithms managed to perform an orientation mapping in occurdance with the expected orientation of the fibers was assessed.
 As a final note, the computational performance of the algorithms, as well as the convergence curves, were compared.

@@ -45,10 +45,12 @@ and a likely cause for most of the gradients, except perhaps the deviations betw
 
 \section{EXPSIN Modification}\label{sec:saxstt_validation}
 From the discussion in Section \ref{sec:validity_saxstt} and \ref{sec:ad_validation}, the validity of the EXPSIN algorithm is also strengthened.
-Because the only difference between the implementation of EXPSIN and AD is a different expression for the form factor, the implementation can be trusted to be correct.
-Consequently, the results of this algorithm can be used to evaluate the qualities of \eqref{eq:final_exp_sin_squared} as a functional for SAXSTT.
-This fact is supported by the main features of Figure \ref{fig:phantom_reconstruction_3D} and \ref{fig:carbon_knot_reconstruction_3D},
-since all three algorithms managed to reconstruct the same main features.
+Because the only difference between the implementation of EXPSIN and AD is a different expression for the form factor,
+one can assume that in the case that AD has been correctly implemented, EXPSIN has also been correctly implemented.
+Consequently, the results of this algorithm can be used to evaluate the qualities and artefacts associated with \eqref{eq:final_exp_sin_squared} as a functional for SAXSTT.
+Firstly, several voxels were trapped with their initial conditions when handling weakly anisotropic meridional scattering, as shown in Figure \ref{fig:phantom_reconstruction_2D} and \ref{fig:phantom_reconstruction_2D_angles}.
+Secondly, the algorithm managed to reconstruct the main features of the carbon knot, but the final result was noisy with each feature covering a larger number of voxels than expected; evident in Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs} and \ref{fig:carbon_knot_reconstruction_2D_angles}.
+With an assumption that EXPSIN has been correctly implemented, the reason for, and possible solutions to, these artefacts will be further discussed in the following chapter.
 
 %all three algorithms are able to minimise the error between the reconstructed scattering intensities and the analytical intensities.
 %Hence, the resulting reconstructions are most likely qualitatively accurate descriptions of the orientation and degree of anisotropy within the sample.

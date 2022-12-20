@@ -29,7 +29,7 @@
 \contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Project Work}}{27}{part.3}%
 \contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Data Sets}}{29}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Carbon Knot from Synchrotron Measurement}{29}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Simulated Parallel Uniaxial Nanostructures}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Simulated Parallel Uniaxial Nanostructures}{30}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Simulated Aligned Parallel Nanostructures with Void}{30}{section.6.3}%
 \contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Implementation}}{31}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Proof of Concept Automatic Differentiation}{31}{section.7.1}%
@@ -48,22 +48,22 @@
 \contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Performed SAXSTT Reconstructions}}{43}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Reconstruction of Simulated Parallel Nanostructures}{43}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Reconstruction of Physical Carbon Knot}{50}{section.10.2}%
-\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computational Performance}}{55}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Time Complexity of Gradient Computation}{55}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{56}{section.11.2}%
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{57}{part.5}%
-\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of Implementations}}{59}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Validity of SAXSTT}{59}{section.12.1}%
-\contentsline {section}{\numberline {12.2}AD SAXSTT}{59}{section.12.2}%
-\contentsline {section}{\numberline {12.3}EXPSIN Modification}{60}{section.12.3}%
-\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Optimisation Performance}}{61}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Evaluation of SAXSTT}{61}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Comparison of Performed Reconstructions}{63}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Assessment of Methodology}{64}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Improvements to the Cost Function}{64}{section.13.4}%
-\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Conclusion}}{65}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Project Evaluation}{65}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Future Work}{65}{section.14.2}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Computational Performance}}{57}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Time Complexity of Gradient Computation}{57}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Convergence of SAXSTT}{58}{section.11.2}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Data Analysis}}{59}{part.5}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Validation of Implementations}}{61}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Validity of SAXSTT}{61}{section.12.1}%
+\contentsline {section}{\numberline {12.2}AD SAXSTT}{61}{section.12.2}%
+\contentsline {section}{\numberline {12.3}EXPSIN Modification}{62}{section.12.3}%
+\contentsline {chapter}{\numberline {13}\spacedlowsmallcaps {Optimisation Performance}}{63}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Evaluation of SAXSTT}{63}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Comparison of Performed Reconstructions}{65}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Assessment of Methodology}{66}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Improvements to the Cost Function}{66}{section.13.4}%
+\contentsline {chapter}{\numberline {14}\spacedlowsmallcaps {Conclusion}}{67}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Project Evaluation}{67}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Future Work}{67}{section.14.2}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{67}{dummy.6}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{69}{dummy.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -6,7 +6,7 @@ Despite the concluded validation of orientation mappin in Section \ref{sec:valid
 there are regardless a number of aspects that should be addressed in order to improve the performance of SAXSTT.
 Firstly, the spatial resolution is affected by the choice of interpolation, as well as the Gaussian blur applied to account for interpolation artefacts.
 As seen in Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs}, zig-zag artefacts, also called staircase artefacts, were present in the reconstructed carbon knot, even though Gaussian blur was applied during reconstruction.
-However, it has not been mentioned that additional regularisation often is applied in SAXSTT to reduce such artefacts and other outliers, at the cost of lower spatial resolution.
+However, regularisation strategies can be utulised to reduce such artefacts and other outliers \cite{liebi2018small}, at the cost of lower spatial resolution.
 Nevertheless, the artefacts can be reduced without sacrificing the spatial resolution by instead utilising Fourier-Sinc interpolation \cite{Sinc_interpolation_2016}.
 %A possible improvement to the inaccurate interpolation and its skewed artefacts could be to use Fourier-Sinc interpolation. %RSD: Cite.
 %\noindent
@@ -72,8 +72,7 @@ As a final note, these alternative optimisation algorithms could be implemented 
 \section{Comparison of Performed Reconstructions}
 %Conclusions drawn from results
 \noindent
-From the loss curves in Figure \ref{fig:Loss_curve_optimal},
-there is reason to believe that the Phantom reconstructions converged near the global minimum, while the carbon knot reconstructions
+From the loss curves in Figure \ref{fig:Loss_curve_optimal}, the Phantom reconstructions seem to have converged to the global minimum, while the carbon knot reconstructions
 were trapped in a local minimum which had half the initial error.
 Since the Phantom data set was a simulated data set, it was possible to ensure the initial conditions to be sufficiently good.
 This condition was not possible to enforce upon the carbon knot data set, since it was experimental data.
@@ -101,7 +100,10 @@ However, the result seemed to be much better with a stronger anisotropic signal,
 As mentioned in Section \ref{sec:reconstruction_physical_carbon_knot},
 the main features of the "SYM"- and "AD"-reconstructions were also present in the "EXPSIN"-reconstruction.
 However, the spatial resolution of the reconstruction was poorer.
-It is important to remember another important difference between the different algorithms.
+One possible, but not closely investigated, explanation may be that more voxels are affected in order to mimick the isotropic part of the projection data.
+During bilinear interpolation, each voxel is weighted between four projection pixels.
+Since EXPSIN has no isotropic coefficient, noisy surrounding may contribute in minimising the error in sectors outside of the highly anisotropic region.
+At the same time, it is important to remember another important difference between the different algorithms.
 SYM and AD both performed stepwise optimisation, while EXPSIN optimised all coefficients simultaneously.
 There are obvious advantages with the first approach, since it allows for a more targeted manner optimisation, resulting in a smaller loss as seen in Figure \ref{fig:Loss_curve_optimal}.
 Therefore, it would be interesting to investigate stepwise optimisation in the "EXPSIN"-algorithm as well.
@@ -127,15 +129,15 @@ As already mentioned, the AD framework could be used to extend the SAXSTT algori
 In regard to the existing cost functions, EXPSIN could possibly be improved by doing stepwise optimisation.
 There is, however, a probability that the intensity term and the expontential term are too "entangled" to be optimised separately.
 A solution could be to do a compromise between the idea of the spherical harmonics cost funtion and that of EXPSIN.
-One possible limitation of the use of a linear combination of spherical harmonics is that one only gets discrete levels of anisotropy.
+The limitations of using spherical harmonics functions were listed in Section \ref{sec:modelling_scattering}, for instance the lack of continuous acuteness of the anisotropy.
 In this thesis, only four anisotropic spherical harmonics functions were used. If an even sharper anisotropy is desired, the number of optimisation parameters would increase drastically.
 In contrast, the degree of anisotropy from EXPSIN is continuous, and the number of optimisation parameters is constant.
 Therefore, it would be interesting to create a linear combination of an isotropic intensity term and the EXPSIN form factor.
 The resulting form factor would be similar to:
 \begin{equation}
     \label{eq:form_factor_linear_combination}
-    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim A_{0}^{2} + A_{1}^{2} \frac{\exp\left(\mp |B| \sin^2(\Theta) \right)} {\int_{0}^{\pi} \exp\left( \mp |B| \sin^{2}(x) \right) \sin(x) dx}
+    \bm{\widehat{R}}(\bm{r'}, \bm{q'}) \sim \vectorBU{A}_{0}^{2} + \vectorBU{A}_{1}^{2} \frac{\exp\left(\mp |\vectorBU{B}| \sin^2(\vectorgreek{\Theta}) \right)} {\int_{0}^{\pi} \exp\left( \mp |\vectorBU{B}| \sin^{2}(x) \right) \sin(x) dx}
 \end{equation}
 \noindent
-where $A_{0}$ and $A_{1}$ are the coefficients of the isotropic and anisotropic intensities, respectively. As before, $B$ determines the anisotropic shape of the form factor.
+where $A_{0}$ and $A_{1}$, in a given voxel, are the coefficients of the isotropic and anisotropic intensities, respectively. As before, $B$ determines the anisotropic shape of the form factor.
 Note that the exponential term can replace any uniaxial spherical harmonics function.

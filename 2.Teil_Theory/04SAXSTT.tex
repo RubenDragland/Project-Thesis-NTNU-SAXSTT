@@ -83,7 +83,7 @@ Therefore, only scattering from a given interval of q-values is collected. %RSD?
 %Figure of scanning orientations?
 
 
-\section{Modelling of Anisotropic Scattering}
+\section{Modelling of Anisotropic Scattering} \label{sec:modelling_scattering}
 The coordinate systems used in this thesis follow the convention of the article "Small-angle X-ray scattering tensor tomography:
 model of the three-dimensional reciprocal-space
 map, reconstruction algorithm and angular
@@ -185,8 +185,8 @@ with resulting shape in threedimensional space as shown in Figure \ref{fig:exp_s
 There are a total of four parameters per voxel to optimise in Equation \eqref{eq:exp_sin_squared}: $A$, $B$, $\theta_{op}$, and $\varphi_{op}$.
 In contrast, six parameters per voxel need to be optimised in Equation \eqref{eq:reciprocal_space_map},
 $a_{0}$, $a_{2}$, $a_{4}$, $a_{6}$, $\theta_{op}$, and $\varphi_{op}$.
-Moreover, the alternative representation provides with a continuous degree of uniaxiality
-as opposed to the finite number of orders of spherical harmonics functions that can be included.
+Moreover, the alternative representation provides the opportunity to model sharper directional scattering without the cost of additional optimisation parameters,
+and the acuteness of the directional scattering can be adjusted in a continuous manner due to parameter $B$.
 However, Equation \eqref{eq:reciprocal_space_map} is more general, and can be used to model a linear combination of isotropic and uniaxial intensities.
 
 
@@ -196,7 +196,7 @@ SAXSTT is approximately a maximum likelihood estimation that can utilise gradien
 The forward pass of SAXSTT is to calculate the resulting SAXS patterns from having the currently estimated model.
 Then, the error between the calculated and measured SAXS patterns can be calculated.
 In terms of cost function expressions, there exist many options, and the expression used by Liebi \cite{liebi2018small} is:
-\begin{equation}
+\begin{equation}\label{eq:cost_function_SAXSTT}
     \epsilon_{q} = 2 \sum_{n, x, y, \phi} \omega_{n}(x,y,q,\phi) \left\{ \left( \widehat{I}_{n}(x,y,q,\phi) \right)^{\frac{1}{2}}  -  \left( \frac{ I_{n}(x,y,q,\phi) }{T_{n}(x,y)} \right)^{\frac{1}{2}} \right\}^{2},
 \end{equation}
 \noindent
@@ -240,15 +240,17 @@ and uniaxial symmetry is implicitly assumed. %RSD?
 %RSD: Drop equatorial scattering?
 \clearpage
 \section{Scattering Models}
+
 From the Hermans order parameter \eqref{eq:hermans_order_parameter}, it is clear that the possible interval of $S$ is $[-0.5, 1]$.
 In the case of negative values, equatorial scattering is dominant, meaning that the resulting scattering is perpendicular to real-space orientation of the sample.
-Typically, equatorial scattering occurs when SAXS is performed on fibers \cite{li2013quantitative}, because X-rays scatter off the fiber-air interface.
-Specifically, the mentioned interface has a characteristic length scale that is responsible for scattering intensity in the analysed \emph{q-range} of the SAXS data.
-To understand this phenomenon, it is important to remember the properties of the Fourier transform.
+For positive values, the scattering is parallel to the real-space orientation of the sample, called meridional scattering.
+To understand these phenomena, it is important to remember the properties of the Fourier transform.
 Short length scales in real space correspond to high frequencies in reciprocal space, and vice versa.
-Hence, the scattering from the fiber itself will have low frequencies below the given \emph{q-range}.
-In the case of positive values, the scattering is parallel to the real-space orientation of the sample, called meridional scattering.
-Here, the length of a nanostructure corresponds to the frequencies that are sampled, while the width is responsible for scattering at a wider angle.
+When doing SAXSTT, only a limited \emph{q-range}, meaning a given frequency interval, is analysed.
+The goal is to include either the meridional or equatorial scattering from the anisotropic sample.
+If the characteristic length of the nanostructure is so that the corresponding scattering is found within the \emph{q-range},
+but the same does not apply for the scattering from the width of the nanostructure, then only meridional scattering will be sampled.
+Similarly can the opposite be true, where only equatorial scattering is sampled because the characteristic length of the nanostructure is too large.
 Figure \ref{fig:scattering_models} shows the distinction between equatorial and meridional scattering.
 
 \begin{figure}
@@ -258,6 +260,17 @@ Figure \ref{fig:scattering_models} shows the distinction between equatorial and 
     \caption[Meridional and Equatorial Scattering]{Meridional, or parallel, scattering is shown on the left, while equatorial, or perpendicular, scattering is shown on the right.
         The 3D figures in front represent objects in real space, while the respective sector diagrams directly behind the objects represent the corresponding scattering patterns for a certain \emph{q-range}.
         The characteristic length scales of the given \emph{q-ranges} are visualised by the dotted lines, respectively.
+        For equatorial scattering, it is assumed that the length of the nanostructure is large enough to only cause $q\sim0$-scattering.
+        Therefore, only scattering from the width and the gap are sampled.
+        Similarly, for meridional scattering, it is assumed that the width of the nanostructure causes wide-angle scattering, which is not sampled in the given \emph{q-range}.
     }
     \label{fig:scattering_models}
 \end{figure}
+
+Typically, equatorial scattering can occur when SAXS is performed on fibers \cite{li2013quantitative}, because X-rays scatter off the fiber-air interface.
+This is also exemplified in Figure \ref{fig:scattering_models}.
+Specifically, the mentioned interface has a characteristic length scale that is responsible for scattering intensity in the analysed \emph{q-range} of the SAXS data.
+Moreover, scattering can also occur from the width of the fibers, given that the width and the gap are of similar size.
+However, no meridional scattering is sampled, because the length of the fiber is too large to be sampled in the given \emph{q-range}.
+
+

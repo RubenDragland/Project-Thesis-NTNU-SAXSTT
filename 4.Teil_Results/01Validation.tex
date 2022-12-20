@@ -22,11 +22,11 @@
 
 %RSD: Legg inn gradientene her:
 
-As mentioned in Section \ref{sec:calc_alt_functional}, the symbolic expression was compared to automatically calculated gradients for random values.
+As mentioned in Section \ref{sec:calc_alt_functional},
+the gradient to the cost function \eqref{eq:cost_function_SAXSTT} with the form factor expressed using \eqref{eq:exp_sin_squared} was computed using a symbolically derived expression and by applying an AD engine.
 Evaluation of the symbolic gradient expressions for the coefficients $A$ and $B$ agreed with the automatically calculated gradients for all sampled initial values.
-The gradients with respect to the orientation parameters $\theta_{op}$ and $\varphi_{op}$, however, were incorrect.
-As a result, the gradients of the alternative functional were correctly derived for the coefficients $A$ and $B$,
-but wrongly derived for the orientation parameters $\theta_{op}$ and $\varphi_{op}$.
+The derived expressions for the gradient to the orientation parameters $\theta_{op}$ and $\varphi_{op}$, however, were, and still are, incorrect.
+Moreover, relevance of these expressions dimished, because the alternative functional was modified in an effort to improve the performed reconstructions.
 Therefore, SAXSTT using the alternative functional had to be implemented using automatically calculated gradients.
 
 \section{Automatic Gradients of SAXSTT}

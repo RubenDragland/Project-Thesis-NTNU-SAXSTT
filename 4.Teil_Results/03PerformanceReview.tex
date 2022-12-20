@@ -6,6 +6,7 @@
 
 Figure \ref{fig:gradient_time_complexity} shows the time complexity of the gradient computation for AD and SYM.
 The dotted line indicates a time complexity of $\mathcal{O}(N)$, where $N$ is the number of voxels.
+Each voxel had, as mentioned, six optimisation parameters.
 All tests were approximately parallel to the dotted line, which indeed indicates a time complexity of $\mathcal{O}(N)$ for both implementations.
 Note that \emph{AD laptop} is tested on another device than the rest.
 Regarding \emph{AD CPU/GPU}, the CPU and GPU automatic gradient calculations were merged, since the performance did not change as a result of choice of device. % as the result was the same.
@@ -27,8 +28,10 @@ Figure \ref{fig:Loss_curve_optimal} shows the convergence of SAXSTT after 100 it
 Specifically, reconstructions of the carbon knot and the Phantom data set are included.
 The characteristic convergence of the Spherical Harmonics method is evident.
 Since the different sets of parameters were optimised independently before the final optimisation, several exponential decays are visible.
-The same step-wise convergence was not implemented for EXPSIN, which therefore experienced an initial exponential decay followed by an almost flat convergence.
+Each exponential decay corresponds to each of the top boxes in Figure \ref{fig:flowchart_SAXSTT} and \ref{fig:flowchart_ADSAXSTT}.
+The same step-wise reconstruction was not implemented for EXPSIN, which therefore experienced an initial exponential decay followed by an almost flat convergence.
 In fact, only $10\%$ of the EXPSIN iterations showed exponential decay; the rest were almost flat.
+However, EXPSIN showed a notable second decay after ca. 55 iterations, and is seemingly still decaying at the end of the 100 iterations, as opposed to the other methods.
 Another fascinating observation was that the loss of the stepwise optimisation drastically increased after 30 iterations, meaning the first iteration of the anisotropic coefficients optimisation.
 Moreover, the loss of the carbon knot reconstruction was only halved after 100 iterations, whereas the loss of the Phantom data set was reduced by a factor of 10.
 In terms of computational time, the symbolic reconstruction of the Phantom data set was significantly faster than the rest, since only 50 of the 100 iterations were performed.

@@ -18,7 +18,8 @@ For simplicity, the preferred orientation will from now on be denoted $\theta$ a
     \centering
     \includesvg[width=1\textwidth]{../XRD_CT/Plotting/thesis_plots/SH_coeffs_0align_closecoeffs.svg}
     \caption[Distribution of Reconstructed Coefficients]{ The coefficients converged to a Lorentzian distribution
-        around the true value when the initial conditions had the correct sign.  }
+        around the true value only when the initial conditions had the correct sign.
+        Therefore, it is necessary to correctly anticipate what type of scattering model is sampled from SAXS. }
     \label{fig:coefficient_comparison_AD_SYM}
 \end{figure}
 
@@ -194,7 +195,7 @@ All voxels with an isotropic intensity below the threshold of 6 are not shown.
     \includesvg[]{../XRD_CT/Plotting/thesis_plots/ck_indcolorbar.svg}
 
     \caption[3D Reconstructions of Carbon Knot]{ The resulting 3D reconstructions of the carbon knot from the "SYM"-, "AD"-, and "EXPSIN"-algorithm, respectively.
-        There were 561, 533, and 900 voxels with an isotropic intensity above the threshold value of 6, respectively.
+        There were 561, 533, and 900 voxels with an isotropic intensity above the threshold value of 6, respectively. Generally, the voxels point in the direction of the carbon fibers.
     }
     \label{fig:carbon_knot_reconstruction_3D}
 \end{figure}
@@ -221,11 +222,13 @@ All voxels with an isotropic intensity below the threshold of 6 are not shown.
 
 From the reconstructed volume, the centremost slice (z = 17) was investigated further.
 Figure \ref{fig:carbon_knot_reconstruction_2D_coeffs} shows the isotropic coefficent, a0 or A, and the degree of anisotropy, DoA, reconstructed using symbolically, automatically, and alternatively calculated gradients, respectively.
-Note that the a0 coefficient corresponds to coefficient A in the alternative cost function \eqref{eq:exp_sin_squared}.
+Note that the a0 coefficient in some sense corresponds to coefficient A in the alternative cost function \eqref{eq:exp_sin_squared}, as both generally determine the scattering intensity from a voxel.
+However, they are not quantitatively comparable.
 %RSD: Describe. 
 The results of the "SYM"- and "AD"-algorithm were close to indistinguishable,
 while the "EXPSIN"-algorithm shared most of the same features.
 However, the latter reconstruction had a less pronounced edge in terms of intensity at the interface between the sample and the surroundings.
+In some sense it seems to be more of a rough estimate, and less converged than the two others.
 With that being said, the amount of noise in surroundings of the DoA calculation was much less than for SYM and AD.
 
 \begin{figure}[h!]
@@ -245,6 +248,8 @@ With that being said, the amount of noise in surroundings of the DoA calculation
 \clearpage
 The preferred orientations in the mentioned 2D slice are shown in Figure \ref{fig:carbon_knot_reconstruction_2D_angles}. %RSD: Describe
 Again, the "EXPSIN"-result turned out to be noisy, even though the main features were reconstructed correctly.
+It is interesting how a the main features are constructed correctly, but on a bigger scale, affecting more voxels, than the "SYM"- and "AD"-algorithms.
+It is important to remember the only two differences between the implementations are the form factor in the cost function, and step-wise reconstruction versus all-at-once reconstruction.
 In contrast to the isotropic and anisotropic parameters,
 the "AD"-algorithm and the "SYM"-algorithm were slightly different in terms of preferred angles.
 Nevertheless, the differences were small, and the edges between the sample and the surroundings were well-defined in both algorithms.
@@ -257,7 +262,8 @@ Nevertheless, the differences were small, and the edges between the sample and t
 
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_theta_svg-tex.pdf}
     \includegraphics[trim = {0 0 0 2.0cm}, clip, width = 1\textwidth]{./svg-inkscape/ck_slices_phi_svg-tex.pdf}
-    \caption[Slice of Reconstructed Orientation for Carbon Knot]{  The reconstructed preferred orientation of the carbon knot in the z=17 cross section for the different reconstruction algorithms, respectively. }
+    \caption[Slice of Reconstructed Orientation for Carbon Knot]{  The reconstructed preferred orientation of the carbon knot in the z=17 cross section for the different reconstruction algorithms, respectively.
+        All the main features have been correctly reconstructed, but the "EXPSIN"-algorithm has a higher noise level where the features in some sense are magnified in extent. }
     \label{fig:carbon_knot_reconstruction_2D_angles}
 \end{figure}
 

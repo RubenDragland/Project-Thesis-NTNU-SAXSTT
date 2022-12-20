@@ -2,12 +2,13 @@
 
 \section{Project Evaluation}
 
-In conclusion, this thesis has demonstrated the versatility and efficiency of automatic differentiation in gradient-based optimisation algorithms.
+In conclusion, this thesis has demonstrated the versatility and efficiency of automatic differentiation in gradient-based SAXSTT.
 SAXSTT with automatic gradient calculation was implemented using Pytorch and validated to the original implementation.
 The implementation allowed for effortless investigation of possible improvements to the current cost function, exemplified through the so-called EXPSIN expression.
 The reconstruction results were promising, but not yet an improvement of the existing SAXSTT algorithm.
-It is not conclusively determined whether the reason for the disappointing results was due to the chosen optimisation algorithm or the functionality of the EXPSIN expression.
+It is not conclusively determined whether this was due to the chosen optimisation algorithm or the functionality of the EXPSIN expression.
 Nevertheless, a linear combination between an isotropic term and an uniaxial exponential term was determined to be an exciting possible improvement to the SAXSTT cost function.
+% In addition, mini batch optimisation using the Quasi-Newton method or the truncated-Newton method was found to be a promising avenue for future work.
 
 
 
@@ -20,6 +21,10 @@ which would ensure an enhanced ability to avoid local minima. This would come at
 In addition, automatic differentiation would allow for implementation of SAXSTT for orientation mapping of other symmetries than the currently implemented uniaxial symmetry.
 Regarding the current SAXSTT algorithm for uniaxial symmetries, the EXPSIN expression should have an isotropic term added to it.
 Other small tweaks would be to implement Fourier-Sinc interpolation despite an increased cost in computational complexity.
-With all these improvements, a viable option would be to translate the entire SAXSTT algorithm to Python, which would also allow for a better exploitation of the GPU.
+With these improvements to the current SAXSTT algorithm, noise would be reduced, the reconstruction would be more robust, and the algorithm would be more versatile.
+A viable option would be to translate the entire SAXSTT algorithm to Python, which would also allow for a better exploitation of the GPU.
+In terms of challenges, efficient memory allocation when performing computations on the GPU would be a challenge for larger datasets.
+For smaller dataset, only performing one transition from CPU to GPU and back could be sufficient. The potential speed-up would be tremendeous, but for larger datasets of many GigaBytes,
+the memory of even the most powerful GPUs would be insufficient. A clever and optimised way of transferring data between the CPU and GPU would then be necessary.
 
 %RSD: Elaborate more? Or just summarise what has been mentioned. 
