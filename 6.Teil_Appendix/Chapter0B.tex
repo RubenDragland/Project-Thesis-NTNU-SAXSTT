@@ -1,9 +1,34 @@
 % Appendix X
 
-\chapter{Appendix B}\label{app:appendixB}
+\chapter{Appendix}\label{app:appendixB}
 
 %----------------------------------------------------------------------------------------
 
 % Content begins here
 
-\section{Symbolic Gradients of Alternative Functional}
+All code can be found, in its raw and unedited form, on the GitHub repository \url{https://github.com/RubenDragland/XRD_CT}.
+This appendix is a short description of the different folders and files in the repository.
+The necessary packages and libraries for the Python scripts can be found in the \emph{SAXSTT\_spec.txt}-file.
+
+
+\section{Reference to PSI Packages}
+
+The original scripts for SAXSTT was downloaded with permission from the PSI website, \url{http://www.psi.ch} \cite{liebi2015nanostructure}.
+These are located in $\emph{3DSAXS\_package}$, \newline $\emph{cSAXS\_matlab\_base\_package}$ and $\emph{cSAXS\_matlab\_sSAXS}$.
+Together with the original files are modified versions of SAXSTT components written in MATLAB.
+Most essentially are the $\emph{Run}$-files, which are used to initilise the scripts efficiently.
+
+\section{Pytorch Automatic Differentiation}
+Within the folder $\emph{Autodiff\_package}$, intitial tests of autograd engines can be found.
+Additionally, gradient calculation for AD SAXSTT can be found, both optimised and unoptimised versions.
+The folder and the files have not been cleaned at this current date, but might eventually be cleaned and updated with additional functionality.
+
+\section{Data Analysis}
+As for the data, the folder $\emph{Data sets}$ contains some of the data used in the thesis.
+For instance, the carbon knot data set can be found here.
+$\emph{Figures}$ contains the editable svg-files to the figures that were created in $\emph{Inkscape}$.
+For figures created using $\emph{Matplotlib}$, please see the $\emph{Plotting}$-folder.
+Raw results and performed data analysis can be found in the $\emph{Results}$ folder.
+
+
+

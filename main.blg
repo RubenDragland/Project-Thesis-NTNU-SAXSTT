@@ -22,6 +22,7 @@ A level-1 auxiliary file: 4.Teil_Results/03PerformanceReview.aux
 A level-1 auxiliary file: 5.Teil_Discussion/01Validation.aux
 A level-1 auxiliary file: 5.Teil_Discussion/02Comparisons.aux
 A level-1 auxiliary file: 5.Teil_Discussion/04Conclusion_Future.aux
+A level-1 auxiliary file: 6.Teil_Appendix/Chapter0B.aux
 A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -46,7 +47,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 24 entries,
             6399 wiz_defined-function locations,
-            1371 strings with 16901 characters,
+            1372 strings with 16930 characters,
 and the built_in function-call counts, 231131 in all, are:
 = -- 19507
 > -- 3310
